@@ -1,12 +1,4 @@
-<script setup lang="ts">
-import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
-const { locale } = useI18n()
-const localePath = useLocalePath()
-const query: QueryBuilderParams = {
-  path: localePath('/articles')
-}
-console.log(query)
-</script>
+
 <template>
   <main>
     <ContentList :query="query" :key="'articleList' + locale">
@@ -28,3 +20,13 @@ console.log(query)
     </ContentList>
   </main>
 </template>
+
+<script setup lang="ts">
+import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
+const { locale } = useI18n()
+const localePath = useLocalePath()
+const query: QueryBuilderParams = {
+  path: localePath('/articles')
+}
+console.log(query)
+</script>
