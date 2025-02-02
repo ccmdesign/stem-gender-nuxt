@@ -3,13 +3,13 @@ import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const query: QueryBuilderParams = {
-  path: localePath('/gallery')
+  path: localePath('/articles')
 }
 console.log(query)
 </script>
 <template>
   <main>
-    <ContentList :query="query" :key="'galleryList' + locale">
+    <ContentList :query="query" :key="'articleList' + locale">
       <template #default="{ list }">
         <ul>
           <li v-for="article in list" :key="article._path">

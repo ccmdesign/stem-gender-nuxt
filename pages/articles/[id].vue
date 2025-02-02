@@ -11,10 +11,8 @@ const localePath = useLocalePath()
         <h2>{{ doc.description }}</h2>
       </template>
       <template #not-found>
-        <h1>{{ $t('errorGalleryMessage') }}</h1>
-        <button @click="$router.push(localePath('/gallery'))">
-          {{ $t('backToGallery') }}
-        </button>
+        <h1>Error</h1>
+        <button @click="$router.push(localePath('/articles'))">Back</button>
       </template>
     </ContentDoc>
   </div>

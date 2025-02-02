@@ -9,6 +9,13 @@ export default defineNuxtConfig({
     }
   },
   modules: ['@nuxtjs/i18n', '@nuxt/eslint', '@nuxt/content'],
+  app: {
+    head: {
+      link: [
+        { rel: 'stylesheet', href: '/css/styles.css' }
+      ]
+    }
+  },
   i18n: {
     // Module Options
     lazy: true,
@@ -23,16 +30,16 @@ export default defineNuxtConfig({
         file: 'en.yml'
       },
       {
-        code: 'de',
-        iso: 'de',
-        name: 'Deutsch',
-        file: 'de.yml'
+        code: 'es',
+        iso: 'es',
+        name: 'Español',
+        file: 'es.yml'
       },
       {
-        code: 'ru',
-        iso: 'ru',
-        name: 'Russian',
-        file: 'ru.yml'
+        code: 'fr',
+        iso: 'fr',
+        name: 'Français',
+        file: 'fr.yml'
       }
     ],
     defaultLocale: 'en'
