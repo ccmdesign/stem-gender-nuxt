@@ -1,6 +1,6 @@
 ---
-title: What have we learned so far?
-permalink: /es/what-we-learned/
+title: Qué hemos aprendido hasta ahora?
+permalink: /es/que-hemos-aprendido/
 order: 5
 ---
 

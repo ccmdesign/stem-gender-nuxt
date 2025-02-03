@@ -9,13 +9,18 @@ export default defineNuxtConfig({
     }
   },
   modules: ['@nuxtjs/i18n', '@nuxt/eslint', '@nuxt/content'],
-  app: {
-    head: {
-      link: [
-        { rel: 'stylesheet', href: '/css/styles.css' }
-      ]
+  
+  css: ['~/assets/css/styles.scss'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          sourceMap: true
+        }
+      }
     }
   },
+  
   i18n: {
     // Module Options
     lazy: true,

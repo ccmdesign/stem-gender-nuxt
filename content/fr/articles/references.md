@@ -1,6 +1,6 @@
 ---
-title: References
-permalink: /es/references/
+title: Références
+permalink: /fr/references/
 order: 8
 ---
 

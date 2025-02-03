@@ -1,6 +1,6 @@
 ---
-title: The State of Women's Participation in STEM in the Global South
-permalink: /es/state-of-womens-participation/
+title: El estado de la participación de las mujeres en STEM en el sur global
+permalink: /es/estado-participacion-mujeres/
 order: 3
 ---
 

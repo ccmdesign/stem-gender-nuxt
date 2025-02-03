@@ -1,6 +1,6 @@
 ---
 title: Introduction
-permalink: /es/introduciton/
+permalink: /fr/introduction/
 order: 2
 ---
 

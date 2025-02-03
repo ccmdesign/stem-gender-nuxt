@@ -1,8 +1,5 @@
-
 <template>
-  
   <main>
-    
     <header class="chapter-layout__header | chapter-header">
       <div class="repel">
         <LangSwitcher />
@@ -25,27 +22,32 @@
         <h2 class="chapter-header__subtitle">A Southern-led research network to advance gender equality in STEM</h2>
       </hgroup>
 
-      <ul class="chapter-header__toc">
-        <ContentList :query="query" :key="'articleList' + locale">
-          <template #default="{ list }">
-            <ul>
-              <li v-for="article in list" :key="article._path">
-                <NuxtLink :to="localePath(article._path)"
-                  >{{ article.title }}
-                </NuxtLink>
-              </li>
-            </ul>
-          </template>
-          <template #not-found>
-            <p>No articles found.</p>
-          </template>
-          <template #pending>
-            <p>...</p>
-          </template>
-        </ContentList>
-      </ul>
+      
+      <ContentList :query="query" :key="'galleryList' + locale">
+        <template #default="{ list }">
+          <ul class="chapter-header__toc">
+            <li v-for="article in list" :key="article._path">
+              <NuxtLink :to="localePath(article._path)"
+                >{{ article.title }}
+              </NuxtLink>
+            </li>
+          </ul>
+        </template>
+        <template #not-found>
+          <p>No articles found.</p>
+        </template>
+        <template #pending>
+          <p>...</p>
+        </template>
+      </ContentList>
     </header>
-  </main> 
+    <ul>
+      <h2>Resources</h2>
+      <li v-for="resource in resources" :key="resource.name">
+        <a :href="resource.url">{{ resource.name }}</a>
+      </li>
+    </ul>
+  </main>
 </template>
 
 <script setup lang="ts">
@@ -60,6 +62,20 @@ const query: QueryBuilderParams = {
   path: localePath('/articles')
 }
 console.log(query)
+
+const resources = ref([])
+
+
+// @TODO: Não consegui importar o arquivo resources.json para cada idioma
+
+onMounted(async () => {
+  try {
+    const data = await import(`/content/resources.json`)
+    resources.value = data.default
+  } catch (error) {
+    console.error('Error loading resources:', error)
+  }
+})
 
 
 </script>

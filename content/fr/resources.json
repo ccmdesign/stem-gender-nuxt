@@ -1,0 +1,192 @@
+[
+  {
+    "name": "Initiative de recherche sur le genre dans les STIM",
+    "select": "Article",
+    "project_type": "",
+    "region": "",
+    "funding": "",
+    "status": "NA",
+    "programs": "",
+    "url": "https://idrc-crdi.ca/en/initiative/gender-stem"
+  },
+  {
+    "name": "Recherche sur le genre dans les sciences de l'eau et du climat en Asie du Sud",
+    "select": "Projet",
+    "project_type": "Initiative de recherche sur le genre dans les STIM",
+    "region": "Bangladesh, Népal, Sri Lanka",
+    "funding": 1247700,
+    "status": "Actif",
+    "programs": "Éducation et Science",
+    "url": "https://idrc-crdi.ca/en/project/gendering-water-and-climate-science-research-south-asia"
+  },
+  {
+    "name": "Promouvoir l'inclusion du genre dans les sciences naturelles, la technologie, l'ingénierie et les mathématiques en Haïti",
+    "select": "Projet", 
+    "project_type": "Initiative de recherche sur le genre dans les STIM",
+    "region": "Cuba, Haïti",
+    "funding": 1184700,
+    "status": "Actif",
+    "programs": "Éducation et Science",
+    "url": "https://idrc-crdi.ca/en/project/advancing-gender-inclusion-natural-sciences-technology-engineering-and-mathematics-haiti"
+  },
+  {
+    "name": "Promouvoir l'inclusion du genre dans les sciences naturelles, la technologie, l'ingénierie et les mathématiques en Haïti",
+    "select": "Projet",
+    "project_type": "Initiative de recherche sur le genre dans les STIM",
+    "region": "Ghana, Kenya",
+    "funding": 1247700,
+    "status": "Actif", 
+    "programs": "Éducation et Science",
+    "url": "https://idrc-crdi.ca/en/project/advancing-gender-inclusion-natural-sciences-technology-engineering-and-mathematics-haiti"
+  },
+  {
+    "name": "Vers le changement : Pour la justice de genre dans la recherche en STIM en Afrique (GEJUS-TA)",
+    "select": "Projet",
+    "project_type": "Initiative de recherche sur le genre dans les STIM",
+    "region": "Kenya, Afrique du Sud, Ouganda, Zambie",
+    "funding": 1207000,
+    "status": "Actif",
+    "programs": "Éducation et Science",
+    "url": "https://idrc-crdi.ca/en/project/pathway-change-towards-gender-justice-stem-research-africa-gejusta"
+  },
+  {
+    "name": "Renforcer l'inclusion du genre dans la recherche agricole pour des résultats plus concluants en Afrique de l'Ouest",
+    "select": "Projet",
+    "project_type": "Initiative de recherche sur le genre dans les STIM",
+    "region": "Bénin, Côte d'Ivoire, Niger",
+    "funding": 1213500,
+    "status": "Actif",
+    "programs": "Éducation et Science",
+    "url": "https://idrc-crdi.ca/en/project/strengthening-gender-inclusion-agricultural-research-more-conclusive-results-west-africa"
+  },
+  {
+    "name": "Données ouvertes latino-américaines pour les politiques d'égalité des genres axées sur le leadership dans les STIM",
+    "select": "Projet",
+    "project_type": "Initiative de recherche sur le genre dans les STIM",
+    "region": "Bolivie, Brésil, Pérou",
+    "funding": 1248600,
+    "status": "Actif",
+    "programs": "Éducation et Science",
+    "url": "https://idrc-crdi.ca/en/project/latin-american-open-data-gender-equality-policies-focusing-leadership-stem"
+  },
+  {
+    "name": "Élaborer des politiques publiques pour la participation effective des femmes en sciences, technologie, ingénierie et mathématiques en Bolivie",
+    "select": "Projet",
+    "project_type": "Briser les barrières systémiques à la participation des femmes en science",
+    "region": "Bolivie",
+    "funding": 514900,
+    "status": "Actif",
+    "programs": "Éducation et Science, Fondements pour l'Innovation",
+    "url": "https://idrc.ca/en/project/constructing-public-policy-effective-participation-women-science-technology-engineering-and"
+  },
+  {
+    "name": "Éliminer les obstacles au recrutement, à la rétention et à l'avancement des femmes dans les domaines scientifiques et technologiques en Colombie",
+    "select": "Projet",
+    "project_type": "Briser les barrières systémiques à la participation des femmes en science",
+    "region": "Colombie",
+    "funding": 456700,
+    "status": "Actif",
+    "programs": "Éducation et Science, Fondements pour l'Innovation",
+    "url": "https://idrc.ca/en/project/removing-barriers-recruiting-retaining-and-advancing-women-science-and-technology-fields"
+  },
+  {
+    "name": "Supervision et mentorat pour les femmes en sciences, technologie, ingénierie et mathématiques en Afrique de l'Est",
+    "select": "Projet",
+    "project_type": "Briser les barrières systémiques à la participation des femmes en science",
+    "region": "Burundi, Kenya, Rwanda, Soudan du Sud, Tanzanie, Ouganda",
+    "funding": 484200,
+    "status": "Actif",
+    "programs": "Éducation et Science, Fondements pour l'Innovation",
+    "url": "https://idrc.ca/en/project/supervision-and-mentorship-women-science-technology-engineering-and-mathematics"
+  },
+  {
+    "name": "Combler l'écart d'égalité des genres en science à l'Université des femmes en Afrique",
+    "select": "Projet",
+    "project_type": "Briser les barrières systémiques à la participation des femmes en science",
+    "region": "Zimbabwe",
+    "funding": 226600,
+    "status": "Terminé",
+    "programs": "Éducation et Science, Fondements pour l'Innovation",
+    "url": "https://idrc.ca/en/project/bridging-gender-equality-gap-science-womens-university-africa"
+  },
+  {
+    "name": "Éliminer les obstacles à la participation des femmes en science : Une étude des universités de recherche africaines",
+    "select": "Projet",
+    "project_type": "Briser les barrières systémiques à la participation des femmes en science",
+    "region": "Éthiopie, Ghana, Kenya, Nigeria, Rwanda, Sénégal, Afrique du Sud, Tanzanie, Ouganda",
+    "funding": 225000,
+    "status": "Actif",
+    "programs": "Éducation et Science, Fondements pour l'Innovation",
+    "url": "https://idrc.ca/en/project/eliminating-barriers-womens-participation-science-study-african-research-universities"
+  },
+  {
+    "name": "Les femmes dans l'éducation et les carrières d'ingénierie au Bénin et au Ghana",
+    "select": "Projet",
+    "project_type": "Briser les barrières systémiques à la participation des femmes en science",
+    "region": "Bénin, Ghana",
+    "funding": 357100,
+    "status": "Terminé",
+    "programs": "Éducation et Science, Fondements pour l'Innovation",
+    "url": "https://idrc.ca/en/project/women-engineering-education-and-careers-benin-and-ghana"
+  },
+  {
+    "name": "Travail technoscientifique et équité des genres en Argentine : Comparaison des obstacles et des opportunités",
+    "select": "Projet",
+    "project_type": "Briser les barrières systémiques à la participation des femmes en science",
+    "region": "Argentine",
+    "funding": 213300,
+    "status": "Terminé",
+    "programs": "Éducation et Science, Fondements pour l'Innovation",
+    "url": "https://idrc.ca/en/project/technoscientific-labour-and-gender-equity-argentina-comparing-barriers-and-opportunities"
+  },
+  {
+    "name": "Soutenir les femmes autochtones en sciences, technologie, ingénierie et mathématiques au Pérou",
+    "select": "Projet",
+    "project_type": "Briser les barrières systémiques à la participation des femmes en science",
+    "region": "Pérou",
+    "funding": 226100,
+    "status": "Terminé",
+    "programs": "Éducation et Science, Fondements pour l'Innovation",
+    "url": "https://idrc.ca/en/project/supporting-indigenous-women-science-technology-engineering-and-mathematics-peru"
+  },
+  {
+    "name": "Briser les barrières à la participation des femmes en sciences, technologie, ingénierie et mathématiques en Éthiopie",
+    "select": "Projet",
+    "project_type": "Briser les barrières systémiques à la participation des femmes en science",
+    "region": "Éthiopie",
+    "funding": 213300,
+    "status": "Terminé",
+    "programs": "Éducation et Science, Fondements pour l'Innovation",
+    "url": "https://idrc.ca/en/project/breaking-barriers-womens-participation-science-technology-engineering-and-mathematics"
+  },
+  {
+    "name": "Disparités entre les genres dans les choix de carrière et la dynamique salariale en sciences, technologie, ingénierie et mathématiques au Brésil",
+    "select": "Projet",
+    "project_type": "Briser les barrières systémiques à la participation des femmes en science",
+    "region": "Brésil",
+    "funding": 206600,
+    "status": "Terminé",
+    "programs": "Éducation et Science, Fondements pour l'Innovation",
+    "url": "https://idrc.ca/en/project/gender-disparities-career-choices-and-wage-dynamics-science-technology-engineering-and"
+  },
+  {
+    "name": "Initiative de recherche sur le genre dans les STIM : Annonce des projets",
+    "select": "Article",
+    "project_type": "",
+    "region": "",
+    "funding": "",
+    "status": "NA",
+    "programs": "",
+    "url": "https://idrc-crdi.ca/en/news/gender-stem-research-initiative-announcement-projects"
+  },
+  {
+    "name": "Briser les barrières : Comprendre les obstacles auxquels font face les femmes en STIM dans le Sud global",
+    "select": "Article",
+    "project_type": "",
+    "region": "",
+    "funding": "",
+    "status": "NA",
+    "programs": "",
+    "url": "https://idrc-crdi.ca/en/news/breaking-barriers-understanding-obstacles-facing-women-stem-global-south"
+  }
+]

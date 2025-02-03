@@ -5,5 +5,6 @@ const { t } = useI18n()
 <template>
   <div>
     <h2>Home</h2>
+    <NuxtLink to="/articles">Articles</NuxtLink>
   </div>
 </template>

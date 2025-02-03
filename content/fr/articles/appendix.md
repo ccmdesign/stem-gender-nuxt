@@ -1,6 +1,6 @@
 ---
-title: Appendix
-permalink: /es/appendix/
+title: Annexe
+permalink: /fr/annexe/
 order: 7
 ---
 

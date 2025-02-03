@@ -1,6 +1,6 @@
 ---
-title: Conclusion and Recommendations
-permalink: /es/conclusion/
+title: Conclusion et Recommandations
+permalink: /fr/conclusion/
 order: 6
 ---
 

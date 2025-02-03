@@ -1,6 +1,6 @@
 ---
-title: Executive Summary
-permalink: /es/summary/
+title: Resumen Ejecutivo
+permalink: /es/resumen-ejecutivo/
 order: 1
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: A Multi-Pronged Approach to Addressing Systemic and Systematic Barriers to Achieving Gender Equity in STEM
-permalink: /es/multi-pronged-approach/
+title: Una aproximación de múltiples vías para abordar las barreras sistemáticas y sistemáticas para lograr la equidad de género en STEM
+permalink: /es/aproximacion-multiples-voies/
 order: 4
 ---
 

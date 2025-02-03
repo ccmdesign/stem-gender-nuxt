@@ -1,5 +1,5 @@
 ---
-title: Conclusion and Recommendations
+title: Conclusión y Recomendaciones
 permalink: /es/conclusion/
 order: 6
 ---

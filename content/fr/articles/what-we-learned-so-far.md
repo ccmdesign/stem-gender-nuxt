@@ -1,6 +1,6 @@
 ---
-title: What have we learned so far?
-permalink: /es/what-we-learned/
+title: Qu'avons-nous appris jusqu'à présent ?
+permalink: /fr/chapitres/rapport/annexe/
 order: 5
 ---
 
