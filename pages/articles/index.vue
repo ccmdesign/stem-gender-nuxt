@@ -1,32 +1,17 @@
 <template>
-  <main>
+  <main class="chapter-layout">
     <header class="chapter-layout__header | chapter-header">
       <div class="repel">
         <LangSwitcher />
-
         <h3>Synthesis Report</h3>
       </div>
 
-      <hgroup>
-        <h1>
-          <span>Breaking Barriers</span>
-          <span>Building Bridges</span>
-        </h1>
+      <chapter-titles />
 
-        <div class="chapter-header__extras">
-          <a href="#" download>Podcast(AI)</a>
-          <a href="#" download>Audio Version</a>
-          <a href="#" download>Download PDF</a>
-        </div>
-
-        <h2 class="chapter-header__subtitle">A Southern-led research network to advance gender equality in STEM</h2>
-      </hgroup>
-
-      
       <ContentList :query="query" :key="'galleryList' + locale">
         <template #default="{ list }">
           <ul class="chapter-header__toc">
-            <li v-for="article in list" :key="article._path">
+            <li v-for="article in list.sort((a,b) => a.order - b.order)" :key="article._path">
               <NuxtLink :to="localePath(article._path)"
                 >{{ article.title }}
               </NuxtLink>
@@ -41,12 +26,15 @@
         </template>
       </ContentList>
     </header>
-    <ul>
-      <h2>Resources</h2>
-      <li v-for="resource in resources" :key="resource.name">
-        <a :href="resource.url">{{ resource.name }}</a>
-      </li>
-    </ul>
+    
+    <div class="chapter-layout__content">
+      <ul>
+        <h2>Resources</h2>
+        <li v-for="resource in resources" :key="resource.name">
+          <a :href="resource.url" target="_blank">{{ resource.name }}</a>
+        </li>
+      </ul>
+    </div>
   </main>
 </template>
 
@@ -81,3 +69,8 @@ onMounted(async () => {
 </script>
 
 
+<style lang="scss" scoped>
+.chapter-header h3 {
+  font-size: var(--size--2);
+}
+</style>

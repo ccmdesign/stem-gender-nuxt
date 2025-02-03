@@ -10,7 +10,8 @@ const { locales, locale, setLocale } = useI18n()
 
 <style scoped>
 .language-switcher button {
-  padding: var(--space-2xs);
+  padding-inline: var(--space-3xs);
+  text-transform: uppercase;
   border: none;
   background: none;
   cursor: pointer;
@@ -18,6 +19,5 @@ const { locales, locale, setLocale } = useI18n()
 
 .language-switcher button[aria-selected="true"] {
   font-weight: bold;
-  text-decoration: underline;
 }
 </style>
