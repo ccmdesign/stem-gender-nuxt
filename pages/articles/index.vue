@@ -5,11 +5,7 @@
     
     <header class="chapter-layout__header | chapter-header">
       <div class="repel">
-        <div class="language-switcher">
-          <a href="/en/">EN</a>
-          <a href="/es/">ES</a>
-          <a href="/fr/">FR</a>
-        </div>
+        <LangSwitcher />
 
         <h3>Synthesis Report</h3>
       </div>

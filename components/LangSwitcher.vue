@@ -1,19 +1,23 @@
+<template>
+    <div class="language-switcher">
+      <button v-for="item in locales" :key="item.code" :aria-selected="locale === item.code" @click="setLocale(item.code)">{{ item.code }}</button>
+    </div>
+</template>
+
 <script setup lang="ts">
 const { locales, locale, setLocale } = useI18n()
-
-const language = computed({
-  get: () => locale.value,
-  set: value => {
-    setLocale(value)
-  }
-})
 </script>
-<template>
-  <div>
-    <select v-model="language">
-      <option v-for="item in locales" :key="item.code" :value="item.code">
-        {{ item.name }}
-      </option>
-    </select>
-  </div>
-</template>
+
+<style scoped>
+.language-switcher button {
+  padding: var(--space-2xs);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.language-switcher button[aria-selected="true"] {
+  font-weight: bold;
+  text-decoration: underline;
+}
+</style>
