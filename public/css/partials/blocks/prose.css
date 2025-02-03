@@ -1,0 +1,99 @@
+/* Based on Andy Bell, https://github.com/Andy-set-studio/personal-site-eleventy */
+
+.prose {
+  --stack-space: var(--space-m-l);
+  --wrapper-width: 64rem;
+}
+
+.prose :where(pre, pre + *, figure, figure + *) {
+  --stack-space: var(--space-m-l);
+}
+
+.prose figcaption {
+  font-size: var(--size-min-1);
+  text-align: center;
+  padding-block-end: var(--space-xs);
+  margin-block-end: var(--space-s);
+  border-bottom: 1px solid var(--color-bg-accent);
+}
+
+:where(.prose :is(h2, h3, h4)) {
+  --stack-space: var(--space-xl);
+}
+
+:where(.prose :is(h2 + *, h3 + *, h4 + *):not(figure)) {
+  --stack-space: var(--space-m);
+}
+
+.prose .heading-anchor:is(:hover, :focus) {
+  text-decoration: none;
+}
+
+.heading-anchor {
+  text-decoration: none;
+}
+
+.prose mark {
+  background-color: var(--color-tertiary);
+  color: var(--color-base-dark);
+}
+
+/* block space only for "regular lists" */
+.prose :not(.cluster):not(.grid) > li + li {
+  padding-block-start: var(--space-s-m);
+}
+
+/* inline space only for "regular lists" */
+.prose :where(ul:not(.grid), ol:not(.grid)) {
+  padding-inline-start: 1.2ch;
+}
+
+/* marker only for "regular lists" */
+.prose :where(ul:not(.grid):not([role='list'])) li::marker {
+  color: var(--color-primary);
+  content: '– ';
+}
+
+.prose ol li::marker {
+  color: var(--color-primary);
+}
+
+.prose img {
+  border-radius: var(--border-radius);
+}
+
+.prose p a {
+  text-decoration: underline;
+  text-decoration-thickness: 0.14em;
+  text-decoration-color: var(--color-primary);
+  text-decoration-skip-ink: none;
+  transition: text-decoration-thickness 0.2s ease-in-out;
+  /* @seidgy: eu queria fazer a transition desse text-decoration-thickness, mas não consegui */
+  
+}
+
+.prose p a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1em;
+  text-underline-offset: -.85em;
+  text-decoration-color: var(--color-primary);
+}
+
+
+
+@media screen(ltsm) {
+  .prose > *,
+  .prose a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    hyphens: auto;
+  }
+}
+
+.brow {
+  font-family: var(--font-brow);
+  font-variation-settings: 'wght' var(--font-weight-bold);
+  font-feature-settings: 'salt' 1;
+}

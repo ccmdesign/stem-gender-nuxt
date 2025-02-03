@@ -1,0 +1,25 @@
+.map {
+  --_map-color: color-mix(in srgb, var(--color-base), var(--color-light) 90%);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  svg {
+    height: 100%;
+    width: 100%;
+    
+  }
+
+  path {
+    fill: var(--_map-color);
+    stroke: var(--_map-color);
+  }
+
+  path[title*="antarctica"],
+  path[title="thurston"],
+  path[title="smyley"],
+  path[title="alexander"],
+  path[title*="antarctic"] {
+    display: none;
+  }
+}
