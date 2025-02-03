@@ -29,7 +29,7 @@
       font-family: var(--font-display);
       text-transform: uppercase;
       font-weight: 900;
-      font-size: var(--size--1);
+      font-size: var(--size-1);
       letter-spacing: 2px;
       opacity: .25;
       
@@ -38,7 +38,7 @@
     h1 span:last-child {
       font-family: var(--font-title);
       font-weight: 100;
-      font-size: calc(var(--size-5)*1.015);
+      font-size: calc(var(--size-5)*1.53);
       text-transform: uppercase;
     }
 

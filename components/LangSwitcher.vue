@@ -15,6 +15,7 @@ const { locales, locale, setLocale } = useI18n()
   border: none;
   background: none;
   cursor: pointer;
+  font-size: var(--size--1);
 }
 
 .language-switcher button[aria-selected="true"] {
