@@ -1,4 +1,7 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: 'default'
+})
 const route = useRoute()
 const localePath = useLocalePath()
 </script>
