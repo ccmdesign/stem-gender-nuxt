@@ -8,7 +8,7 @@
 
       <chapter-titles />
 
-      <ContentList :query="query" :key="'galleryList' + locale">
+      <ContentList :query="query" :key="'url' + locale">
         <template #default="{ list }">
           <ul class="chapter-header__toc">
             <li v-for="article in list.sort((a,b) => a.order - b.order)" :key="article._path">
@@ -27,6 +27,9 @@
       </ContentList>
     </header>
     
+    
+    <world-map />
+
     <div class="chapter-layout__content">
       <ul>
         <h2>Resources</h2>
