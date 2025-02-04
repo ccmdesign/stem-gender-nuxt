@@ -28,10 +28,19 @@
     </header>
     
     
-    <world-map />
+    
 
-    <div class="chapter-layout__content">
-      <ul>
+    <div class="chapter-layout__content aux">
+      <div class="map-grid aux" >
+        <div class="map-grid__map">
+          <world-map />
+        </div>
+        <div class="map-grid__content">
+          <resource-card />
+        </div>
+      </div>
+
+      <ul class="display:none">
         <h2>Resources</h2>
         <li v-for="resource in resources" :key="resource.name">
           <a :href="resource.url" target="_blank">{{ resource.name }}</a>
