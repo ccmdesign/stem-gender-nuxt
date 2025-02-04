@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       enabled: true
     }
   },
-  modules: ['@nuxtjs/i18n', '@nuxt/eslint', '@nuxt/content'],
+  modules: ['@nuxtjs/i18n', '@nuxt/eslint', '@nuxt/content', '@pinia/nuxt'],
   
   css: ['~/assets/css/styles.scss'],
   vite: {

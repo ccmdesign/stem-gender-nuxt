@@ -27,11 +27,8 @@
       </ContentList>
     </header>
     
-    
-    
-
-    <div class="chapter-layout__content aux">
-      <div class="map-grid aux" >
+    <div class="chapter-layout__content">
+      <div class="map-grid" >
         <div class="map-grid__map">
           <world-map />
         </div>
@@ -54,17 +51,15 @@
 definePageMeta({
   layout: 'default'
 })
-
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
+
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const query: QueryBuilderParams = {
   path: localePath('/articles')
 }
-console.log(query)
 
 const resources = ref([])
-
 
 // @TODO: Não consegui importar o arquivo resources.json para cada idioma
 
