@@ -11,9 +11,8 @@
       <ContentList :query="query" :key="'url' + locale">
         <template #default="{ list }">
           <ul class="chapter-header__toc">
-            <li v-for="article in list.sort((a,b) => a.order - b.order)" :key="article._path">
-              <NuxtLink :to="localePath(article._path)"
-                >{{ article.title }}
+            <li v-for="article in list.sort((a, b) => a.order - b.order)" :key="article._path">
+              <NuxtLink :to="localePath(article._path)">{{ article.title }}
               </NuxtLink>
             </li>
           </ul>
@@ -26,23 +25,26 @@
         </template>
       </ContentList>
     </header>
-    
+
     <div class="chapter-layout__content">
-      <div class="map-grid" >
+      <div class="map-grid">
         <div class="map-grid__map">
           <world-map />
         </div>
-        <div class="map-grid__content">
-          <resource-card />
+        <div>
+          <h1>Articles</h1>
+          <ul class="resource-list">
+            <li v-for="(resource, index) in resources" :key="index">
+              <a href="#" @click.prevent="toggleCard(index)">{{ resource.name }}</a>
+            </li>
+          </ul>
+
+          <div v-for="(resource, index) in resources" :key="index">
+            <resource-card v-if="activeIndex === index" :resource="resource" :isVisible="activeIndex === index" />
+          </div>
         </div>
       </div>
 
-      <ul class="display:none">
-        <h2>Resources</h2>
-        <li v-for="resource in resources" :key="resource.name">
-          <a :href="resource.url" target="_blank">{{ resource.name }}</a>
-        </li>
-      </ul>
     </div>
   </main>
 </template>
@@ -51,6 +53,8 @@
 definePageMeta({
   layout: 'default'
 })
+import { ref, onMounted } from 'vue'
+import ResourceCard from '@/components/resourceCard.vue'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
 const { locale } = useI18n()
@@ -60,18 +64,20 @@ const query: QueryBuilderParams = {
 }
 
 const resources = ref([])
-
-// @TODO: Não consegui importar o arquivo resources.json para cada idioma
+const activeIndex = ref(null)
 
 onMounted(async () => {
   try {
-    const data = await import(`/content/resources.json`)
-    resources.value = data.default
+    const response = await fetch('/resources.json');
+    resources.value = await response.json();
   } catch (error) {
-    console.error('Error loading resources:', error)
+    console.error('Erro ao carregar os recursos:', error);
   }
-})
+});
 
+const toggleCard = (index) => {
+  activeIndex.value = activeIndex.value === index ? null : index;
+};
 
 </script>
 
