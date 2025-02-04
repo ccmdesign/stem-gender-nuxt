@@ -1,8 +1,8 @@
 /* Color Values */
 :root {
   --white-hsl: 255, 100%, 100%;
-  --black-hsl: 0, 0%, 7%;
-  
+  --black-hsl: 257, 88%, 10%;
+  --base-hsl: 257, 88%, 10%;
   --primary-hsl: 184, 58%, 32%;
   --secondary-hsl: 23, 41%, 91%;
 }
@@ -11,13 +11,28 @@
 :root {
   --white-color: hsl(var(--white-hsl));
   --black-color: hsl(var(--black-hsl));
-
+  --base-color: hsl(var(--base-hsl));
   --primary-color: hsl(var(--primary-hsl));
   --secondary-color: hsl(var(--secondary-hsl));
 }
 
 /* Color Mix | Tints */
 :root {
+  --base-color-98-tint: color-mix(in srgb, var(--base-color) 98%, white 2%);
+  --base-color-90-tint: color-mix(in srgb, var(--base-color) 90%, white 10%);
+  --base-color-80-tint: color-mix(in srgb, var(--base-color) 80%, white 20%);
+  --base-color-73-tint: color-mix(in srgb, var(--base-color) 73%, white 27%);
+  --base-color-70-tint: color-mix(in srgb, var(--base-color) 70%, white 30%);
+  --base-color-60-tint: color-mix(in srgb, var(--base-color) 60%, white 40%);
+  --base-color-50-tint: color-mix(in srgb, var(--base-color) 50%, white 50%);
+  --base-color-40-tint: color-mix(in srgb, var(--base-color) 40%, white 60%);
+  --base-color-30-tint: color-mix(in srgb, var(--base-color) 30%, white 70%);
+  --base-color-20-tint: color-mix(in srgb, var(--base-color) 20%, white 80%);
+  --base-color-11-tint: color-mix(in srgb, var(--base-color) 11%, white 89%);
+  --base-color-10-tint: color-mix(in srgb, var(--base-color) 10%, white 90%);
+  --base-color-05-tint: color-mix(in srgb, var(--base-color) 5%, white 95%);
+  --base-color-02-tint: color-mix(in srgb, var(--base-color) 2%, white 98%);
+
   --primary-color-98-tint: color-mix(in srgb, var(--primary-color) 98%, white 2%);
   --primary-color-90-tint: color-mix(in srgb, var(--primary-color) 90%, white 10%);
   --primary-color-80-tint: color-mix(in srgb, var(--primary-color) 80%, white 20%);
