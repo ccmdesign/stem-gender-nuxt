@@ -31,18 +31,24 @@
         <div class="map-grid__map">
           <world-map />
         </div>
-        <div>
-          <h1>Articles</h1>
-          <ul class="resource-list">
-            <li v-for="(resource, index) in resources" :key="index">
-              <a href="#" @click.prevent="toggleCard(index)">{{ resource.name }}</a>
+        <div class="map-grid__content">
+          <ul class="resource-list | stack" role="list">
+            <li v-for="(resource, index) in resourcesByCountry" :key="index" >
+              <details>
+                <summary>{{ index }}</summary>
+                <ul role="list">
+                  <li v-for="(resource, index) in resource" :key="index">
+                    <button @click="toggleCard(index)">{{ resource.name }}</button>
+                  </li>
+                </ul>
+              </details>
             </li>
           </ul>
 
           <div v-for="(resource, index) in resources" :key="index">
             <resource-card v-if="activeIndex === index" :resource="resource" :isVisible="activeIndex === index" />
           </div>
-        </div>
+        </div>  
       </div>
 
     </div>
@@ -64,12 +70,29 @@ const query: QueryBuilderParams = {
 }
 
 const resources = ref([])
+const resourcesByCountry = ref({})
 const activeIndex = ref(null)
 
 onMounted(async () => {
   try {
     const response = await fetch('/resources.json');
     resources.value = await response.json();
+    // Group resources by country code
+    resourcesByCountry.value = resources.value.reduce((acc, resource) => {
+      if (resource.region) {
+        const countries = resource.region.split(', ');
+        countries.forEach(country => {
+          // Skip empty or "NA" regions
+          if (!country || country === "NA") return;
+          
+          if (!acc[country]) {
+            acc[country] = [];
+          }
+          acc[country].push(resource);
+        });
+      }
+      return acc;
+    }, {});
   } catch (error) {
     console.error('Erro ao carregar os recursos:', error);
   }
@@ -79,11 +102,67 @@ const toggleCard = (index) => {
   activeIndex.value = activeIndex.value === index ? null : index;
 };
 
+// const countryTest = computed(() => {
+//   return {
+//     "left": 537,
+//     "top": 486,
+//     "width": 33,
+//     "height": 28
+//   }
+// })
+
+// const getCountryCenter = computed(() => {
+//   const country = countryTest.value
+//   const center = {}
+  
+//   if (country.left && country.width) {
+//     center.x = country.left + (country.width / 2)
+//   } else {
+//     center.x = 0
+//   }
+
+//   if (country.top && country.height) {
+//     center.y = country.top + (country.height / 2)
+//   } else {
+//     center.y = 0
+//   }
+
+//   return center
+// })
+
+// console.log(getCountryCenter.value)
+
+
 </script>
 
 
 <style lang="scss" scoped>
 .chapter-header h3 {
   font-size: var(--size--2);
+}
+
+.map-grid {
+  position: relative;
+}
+
+
+.map-grid__map {
+  position: relative;
+}
+
+.resource-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.test__circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
 }
 </style>
