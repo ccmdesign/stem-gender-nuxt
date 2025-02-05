@@ -33,12 +33,12 @@
         </div>
         <div class="map-grid__content">
           <ul class="resource-list | stack" role="list">
-            <li v-for="(resource, index) in resourcesByCountry" :key="index" >
-              <details>
-                <summary>{{ index }}</summary>
+            <li v-for="(item, index) in resourcesByCountry" :key="index" >
+              <details name="resource-list">
+                <summary>{{ item.name }}</summary>
                 <ul role="list">
-                  <li v-for="(resource, index) in resource" :key="index">
-                    <button @click="toggleCard(index)">{{ resource.name }}</button>
+                  <li v-for="(i, index) in item.resources" :key="index">
+                    <button @click="toggleCard(index)">{{ i.name }}</button>
                   </li>
                 </ul>
               </details>
@@ -77,18 +77,26 @@ onMounted(async () => {
   try {
     const response = await fetch('/resources.json');
     resources.value = await response.json();
+
+    console.log(resources.value)
     // Group resources by country code
     resourcesByCountry.value = resources.value.reduce((acc, resource) => {
-      if (resource.region) {
+      if (resource.region && resource.region_codes) {
         const countries = resource.region.split(', ');
-        countries.forEach(country => {
+        const codes = resource.region_codes;
+        
+        countries.forEach((country, index) => {
           // Skip empty or "NA" regions
           if (!country || country === "NA") return;
           
-          if (!acc[country]) {
-            acc[country] = [];
+          const code = codes[index];
+          if (!acc[code]) {
+            acc[code] = {
+              name: country,
+              resources: []
+            };
           }
-          acc[country].push(resource);
+          acc[code].resources.push(resource);
         });
       }
       return acc;
@@ -156,6 +164,7 @@ const toggleCard = (index) => {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: scroll;
 }
 
 .test__circle {
