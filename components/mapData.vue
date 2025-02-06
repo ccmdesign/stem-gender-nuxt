@@ -38,8 +38,8 @@ console.log(resources);
 button {
   position: absolute;
   border-radius: 50%;
-  width: 16px;
-  height: 16px;
+  width: var(--size--1);
+  height: var(--size--1);
   background-color: var(--primary-color);
 }
 
