@@ -40,15 +40,20 @@ button {
   border-radius: 50%;
   width: 16px;
   height: 16px;
-  background-color: red;
+  background-color: var(--primary-color);
 }
 
 span {
+  display: none;
   position: absolute;
   left: 140%;
   top: 50%;
   width: min-content;
   white-space: nowrap;
   transform: translateY(-50%);
+}
+
+button:hover span {
+  display: block;
 }
 </style>
