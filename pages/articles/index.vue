@@ -10,7 +10,7 @@
 
       <ContentList :query="query" :key="'url' + locale">
         <template #default="{ list }">
-          <ul class="chapter-header__toc">
+          <ul class="chapter-header__toc" role="list">
             <li v-for="article in list.sort((a, b) => a.order - b.order)" :key="article._path">
               <NuxtLink :to="localePath(article._path)">{{ article.title }}
               </NuxtLink>
@@ -29,17 +29,19 @@
     </header>
 
     <div class="chapter-layout__content">
+      <resource-list :resources="resources" />
+
       <div class="map-grid">
         <div class="map-grid__map">
           <world-map class="map" />
           <map-data class="data" :resources="resources" @project-selected="handleProjectSelected" />
         </div>
-        <div class="map-grid__content">
-          <resource-list :resources="resources" />
+        <div class="map-grid__content">          
           <resource-card v-if="activeCountry && activeProjectIndex !== null"
             :resource="resources[activeCountry].resources[activeProjectIndex]" :isVisible="true" />
         </div>
       </div>
+      
 
     </div>
   </main>
@@ -84,18 +86,11 @@ onMounted(async () => {
   font-size: var(--size--2);
 }
 
-
-
-.resource-list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
+.map-grid {
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
-
-.map-grid {}
 
 .map-grid__map {
   position: relative;

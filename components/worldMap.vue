@@ -8,7 +8,7 @@
   width: 100%;
 
   --_map-fill-color: hsla(var(--black-hsl), .075);
-  --_map-stroke-color: hsla(var(--black-hsl), .025);
+  /* --_map-stroke-color: hsla(var(--black-hsl), .025); */
 }
 
 .world-map path { 

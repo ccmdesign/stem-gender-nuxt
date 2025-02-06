@@ -12,17 +12,19 @@
         'anchor-name': `--resource-list-${key}`
       }"
     >
-      <button :popovertarget="`resource-list-${key}`"><span>{{ resource.name }}</span></button>
+      <button :popovertarget="`resource-list-${key}`">
+        <span class="circle"></span>
+        <span class="name" :style="{'position-anchor': `--resource-list-${key}`}">{{ resource.name }}</span>
+      </button>
       
       <ul 
         role="list" 
         class="resource__list" 
         popover 
         :id="`resource-list-${key}`" 
-        :style="{'position-anchor': `--resource-list-${key}`
-      }">
+        :style="{'position-anchor': `--resource-list-${key}`}">
         <li v-for="(i, index) in resource.resources" :key="index">
-          <span></span>
+          <span class="circle"></span>
           <button @click="toggleCard(key, index)">{{ i.name }}</button>
         </li>
       </ul>
@@ -57,39 +59,86 @@ const toggleCard = (countryCode, projectIndex) => {
   position: absolute;
   width: fit-content;
   white-space: nowrap;
-  transform: translateX(var(--size-1));
+
+  --_gap: var(--space-xs);
+}
+
+.resource__list li:not(:last-child):before {
+  content: "";
+  border-left: 2px solid var(--primary-color);
+  position: absolute;
+  left: calc(var(--size--2) / 2 - 1px);
+  top: var(--size--1);
+  bottom: calc(var(--size--1) * -1);
 }
 
 .resource__list li {
   position: relative;
+  text-wrap: balance;
 }
 
-.resource button:before,
-.resource__list li:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.resource button {
+
+  .name {
+    text-wrap: nowrap;
+    position: absolute;
+    left: anchor(right);
+    top: calc(anchor(bottom) + var(--space-3xs));
+    position-try-fallbacks: flip-inline;
+    margin-inline: var(--space-2xs);
+  }
+}
+
+.resource .circle {
+  --_circle-hsl: var(--primary-hsl);
+  --_circle-border-hsl: var(--base-hsl);
+
   border-radius: 50%;
-  width: var(--size--1);
-  height: var(--size--1);
-  background-color: var(--primary-color);
-  transform: translate(calc(var(--size-1) * -1), 30%);
+  width: var(--size--2);
+  height: var(--size--2);
+  display: inline-block;
+  background-color: hsla(var(--_circle-hsl), 1);
+  transition: opacity 0.2s ease-in-out;
+  outline: 8px solid hsla(var(--_circle-border-hsl), .15);
 }
 
 .resource__list {
   position: absolute;
-  left: calc(anchor(left) + var(--size-1));
-  top: anchor(bottom);
+  left: anchor(left);
+  top: calc(anchor(bottom) + var(--space-3xs));
   position-try-fallbacks: flip-inline;
   overflow: visible;
+  margin: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: var(--size--1) 1fr;
+    grid-template-areas: circle name;
+    grid-template-rows: 1fr;
+    align-items: flex-start;
+    gap: calc(var(--_gap) * .75); // por algum motivo isso estva ficando diferente. 
+
+    & + li { margin-top: var(--space-3xs); }
+    
+    .circle { 
+      transform: translateY(.25rem); 
+      --_circle-hsl: var(--base-hsl);
+      --_circle-border-hsl: var(--primary-hsl);
+    }
+  }
 }
 
-.resource span { opacity: 0; }
+.resource .name { 
+  opacity: 0; 
+  transition: opacity 0.2s ease-in-out;
+  font-weight: 700;
+}
 
-
-.resource button:has(:popover-open) span,
-.resource:hover span { opacity: 1; }
+.resource:has(:popover-open) .name,
+.resource:hover .name { 
+  z-index: 10;
+  opacity: 1 !important; 
+}
 
 
 
@@ -104,5 +153,16 @@ const toggleCard = (countryCode, projectIndex) => {
 #resource-bd,
 #resource-nt {
   // isso aqui é para customizar os textos do SriLanka, Bangladesh e Nepal
+  
+  .name {
+    left: unset;
+    right: calc(var(--space-3xs) + var(--size-0));
+  }
+
+  // .resource__list li {
+  //   grid-template-columns: 1fr var(--size--1);
+  //   grid-template-areas: name circle;
+  // }
+  
 }
 </style>
