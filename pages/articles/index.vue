@@ -17,11 +17,11 @@
             </li>
           </ul>
         </template>
-        
+
         <template #not-found>
           <p>No articles found.</p>
         </template>
-        
+
         <template #pending>
           <p>...</p>
         </template>
@@ -32,14 +32,13 @@
       <div class="map-grid">
         <div class="map-grid__map">
           <world-map class="map" />
-          <map-data class="data" :resources="resources" />
+          <map-data class="data" :resources="resources" @project-selected="handleProjectSelected" />
         </div>
         <div class="map-grid__content">
           <resource-list :resources="resources" />
-          <div v-for="(resource, index) in resources" :key="index">
-            <resource-card v-if="activeIndex === index" :resource="resource" :isVisible="activeIndex === index" />
-          </div>
-        </div>  
+          <resource-card v-if="activeCountry && activeProjectIndex !== null"
+            :resource="resources[activeCountry].resources[activeProjectIndex]" :isVisible="true" />
+        </div>
       </div>
 
     </div>
@@ -61,7 +60,13 @@ const query: QueryBuilderParams = {
 }
 
 const resources = ref([])
-const activeIndex = ref(null)
+const activeCountry = ref<string | null>(null);
+const activeProjectIndex = ref<number | null>(null);
+
+const handleProjectSelected = ({ countryCode, projectIndex }) => {
+  activeCountry.value = countryCode;
+  activeProjectIndex.value = projectIndex;
+};
 
 onMounted(async () => {
   try {
@@ -71,10 +76,6 @@ onMounted(async () => {
     console.error('Erro ao carregar os recursos:', error);
   }
 });
-
-const toggleCard = (index) => {
-  activeIndex.value = activeIndex.value === index ? null : index;
-};
 </script>
 
 
@@ -94,8 +95,7 @@ const toggleCard = (index) => {
   overflow: scroll;
 }
 
-.map-grid {
-}
+.map-grid {}
 
 .map-grid__map {
   position: relative;

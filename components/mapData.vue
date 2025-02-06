@@ -23,7 +23,7 @@
       }">
         <li v-for="(i, index) in resource.resources" :key="index">
           <span></span>
-          <button @click="toggleCard(index)">{{ i.name }}</button>
+          <button @click="toggleCard(key, index)">{{ i.name }}</button>
         </li>
       </ul>
     </li>
@@ -31,6 +31,7 @@
 </template>
 
 <script setup>
+import { defineEmits } from 'vue';
 defineProps({
   resources: {
     type: Object,
@@ -38,6 +39,12 @@ defineProps({
     default: () => ({})
   }
 })
+
+const emit = defineEmits(['project-selected']);
+
+const toggleCard = (countryCode, projectIndex) => {
+  emit('project-selected', { countryCode, projectIndex });
+};
 </script>
 
 <style lang="scss" scoped>
