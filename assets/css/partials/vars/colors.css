@@ -5,6 +5,7 @@
   --base-hsl: 257, 88%, 10%;
   --primary-hsl: 184, 58%, 32%;
   --secondary-hsl: 23, 41%, 91%;
+  --tertiary-hsl: 143, 100%, 87%;
 }
 
 /* Solid Colors */
@@ -14,6 +15,7 @@
   --base-color: hsl(var(--base-hsl));
   --primary-color: hsl(var(--primary-hsl));
   --secondary-color: hsl(var(--secondary-hsl));
+  --tertiary-color: hsl(var(--tertiary-hsl));
 }
 
 /* Color Mix | Tints */

@@ -2,6 +2,11 @@
 title: Appendix
 permalink: /en/appendix/
 order: 7
+description: 'The gender gap in STEM is not a 
+result of individual choices but is shaped by systemic barriers, including gender biases, stereotypes, and structural inequalities within educational institutions and workplaces.
+Uncovering and addressing these barriers is a necessary step in driving development around the world.'
+brow: 'Breaking barriers building bridges'
+image: '/images/default-hero-bg.jpeg'
 ---
 
 ## A Snapshot of our Projects

@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.12.1",
+    "@pinia/nuxt": "^0.9.0",
     "nuxt": "^3.11.2",
+    "pinia": "^2.3.1",
     "vue": "^3.4.25",
     "vue-router": "^4.3.2"
   },

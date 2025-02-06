@@ -97,3 +97,8 @@
   font-variation-settings: 'wght' var(--font-weight-bold);
   font-feature-settings: 'salt' 1;
 }
+
+.region {
+  padding-block-start: var(--region-space-top, var(--space-l-xl));
+  padding-block-end: var(--region-space-bottom, var(--space-l-xl));
+}
