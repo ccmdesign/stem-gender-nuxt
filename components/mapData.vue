@@ -1,32 +1,42 @@
 <template>
-  <div class="map-data">
-    <button 
-      class="map-data__button" 
-      v-for="resource in resources" 
-      :key="resource.code"
-      @click="toggleResource(resource.code)"
+  <ul class="map-data" role="list">
+    <li 
+      :id="`resource-${key}`"
+      name="resource-list" 
+      class="resource"
+      v-for="(resource, key) in resources" 
+      :key="key"
       :style="{
         left: resource.position.x,
         top: resource.position.y,
+        'anchor-name': `--resource-list-${key}`
       }"
     >
-      <span>{{ resource.name }}</span>
-  </button>
-  </div>
+      <button :popovertarget="`resource-list-${key}`">{{ resource.name }}</button>
+      
+      <ul 
+        role="list" 
+        class="resource__list" 
+        popover 
+        :id="`resource-list-${key}`" 
+        :style="{'position-anchor': `--resource-list-${key}`
+      }">
+        <li v-for="(i, index) in resource.resources" :key="index">
+          <button @click="toggleCard(index)">{{ i.name }}</button>
+        </li>
+      </ul>
+    </li>
+  </ul>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-const resources = ref([]);
-onMounted(async () => {
-  try {
-    const response = await fetch('/resourcesByCountry.json');
-    resources.value = await response.json();
-  } catch (error) {
-    console.error('Error fetching resources:', error);
+defineProps({
+  resources: {
+    type: Object,
+    required: true,
+    default: () => ({})
   }
-});
-console.log(resources);
+})
 </script>
 
 <style lang="scss" scoped>
@@ -35,25 +45,35 @@ console.log(resources);
   position: absolute;
 }
 
-button {
+.resource {
   position: absolute;
+  width: fit-content;
+  white-space: nowrap;
+  transform: translateX(var(--size-1));
+}
+
+.resource button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   border-radius: 50%;
   width: var(--size--1);
   height: var(--size--1);
   background-color: var(--primary-color);
+  transform: translate(-140%, 30%);
 }
 
-span {
-  display: none;
+.resource__list {
   position: absolute;
-  left: 140%;
-  top: 50%;
-  width: min-content;
-  white-space: nowrap;
-  transform: translateY(-50%);
+  left: anchor(left);
+  top: anchor(bottom);
+  position-try-fallbacks: flip-inline;
 }
 
-button:hover span {
-  display: block;
+#resource-lk,
+#resource-bd,
+#resource-nt {
+  // isso aqui é para customizar os textos do SriLanka, Bangladesh e Nepal
 }
 </style>

@@ -17,9 +17,11 @@
             </li>
           </ul>
         </template>
+        
         <template #not-found>
           <p>No articles found.</p>
         </template>
+        
         <template #pending>
           <p>...</p>
         </template>
@@ -30,22 +32,10 @@
       <div class="map-grid">
         <div class="map-grid__map">
           <world-map class="map" />
-          <map-data class="data" />
+          <map-data class="data" :resources="resources" />
         </div>
         <div class="map-grid__content">
-          <!--<ul class="resource-list | stack" role="list">
-            <li v-for="(item, index) in resourcesByCountry" :key="index" >
-              <details name="resource-list">
-                <summary>{{ item.name }}</summary>
-                <ul role="list">
-                  <li v-for="(i, index) in item.resources" :key="index">
-                    <button @click="toggleCard(index)">{{ i.name }}</button>
-                  </li>
-                </ul>
-              </details>
-            </li>
-          </ul>-->
-
+          <resource-list :resources="resources" />
           <div v-for="(resource, index) in resources" :key="index">
             <resource-card v-if="activeIndex === index" :resource="resource" :isVisible="activeIndex === index" />
           </div>
