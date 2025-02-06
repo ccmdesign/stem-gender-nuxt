@@ -12,7 +12,7 @@
         'anchor-name': `--resource-list-${key}`
       }"
     >
-      <button :popovertarget="`resource-list-${key}`">{{ resource.name }}</button>
+      <button :popovertarget="`resource-list-${key}`"><span>{{ resource.name }}</span></button>
       
       <ul 
         role="list" 
@@ -22,6 +22,7 @@
         :style="{'position-anchor': `--resource-list-${key}`
       }">
         <li v-for="(i, index) in resource.resources" :key="index">
+          <span></span>
           <button @click="toggleCard(index)">{{ i.name }}</button>
         </li>
       </ul>
@@ -52,7 +53,12 @@ defineProps({
   transform: translateX(var(--size-1));
 }
 
-.resource button:before {
+.resource__list li {
+  position: relative;
+}
+
+.resource button:before,
+.resource__list li:before {
   content: "";
   position: absolute;
   top: 0;
@@ -61,15 +67,31 @@ defineProps({
   width: var(--size--1);
   height: var(--size--1);
   background-color: var(--primary-color);
-  transform: translate(-140%, 30%);
+  transform: translate(calc(var(--size-1) * -1), 30%);
 }
 
 .resource__list {
   position: absolute;
-  left: anchor(left);
+  left: calc(anchor(left) + var(--size-1));
   top: anchor(bottom);
   position-try-fallbacks: flip-inline;
+  overflow: visible;
 }
+
+.resource span { opacity: 0; }
+
+
+.resource button:has(:popover-open) span,
+.resource:hover span { opacity: 1; }
+
+
+
+// isso aqui é para o efeito de fade-in/out dos recursos
+.map-data:has(:popover-open) {
+  .resource { opacity: .25;}
+  .resource:has(:popover-open) { opacity: 1;}
+}
+
 
 #resource-lk,
 #resource-bd,
