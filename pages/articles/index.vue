@@ -34,7 +34,17 @@
           <world-map class="map" />
           <map-data class="data" :resources="resources" @project-selected="handleProjectSelected" />
         </div>
-        <div class="map-grid__content">
+        <div class="map-grid__content">          
+          <details class="country-list">
+            <summary>
+              <h4>Countries</h4>
+            </summary>
+            <div class="cluster">
+              <button v-for="i in resources" class="country-button">{{ i.name }}</button>
+            </div>
+          </details>
+          
+
           <resource-list :resources="resources" />
           <resource-card v-if="activeCountry && activeProjectIndex !== null"
             :resource="resources[activeCountry].resources[activeProjectIndex]" :isVisible="true" />
@@ -100,6 +110,13 @@ onMounted(async () => {
   height: min-content;
 }
 
+.map-grid__content {
+  position: relative;
+  z-index: 10;
+}
+
+
+
 .map {
   height: auto;
 }
@@ -118,4 +135,23 @@ onMounted(async () => {
     display: block;
   }
 }
+
+.country-list {
+  --gutter: var(--space-s);
+
+  summary {
+    padding-block: var(--space-xs);
+    
+    * { display: inline-block; }
+  }
+
+  summary::marker {
+    color: var(--primary-color);
+  }
+}
+
+.country-button {
+  color: var(--primary-color);
+}
+
 </style>
