@@ -10,9 +10,17 @@ const localePath = useLocalePath()
   <main>
     <ContentDoc :path="localePath(route.path)">
       <template v-slot="{ doc }">
-        <article>
-          <chapter-hero :heading="doc.title" :tagline="doc.description" :brow="doc.brow" :image="doc.image"></chapter-hero>
-          <section class="content">
+        <article class="article-layout">
+          
+          <chapter-hero 
+            class="article-layout__hero"
+            :heading="doc.title"
+            :tagline="doc.description"
+            :brow="doc.brow"
+            :image="doc.image">
+          </chapter-hero>
+
+          <section class="article-layout__content">
             <ContentRenderer :value="doc" class="post-layout | region prose" />
           </section>
         </article>
@@ -25,3 +33,15 @@ const localePath = useLocalePath()
     <chapterFooter />
   </main>
 </template>
+
+<style>
+
+
+
+
+/* article {
+  display: none;
+} */
+
+
+</style>
