@@ -113,7 +113,7 @@ const toggleCard = (countryCode, projectIndex) => {
   li {
     display: grid;
     grid-template-columns: var(--size--1) 1fr;
-    grid-template-areas: circle name;
+    grid-template-areas: "circle name";
     grid-template-rows: 1fr;
     align-items: flex-start;
     gap: calc(var(--_gap) * .75); // por algum motivo isso estva ficando diferente. 
