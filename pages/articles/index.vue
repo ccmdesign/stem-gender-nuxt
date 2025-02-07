@@ -29,14 +29,13 @@
     </header>
 
     <div class="chapter-layout__content">
-      <resource-list :resources="resources" />
-
       <div class="map-grid">
         <div class="map-grid__map">
           <world-map class="map" />
           <map-data class="data" :resources="resources" @project-selected="handleProjectSelected" />
         </div>
         <div class="map-grid__content">          
+          <resource-list :resources="resources" />
           <resource-card v-if="activeCountry && activeProjectIndex !== null"
             :resource="resources[activeCountry].resources[activeProjectIndex]" :isVisible="true" />
         </div>
