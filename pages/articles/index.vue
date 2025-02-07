@@ -96,6 +96,12 @@ onMounted(async () => {
   height: min-content;
 }
 
+
+.map,
+.data {
+  transform: translateY(-11svh);
+}
+
 .map {
   height: auto;
 }
