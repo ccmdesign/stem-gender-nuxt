@@ -1,10 +1,10 @@
 ---
 title: Executive Summary
 permalink: /en/summary/
+image: https://images.unsplash.com/photo-1738193026612-4a953a4f4e96?q=80&w=2480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 order: 1
 ---
 
-## Executive Summary
 The **Breaking Barriers Network**, supported by the International Development Research Centre (IDRC), is a CAD$15M investmentto dismantle the systemic and systematic barriers that hinder women's participation and leadership in STEM (Science, Technology, Engineering, and Mathematics) fields, particularly in the Global South. This report synthesizes the findings and impacts of various projects that make up this network, underscoring the critical importance of evidence-informed policies and interventions to drive progress towards gender equity in STEM.
 
 In recent years, awareness of gender inequities in STEM has grown significantly, with an acknowledgement of the entrenched forces driving these inequities. However, much of the research, data, and tested interventions addressing these have originated from the Global North. There remains a notable gap in evidence-based strategies and interventions specifically piloted to tackle the barriers women face in progressing and succeeding in STEM fields and industries. The initiatives and recommendations presented in this publication aim to bridge this gap, providing insights to inform future initiatives and policy development. They advocate for a comprehensive approach to fostering a more inclusive and equitable STEM landscape.

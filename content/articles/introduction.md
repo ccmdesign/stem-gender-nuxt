@@ -1,11 +1,9 @@
 ---
-title: Introduction
+brow: Introduction
+title: The importance of women's participation and leadership in STEM
 permalink: /en/introduction/
 order: 2
 ---
-
-### The importance of women's participation and leadership in STEM.
-
 
 Achieving gender equality in science is not only a moral imperative but also crucial for advancing scientific innovation. The underrepresentation of women in science deprives the field of diverse perspectives and limits the development of multifaceted solutions. For instance, in many developing countries, women are primarily responsible for water collection. Involving them in water management projects ensures solutions that reflect their needs and lived experiences. Despite this, women's participation in research and leadership within the water sector remains minimal (UNESCO, 2021).  Historically, the male-dominated field of medical research has overlooked crucial sex differences in medicine. However, the inclusion of women in this field has been transformative, leading to groundbreaking scientific discoveries that significantly enhance women's health and well-being (Kozlowski et al., 2022).   
 

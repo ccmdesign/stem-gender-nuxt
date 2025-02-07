@@ -2,9 +2,8 @@
 title: A Multi-Pronged Approach to Addressing Systemic and Systematic Barriers to Achieving Gender Equity in STEM
 permalink: /en/multi-pronged-approach/
 order: 4
+image: https://images.unsplash.com/photo-1738878524656-44ac4654826e?q=80&w=4000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
-
-## 3	A Multi-Pronged Approach to Addressing Systemic and Systematic Barriers to Achieving Gender Equity in STEM
 
 Through the Breaking Barriers network, IDRC is advancing its efforts to address systemic and systematic barriers to women's participation and leadership in STEM. With projects focused on specific research modalities, contexts, scales, and even STEM disciplines, teams are effectively addressing different challenges and issues and uncovering areas of future research and collaboration. 
 
