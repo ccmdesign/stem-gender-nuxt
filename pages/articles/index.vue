@@ -34,13 +34,16 @@
           <world-map class="map" />
           <map-data class="data" :resources="resources" @project-selected="handleProjectSelected" />
         </div>
-        <div class="map-grid__content">          
+        <div class="map-grid__content">
           <resource-list :resources="resources" />
           <resource-card v-if="activeCountry && activeProjectIndex !== null"
             :resource="resources[activeCountry].resources[activeProjectIndex]" :isVisible="true" />
         </div>
       </div>
-      
+
+      <div class="mobile-resource-cards">
+        <resource-card v-for="resource in allResources" :key="resource.name" :resource="resource" :isVisible="true" />
+      </div>
 
     </div>
   </main>
@@ -53,6 +56,7 @@ definePageMeta({
 import { ref, onMounted } from 'vue'
 import ResourceCard from '@/components/resourceCard.vue'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
+import allResources from '~/public/resources.json'
 
 const { locale } = useI18n()
 const localePath = useLocalePath()
@@ -106,5 +110,12 @@ onMounted(async () => {
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.mobile-resource-cards {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 </style>
