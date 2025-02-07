@@ -17,3 +17,8 @@
 }
 
 
+.map,
+.data,
+.resource__list {
+  transform: translateY(-11svh);
+}

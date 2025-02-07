@@ -75,6 +75,7 @@ const toggleCard = (countryCode, projectIndex) => {
 .resource__list li {
   position: relative;
   text-wrap: balance;
+  max-width: 60ch;
 }
 
 .resource button {
