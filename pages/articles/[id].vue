@@ -22,5 +22,6 @@ const localePath = useLocalePath()
         <button @click="$router.push(localePath('/articles'))">Back</button>
       </template>
     </ContentDoc>
+    <chapterFooter />
   </main>
 </template>
