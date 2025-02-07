@@ -40,7 +40,7 @@
 
 /* block space only for "regular lists" */
 .prose :not(.cluster):not(.grid) > li + li {
-  padding-block-start: var(--space-s-m);
+  padding-block-start: var(--space-3xs);
 }
 
 /* inline space only for "regular lists" */
@@ -65,7 +65,7 @@
 .prose p a {
   text-decoration: underline;
   text-decoration-thickness: 0.14em;
-  text-decoration-color: var(--color-primary);
+  text-decoration-color: var(--base-color-10-tint);
   text-decoration-skip-ink: none;
   transition: text-decoration-thickness 0.2s ease-in-out;
   /* @seidgy: eu queria fazer a transition desse text-decoration-thickness, mas não consegui */
@@ -76,10 +76,13 @@
   text-decoration: underline;
   text-decoration-thickness: 1em;
   text-underline-offset: -.85em;
-  text-decoration-color: var(--color-primary);
+  text-decoration-color: var(--base-color-10-tint);
 }
 
-
+.prose strong {
+  font-weight: 400;
+  color: var(--primary-color);
+}
 
 @media screen(ltsm) {
   .prose > *,

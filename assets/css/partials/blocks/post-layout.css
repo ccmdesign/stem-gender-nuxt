@@ -15,7 +15,7 @@
   }
 
   .post-layout > * { grid-column:2/3; }
-  .post-layout > :where(h2, h3, h4, .left-column, hgroup) { grid-column:1/2; }
+  .post-layout > :where(h3, h4, .left-column, hgroup) { grid-column:1/2; }
 
   .post-layout p:has(picture) {
     /* 
@@ -27,12 +27,11 @@
     padding-block: var(--space-s-m);
   }
 
-  .post-layout > :where(h2, h3, h4, .left-column, hgroup) {
+  .post-layout > :where(h3, h4, .left-column, hgroup) {
     text-align: right;
     padding-inline-end: var(--space-s-m);
     padding-block-end: var(--space-s-m);
   }
-
 
   .post-layout h2 + * {
     padding-block-start: var(--space-xl-2xl);
@@ -51,7 +50,10 @@
     padding-block-start: var(--space-s-m);
   }
 }
- 
+
+
+
+
 .post-layout h2 {
   padding-block-start: var(--space-xl-2xl);
   

@@ -83,6 +83,10 @@
     margin-bottom: 0.5em;
   }
 
+  li + li {
+    margin-top: var(--space-3xs);
+  }
+
   blockquote {
     margin: 0;
     padding: 0 var(--base-padding-inline);
@@ -93,7 +97,8 @@
   p,
   input,
   button,
-  a {
+  a,
+  li {
     font-weight: 100;
   }
 
