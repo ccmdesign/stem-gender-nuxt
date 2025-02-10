@@ -20,5 +20,10 @@
 .map,
 .data,
 .resource__list {
-  transform: translateY(-11svh);
+  transform: translateY(-8svh);
+}
+
+.map-grid__idrc-logo {
+  position: absolute;
+  right: 0;
 }
