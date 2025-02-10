@@ -6,3 +6,4 @@ Info about this implementation: https://piccalil.li/quick-tip/flow-utility/
 :where(.stack) > * + * {
   margin-block-start: var(--stack-space, 1em);
 }
+

@@ -3,7 +3,7 @@
       <div class="chapter-hero__info | stack">
         <p class="chapter-hero__brow">{{ brow || 'Breaking Barriers Building Bridges' }}</p>
         <h1 class="chapter-hero__title">{{ heading }}</h1>
-        <p v-if="tagline" class="chapter-hero__tagline">{{ tagline }}</p>
+        <p v-if="tagline" class="chapter-hero__tagline" data-split>{{ tagline }}</p>
         <nuxt-link to="/articles" class="chapter-hero__back">Back to title</nuxt-link>
       </div>
       
@@ -65,6 +65,8 @@
 .chapter-hero__info {
   padding: var(--space-s-m);
   grid-area: info;
+  display: flex;
+  flex-direction: column;
 }
 
 .chapter-hero__title {
@@ -74,6 +76,8 @@
   color: var(--_hero-text-color-title);
   font-size: clamp(3.5rem, 2.1087rem + 6.9565vw, 7.5rem);
   line-height: 1;
+  margin-block-start: 0;
+  flex: 1;
 }
 
 .chapter-hero__tagline {
@@ -81,6 +85,7 @@
   font-weight: 300;
   color: var(--_hero-text-color);
   font-size: var(--size-1);
+  
 }
 
 .chapter-hero__back {
