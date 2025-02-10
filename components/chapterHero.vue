@@ -4,7 +4,7 @@
         <p class="chapter-hero__brow">{{ brow || 'Breaking Barriers Building Bridges' }}</p>
         <h1 class="chapter-hero__title">{{ heading }}</h1>
         <p v-if="tagline" class="chapter-hero__tagline" data-split>{{ tagline }}</p>
-        <nuxt-link to="/articles" class="chapter-hero__back">Back to title</nuxt-link>
+        <nuxt-link :to="localePath('/articles')" class="chapter-hero__back">Back to title</nuxt-link>
       </div>
       
       <img v-if="image" class="chapter-hero__image" :src="image" />
@@ -12,6 +12,8 @@
   </template>
   
   <script setup>
+    const { locale } = useI18n()
+    const localePath = useLocalePath()
     const props = defineProps({
         heading: {
             type: String,
