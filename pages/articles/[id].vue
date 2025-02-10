@@ -15,6 +15,13 @@ function getNextDoc(currentOrder: number) {
   const currentIndex = sortedDocs.findIndex(d => d.order === currentOrder)
   return currentIndex !== -1 ? sortedDocs[currentIndex + 1] || null : null
 }
+
+function getPrevDoc(currentOrder: number) {
+  if (!docs.value) return null
+  const sortedDocs = docs.value
+  const currentIndex = sortedDocs.findIndex(d => d.order === currentOrder)
+  return currentIndex !== 0 ? sortedDocs[currentIndex - 1] || null : null
+}
 </script>
 
 <template>
@@ -35,12 +42,20 @@ function getNextDoc(currentOrder: number) {
             <ContentRenderer :value="doc" class="post-layout | region prose" />
           </section>
         </article>
-        <article v-if="getNextDoc(doc.order)" class="next-article">
+        <article class="next-article">
           <div class="next-article__content">
-            <p class="next-article__cta">Read next</p>
-            <NuxtLink class="next-article__link" :to="localePath(getNextDoc(doc.order)._path)">
-              {{ getNextDoc(doc.order).title }}
-            </NuxtLink>
+            <div class="next-article__item" v-if="getPrevDoc(doc.order)">
+              <p class="next-article__cta">Previous article</p>
+              <NuxtLink class="next-article__link" :to="localePath(getPrevDoc(doc.order)._path)">
+                {{ getPrevDoc(doc.order).title }}
+              </NuxtLink>
+            </div>
+            <div class="next-article__item next-article__item--right" v-if="getNextDoc(doc.order)">
+              <p class="next-article__cta">Read next</p>
+              <NuxtLink class="next-article__link" :to="localePath(getNextDoc(doc.order)._path)">
+                {{ getNextDoc(doc.order).title }}
+              </NuxtLink>
+            </div>
           </div>
         </article>
       </template>
@@ -63,13 +78,17 @@ function getNextDoc(currentOrder: number) {
       display: flex;
       flex-direction: row;
       gap: var(--space-xl);
-      justify-content: center;
+      justify-content: space-between;
       color: var(--primary-color);
       align-items: center;
     }
 
+    .next-article__item--right {
+      text-align: right;
+    }
+
     .next-article__cta {
-      font-size: var(--size-3);
+      font-size: var(--size-1);
       text-transform: uppercase;
       font-weight: 400;
       font-family: var(--font-title);
