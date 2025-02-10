@@ -7,7 +7,8 @@
 
     <div class="chapter-header__extras | cluster">
       <a href="public/breaking-barriers-podcast-ai.mp3" download>Podcast(AI)</a>
-      <a href="public/breaking-barriers-en.pdf" download>Download PDF</a>
+      <a :href="`/breaking-barriers-${locale}.pdf`" 
+      :download="`breaking-barriers-${locale}.pdf`">Download PDF</a>
     </div>
 
     <h2>A Southern-led research network to advance gender equality in STEM</h2>
@@ -15,7 +16,7 @@
 </template>
 
 <script setup>
-
+  const { locale } = useI18n();
 </script>
 
 <style lang="scss" scoped>
