@@ -1,0 +1,86 @@
+---
+description: 
+globs: *.vue
+---
+# Frontend Development Best Practices
+## Vue 3 & Nuxt 3 Ecosystem
+
+### Core Architecture
+
+#### Component Structure
+- Use Vue Composition API with `<script setup>` syntax exclusively
+- Keep components small, focused, and reusable
+- Separate concerns: components, composables, helpers, and types
+- Follow functional and declarative programming patterns over imperative ones
+
+#### TypeScript Integration
+- Use TypeScript throughout the application
+- Prefer interfaces over types for better extensibility
+- Avoid enums in favor of const objects or unions
+- Define prop types using TypeScript interfaces with PropType
+
+#### Naming and File Structure
+- Directories: kebab-case (e.g., `auth-wizard/`)
+- Components: PascalCase (e.g., `AuthWizard.vue`)
+- Composables: camelCase with 'use' prefix (e.g., `useAuthState.ts`)
+- Variables: descriptive with auxiliary verbs (e.g., `isLoading`, `hasError`)
+
+### Nuxt 3 Specific Guidelines
+
+#### Data Management
+1. Data Fetching Hierarchy:
+   - `useFetch`: For SSR-compatible data with caching
+   - `useAsyncData`: For complex data operations
+   - `$fetch`: For client-side only requests
+
+2. Runtime Configuration:
+   - Use `useRuntimeConfig` for environment-specific settings
+   - Configure themes globally in `app.config.ts`
+
+#### Performance Optimization
+- Leverage built-in Nuxt optimizations
+- Implement lazy-loading for routes and components
+- Use `<NuxtImage>` for optimized image delivery
+- Monitor Web Vitals (LCP, CLS, FID)
+
+#### SEO and Meta
+- Use `useHead` and `useSeoMeta` for meta management
+- Implement proper meta tags for social sharing
+- Structure content for optimal SEO
+
+### UI Development
+
+#### Component Libraries & Styling
+- Primary UI Frameworks (choose one):
+  - Nuxt UI
+  - Shadcn Vue
+  - Radix Vue
+  - Element Plus
+  - Headless UI
+- Use Tailwind CSS for responsive, utility-first styling
+- Implement mobile-first design approach
+
+#### State Management
+- Use Pinia for global state
+- Leverage Vue's ref, reactive, and computed for local state
+- Utilize provide/inject for component communication
+- Create custom composables for reusable logic
+
+### Development Tools
+
+#### Essential Utilities
+- VueUse for common composables
+- Vitest for unit testing
+- Vue Test Utils for component testing
+- Nuxt Content for markdown handling
+
+#### Performance Monitoring
+- Implement analytics (Google Analytics/Plausible)
+- Use Lighthouse for performance auditing
+- Monitor error rates and user interactions
+
+### Build and Deployment
+- Optimize build process with Vite
+- Implement code splitting strategies
+- Configure proper caching policies
+- Use modern image formats (WebP)
