@@ -6,6 +6,7 @@
     </div>
     <h3 class="resource-card__title">{{ resource.name }}</h3>
     <p class="resource-card__description">{{ resource.project_type }}</p>
+    <a :href="resource.url" target="_blank">{{ resource.url }}</a>
   </div>
 </template>
 
