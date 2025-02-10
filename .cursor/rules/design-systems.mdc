@@ -1,0 +1,123 @@
+---
+description: Design Systems and interfaces
+globs: *.css, *.njk, .vue, .html
+---
+
+# Design System Rules
+
+You are an expert in creating HTML and CSS files using a design systems approach, leveraging modular and responsive CSS principles. You will organize code following a hierarchy inspired by Atomic Design with custom naming conventions. Your primary goal is to ensure accessibility, maintainability, and scalability.
+
+## Design System Hierarchy
+- Elements: Native HTML elements styled by a reset and base stylesheet
+- Components: Equivalent to molecules, encapsulating small, reusable building blocks
+- Modules: Equivalent to organisms, grouping components for more complex functionality
+- Sections: Isolated page sections combining modules for larger structures
+- Templates: Layouts with sections providing a structure for content placement
+- Pages: Fully assembled templates with actual content
+
+## Modern HTML Best Practices
+
+### Semantic Elements
+- Use modern HTML elements that provide built-in functionality:
+  - `<dialog>` for modal windows instead of custom implementations
+  - `<details>` and `<summary>` for expandable content
+  - `<aside>` for complementary content
+  - `<article>` for self-contained compositions
+  - `<time>` for dates and timestamps
+  - `<figure>` and `<figcaption>` for images with captions
+
+
+#### Accessibility & SEO
+- Implement meta tags consistently
+- Use descriptive URLs
+- Generate sitemaps automatically
+- Implement structured data when relevant
+
+
+### Modern APIs and Attributes
+- Leverage the Popover API with `popover` attribute for tooltips and popovers
+- Use `inert` attribute to disable interactions with content outside modals
+- Implement `loading="lazy"` for images and iframes
+- Utilize `<picture>` element with `srcset` for responsive images
+- Apply `aspect-ratio` property instead of padding hacks
+- use `[popover]` API for simple click events
+- use `anchor-position` for in conjunction with the `[popover]` api
+- use `ancho-position` css api when `position:relative` and `position:absolute` become too complex 
+
+
+### Progressive Enhancement
+- Ensure core functionality works without JavaScript
+- Use `<form>` with proper validation attributes (`required`, `pattern`, etc.)
+- Implement `<input type="date">` and other modern input types
+- Add `prefers-reduced-motion` media query support
+
+## Key Principles
+
+### 1. Modular CSS
+- Write encapsulated CSS for each component, module, and section
+- Use CSS variables (`--`) for theming and customization
+- Apply BEM (Block-Element-Modifier) methodology for class naming
+
+### 2. Responsive Design
+- Use `@media` queries to ensure a mobile-first approach
+- Leverage `clamp()` and other CSS functions for fluid typography and spacing
+- Ensure touch-friendly interactions with proper spacing for touch targets
+
+### 3. Data Attributes for Variants
+- Use `data-*` attributes to handle component variants (e.g., `data-variant="primary"`)
+- Write CSS selectors using these attributes for styling variations
+
+## Variable Structure
+Internal variables for each component should be prefixed with `_`:
+
+```css
+.button {
+  --_button-background: var(--primary-color);
+  --_button-text: var(--text-color);
+  --_button-padding: var(--space-s);
+  --_button-border: none;
+
+  /* Structure */
+  display: inline-block;
+  
+  /* Skin */
+  padding: var(--_button-padding);
+  background: var(--_button-background);
+  color: var(--_button-text);
+  border: var(--_button-border);
+  border-radius: var(--_button-border-radius);
+}
+
+.button[data-variant="variant"] {
+  --_button-background: var(--secondary-color);
+}
+```
+
+## Design System Scales
+Use Utopia to calculate type and space scales. Variables are defined at the `:root` level:
+
+```css
+:root {
+  --size-1: clamp(1rem, 1vw + 0.5rem, 1.5rem);
+  --space-m: clamp(1rem, 1vw, 2rem);
+}
+```
+
+## HTML Structure
+- Use semantic elements: `<header>`, `<main>`, `<article>`, `<section>`, `<footer>`
+- Include ARIA roles and attributes for accessibility
+- Apply `<img>` tags with proper alt attributes and `<button>` instead of `<div>` for interactivity
+
+## CSS Best Practices
+1. Avoid inline styles; use external CSS files
+2. Group CSS by component/module in separate files
+3. Maintain a reset.css and a base.css for global styles
+
+## Testing and Iteration
+- Test responsiveness with tools like Chrome DevTools
+- Validate HTML and CSS using W3C validators
+- Conduct accessibility checks with tools like Lighthouse and Axe
+
+## Documentation
+- Document all components, modules, and sections in a style guide
+- Include usage examples and descriptions for each

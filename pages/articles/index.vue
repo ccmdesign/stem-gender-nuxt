@@ -31,6 +31,7 @@
     <div class="chapter-layout__content">
       <div class="map-grid">
         <div class="map-grid__map">
+          <img src="/images/idrc-logo-full.png" alt="IDRC" class="map-grid__idrc-logo">
           <world-map class="map" />
           <map-data class="data" :resources="resources" @project-selected="handleProjectSelected" />
         </div>
@@ -51,7 +52,13 @@
         </div>
       </div>
 
-      <div class="mobile-resource-cards">
+      <div class="mobile-resource-cards | stack">
+        <div class="repel">
+          <h3>Resources</h3>
+          <img src="/images/idrc-logo-full.png" alt="IDRC" class="idrc-logo">
+        </div>
+        
+
         <resource-card v-for="resource in allResources" :key="resource.name" :resource="resource" :isVisible="true" />
       </div>
 
@@ -115,8 +122,6 @@ onMounted(async () => {
   z-index: 10;
 }
 
-
-
 .map {
   height: auto;
 }
@@ -133,6 +138,11 @@ onMounted(async () => {
   display: none;
   @media (max-width: 768px) {
     display: block;
+    padding: var(--space-s);
+  }
+
+  .repel {
+    align-items: flex-end;
   }
 }
 

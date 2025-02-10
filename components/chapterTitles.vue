@@ -5,10 +5,9 @@
       <span>Building Bridges</span>
     </h1>
 
-    <div class="chapter-header__extras">
-      <a href="#" download>Podcast(AI)</a>
-      <a href="#" download>Audio Version</a>
-      <a href="#" download>Download PDF</a>
+    <div class="chapter-header__extras | cluster">
+      <a href="public/breaking-barriers-podcast-ai.mp3" download>Podcast(AI)</a>
+      <a href="public/breaking-barriers-en.pdf" download>Download PDF</a>
     </div>
 
     <h2>A Southern-led research network to advance gender equality in STEM</h2>
@@ -45,5 +44,12 @@
     h2 {
       font-size: var(--size-0);
     }
+  }
+
+  .chapter-header__extras {
+    --_cluster-space: var(--space-2xs);
+    --_cluster-horizontal-alignment: flex-end;
+    padding-block: var(--space-s);
+    a { color: var(--secondary-color); }
   }
 </style>

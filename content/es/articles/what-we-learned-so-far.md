@@ -2,6 +2,7 @@
 title: Qué hemos aprendido hasta ahora?
 permalink: /es/que-hemos-aprendido/
 order: 5
+image: '/images/lessons-learned.jpg'
 ---
 
 ### Importance of Comprehensive Programs
