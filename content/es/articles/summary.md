@@ -2,6 +2,7 @@
 title: Resumen Ejecutivo
 permalink: /es/resumen-ejecutivo/
 order: 1
+image: '/images/summary.jpg'
 ---
 
 

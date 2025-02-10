@@ -1,11 +1,13 @@
 ---
 title: The State of Women's Participation in STEM in the Global South
 permalink: /en/state-of-womens-participation/
-image: https://images.unsplash.com/photo-1738878524656-44ac4654826e?q=80&w=4000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: '/images/state-of-participation.jpg'
 order: 3
 ---
 
-In investigating local trends in women's participation in STEM, IDRC-funded research has highlighted challenges similar to those reported in the Global North. Across various regions, women's participation and leadership in STEM fields have not kept pace with the rapid growth of STEM industries and broader advancements toward gender equality (UNESCO, 2017). Alarmingly, despite increasing representation of women in higher education throughout the Americas and Europe, significant attrition occurs as women transition from STEM education to the workforce and even into advanced levels of education (European Commission, 2021; National Science Foundation, 2021).
+In investigating local trends in women's participation in STEM, IDRC-funded research has highlighted challenges similar to those reported in the Global North. Across various regions, women's participation and leadership in STEM fields have not kept pace with the rapid growth of STEM industries and broader advancements toward gender equality (UNESCO, 2017).
+
+Alarmingly, despite increasing representation of women in higher education throughout the Americas and Europe, significant attrition occurs as women transition from STEM education to the workforce and even into advanced levels of education (European Commission, 2021; National Science Foundation, 2021).
 
 Recent studies reveal that while female engagement in STEM research averages around 40% in regions like Latin America, the Caribbean, and parts of Europe, it remains lower in North America and Western Europe, hovering around 30% (UIS, 2019). This disparity underscores the need for targeted interventions to support women at critical transition points in their STEM careers. We highlight other major trends and statistics below.
 
@@ -22,7 +24,7 @@ Current statistics and trends.
 - **Disparities in the Sustainability Sector**: By 2030, between 15 and 22 million green jobs are projected, yet over 80% are in traditionally male-dominated sectors such as agriculture, energy, manufacturing, transportation, and construction. Women are underrepresented in these areas, with fewer than 20% working in renewable energy. In countries like Uruguay, Bolivia, Costa Rica, El Salvador, and Honduras, women account for 17% to 36% of researchers in engineering and technology.
 - **Disparities in Agricultural Sciences**: Women are notably underrepresented in higher education and research positions in agricultural sciences, with fewer than 25% of staff in relevant academic and training units being women. In public universities in West Africa, the proportion of women in agricultural science courses is as low as 15.36% in Benin, 17.19% in Niger, and 22.22% in Côte d'Ivoire. Women constitute only 16.46% of research team members in these countries.
 
-### Barriers to participation and leadership.
+## Barriers to participation and leadership
 
 These challenges are not isolated incidents but are part of a broader pattern that has been extensively documented. Research from the Breaking Barriers Network, a collaborative effort at understanding and addressing these obstacles, has uncovered several key issues:
 
@@ -44,7 +46,7 @@ Cultural norms and practices can severely restrict women's participation in STEM
 #### Policy and Institutional Barriers
 National and institutional policies frequently lack integration of gender considerations, resulting in insufficient support for women in STEM. Many existing policies do not adequately address the specific needs and challenges faced by women, leading to ineffective implementation and limited impact. For example, policies may fail to promote gender diversity in recruitment, advancement, and leadership roles within STEM organizations. The lack of enforcement of gender equity guidelines and the absence of dedicated resources to implement supportive measures further exacerbate these barriers. Effective policy integration is essential for creating environments that support and sustain women's participation and leadership in STEM.
 
-### Responding to UNESCO's Call to Action to Close the Gender Gap in Science
+## Responding to UNESCO's Call to Action to Close the Gender Gap in Science
 
 IDRC's **Breaking Barriers Network** reflects only a snapshot of the global movement to bridge the gender gap on women's participation and success in STEM. There has been a growing awareness among the international community of the importance of gender equality in STEM. Various organizations, governments, and advocacy groups have been actively working to promote gender diversity and inclusion in these fields. 
 A key moment for this community has been the launch of UNESCO's 2024 call to action entitled ["Closing the Gender Gap in Science."](https://dataviz.unesco.org/en/science-technology-and-innovation/cta) While this call emphasizes the importance of gender equality in addressing complex global challenges, it also highlighted the significant gaps that exist, which map directly onto many of the systemic and systematic barriers that IDRC's research collaborators have confronted and identified to date.

@@ -2,6 +2,7 @@
 title: Una aproximación de múltiples vías para abordar las barreras sistemáticas y sistemáticas para lograr la equidad de género en STEM
 permalink: /es/aproximacion-multiples-voies/
 order: 4
+image: '/images/multi-pronged.jpg'
 ---
 
 Through the Breaking Barriers network, IDRC is advancing its efforts to address systemic and systematic barriers to women's participation and leadership in STEM. With projects focused on specific research modalities, contexts, scales, and even STEM disciplines, teams are effectively addressing different challenges and issues and uncovering areas of future research and collaboration. 

@@ -2,6 +2,7 @@
 title: Résumé Exécutif
 permalink: /fr/resume-executif/
 order: 1
+image: '/images/summary.jpg'
 ---
 
 

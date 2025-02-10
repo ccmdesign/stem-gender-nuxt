@@ -2,6 +2,7 @@
 title: El estado de la participación de las mujeres en STEM en el sur global
 permalink: /es/estado-participacion-mujeres/
 order: 3
+image: '/images/state-of-participation.jpg'
 ---
 
 In investigating local trends in women's participation in STEM, IDRC-funded research has highlighted challenges similar to those reported in the Global North. Across various regions, women's participation and leadership in STEM fields have not kept pace with the rapid growth of STEM industries and broader advancements toward gender equality (UNESCO, 2017). Alarmingly, despite increasing representation of women in higher education throughout the Americas and Europe, significant attrition occurs as women transition from STEM education to the workforce and even into advanced levels of education (European Commission, 2021; National Science Foundation, 2021).

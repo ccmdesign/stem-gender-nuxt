@@ -2,6 +2,7 @@
 title: Introduction
 permalink: /fr/introduction/
 order: 2
+image: '/images/introduction.jpg'
 ---
 
 ### The importance of women's participation and leadership in STEM.
