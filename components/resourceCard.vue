@@ -18,8 +18,8 @@ defineProps({
   },
   isVisible: {
     type: Boolean,
-    required: true,
-    default: false
+    required: false,
+    default: true
   }
 });
 </script>

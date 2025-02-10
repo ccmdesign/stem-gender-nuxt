@@ -48,7 +48,7 @@
 
           <resource-list :resources="resources" />
           <resource-card v-if="activeCountry && activeProjectIndex !== null"
-            :resource="resources[activeCountry].resources[activeProjectIndex]" :isVisible="true" />
+            :resource="resources[activeCountry].resources[activeProjectIndex]" />
         </div>
       </div>
 
@@ -59,7 +59,7 @@
         </div>
         
 
-        <resource-card v-for="resource in allResources" :key="resource.name" :resource="resource" :isVisible="true" />
+        <resource-card v-for="resource in allResources" :key="resource.name" :resource="resource" />
       </div>
 
     </div>
