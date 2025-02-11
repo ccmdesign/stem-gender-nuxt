@@ -151,10 +151,11 @@ onMounted(async () => {
 }
 
 .country-list {
-  --_cluster-space: var(--space-s);
+  --_cluster-space: var(--space-2xs);
+  padding-block: var(--space-s);
 
   summary {
-    padding-block: var(--space-xs);
+    padding-block: var(--space-2xs);
     &::marker {
       color: var(--primary-color);
       content: '+ ';
@@ -168,6 +169,7 @@ onMounted(async () => {
 
 .country-button {
   color: var(--primary-color);
+  font-size: var(--size--1);
 }
 
 .project-summary {
