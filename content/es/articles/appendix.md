@@ -3,7 +3,7 @@ title: Apéndice
 permalink: /es/apendice/
 description: 'La brecha de género en STEM no es resultado de elecciones individuales, sino que está determinada por barreras sistémicas, incluyendo sesgos de género, estereotipos y desigualdades estructurales dentro de las instituciones educativas y lugares de trabajo. Descubrir y abordar estas barreras es un paso necesario para impulsar el desarrollo en todo el mundo.'
 order: 7
-image: '/images/summary.jpg'
+image: '/images/appendix.jpg'
 ---
 
 ## A Snapshot of our Projects

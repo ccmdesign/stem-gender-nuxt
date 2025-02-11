@@ -3,7 +3,7 @@ title: Annexe
 permalink: /fr/annexe/
 order: 7
 description: "L'écart entre les genres dans les STIM n'est pas le résultat de choix individuels, mais est façonné par des barrières systémiques, notamment les préjugés de genre, les stéréotypes et les inégalités structurelles au sein des établissements d'enseignement et des lieux de travail. Découvrir et éliminer ces barrières est une étape nécessaire pour stimuler le développement dans le monde entier."
-image: '/images/summary.jpg'
+image: '/images/appendix.jpg'
 ---
 
 ## A Snapshot of our Projects
