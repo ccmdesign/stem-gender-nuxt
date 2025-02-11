@@ -50,12 +50,15 @@ function getPrevDoc(currentOrder: number) {
                 {{ getPrevDoc(doc.order).title }}
               </NuxtLink>
             </div>
+            <div class="next-article__item" v-else></div>
+
             <div class="next-article__item next-article__item--right" v-if="getNextDoc(doc.order)">
               <p class="next-article__cta">Read next</p>
               <NuxtLink class="next-article__link" :to="localePath(getNextDoc(doc.order)._path)">
                 {{ getNextDoc(doc.order).title }}
               </NuxtLink>
             </div>
+            <div class="next-article__item next-article__item--right" v-else></div>
           </div>
         </article>
       </template>

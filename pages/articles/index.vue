@@ -30,8 +30,12 @@
 
     <div class="chapter-layout__content">
       <div class="map-grid">
+        <img src="/images/idrc-logo-full.png" alt="IDRC" class="map-grid__idrc-logo">
+        <div class="map-grid__summary | project-summary">
+          <h3><span>15</span> Global Projects</h3>
+          <h3><span>14</span> Sub-Saharan Africa Projects</h3>
+        </div>
         <div class="map-grid__map">
-          <img src="/images/idrc-logo-full.png" alt="IDRC" class="map-grid__idrc-logo">
           <world-map class="map" />
           <map-data class="data" :resources="resources" @project-selected="handleProjectSelected" />
         </div>
@@ -103,7 +107,7 @@ onMounted(async () => {
 
 <style lang="scss" scoped>
 .chapter-header h3 {
-  font-size: var(--size--2);
+  font-size: var(--size-1);
 }
 
 .map-grid {
@@ -147,21 +151,39 @@ onMounted(async () => {
 }
 
 .country-list {
-  --gutter: var(--space-s);
+  --_cluster-space: var(--space-s);
 
   summary {
     padding-block: var(--space-xs);
+    &::marker {
+      color: var(--primary-color);
+      content: '+ ';
+      font-size: 1.65rem;
+    }
     
     * { display: inline-block; }
   }
-
-  summary::marker {
-    color: var(--primary-color);
-  }
+  &[open] summary::marker { content: '- ' !important; }
 }
 
 .country-button {
   color: var(--primary-color);
 }
 
+.project-summary {
+  padding-inline: var(--space-s-m);
+  display: flex;
+  gap: var(--space-m);
+  align-items: center;
+  justify-content: center;
+
+  h3 {font-size: var(--size-1);}
+  span {
+    font-size: var(--size-2);
+    font-weight: 800;
+    letter-spacing: .5px;
+    font-family: var(--font-display);
+    color: var(--primary-color);
+  }
+}
 </style>
