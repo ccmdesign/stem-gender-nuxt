@@ -31,7 +31,7 @@
     <div class="chapter-layout__content">
       <div class="map-grid">
         <img src="/images/idrc-logo-full.png" alt="IDRC" class="map-grid__idrc-logo">
-        <div class="map-grid__summary | project-summary | repel">
+        <div class="map-grid__summary | project-summary">
           <h3><span>15</span> Global Projects</h3>
           <h3><span>14</span> Sub-Saharan Africa Projects</h3>
         </div>
@@ -172,6 +172,10 @@ onMounted(async () => {
 
 .project-summary {
   padding-inline: var(--space-s-m);
+  display: flex;
+  gap: var(--space-m);
+  align-items: center;
+  justify-content: center;
 
   h3 {font-size: var(--size-1);}
   span {
