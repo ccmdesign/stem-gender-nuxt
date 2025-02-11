@@ -5,6 +5,7 @@
 
 @import 'partials/vars/space.css';
 @import 'partials/vars/colors.css';
+@import 'partials/vars/variables.css';
 @import 'partials/vars/typography.css';
 @import 'partials/base/global-styles.css';
 
@@ -16,7 +17,7 @@
 @import 'partials/compositions/wrapper.css';
 
 
-// @import 'partials/blocks/button.css';
+@import 'partials/blocks/button.css';
 @import 'partials/blocks/chapter-header.css';
 @import 'partials/blocks/chapter-layout.css';
 @import 'partials/blocks/map-grid.css';
