@@ -12,7 +12,7 @@
         'anchor-name': `--resource-list-${key}`
       }"
     >
-      <button :popovertarget="`resource-list-${key}`">
+      <button :popovertarget="`resource-list-${key}`" :id="`trigger-${key}`" @click="findPopover(key)">
         <span class="circle"></span>
         <span class="name" :style="{'position-anchor': `--resource-list-${key}`}">{{ resource.name }}</span>
       </button>
@@ -47,6 +47,21 @@ const emit = defineEmits(['project-selected']);
 const toggleCard = (countryCode, projectIndex) => {
   emit('project-selected', { countryCode, projectIndex });
 };
+
+const findPopover = (id) => {
+  const trigger = document.querySelector(`#trigger-${id}`);
+  const popover = document.querySelector(`#resource-list-${id}`);
+  
+  window.setTimeout(function() {
+    const triggerPos = trigger.getBoundingClientRect().x;
+    const popoverPos = popover.getBoundingClientRect().x;
+    if(popoverPos == 0) {
+      popover.classList.remove('resource-list--fallback');
+    } else if(triggerPos != popoverPos) {
+      popover.classList.add('resource-list--fallback');
+    }
+  },1)
+}
 </script>
 
 <style lang="scss" scoped>
@@ -128,6 +143,20 @@ const toggleCard = (countryCode, projectIndex) => {
     }
   }
 }
+
+  .resource-list--fallback {
+    li {
+      grid-template-columns: 1fr var(--size--1);
+      transform: translateX(.25rem);
+      &:not(:last-child):before {
+        right: calc(var(--size--2) / 2 + 2px);
+        left: auto;
+      }
+      .circle { 
+        order: 1;
+      }
+    }
+  }
 
 .resource .name { 
   opacity: 0; 
