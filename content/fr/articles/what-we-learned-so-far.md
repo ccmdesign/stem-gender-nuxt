@@ -5,21 +5,20 @@ order: 5
 image: '/images/lessons-learned.jpg'
 ---
 
-### Importance of Comprehensive Programs
-Programs that combine educational interventions with organizational learning processes are effective in promoting gender equity in STEM fields. These programs address barriers at multiple levels and create supportive environments for women.
+### Importance des programmes complets
+Les programmes qui arriment des interventions éducatives avec des processus d’apprentissage organisationnels sont efficaces pour promouvoir l’équité entre les genres dans les domaines des STIM. Ces programmes s’attaquent aux obstacles à plusieurs échelons et créent des environnements favorables pour les femmes.
 
-### Role of Participatory Research
-Participatory research methods are valuable for understanding the specific challenges women face and developing gender-sensitive research approaches. Involving women in the research process ensures that their perspectives are included and addressed.
+### Rôle de la recherche participative
+Les méthodes de recherche participative sont utiles pour comprendre les défis particuliers auxquels les femmes sont confrontées et développer des approches de recherche sensibles au genre. La participation des femmes au processus de recherche permet de s’assurer que leurs points de vue sont intégrés et pris en compte.
 
-### Impact of Mentorship and Role Models
-Initiatives that provide mentorship and highlight female role models are crucial for inspiring and supporting young women in STEM. These programs help combat negative stereotypes and promote broader social and gender equity goals.
+### Répercussions du mentorat et des figures exemplaires
+Les initiatives qui offrent du mentorat et mettent en valeur des figures exemplaires qui sont des femmes sont essentielles pour inspirer et soutenir les jeunes femmes en STIM. Ces programmes aident à lutter contre les stéréotypes négatifs et à promouvoir des objectifs plus larges en matière d’équité sociale et d’équité entre les genres.
 
-### Need for Policy Integration and Implementation
-Effective policy integration and implementation are essential for supporting women's inclusion in leadership roles within STEM fields. Programming to date highlights the importance of developing comprehensive policies and ensuring their effective implementation.
+### Nécessité de l’intégration et de la mise en œuvre des politiques
+L’intégration et la mise en œuvre efficaces des politiques sont essentielles afin de soutenir l’inclusion des femmes dans des rôles de leadership dans les domaines des STIM. Les programmes à ce jour soulignent l’importance d’élaborer des politiques générales ainsi que d’assurer leur mise en œuvre efficace.
 
-### Community Engagement and Education
-Addressing cultural and social barriers requires community engagement and education. Programs that involve community members and address traditional norms are effective in promoting gender equality and supporting women's participation in STEM.
+### Mobilisation communautaire et éducation
+Afin de surmonter les obstacles culturels et sociaux, il faut la mobilisation communautaire et l’éducation. Les programmes qui impliquent les membres de la communauté et qui abordent les normes traditionnelles sont efficaces pour promouvoir l’égalité des genres et soutenir la participation des femmes aux STIM.
 
-### Transformative Learning
-Transformative learning approaches, which focus on changing beliefs, attitudes, and behaviors, are key to addressing root causes of inequality and generating radical changes at individual, organizational, and educational system levels. These approaches are essential for creating lasting change and promoting gender equity in STEM fields.
-permalink: /es/chapters/report/appendix/
+### Apprentissage transformateur
+Les approches d’apprentissage transformatrices, qui se concentrent sur le changement des convictions, des attitudes et des comportements, sont essentielles pour s’attaquer aux causes profondes de l’inégalité et générer des changements radicaux à l’échelle individuelle, de l’organisation et du système éducatif. Ces approches sont essentielles pour créer un changement durable et promouvoir l’équité entre les genres dans les domaines des STIM.

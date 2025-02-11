@@ -5,40 +5,60 @@ order: 6
 image: '/images/conclusion.jpg'
 ---
 
-The journey towards gender equity in STEM is multifaceted and requires a concerted effort from all stakeholders. The programs, initiatives and research findings outlined highlight the importance of comprehensive programs, participatory research, mentorship, policy integration, community engagement, and transformative learning. These elements are crucial in addressing systemic barriers and fostering an inclusive environment for women in STEM.
+Le parcours vers l’égalité des genres dans les STIM est multiforme et nécessite un effort concerté de la part de toutes les parties prenantes. Les programmes, les initiatives et les résultats de recherche décrits soulignent l’importance des programmes complets, de la recherche participative, du mentorat, de l’intégration des politiques, de la mobilisation communautaire et de l’apprentissage transformateur. Ces éléments sont essentiels afin d’éliminer les obstacles systémiques et favoriser un environnement inclusif pour les femmes dans les STIM.
 
-The work of the IDRC and its partners exemplifies the potential for impactful change to dismantle identified challenges through targeted interventions and collaborative efforts. By identifying context-specific barriers and piloting innovative solutions, significant strides have been made in promoting gender equity. The success stories from various regions, such as the collaborative policy development in Zimbabwe and commitments to incorporate mentorship programs across universities in East Africa, demonstrate the effectiveness of these approaches.
+Le travail du CRDI et de ses partenaires illustre le potentiel de changements percutants pour éliminer les défis cernés grâce à des interventions ciblées et à des efforts de collaboration. En déterminant les obstacles particuliers au contexte et en mettant à l’essai des solutions innovantes, des progrès importants ont été réalisés dans la promotion de l’équité entre les genres. Les réussites de diverses régions, comme l’élaboration de politiques collaboratives au Zimbabwe et les engagements à intégrer des programmes de mentorat dans les universités d’Afrique de l’Est, démontrent l’efficacité de ces approches.
 
-However, to sustain and scale these efforts, it is imperative to involve policymakers and key stakeholders from the outset. This ensures that interventions are not only implemented but also institutionalized, creating a lasting impact. By continuing to build on these foundations and expanding the reach of successful programs, we can move closer to achieving true transformation of our science systems, making them more equitable and inclusive, and reflective of the populations their innovations can service. 
+Toutefois, afin de soutenir et mettre à l’échelle ces efforts, il est impératif d’impliquer les décisionnaires et les principales parties prenantes dès le départ. Cela garantit que les interventions ne sont pas seulement mises en œuvre, mais également institutionnalisées, créant un impact durable. En continuant de miser sur ces fondements et en élargissant la portée des programmes couronnés de succès, nous pouvons nous rapprocher de la réalisation d’une véritable transformation de nos systèmes scientifiques, en les rendant plus équitables et inclusifs, et en reflétant les populations que leurs innovations peuvent servir. 
 
-The path forward requires a commitment to ongoing research, policy advocacy, and community engagement. By leveraging the collective expertise and experiences of diverse stakeholders, we can create a more equitable and inclusive STEM landscape that benefits everyone.
+La voie à suivre exige un engagement à l’égard de la recherche continue, de la défense des politiques et de la mobilisation communautaire. En tirant parti de l’expertise et des expériences collectives de diverses parties prenantes, nous pouvons créer un paysage des STIM plus équitable et inclusif qui profite à tout le monde.
 
-## Recommendations for Key Stakeholders
+## Recommandations à l’intention des principales parties prenantes
 
-### Policymakers
-1.      Increase Visibility of Women Scientists: Launch national media campaigns and public lectures to highlight women scientists, fostering a positive association between women and science.
-2.      Combat Gender Stereotypes: Implement and enforce gender-sensitive policies to dismantle stereotypes and promote equitable participation in STEM fields.
-3.      Provide Incentives for Girls' Performance in STEM: Offer scholarships and incentives to motivate girls in STEM studies, and recognize their achievements to encourage continued participation.
-4.      Implement National and Institutional Policies: Promote STEM education through comprehensive policies already existing at the university and institution level.
-5.      Develop Mainstreaming Strategies: Develop strategies with clear objectives and accountability structures, including policies for gender-based violence prevention and response.
+### Responsables politiques
 
-### Universities and Education Institutions
-1.      Expand Outreach and Mentorship Activities: Strengthen support systems in schools and universities, and implement formal mentorship programs to support women in various STEM sectors.
-2.      Develop Interactive and Equitable Learning Environments: Create inclusive learning environments and provide vocational guidance and mentorship to support career development in STEM fields.
-3.      Staff Development in Gender-Sensitive Pedagogy: Train university lecturers on gender-sensitive teaching methods and review curricula to make them more inclusive.
-5.      Improve Data Collection and Analysis: Implement systems for collecting gender-disaggregated data in all training and research structures, ensuring methodologies mitigate gender biases.
-6.    Conduct Gender Audits: Perform gender audits across relevant education institutions.
- 
-### Science and Research Institutions
-1.      Increase Visibility of Women Scientists: Feature women scientists in research publications and conferences to enhance their visibility and inspire future generations.
-2.      Expand Outreach and Mentorship Activities: Facilitate mentorship programs and outreach activities to support women in STEM, particularly in specialized fields like water and agronomic sciences.
-3.      Enhance Policy Awareness and Participation: Restructure promotion processes, provide resources for research, and develop monitoring and evaluation frameworks to track progress and impact.
-4.      Provide Capacity Building and Training Opportunities: Offer scholarships, networking opportunities, and targeted training programs, including reintegration programs for returning new mothers.
-5.      Adopt a Multi-Stakeholder and Coordinated Approach: Collaborate with government agencies, educational institutions, and advocacy groups to improve female participation in STEM disciplines.
+1. Accroître la visibilité des femmes scientifiques : Lancer des campagnes médiatiques nationales et des conférences publiques pour mettre en avant les femmes scientifiques, en favorisant une association positive entre les femmes et la science.
 
-### Women in STEM
-1.      Increase Visibility of Women Scientists: Participate in media campaigns, public lectures, and educational materials to inspire young girls and establish a positive association with science.
-2.      Expand Outreach and Mentorship Activities: Engage in mentorship programs and outreach activities to support and guide other women in STEM fields.
-3.      Combat Gender Stereotypes: Advocate for and participate in awareness campaigns to challenge gender biases and stereotypes in STEM.
-4.      Provide Capacity Building and Training Opportunities: Take advantage of scholarships, networking opportunities, and training programs to advance in STEM careers.
-5.      Reinforce Educational Policies: Foster girls' and women's continued registration in STEM, particularly in male-dominated disciplines, and address cultural and social barriers limiting participation.
+2. Combattre les stéréotypes liés au genre : Mettre en œuvre et appliquer des politiques sensibles au genre pour démanteler les stéréotypes et promouvoir une participation équitable dans les domaines des STIM.
+
+3. Offrir des incitations aux performances des filles dans les STEM : Offrir des bourses et des incitations pour motiver les filles dans les études STEM, et reconnaître leurs réussites pour les encourager à poursuivre leur participation.
+
+4. Mettre en œuvre des politiques nationales et institutionnelles : Promouvoir l'enseignement des STIM par le biais de politiques globales déjà en place au niveau des universités et des institutions.
+
+5. Élaborer des stratégies d'intégration : Élaborer des stratégies assorties d'objectifs clairs et de structures de responsabilité, y compris des politiques de prévention et de réponse à la violence fondée sur le genre.
+
+### Universités et établissements d'enseignement
+
+1. Développer les activités de sensibilisation et de mentorat : Renforcer les systèmes de soutien dans les écoles et les universités et mettre en œuvre des programmes de mentorat formels pour soutenir les femmes dans divers secteurs des STIM.
+
+2. Créer des environnements d'apprentissage interactifs et équitables : Créer des environnements d'apprentissage inclusifs et fournir une orientation professionnelle et un mentorat pour soutenir le développement de carrière dans les domaines des STIM.
+
+3. Formation du personnel à la pédagogie sensible au genre : Former les professeurs d'université aux méthodes d'enseignement sensibles à la dimension de genre et revoir les programmes d'études pour les rendre plus inclusifs.
+
+4. Améliorer la collecte et l'analyse des données : Mettre en œuvre des systèmes de collecte de données ventilées par sexe dans toutes les structures de formation et de recherche, en veillant à ce que les méthodologies atténuent les préjugés sexistes.
+
+5. Réaliser des audits sur l'égalité des sexes : Réaliser des audits sur l'égalité entre les hommes et les femmes dans les établissements d'enseignement concernés.
+
+### Institutions scientifiques et de recherche
+
+1. Accroître la visibilité des femmes scientifiques : Présenter les femmes scientifiques dans les publications de recherche et les conférences afin d'améliorer leur visibilité et d'inspirer les générations futures.
+
+2. Développer les activités de sensibilisation et de mentorat : Faciliter les programmes de mentorat et les activités de sensibilisation pour soutenir les femmes dans les STIM, en particulier dans des domaines spécialisés comme les sciences de l'eau et les sciences agronomiques.
+
+3. Renforcer la sensibilisation et la participation aux politiques : Restructurer les processus de promotion, fournir des ressources pour la recherche et développer des cadres de suivi et d'évaluation pour suivre les progrès et l'impact.
+
+4. Offrir des possibilités de renforcement des capacités et de formation : Offrir des bourses d'études, des possibilités de mise en réseau et des programmes de formation ciblés, y compris des programmes de réintégration pour les nouvelles mères qui reviennent.
+
+5. Adopter une approche coordonnée et multipartite : Collaborer avec les agences gouvernementales, les établissements d'enseignement et les groupes de pression pour améliorer la participation des femmes dans les disciplines STIM.
+
+### Les femmes dans les STIM
+
+1. Accroître la visibilité des femmes scientifiques : Participer à des campagnes médiatiques, des conférences publiques et du matériel éducatif pour inspirer les jeunes filles et établir une association positive avec la science.
+
+2. Développer les activités de sensibilisation et de mentorat : S'engager dans des programmes de mentorat et des activités de sensibilisation pour soutenir et guider d'autres femmes dans les domaines des STIM.
+
+3. Combattre les stéréotypes liés au genre : Plaider et participer à des campagnes de sensibilisation pour lutter contre les préjugés et les stéréotypes liés au genre dans le domaine des STIM.
+
+4. Offrir des possibilités de renforcement des capacités et de formation : Profiter des bourses d'études, des possibilités de mise en réseau et des programmes de formation pour progresser dans les carrières en STIM.
+
+5. Renforcer les politiques éducatives : Favoriser l'inscription continue des filles et des femmes dans les STIM, en particulier dans les disciplines dominées par les hommes, et s'attaquer aux barrières culturelles et sociales qui limitent la participation.
