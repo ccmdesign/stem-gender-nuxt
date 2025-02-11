@@ -45,7 +45,7 @@
               <h4>Countries</h4>
             </summary>
             <div class="cluster">
-              <button v-for="i in resources" class="country-button">{{ i.name }}</button>
+              <button v-for="(i, key) in resources" class="country-button" @click="activateCountry(key)">{{ i.name }}</button>
             </div>
           </details>
           
@@ -93,6 +93,13 @@ const handleProjectSelected = ({ countryCode, projectIndex }) => {
   activeCountry.value = countryCode;
   activeProjectIndex.value = projectIndex;
 };
+
+const activateCountry = (id) => {
+  const trigger = document.querySelector(`#trigger-${id}`);
+  if(trigger) {
+    trigger.click();
+  }
+}
 
 onMounted(async () => {
   try {

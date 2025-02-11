@@ -155,6 +155,9 @@ const findPopover = (id) => {
       .circle { 
         order: 1;
       }
+      button {
+        text-align: right;
+      }
     }
   }
 
