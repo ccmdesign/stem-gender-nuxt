@@ -40,14 +40,14 @@
           <map-data class="data" :resources="resources" :activeCountry="data.selectedCountry" @project-selected="handleProjectSelected" />
         </div>
         <div class="map-grid__content">          
-          <details class="country-list">
+          <!--<details class="country-list">
             <summary>
               <h4>Countries</h4>
             </summary>
             <div class="cluster">
               <button v-for="(i, key) in resources" class="country-button" :class="{'country-button--active': data.selectedCountry == key}" @click="activateCountry(key)">{{ i.name }}</button>
             </div>
-          </details>
+          </details>-->
           
 
           <resource-list :resources="resources" />
