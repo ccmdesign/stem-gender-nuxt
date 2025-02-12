@@ -172,7 +172,7 @@ onMounted(async () => {
 }
 
 .country-list {
-  --_cluster-space: var(--space-2xs);
+  --_cluster-space: 0;
   padding-block: var(--space-s);
 
   summary {
@@ -191,6 +191,11 @@ onMounted(async () => {
 .country-button {
   color: var(--primary-color);
   font-size: var(--size--1);
+  padding: var(--space-3xs) var(--space-xs);
+
+  &:hover {
+    background-color: var(--primary-color-10-tint);
+  }
 }
 
   .country-button--active {
