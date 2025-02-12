@@ -1,3 +1,13 @@
-# Menu principal
+# Main menu items texts
 homeLink: 'Accueil'
 backLink: 'Retour à la page précédente'
+synthesisReport: 'Rapport de Synthèse'
+countries: 'Pays'
+resources: 'Ressources'
+previousArticle: 'Article précédent'
+readNext: 'Lire suivant'
+error: 'Erreur'
+back: 'Retour'
+noArticlesFound: 'Aucun article trouvé.'
+globalProjects: 'Projets Globaux'
+subSaharanAfricaProjects: 'Projets en Afrique Subsaharienne'

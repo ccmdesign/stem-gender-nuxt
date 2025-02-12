@@ -1,3 +1,13 @@
 # Main menu items texts
 homeLink: 'Home'
 backLink: 'Back to Title'
+synthesisReport: 'Synthesis Report'
+countries: 'Countries'
+resources: 'Resources'
+previousArticle: 'Previous article'
+readNext: 'Read next'
+error: 'Error'
+back: 'Back'
+noArticlesFound: 'No articles found.'
+globalProjects: 'Global Projects'
+subSaharanAfricaProjects: 'Sub-Saharan Africa Projects'

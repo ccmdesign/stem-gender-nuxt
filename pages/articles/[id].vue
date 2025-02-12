@@ -45,7 +45,7 @@ function getPrevDoc(currentOrder: number) {
         <article class="next-article">
           <div class="next-article__content">
             <div class="next-article__item" v-if="getPrevDoc(doc.order)">
-              <p class="next-article__cta">Previous article</p>
+              <p class="next-article__cta">{{ $t('previousArticle') }}</p>
               <NuxtLink class="next-article__link" :to="localePath(getPrevDoc(doc.order)._path)">
                 {{ getPrevDoc(doc.order).title }}
               </NuxtLink>
@@ -53,7 +53,7 @@ function getPrevDoc(currentOrder: number) {
             <div class="next-article__item" v-else></div>
 
             <div class="next-article__item next-article__item--right" v-if="getNextDoc(doc.order)">
-              <p class="next-article__cta">Read next</p>
+              <p class="next-article__cta">{{ $t('readNext') }}</p>
               <NuxtLink class="next-article__link" :to="localePath(getNextDoc(doc.order)._path)">
                 {{ getNextDoc(doc.order).title }}
               </NuxtLink>
@@ -63,8 +63,8 @@ function getPrevDoc(currentOrder: number) {
         </article>
       </template>
       <template #not-found>
-        <h1>Error</h1>
-        <button @click="$router.push(localePath('/'))">Back</button>
+        <h1>{{ $t('error') }}</h1>
+        <button @click="$router.push(localePath('/'))">{{ $t('back') }}</button>
       </template>
     </ContentDoc>
     <chapterFooter />

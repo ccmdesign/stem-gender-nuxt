@@ -1,3 +1,13 @@
 # Main menu items texts
 homeLink: 'Inicio'
 backLink: 'Volver al título'
+synthesisReport: 'Informe de Síntesis'
+countries: 'Países'
+resources: 'Recursos'
+previousArticle: 'Artículo anterior'
+readNext: 'Leer siguiente'
+error: 'Error'
+back: 'Volver'
+noArticlesFound: 'No se encontraron artículos.'
+globalProjects: 'Proyectos Globales'
+subSaharanAfricaProjects: 'Proyectos en África Subsahariana'

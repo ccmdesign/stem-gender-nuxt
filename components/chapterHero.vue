@@ -4,7 +4,7 @@
         <p class="chapter-hero__brow">{{ brow || 'Breaking Barriers Building Bridges' }}</p>
         <h1 class="chapter-hero__title">{{ heading }}</h1>
         <p v-if="tagline" class="chapter-hero__tagline" data-split>{{ tagline }}</p>
-        <nuxt-link :to="localePath('/')" class="chapter-hero__back">Back to title</nuxt-link>
+        <nuxt-link :to="localePath('/')" class="chapter-hero__back">{{ $t('backLink') }}</nuxt-link>
       </div>
       
       <img v-if="image" class="chapter-hero__image" :src="image" />

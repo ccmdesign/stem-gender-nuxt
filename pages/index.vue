@@ -3,7 +3,7 @@
     <header class="chapter-layout__header | chapter-header">
       <div class="repel">
         <LangSwitcher />
-        <h3>Synthesis Report</h3>
+        <h3>{{ $t('synthesisReport') }}</h3>
       </div>
 
       <chapter-titles />
@@ -21,7 +21,7 @@
         </template>
 
         <template #not-found>
-          <p>No articles found.</p>
+          <p>{{ $t('noArticlesFound') }}</p>
         </template>
 
         <template #pending>
@@ -34,8 +34,8 @@
       <div class="map-grid">
         <img src="/images/idrc-logo-full.png" alt="IDRC" class="map-grid__idrc-logo">
         <div class="map-grid__summary | project-summary">
-          <h3><span>15</span> Global Projects</h3>
-          <h3><span>14</span> Sub-Saharan Africa Projects</h3>
+            <h3><span>15</span> {{ $t('globalProjects') }}</h3>
+            <h3><span>14</span> {{ $t('subSaharanAfricaProjects') }}</h3>
         </div>
         <div class="map-grid__map">
           <world-map class="map" />
@@ -44,7 +44,7 @@
         <div class="map-grid__content">          
           <details class="country-list">
             <summary>
-              <h4>Countries</h4>
+              <h4>{{ $t('countries') }}</h4>
             </summary>
             <div class="cluster">
               <button v-for="(i, key) in resources" class="country-button" :class="{'country-button--active': data.selectedCountry == key}" @click="activateCountry(key)">{{ i.name }}</button>
@@ -60,7 +60,7 @@
 
       <div class="mobile-resource-cards | stack">
         <div class="repel">
-          <h3>Resources</h3>
+          <h3>{{ $t('resources') }}</h3>
           <img src="/images/idrc-logo-full.png" alt="IDRC" class="idrc-logo">
         </div>
         
@@ -87,14 +87,12 @@ const query: QueryBuilderParams = {
   path: localePath('/')
 }
 
-
 const resources = ref([])
 const activeCountry = ref<string | null>(null);
 const activeProjectIndex = ref<number | null>(null);
 const data = reactive({
   selectedCountry: ''
 })
-
 
 const handleProjectSelected = ({ countryCode, projectIndex }) => {
   activeCountry.value = countryCode;
@@ -140,7 +138,6 @@ onUnmounted(() => {
   document.removeEventListener('click', handleClickOutside);
 });
 </script>
-
 
 <style lang="scss" scoped>
 .chapter-header h3 {
