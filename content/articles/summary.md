@@ -3,6 +3,7 @@ title: Executive Summary
 permalink: /en/summary/
 image: '/images/summary.jpg'
 order: 1
+description: 'Achieving gender equity in STEM requires a multifaceted approach involving multiple stakeholders, across levels of impact and change. The Breaking Barriers Network demonstrates the potential for impactful change through targeted interventions and collaborative effort, but more is still needed to achieve lasting changes to institutions and the broader science system.'
 ---
 
 The **Breaking Barriers Network**, supported by the International Development Research Centre (IDRC), is a CAD$15M investmentto dismantle the systemic and systematic barriers that hinder women's participation and leadership in STEM (Science, Technology, Engineering, and Mathematics) fields, particularly in the Global South. This report synthesizes the findings and impacts of various projects that make up this network, underscoring the critical importance of evidence-informed policies and interventions to drive progress towards gender equity in STEM.
@@ -21,7 +22,10 @@ Mentorship and role models have emerged as crucial elements for inspiring and su
 Community engagement and education have been key to addressing cultural and social barriers. Programs that involve community members and address traditional norms have been effective in promoting gender equality and supporting women's participation in STEM. Transformative learning approaches, which focus on changing beliefs, attitudes, and behaviors, have been necessary for creating lasting change and promoting gender equity in STEM fields.
 
 ### Recommendations
-Achieving gender equity in STEM requires a multifaceted approach involving multiple stakeholders, across levels of impact and change. The **Breaking Barriers Network** demonstrates the potential for impactful change through targeted interventions and collaborative effort, but more is still needed to achieve lasting changes to institutions and the broader science system. Sustaining and scaling these efforts necessitates involving policymakers and key stakeholders from the outset to ensure lasting impact. There is a need to continue to build on these foundations and expand successful programs.
+> Achieving gender equity in STEM requires a multifaceted approach involving multiple stakeholders, across levels of impact and change. The **Breaking Barriers Network** demonstrates the potential for impactful change through targeted interventions and collaborative effort, but more is still needed to achieve lasting changes to institutions and the broader science system.
+
+
+Sustaining and scaling these efforts necessitates involving policymakers and key stakeholders from the outset to ensure lasting impact. There is a need to continue to build on these foundations and expand successful programs.
 
 To move forward, it is essential to increase the visibility of women scientists through media campaigns and educational materials, expand outreach and mentorship activities, and combat entrenched systemic and systematic barriers with gender-sensitive policies and campaigns. Providing incentives and scholarships to support girls and women in STEM studies, developing interactive and equitable learning environments, and conducting gender audits and developing mainstreaming strategies are also crucial steps to see lasting change to educational and science institutions.
 

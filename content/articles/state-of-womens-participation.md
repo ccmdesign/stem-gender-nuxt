@@ -3,6 +3,7 @@ title: The State of Women's Participation in STEM in the Global South
 permalink: /en/state-of-womens-participation/
 image: '/images/state-of-participation.jpg'
 order: 3
+description: 'Gender-based discrimination and harassment, such as inappropriate comments and exclusion from key meetings or decision-making processes, further contribute to a challenging work environment.'
 ---
 
 In investigating local trends in women's participation in STEM, IDRC-funded research has highlighted challenges similar to those reported in the Global North. Across various regions, women's participation and leadership in STEM fields have not kept pace with the rapid growth of STEM industries and broader advancements toward gender equality (UNESCO, 2017).

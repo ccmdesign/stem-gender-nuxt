@@ -3,6 +3,7 @@ title: El estado de la participación de las mujeres en STEM en el sur global
 permalink: /es/estado-participacion-mujeres/
 order: 3
 image: '/images/state-of-participation.jpg'
+description: 'La discriminación y el acoso por motivos de género, tales como los comentarios inapropiados y la exclusión de reuniones clave o procesos de toma de decisiones, contribuyen aún más a crear un entorno laboral desafiante.'
 ---
 
 Al investigar las tendencias locales en la participación de las mujeres en las áreas STEM, la investigación financiada por el IDRC ha resaltado desafíos similares a los reportados en el Norte Global. En varias regiones, la participación y el liderazgo de las mujeres en los campos STEM no han seguido el ritmo del rápido crecimiento de las industrias STEM y los avances más amplios hacia la igualdad de género (UNESCO, 2017). Es alarmante que, a pesar de la creciente representación de las mujeres en la educación superior en las Américas y Europa, se produzca una pérdida significativa a medida que las mujeres pasan de la educación en STEM a la fuerza laboral e incluso a niveles avanzados de educación (Comisión Europea, 2021; National Science Foundation, 2021).

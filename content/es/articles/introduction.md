@@ -3,6 +3,7 @@ title: Introducción
 permalink: /es/introduccion/
 order: 2
 image: '/images/introduction.jpg'
+description: 'La brecha de género en los ámbitos STEM no es resultado de decisiones individuales, sino que está determinada por barreras sistémicas, tales como prejuicios de género, estereotipos y desigualdades estructurales en las instituciones educativas y los lugares de trabajo. Descubrir y abordar estas barreras es un paso necesario para impulsar el desarrollo en todo el mundo.'
 ---
 
 ### La importancia de la participación y el liderazgo de las mujeres en STEM.
@@ -38,30 +39,6 @@ Dichos estudios generaron evidencia sobre los obstáculos exclusivos que las muj
 
 Los proyectos de investigación financiados a través de ambas cohortes, así como el trabajo en curso del IDRC para proporcionar becas a [mujeres científicas en el inicio de su carrera](https://idrc-crdi.ca/en/project/early-career-fellowships-gender-equality-science-2022-2026) a través de la colaboración con la [Organización de Mujeres en la Ciencia para el Mundo en Desarrollo (OWSD)](https://owsd.net/), están mostrando resultados y hallazgos relevantes para diversas partes interesadas en el Norte y el Sur Global. La cohorte de investigadores, que compone estas diversas iniciativas, ahora conocida como la **Breaking Barriers Network**, se está reuniendo y generando apoyo e impulso en sus geografías relevantes. Desde la realización de una auditoría de género en una importante universidad de Zimbabwe hasta un innovador programa de becas de apoyo a mujeres científicas indígenas en México, la **Breaking Barriers Network** está construyendo puentes para promover la participación y el liderazgo sostenidos de las mujeres en los campos de STEM.
 
-[*__Construyendo políticas públicas para la participación efectiva de las mujeres en ciencia, tecnología, ingeniería y matemáticas en Bolivia__*](https://idrc.ca/en/project/constructing-public-policy-effective-participation-women-science-technology-engineering-and)  
-
-[*__Eliminando barreras para el reclutamiento, la retención y el avance de las mujeres en los campos de ciencia y tecnología para promover industrias verdes en Colombia__*](https://idrc.ca/en/project/removing-barriers-recruiting-retaining-and-advancing-women-science-and-technology-fields)
-
-[*__Supervisión y tutoría de mujeres en programas de formación de posgrado en ciencia, tecnología, ingeniería y matemáticas en África subsahariana__*](https://idrc.ca/en/project/supervision-and-mentorship-women-science-technology-engineering-and-mathematics)
-
-[*__Reduciendo la brecha de igualdad de género en la ciencia en la Women's University en África__*](https://idrc.ca/en/project/bridging-gender-equality-gap-science-womens-university-africa)
-
-[*__Eliminando las barreras a la participación de las mujeres en la ciencia: un estudio de la African Research Universities Alliance__*](https://idrc.ca/en/project/eliminating-barriers-womens-participation-science-study-african-research-universities)
-
-[*__Mujeres en la educación y las carreras de ingeniería en Benín y Ghana__*](https://idrc.ca/en/project/women-engineering-education-and-careers-benin-and-ghana)
-
-[*__Transformando Instituciones para el Avance de Mujeres Líderes en Ciencias, Tecnología, Ingeniería y Matemáticas (SISTARS): Lecciones de Ghana y Kenia__*](https://idrc.ca/en/project/transforming-institutions-advance-women-leaders-science-technology-engineering-and)
-
-[*__Ruta al cambio: hacia la justicia de género en la investigación STEM en África (GeJuSTA)__*](https://idrc.ca/en/project/pathway-change-towards-gender-justice-stem-research-africa-gejusta)
-
-[*__Fortalecimiento de la inclusión de género en la investigación agrícola para obtener resultados más concluyentes en África Occidental__*](https://idrc.ca/en/project/strengthening-gender-inclusion-agricultural-research-more-conclusive-results-west-africa)
-
-[*__Datos abiertos latinoamericanos para políticas de igualdad de género con foco en el liderazgo en STEM__*](https://idrc.ca/en/project/latin-american-open-data-gender-equality-policies-focusing-leadership-stem)
-
-[*__Apoyando a las mujeres indígenas en carreras de ciencia, tecnología, ingeniería y matemáticas en México y América Central__*](https://idrc-crdi.ca/en/project/supporting-indigenous-women-science-technology-engineering-and-mathematics-careers-mexico)
-
-[*__Apoyando al liderazgo de las mujeres en ciencia, tecnología e innovación a través de becas para jóvenes al comienzo de su carrera (2017–2021)__*](https://idrc-crdi.ca/en/project/supporting-womens-leadership-science-technology-and-innovation-through-early-career)
-
 Hasta la fecha, la **Breaking Barriers Network** ha avanzado colectivamente en diferentes áreas:
 - Desarrollo de una base de evidencia: generación de evidencia sobre cómo mejorar la igualdad de género y la diversidad en STEM, mediante el estudio y el ensayo de intervenciones prometedoras. 
 - Establecimiento de redes colaborativas: establecimiento de redes de investigadoras y profesionales femeninas para fomentar la colaboración y el apoyo. 
@@ -77,7 +54,9 @@ Reconociendo la necesidad crítica de esfuerzos continuos en todo el espectro ed
 
 Como parte de la **Breaking Barriers Network**, investigadores de América Latina y África han colaborado para desarrollar una agenda de investigación basada en el conocimiento, la experiencia y las mejores prácticas existentes identificadas por expertos que trabajan en diversos contextos. A pesar de los desafíos persistentes para la participación de las mujeres en STEM tanto en el Norte como en el Sur Global, estos investigadores han demostrado que las intervenciones intencionales, específicas para el contexto y comprometidas, pueden ayudar a cerrar la brecha de género en las áreas de STEM.
 
-[INSERTAR gráfica de la Teoría del cambio]
+> Las barreras sistémicas existentes resaltan la importancia de un enfoque coordinado y multifacético que integre las prioridades educativas, científicas y tecnológicas nacionales y regionales, con compromisos claros para promover el desarrollo equitativo.
+
+![Teoría del cambio](/images/introduction-theory-of-change-es.png)
 
 La **Breaking Barriers Network** ha elaborado una agenda de investigación basada en la evidencia y la experiencia, señalando áreas clave para futuras investigaciones y una implementación más amplia. Las principales áreas de enfoque y acción incluyen:
 

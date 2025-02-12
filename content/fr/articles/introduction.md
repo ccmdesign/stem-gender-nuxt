@@ -3,6 +3,7 @@ title: Introduction
 permalink: /fr/introduction/
 order: 2
 image: '/images/introduction.jpg'
+description: 'L’écart entre les genres dans les STIM n’est pas le résultat de choix individuels, mais est façonné par des obstacles systémiques, notamment des préjugés propres au genre, des stéréotypes et des inégalités structurelles au sein des établissements d’enseignement et des lieux de travail. La découverte et la résolution de ces obstacles représentent une étape nécessaire pour stimuler le développement dans le monde entier.'
 ---
 
 ### L’importance de la participation et du leadership des femmes dans les STIM.
@@ -38,30 +39,6 @@ Ces études ont généré des données probantes portant sur les obstacles uniqu
 
 Les projets de recherche financés par les deux cohortes, ainsi que les travaux continus du CRDI portant sur l’octroi de bourses d’études aux [femmes scientifiques en début de carrière](https://idrc-crdi.ca/en/project/early-career-fellowships-gender-equality-science-2022-2026) en collaboration avec l’[Organisation pour les femmes et la science dans le monde en développement (OWSD)](https://owsd.net/), montrent des résultats et des conclusions pertinents pour diverses parties prenantes dans les pays du Nord et du Sud. La cohorte de chercheures et chercheurs, qui composent ces diverses initiatives, maintenant appelée le **Réseau briser les barrières**, rassemble et renforce la défense des intérêts et l’élan dans ses zones géographiques pertinentes. Qu’il s’agisse de mener une vérification de l’égalité entre les genres dans une grande université du Zimbabwe ou encore d’un programme de bourses novateur à l’appui des femmes scientifiques autochtones au Mexique, le **Réseau briser les barrières** est en mesure de bâtir des ponts pour faire progresser la participation et le leadership soutenus des femmes dans les domaines des STIM.
 
-[*__Élaborer une politique publique pour une participation efficace des femmes aux sciences, à la technologie, à l’ingénierie et aux mathématiques en Bolivie__*](https://idrc.ca/en/project/constructing-public-policy-effective-participation-women-science-technology-engineering-and)
-
-[*__Éliminer les obstacles au recrutement, au maintien et à la promotion des femmes dans les domaines scientifiques et technologiques pour promouvoir les industries vertes en Colombie__*](https://idrc.ca/en/project/removing-barriers-recruiting-retaining-and-advancing-women-science-and-technology-fields)
-
-[*__Supervision et mentorat des femmes participant à des programmes d’études universitaires supérieures dans les domaines des sciences, de la technologie, de l’ingénierie et des mathématiques en Afrique subsaharienne__*](https://idrc.ca/en/project/supervision-and-mentorship-women-science-technology-engineering-and-mathematics)
-
-[*__Combler l’écart entre les genres dans les sciences à la Women's University in Africa__*](https://idrc.ca/en/project/bridging-gender-equality-gap-science-womens-university-africa)
-
-[*__Éliminer les obstacles à la participation des femmes aux sciences – une étude de l’African Research Universities Alliance__*](https://idrc.ca/en/project/eliminating-barriers-womens-participation-science-study-african-research-universities)
-
-[*__Les femmes dans les formations en ingénierie et les carrières d’ingénieur au Bénin et au Ghana__*](https://idrc.ca/en/project/women-engineering-education-and-careers-benin-and-ghana)
-
-[*__Transformer les institutions que les femmes jouent un rôle de leader dans les STIM : les leçons du Ghana et du Kenya__*](https://idrc.ca/en/project/transforming-institutions-advance-women-leaders-science-technology-engineering-and)
-
-[*__La voie du changement : vers une justice de genre dans la recherche en STIM en Afrique__*](https://idrc.ca/en/project/pathway-change-towards-gender-justice-stem-research-africa-gejusta)
-
-[*__Renforcement de l’inclusion du genre dans la recherche agronomique pour des résultats plus probants en Afrique de l’Ouest__*](https://idrc.ca/en/project/strengthening-gender-inclusion-agricultural-research-more-conclusive-results-west-africa)
-
-[*__Données ouvertes d’Amérique latine pour les politiques d’égalité des genres axées sur le leadership dans les STIM__*](https://idrc.ca/en/project/latin-american-open-data-gender-equality-policies-focusing-leadership-stem)
-
-[*__Soutien aux femmes autochtones voulant faire carrière dans les domaines des sciences, de la technologie, de l’ingénierie et des mathématiques, au Mexique et en Amérique centrale__*](https://idrc-crdi.ca/en/project/supporting-indigenous-women-science-technology-engineering-and-mathematics-careers-mexico)
-
-[*__Appuyer le leadership des femmes dans les sciences, la technologie et l’innovation grâce à des bourses de début de carrière (2017-2021)__*](https://idrc-crdi.ca/en/project/supporting-womens-leadership-science-technology-and-innovation-through-early-career)
-
 À ce jour, le **Réseau briser les barrières** a collectivement fait progresser les travaux dans différents domaines, notamment :
 - Élaboration d’une base de données probantes : produire des données probantes portant sur la façon d’améliorer l’égalité des genres et la diversité dans les STIM, grâce à la portée et à la mise à l’essai d’interventions prometteuses
 - Création de réseaux de collaboration : établir des réseaux de chercheures et de praticiennes pour favoriser la collaboration et le soutien
@@ -71,13 +48,17 @@ Les projets de recherche financés par les deux cohortes, ainsi que les travaux 
 
 ### Un programme de recherche fondé sur des données probantes
 
+
+
 Les projets de recherche ont permis de cerner les obstacles propres au contexte et de mettre à l’essai des interventions connues et novatrices. Il s’agit notamment de pratiques pédagogiques, de politiques, de collecte de données institutionnalisées et de méthodologies sensibles au genre appliquées dans certains établissements d’enseignement supérieur et de domaines des STIM. Les responsables des projets ont connu du succès, avec des initiatives comme le codéveloppement de politiques sur le harcèlement sexuel et l’équité entre les genres aux côtés des ministères nationaux et la reproduction des efforts dans les institutions locales. Par exemple, au Zimbabwe, une équipe de projet aide le ministère de l’Enseignement supérieur, des Sciences et de la Technologie à établir un programme et à élaborer des politiques sur le harcèlement sexuel et à résoudre les enjeux plus larges d’équité entre les genres dans les établissements d’enseignement supérieur. Cependant, il est nécessaire d’explorer comment ces interventions peuvent être intensifiées en impliquant les décisionnaires et d’autres parties prenantes clés de l’écosystème des STI dès le début.
 
 Compte tenu de la nécessité cruciale de poursuivre les efforts dans l’ensemble du spectre des études, il est essentiel que les initiatives visant à accroître l’égalité entre les genres et l’inclusion (EGI) s’harmonisent avec les priorités scientifiques et technologiques nationales et les besoins changeants de l’industrie. Les obstacles systémiques qui existent soulignent l’importance d’une approche coordonnée et multidimensionnelle qui intègre les priorités nationales et régionales en matière d’éducation, de science et de technologie, avec des engagements clairs afin de faire progresser le développement équitable.
 
 Dans le cadre du **Réseau briser les barrières**, des chercheures et chercheurs d’Amérique latine et d’Afrique ont collaboré à l’élaboration d’un programme de recherche fondé sur les connaissances, l’expérience et les pratiques exemplaires existantes déterminées par des personnes expertes travaillant dans divers contextes. Malgré les défis persistants à la participation des femmes aux STIM dans les pays du Nord et du Sud, ces chercheures et chercheurs ont démontré que des interventions intentionnelles, adaptées au contexte et engagées peuvent aider à combler l’écart entre les genres dans les STIM.
 
-[Insérer l’image sur théorie du changement]
+> Les obstacles systémiques qui existent soulignent l’importance d’une approche coordonnée et multidimensionnelle qui intègre les priorités nationales et régionales en matière d’éducation, de science et de technologie, avec des engagements clairs afin de faire progresser le développement équitable.
+
+![Théorie du changement](/images/introduction-theory-of-change-fr.png)
 
 Le **Réseau briser les barrières** a élaboré un programme de recherche fondé sur des données probantes et l’expérience, en déterminant les domaines clés pour la recherche future et une mise en œuvre plus large. Les principaux domaines d’intérêt et d’intervention sont les suivants :
 
@@ -85,3 +66,4 @@ Le **Réseau briser les barrières** a élaboré un programme de recherche fond�
 - Approches axées sur les données pour lutter contre les disparités et la marginalisation : Il est essentiel d’améliorer la collecte de données portant sur les disparités entre les genres, les différences raciales et sociales pour comprendre des facteurs comme l’attrition, la faible participation et les moments d’abandon à risque élevé. Cette base de données probantes éclaire les politiques qui s’attaquent aux obstacles à la réussite dans les études et la carrière en STIM pour les groupes marginalisés.
 - Possibilités de leadership et de mentorat pour les groupes sous-représentés : Les cadres et les initiatives offrent des possibilités de leadership aux groupes marginalisés souvent exclus de la prise de décisions et de l’établissement des programmes de recherche. Cela comprend la mise à l’échelle des pratiques de mentorat, la formation postdoctorale et la promotion de réseaux de collaboration pour les femmes ainsi que d’autres personnes sous-représentées dans les STIM.
 - Soutien coordonné dans l’ensemble des transitions entre les études et le marché du travail : La coordination entre les établissements, les institutions et les politiques dans l’ensemble du spectre des études et de la main-d’œuvre est essentielle pour assurer la continuité du soutien. La formation sensible au genre et les pédagogies adaptées au genre aident à maintenir l’inclusion, tout en relevant les défis uniques auxquels sont confrontés les groupes marginalisés lors de la transition entre les études et le marché du travail dans une carrière en STIM.
+

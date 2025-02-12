@@ -3,6 +3,7 @@ title: L'état de la participation des femmes dans les STIM dans le Sud global
 permalink: /fr/etat-participation-femmes/
 order: 3
 image: '/images/state-of-participation.jpg'
+description: 'La discrimination et le harcèlement fondés sur le genre, comme les commentaires inappropriés et l’exclusion des réunions clés ou des processus de décision, contribuent davantage à un milieu de travail difficile.'
 ---
 
 En étudiant les tendances locales de la participation des femmes aux STIM, la recherche financée par le CRDI a permis de mettre en évidence des défis semblables à ceux signalés dans les pays du Nord. Dans diverses régions, la participation et le leadership des femmes dans les domaines des STIM n’ont pas suivi le rythme de la croissance rapide des industries des STIM et des progrès plus larges vers l’égalité des genres (UNESCO, 2017). De manière alarmante, et malgré la représentation croissante des femmes dans l’enseignement supérieur à travers les Amériques et l’Europe, une attrition importante se produit lors des transitions entre les études et le marché du travail dans les STIM, et ce, même à des stades d’études supérieures (Commission européenne, 2021; National Science Foundation, 2021).

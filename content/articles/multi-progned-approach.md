@@ -7,6 +7,9 @@ image: '/images/multi-pronged.jpg'
 
 Through the Breaking Barriers network, IDRC is advancing its efforts to address systemic and systematic barriers to women's participation and leadership in STEM. With projects focused on specific research modalities, contexts, scales, and even STEM disciplines, teams are effectively addressing different challenges and issues and uncovering areas of future research and collaboration. 
 
+![A Multi-Pronged Approach to Addressing Systemic and Systematic Barriers to Achieving Gender Equity in STEM](/images/multi-prongued-chart-en.png)
+
+
 ##	Building Gender-Responsive and Equitable STEM Institutions
 
 Projects from across the Breaking Barriers Network have worked diligently to begin to institutionalize gender-responsive policies that promote equity and inclusivity within STEM institutions. Formal mentorship programs have been developed to support women in fields such as engineering, agronomic sciences, green industries, and water management. These programs connect emerging female scientists with experienced mentors, offering them critical resources, guidance, and encouragement to navigate their STEM careers. Additionally, the projects have established and supported scholarship and incentive programs to motivate women to pursue STEM studies and recognize their academic achievements, ensuring ongoing participation in research and innovation. 

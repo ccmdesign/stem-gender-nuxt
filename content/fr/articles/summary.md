@@ -3,6 +3,7 @@ title: Résumé Exécutif
 permalink: /fr/resume-executif/
 order: 1
 image: '/images/summary.jpg'
+description: 'La réalisation de l’équité entre les genres dans les STIM nécessite une approche à multiples facettes impliquant de multiples parties prenantes, à travers tous les échelons porteurs d’impact et de changement. Le Réseau briser les barrières démontre le potentiel d’un changement percutant grâce à des interventions ciblées et à des efforts de collaboration, mais il en faut encore plus pour apporter des changements durables aux établissements, aux institutions et au système scientifique en général.'
 ---
 
 Le **Réseau briser les barrières**, appuyé par le Centre de recherches pour le développement international (CRDI), constitue un investissement visant à éliminer les obstacles systémiques et systématiques qui entravent la participation et le leadership des femmes dans les domaines des STIM (sciences, technologie, ingénierie et mathématiques), en particulier dans les pays du Sud. Ce rapport synthétise les conclusions et les répercussions de divers projets qui composent ce réseau, soulignant l’importance cruciale des politiques et des interventions fondées sur des données probantes pour faire progresser l’équité entre les genres dans les STIM.
@@ -20,6 +21,8 @@ Le mentorat et les figures exemplaires sont apparus comme des éléments cruciau
 La mobilisation communautaire et l’éducation ont été essentielles pour éliminer les obstacles culturels et sociaux. Les programmes qui font participer les membres de la communauté et qui tiennent compte des normes traditionnelles ont été efficaces pour promouvoir l’égalité des genres et soutenir la participation des femmes aux STIM. Les approches d’apprentissage transformatrices, qui mettent l’accent sur le changement des convictions, des attitudes et des comportements, ont été nécessaires pour créer un changement durable et promouvoir l’équité entre les genres dans les domaines des STIM.
 
 ## Recommandations
+
+> La réalisation de l’équité entre les genres dans les STIM nécessite une approche à multiples facettes impliquant de multiples parties prenantes, à travers tous les échelons porteurs d’impact et de changement. Le Réseau briser les barrières démontre le potentiel d’un changement percutant grâce à des interventions ciblées et à des efforts de collaboration, mais il en faut encore plus pour apporter des changements durables aux établissements, aux institutions et au système scientifique en général.
 
 La réalisation de l’équité entre les genres dans les STIM nécessite une approche à multiples facettes impliquant de multiples parties prenantes, à travers tous les échelons porteurs d’impact et de changement. Le **Réseau briser les barrières** démontre le potentiel d’un changement percutant grâce à des interventions ciblées et à des efforts de collaboration, mais il en faut encore plus pour apporter des changements durables aux établissements, aux institutions et au système scientifique en général. Le maintien et l’intensification de ces efforts nécessitent la participation des décisionnaires et des principales parties prenantes dès le départ pour assurer des répercussions durables. Il est nécessaire de continuer à miser sur ces fondements et à élargir les programmes qui ont du succès.
 

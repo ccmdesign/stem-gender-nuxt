@@ -3,6 +3,7 @@ title: Resumen Ejecutivo
 permalink: /es/resumen-ejecutivo/
 order: 1
 image: '/images/summary.jpg'
+description: 'Lograr la equidad de género en STEM requiere un enfoque multifacético que involucre a múltiples partes interesadas, en todos los niveles de impacto y cambio. La Breaking Barriers Network demuestra el potencial para un cambio impactante a través de intervenciones específicas y un esfuerzo colaborativo, pero aún se necesita más para lograr cambios duraderos en las instituciones y el sistema científico en general.'
 ---
 
 La **Breaking Barriers Network** (Rompiendo Barreras), apoyada por el Centro Internacional de Investigaciones para el Desarrollo (IDRC), es una iniciativa para desmantelar las barreras sistémicas y sistemáticas que obstaculizan la participación y el liderazgo de las mujeres en los campos de STEM (siglas en inglés para ciencia, tecnología, ingeniería y matemáticas), en particular en el Sur Global. Este informe sintetiza los hallazgos y los impactos de varios proyectos que conforman esta red, resaltando la importancia crítica de las políticas e intervenciones basadas en evidencia para impulsar el progreso hacia la equidad de género en STEM.
@@ -20,6 +21,8 @@ La tutoría y los modelos a seguir han surgido como elementos cruciales para ins
 La participación comunitaria y la educación han sido clave para abordar las barreras culturales y sociales. Los programas que involucran a los miembros de la comunidad y abordan las normas tradicionales han sido eficaces para promover la igualdad de género y apoyar la participación de las mujeres en STEM. Los enfoques de aprendizaje transformador, que se centran en cambiar creencias, actitudes y comportamientos, han sido necesarios para crear un cambio duradero y promover la equidad de género en los campos de STEM.
 
 ## Recomendaciones
+
+> Lograr la equidad de género en STEM requiere un enfoque multifacético que involucre a múltiples partes interesadas, en todos los niveles de impacto y cambio. La Breaking Barriers Network demuestra el potencial para un cambio impactante a través de intervenciones específicas y un esfuerzo colaborativo, pero aún se necesita más para lograr cambios duraderos en las instituciones y el sistema científico en general.
 
 Lograr la equidad de género en STEM requiere un enfoque multifacético que involucre a múltiples partes interesadas, en todos los niveles de impacto y cambio. La **Breaking Barriers Network** demuestra el potencial para un cambio impactante a través de intervenciones específicas y un esfuerzo colaborativo, pero aún se necesita más para lograr cambios duraderos en las instituciones y el sistema científico en general. Mantener y ampliar la escala de estos esfuerzos requiere la participación de los formuladores de políticas y las partes interesadas clave desde el principio para garantizar un impacto duradero. Es necesario seguir construyendo sobre estas bases y expandir los programas exitosos.
 

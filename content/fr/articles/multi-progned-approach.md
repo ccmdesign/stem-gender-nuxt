@@ -5,7 +5,9 @@ order: 4
 image: '/images/multi-pronged.jpg'
 ---
 
-Par l’entremise du Réseau briser les obstacles, le CRDI fait progresser ses efforts pour éliminer les obstacles systémiques et systématiques à la participation et au leadership des femmes dans les STIM. Avec des projets axés sur des modalités de recherche, des contextes, des échelles et même des disciplines particulières des STIM, les équipes des projets abordent efficacement différents défis et enjeux et découvrent des domaines de recherche et de collaboration futures. 
+Par l’entremise du Réseau briser les obstacles, le CRDI fait progresser ses efforts pour éliminer les obstacles systémiques et systématiques à la participation et au leadership des femmes dans les STIM. Avec des projets axés sur des modalités de recherche, des contextes, des échelles et même des disciplines particulières des STIM, les équipes des projets abordent efficacement différents défis et enjeux et découvrent des domaines de recherche et de collaboration futures.
+
+![Une approche déclinée en plusieurs volets pour éliminer les obstacles systémiques et systématiques à l’atteinte de l’équité entre les genres dans les STIM](/images/multi-prongued-chart-fr.png)
 
 ## Bâtir des institutions et des établissements en STIM équitables et adaptés au genre
 
