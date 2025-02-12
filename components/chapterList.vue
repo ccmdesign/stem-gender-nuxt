@@ -3,7 +3,8 @@
         <template #default="{ list }">
             <ul class="chapter-list" role="list">
                 <li class="chapter-list__item" v-for="article in list.sort((a, b) => a.order - b.order)" :key="article._path">
-                    <NuxtLink class="chapter-list__link" :to="localePath(article._path)">{{ article.title }}</NuxtLink>
+                    <NuxtLink v-if="locale !== 'en'" class="chapter-list__link" :to="localePath(article._path)">{{ article.title }}</NuxtLink>
+                    <NuxtLink v-else class="chapter-list__link" :to="`/articles/${article.slug}`">{{ article.title }}</NuxtLink>
                 </li>
             </ul>
         </template>
