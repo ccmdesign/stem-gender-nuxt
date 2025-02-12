@@ -40,6 +40,16 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
+  --box-shadow-inset: inset rgba(0, 0, 0, 0.03) 0px 0px 4px 0px;
+
+  --box-shadow-s: rgba(0, 0, 0, 0.03) 0px 3px 4px 0px;
+
+  --box-shadow-m: rgba(0, 0, 0, 0.03) 0px 3px 4px 0px, rgba(0, 0, 0, 0.03) 0px 0px 4px 0px, rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.035) 0px 0px 16px 0px;
+
+  --box-shadow-l: rgba(0, 0, 0, 0.03) 0px 3px 4px 0px, rgba(0, 0, 0, 0.03) 0px 0px 4px 0px, rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.05) 0px 0px 16px 0px, rgba(0, 0, 0, 0.035) 0px 0px 32px 0px;
+
   
 }
 
@@ -59,3 +69,4 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
   --color-bg-accent: #fdfdfd;
   --color-bg-accent-2: #f7f7f7;
 }
+

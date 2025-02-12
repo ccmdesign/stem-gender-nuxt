@@ -35,7 +35,6 @@
         <img src="/images/idrc-logo-full.png" alt="IDRC" class="map-grid__idrc-logo">
         <div class="map-grid__summary | project-summary">
             <h3><span>15</span> {{ $t('globalProjects') }}</h3>
-            <h3><span>14</span> {{ $t('subSaharanAfricaProjects') }}</h3>
         </div>
         <div class="map-grid__map">
           <world-map class="map" />
@@ -158,6 +157,25 @@ onUnmounted(() => {
 .map-grid__content {
   position: relative;
   z-index: 10;
+}
+
+.map-grid__idrc-logo,
+.map-grid__summary {
+  box-shadow: 
+    rgba(0, 0, 0, 0.03) 0px 7px 4px -4px, 
+    rgba(0, 0, 0, 0.03) 0px 4px 4px -4px, 
+    rgba(0, 0, 0, 0.03) 0px 8px 8px -8px,
+    rgba(0, 0, 0, 0.035) 0px 16px 16px -16px;
+
+
+  background-color: var(--white-color);
+  z-index: 1;
+  
+}
+
+.map-grid__idrc-logo {
+  max-width: 220px;
+  padding: var(--space-s);
 }
 
 .map {
