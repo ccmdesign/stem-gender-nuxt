@@ -16,7 +16,7 @@
     const { locale } = useI18n()
     const localePath = useLocalePath()
     const query: QueryBuilderParams = {
-        path: localePath('/articles')
+        path: localePath('/')
     }
   </script>
   
