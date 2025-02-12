@@ -37,7 +37,7 @@
         </div>
         <div class="map-grid__map">
           <world-map class="map" />
-          <map-data class="data" :resources="resources" @project-selected="handleProjectSelected" />
+          <map-data class="data" :resources="resources" :activeCountry="data.selectedCountry" @project-selected="handleProjectSelected" />
         </div>
         <div class="map-grid__content">          
           <details class="country-list">
@@ -45,7 +45,7 @@
               <h4>Countries</h4>
             </summary>
             <div class="cluster">
-              <button v-for="(i, key) in resources" class="country-button" @click="activateCountry(key)">{{ i.name }}</button>
+              <button v-for="(i, key) in resources" class="country-button" :class="{'country-button--active': data.selectedCountry == key}" @click="activateCountry(key)">{{ i.name }}</button>
             </div>
           </details>
           
@@ -85,9 +85,14 @@ const query: QueryBuilderParams = {
   path: localePath('/articles')
 }
 
+
 const resources = ref([])
 const activeCountry = ref<string | null>(null);
 const activeProjectIndex = ref<number | null>(null);
+const data = reactive({
+  selectedCountry: ''
+})
+
 
 const handleProjectSelected = ({ countryCode, projectIndex }) => {
   activeCountry.value = countryCode;
@@ -95,9 +100,18 @@ const handleProjectSelected = ({ countryCode, projectIndex }) => {
 };
 
 const activateCountry = (id) => {
-  const trigger = document.querySelector(`#trigger-${id}`);
-  if(trigger) {
-    trigger.click();
+  if(data.selectedCountry != id) {
+    const trigger = document.querySelector(`#trigger-${id}`);
+    if(trigger) {
+      trigger.click();
+    }
+    data.selectedCountry = id
+  } else {
+    const trigger = document.querySelector(`.map-grid__map`);
+    if(trigger) {
+      trigger.click();
+    }
+    data.selectedCountry = ''
   }
 }
 
@@ -178,6 +192,10 @@ onMounted(async () => {
   color: var(--primary-color);
   font-size: var(--size--1);
 }
+
+  .country-button--active {
+    font-weight: 500;
+  }
 
 .project-summary {
   padding-inline: var(--space-s-m);

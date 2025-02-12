@@ -4,6 +4,7 @@
       :id="`resource-${key}`"
       name="resource-list" 
       class="resource"
+      :class="{'resource--active': data.selectedCountry == key}"
       v-for="(resource, key) in resources" 
       :key="key"
       :style="{
@@ -34,12 +35,20 @@
 
 <script setup>
 import { defineEmits } from 'vue';
-defineProps({
+const props = defineProps({
   resources: {
     type: Object,
     required: true,
     default: () => ({})
+  },
+  activeCountry: {
+    type: String,
+    default: ''
   }
+})
+
+const data= reactive({
+  selectedCountry: props.activeCountry
 })
 
 const emit = defineEmits(['project-selected']);
@@ -49,6 +58,7 @@ const toggleCard = (countryCode, projectIndex) => {
 };
 
 const findPopover = (id) => {
+  data.selectedCountry = data.selectedCountry == id ? '' : id
   const trigger = document.querySelector(`#trigger-${id}`);
   const popover = document.querySelector(`#resource-list-${id}`);
   
