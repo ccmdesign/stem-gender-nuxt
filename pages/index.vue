@@ -8,11 +8,13 @@
 
       <chapter-titles />
 
-      <ContentList :query="query" :key="'url' + locale">
+      <ContentList :query="query" :key="'url' + locale" :path="`/${locale}/`">
         <template #default="{ list }">
           <ul class="chapter-header__toc" role="list">
             <li v-for="article in list.sort((a, b) => a.order - b.order)" :key="article._path">
-              <NuxtLink :to="localePath(article._path)">{{ article.title }}
+              <NuxtLink v-if="locale !== 'en'" :to="localePath(article._path)">{{ article.title }}
+              </NuxtLink>
+              <NuxtLink v-else :to="`/articles/${article.slug}`">{{ article.title }}
               </NuxtLink>
             </li>
           </ul>
@@ -79,7 +81,7 @@ import ResourceCard from '@/components/resourceCard.vue'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import allResources from '~/public/resources.json'
 
-const { locale } = useI18n()
+const { locale, fallbackLocale } = useI18n()
 const localePath = useLocalePath()
 const query: QueryBuilderParams = {
   path: localePath('/')
