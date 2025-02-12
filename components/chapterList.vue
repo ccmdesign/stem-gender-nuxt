@@ -1,5 +1,5 @@
 <template>
-    <ContentList :query="query" :key="'url' + locale">
+    <ContentList :query="query" :key="'url' + locale" :path="`/${locale}/`">
         <template #default="{ list }">
             <ul class="chapter-list" role="list">
                 <li class="chapter-list__item" v-for="article in list.sort((a, b) => a.order - b.order)" :key="article._path">
@@ -8,19 +8,19 @@
             </ul>
         </template>
     </ContentList>
-  </template>
-  
-  <script setup lang="ts">
+</template>
+
+<script setup lang="ts">
     import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
     const { locale } = useI18n()
     const localePath = useLocalePath()
     const query: QueryBuilderParams = {
-        path: localePath('/')
+        path: `/${locale}/`
     }
-  </script>
-  
-  <style lang="scss" scoped>
+</script>
+
+<style lang="scss" scoped>
     .chapter-list {
         width: 100%;
         margin: 0;
@@ -50,4 +50,4 @@
                 text-align: left;
             }
         }
-  </style>
+</style>
