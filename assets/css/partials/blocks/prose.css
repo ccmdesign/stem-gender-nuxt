@@ -84,6 +84,19 @@
   color: var(--primary-color);
 }
 
+.prose blockquote {
+  padding-inline-start: 0;
+  padding-block-end: var(--space-s);
+  
+  p {
+    font-size: var(--size-1);
+    font-family: var(--font-decorative);
+    color: var(--primary-color-60-tint);
+    border-left: 4px solid var(--secondary-color-60-tint);
+    padding-inline-start: var(--space-s);
+  }
+}
+
 @media screen(ltsm) {
   .prose > *,
   .prose a {
