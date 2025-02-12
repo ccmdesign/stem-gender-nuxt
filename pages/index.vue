@@ -173,6 +173,8 @@ onUnmounted(() => {
   
 }
 
+
+.idrc-logo,
 .map-grid__idrc-logo {
   max-width: 220px;
   padding: var(--space-s);
