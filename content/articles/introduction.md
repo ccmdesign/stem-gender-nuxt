@@ -46,11 +46,16 @@ These studies generated evidence on the unique obstacles facing women and other 
 Research projects funded through both cohorts, as well as IDRC's ongoing work on providing scholarships for [early career women scientists](https://idrc-crdi.ca/en/project/early-career-fellowships-gender-equality-science-2022-2026) through collaboration with the [Organization for Women in Science for the Developing World (OWSD)](https://owsd.net/), are showing results and findings relevant to various stakeholders across the Global North and South. The cohort of researchers, that make up these various initiatives, now referred to as the **Breaking Barriers Network**, is gathering and building advocacy and momentum across its relevant geographies. From conducting a gender audit at a major university in Zimbabwe to an innovative fellowship program supporting Indigenous women scientists in Mexico, the **Breaking Barriers Network** is building bridges to advance women's sustained participation and leadership across STEM fields. 
 
 To date, the Breaking Barriers Network has collectively advanced work in different areas:
-- Developed an Evidence-base: Generating evidence on how to improve gender equality and diversity in STEM, through scoping and the testing of promising interventions. 
-- Established Collaborative Networks: Establishing networks of female researchers and practitioners to foster collaboration and support. 
-- Built and Strengthened Capacities: Implementing training programs to build the capacity of female scientists and researchers in the Global South. 
-- Influenced Policy: Working with governments and institutions to influence policy changes that support gender equality in STEM fields. 
-- Developed Monitoring and Evaluation Frameworks: Developing robust mechanisms to monitor and evaluate the impact of gender equality initiatives, ensuring continuous improvement and accountability. 
+
+**Developed an Evidence-base**: Generating evidence on how to improve gender equality and diversity in STEM, through scoping and the testing of promising interventions. 
+
+**Established Collaborative Networks**: Establishing networks of female researchers and practitioners to foster collaboration and support. 
+
+**Built and Strengthened Capacities**: Implementing training programs to build the capacity of female scientists and researchers in the Global South. 
+
+**Influenced Policy**: Working with governments and institutions to influence policy changes that support gender equality in STEM fields. 
+
+**Developed Monitoring and Evaluation Frameworks**: Developing robust mechanisms to monitor and evaluate the impact of gender equality initiatives, ensuring continuous improvement and accountability. 
 
 ### An Evidence-Informed Research Agenda
 
@@ -66,9 +71,14 @@ As part of the **Breaking Barriers Network**, researchers from Latin America and
 
 The **Breaking Barriers Network** has crafted an evidence and experience-based research agenda, pinpointing key areas for future research and broader implementation. The main areas of focus and action include:
 
-- Comprehensive Gender-Responsive and Inclusive Institutional Policies: National science institutions and workplaces integrate gender and inclusivity principles into policies to promote marginalized groups in STEM, ensuring advocacy, alignment with science priorities, and creating supportive environments free from gender-based violence, harassment, and discrimination.
+![Activities](/images/activities-en.png)
+![Desired Outcomes](/images/desired-outcomes-en.png)
+
+
+
+<!-- - Comprehensive Gender-Responsive and Inclusive Institutional Policies: National science institutions and workplaces integrate gender and inclusivity principles into policies to promote marginalized groups in STEM, ensuring advocacy, alignment with science priorities, and creating supportive environments free from gender-based violence, harassment, and discrimination.
 - Data-Driven Approaches to Address Disparities and Marginalization: Improved data collection on gender, racial, and social disparities is critical to understanding factors such as attrition, low participation, and high-risk dropout moments. This evidence base informs policies that address barriers to success in STEM education and careers for marginalized groups.
 - Leadership and Mentorship Opportunities for Underrepresented Groups: Frameworks and initiatives provide leadership opportunities to marginalized groups often excluded from decision-making and research agenda-setting. This includes scaling mentorship practices, postgraduate training, and fostering collaborative networks for women and other underrepresented individuals in STEM.
-- Coordinated Support Across Education and Workforce Transitions: Coordination between institutions and policies across the educational spectrum and workforce is essential to ensure continuity of support. Gender-sensitive training and gender-responsive pedagogies help sustain inclusivity, while addressing the unique challenges faced by marginalized groups as they transition from education to STEM careers.
+- Coordinated Support Across Education and Workforce Transitions: Coordination between institutions and policies across the educational spectrum and workforce is essential to ensure continuity of support. Gender-sensitive training and gender-responsive pedagogies help sustain inclusivity, while addressing the unique challenges faced by marginalized groups as they transition from education to STEM careers. -->
 
 
