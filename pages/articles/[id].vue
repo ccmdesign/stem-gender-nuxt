@@ -64,7 +64,7 @@ function getPrevDoc(currentOrder: number) {
       </template>
       <template #not-found>
         <h1>Error</h1>
-        <button @click="$router.push(localePath('/articles'))">Back</button>
+        <button @click="$router.push(localePath('/'))">Back</button>
       </template>
     </ContentDoc>
     <chapterFooter />
