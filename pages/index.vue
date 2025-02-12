@@ -1,5 +1,5 @@
 <template>
-  <main class="chapter-layout">
+  <main class="chapter-layout" @click="handleClickOutside">
     <header class="chapter-layout__header | chapter-header">
       <div class="repel">
         <LangSwitcher />
@@ -76,7 +76,7 @@
 definePageMeta({
   layout: 'default'
 })
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import ResourceCard from '@/components/resourceCard.vue'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import allResources from '~/public/resources.json'
@@ -101,6 +101,15 @@ const handleProjectSelected = ({ countryCode, projectIndex }) => {
   activeProjectIndex.value = projectIndex;
 };
 
+const handleClickOutside = (event: MouseEvent) => {
+  // Check if the click was outside of any resource button
+  const isResourceButton = event.target.closest('.resource button');
+  if (!isResourceButton) {
+    activeCountry.value = null;
+    activeProjectIndex.value = null;
+  }
+};
+
 const activateCountry = (id) => {
   if(data.selectedCountry != id) {
     const trigger = document.querySelector(`#trigger-${id}`);
@@ -118,12 +127,17 @@ const activateCountry = (id) => {
 }
 
 onMounted(async () => {
+  document.addEventListener('click', handleClickOutside);
   try {
     const response = await fetch('/resourcesByCountry.json');
     resources.value = await response.json();
   } catch (error) {
     console.error('Erro ao carregar os recursos:', error);
   }
+});
+
+onUnmounted(() => {
+  document.removeEventListener('click', handleClickOutside);
 });
 </script>
 
