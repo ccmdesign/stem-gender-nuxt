@@ -71,9 +71,12 @@
 </template>
 
 <script setup lang="ts">
+
 definePageMeta({
-  layout: 'default'
+  layout: 'default',
+  alias: '/articles'
 })
+
 import { ref, onMounted } from 'vue'
 import ResourceCard from '@/components/resourceCard.vue'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
@@ -84,6 +87,7 @@ const localePath = useLocalePath()
 const query: QueryBuilderParams = {
   path: localePath('/articles')
 }
+
 
 
 const resources = ref([])
