@@ -21,7 +21,8 @@
     text-align: center;
   }
 
-  .post-layout p:has(picture) {
+  .post-layout p:has(picture, img) {
+    
     /* 
       @seidgy: não consegui resolver esse problema da imagem com o grid 
       ela precisa ocupar as duas colunas do grid no desktop.
