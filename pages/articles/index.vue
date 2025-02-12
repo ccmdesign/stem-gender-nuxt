@@ -194,12 +194,12 @@ onMounted(async () => {
   padding: var(--space-3xs) var(--space-xs);
 
   &:hover {
-    background-color: var(--primary-color-10-tint);
+    background-color: var(--secondary-color-50-tint);
   }
 }
 
   .country-button--active {
-    font-weight: 500;
+    background-color: var(--primary-color-20-tint);
   }
 
 .project-summary {
