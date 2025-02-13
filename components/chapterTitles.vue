@@ -9,7 +9,7 @@
       <a :href="`/breaking-barriers-${locale}.pdf`" target="_blank">Report PDF</a>
     </div>
 
-    <h2>A Southern-led research network to advance gender equality in STEM</h2>
+    <h2>{{ $t('tagline') }}</h2>
   </hgroup>
 </template>
 
