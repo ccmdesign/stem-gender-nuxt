@@ -3,7 +3,10 @@
     <header class="chapter-layout__header | chapter-header">
       <div class="repel">
         <LangSwitcher />
-        <h3>{{ $t('synthesisReport') }}</h3>
+        <h3>
+          {{ $t('synthesisReport') }} | Beta
+        </h3>
+        
       </div>
 
       <chapter-titles />
