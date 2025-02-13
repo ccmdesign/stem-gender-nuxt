@@ -86,6 +86,10 @@ function getPrevDoc(currentOrder: number) {
       align-items: center;
     }
 
+    .next-article__item {
+      text-wrap: balance; 
+    }
+
     .next-article__item--right {
       text-align: right;
     }

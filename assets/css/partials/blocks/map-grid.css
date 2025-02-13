@@ -19,7 +19,7 @@
 .map,
 .data,
 .resource__list {
-  transform: translateY(-8svh);
+  transform: translateY(-4svh);
 }
 
 .map-grid__idrc-logo {

@@ -13,8 +13,11 @@ Dans diverses formes de médias, comme ceux qui mettent en évidence les contrib
 
 L’écart entre les genres dans les STIM n’est pas le résultat de choix individuels, mais est façonné par des obstacles systémiques, notamment des préjugés propres au genre, des stéréotypes et des inégalités structurelles au sein des établissements d’enseignement et des lieux de travail (UNESCO, 2021). La découverte et la résolution de ces obstacles représentent une étape nécessaire pour stimuler le développement dans le monde entier.
 
-#### Le contexte mondial 
-### Défis et occasions cernés grâce aux travaux et aux investissements antérieurs.
+<hgroup>
+  <h4>Le contexte mondial</h4>
+  <h3>Des défis et opportunités identifiés grâce aux travaux et aux investissements antérieurs</h3>
+</hgroup>
+
 
 Des progrès importants ont été réalisés pour mettre en évidence le manque d’égalité entre les genres dans les domaines des STIM, mais les secteurs scientifiques et technologiques non diversifiés demeurent la norme. Selon le rapport de 2024 de l’UNESCO, L’écart entre les genres en science : situation et tendances, les femmes ne représentent qu’un tiers des chercheures et chercheurs dans le monde, avec une représentation encore plus faible dans les rôles de direction et les postes de direction – une statistique qui est restée presque inchangée au cours de la dernière décennie. Les données portant sur d’autres groupes marginalisés ne sont souvent pas disponibles ou non reconnues.
 
@@ -58,12 +61,9 @@ Dans le cadre du **Réseau briser les barrières**, des chercheures et chercheur
 
 > Les obstacles systémiques qui existent soulignent l’importance d’une approche coordonnée et multidimensionnelle qui intègre les priorités nationales et régionales en matière d’éducation, de science et de technologie, avec des engagements clairs afin de faire progresser le développement équitable.
 
-![Théorie du changement](/images/introduction-theory-of-change-fr.png)
+![Théorie du changement](/images/theory-of-change-fr.png)
 
 Le **Réseau briser les barrières** a élaboré un programme de recherche fondé sur des données probantes et l’expérience, en déterminant les domaines clés pour la recherche future et une mise en œuvre plus large. Les principaux domaines d’intérêt et d’intervention sont les suivants :
 
-- Politiques institutionnelles globales adaptées au genre et inclusives : Les institutions scientifiques nationales et les milieux de travail intègrent les principes de genre et d’inclusion dans les politiques visant à promouvoir les groupes marginalisés dans les STIM, à assurer le plaidoyer, l’alignement sur les priorités scientifiques et à créer des environnements favorables exempts de violence, de harcèlement et de discrimination fondés sur le genre.
-- Approches axées sur les données pour lutter contre les disparités et la marginalisation : Il est essentiel d’améliorer la collecte de données portant sur les disparités entre les genres, les différences raciales et sociales pour comprendre des facteurs comme l’attrition, la faible participation et les moments d’abandon à risque élevé. Cette base de données probantes éclaire les politiques qui s’attaquent aux obstacles à la réussite dans les études et la carrière en STIM pour les groupes marginalisés.
-- Possibilités de leadership et de mentorat pour les groupes sous-représentés : Les cadres et les initiatives offrent des possibilités de leadership aux groupes marginalisés souvent exclus de la prise de décisions et de l’établissement des programmes de recherche. Cela comprend la mise à l’échelle des pratiques de mentorat, la formation postdoctorale et la promotion de réseaux de collaboration pour les femmes ainsi que d’autres personnes sous-représentées dans les STIM.
-- Soutien coordonné dans l’ensemble des transitions entre les études et le marché du travail : La coordination entre les établissements, les institutions et les politiques dans l’ensemble du spectre des études et de la main-d’œuvre est essentielle pour assurer la continuité du soutien. La formation sensible au genre et les pédagogies adaptées au genre aident à maintenir l’inclusion, tout en relevant les défis uniques auxquels sont confrontés les groupes marginalisés lors de la transition entre les études et le marché du travail dans une carrière en STIM.
-
+![Activités](/images/activities-fr.png)
+![Résultats souhaités](/images/desired-outcomes-fr.png)

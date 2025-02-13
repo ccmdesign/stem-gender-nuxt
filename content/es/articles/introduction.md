@@ -14,7 +14,10 @@ En diversas formas de medios de comunicación, como los que destacan las contrib
 
 La brecha de género en los ámbitos STEM no es resultado de decisiones individuales, sino que está determinada por barreras sistémicas, tales como prejuicios de género, estereotipos y desigualdades estructurales en las instituciones educativas y los lugares de trabajo (UNESCO, 2021). Descubrir y abordar estas barreras es un paso necesario para impulsar el desarrollo en todo el mundo.
 
-#### El contexto global: desafíos y oportunidades identificados a través de trabajos e inversiones anteriores.
+<hgroup>
+  <h4>El contexto global</h4>
+  <h3>Desafíos y oportunidades identificados a través de trabajos e inversiones anteriores</h3>
+</hgroup>
 
 Se han logrado avances significativos en la identificación de la falta de igualdad de género en los campos de STEM, pero los sectores de la ciencia y la tecnología aún no diversos siguen siendo la norma. Según el informe de la UNESCO de 2024 sobre la brecha de género en la ciencia, las mujeres representan solo un tercio de los investigadores a nivel mundial, con una representación aún menor en puestos de liderazgo y de alto nivel, una estadística que se ha mantenido casi sin cambios en la última década. Los datos sobre otros grupos marginados a menudo no están disponibles o no se reconocen.
 
@@ -56,11 +59,9 @@ Como parte de la **Breaking Barriers Network**, investigadores de América Latin
 
 > Las barreras sistémicas existentes resaltan la importancia de un enfoque coordinado y multifacético que integre las prioridades educativas, científicas y tecnológicas nacionales y regionales, con compromisos claros para promover el desarrollo equitativo.
 
-![Teoría del cambio](/images/introduction-theory-of-change-es.png)
+![Teoría del cambio](/images/theory-of-change-es.png)
 
 La **Breaking Barriers Network** ha elaborado una agenda de investigación basada en la evidencia y la experiencia, señalando áreas clave para futuras investigaciones y una implementación más amplia. Las principales áreas de enfoque y acción incluyen:
 
-- Políticas institucionales inclusivas y con perspectiva de género: las instituciones científicas nacionales y los lugares de trabajo integran los principios de género e inclusión en las políticas para promover a los grupos marginados en STEM, asegurando la abogacía, la alineación con las prioridades científicas y la creación de entornos de apoyo libres de violencia de género, acoso y discriminación.
-- Enfoques basados en datos para abordar las disparidades y la marginación: una mejor recopilación de datos sobre disparidades de género, raciales y sociales es fundamental para comprender factores como la deserción, la baja participación y los momentos de alto riesgo de abandono escolar. Esta base de evidencia informa las políticas que abordan las barreras para el éxito en la educación y las carreras STEM para los grupos marginados.
-- Oportunidades de liderazgo y tutoría para grupos subrepresentados: los marcos e iniciativas brindan oportunidades de liderazgo a los grupos marginados que a menudo se excluyen de la toma de decisiones y el establecimiento de la agenda de investigación. Esto incluye el escalamiento de las prácticas de tutoría, la capacitación de posgrado y el fomento de redes de colaboración para mujeres y otras personas subrepresentadas en STEM.
-- Apoyo coordinado en las transiciones educativas y laborales: la coordinación entre instituciones y políticas en todo el espectro educativo y laboral es esencial para garantizar la continuidad del apoyo. La capacitación y las pedagogías sensibles al género ayudan a mantener la inclusión, al tiempo que abordan los desafíos únicos que enfrentan los grupos marginados en su transición de la educación a las carreras STEM.
+![Actividades](/images/activities-es.png)
+![Resultados deseados](/images/desired-outcomes-es.png)

@@ -63,13 +63,9 @@ As part of the **Breaking Barriers Network**, researchers from Latin America and
 
 > The systemic barriers that exist highlight the importance of a coordinated, multi-faceted approach that integrates national and regional educational, science, and technology priorities, with clear commitments to advancing equitable development.
 
-![Theory of Change](/images/introduction-theory-of-change-en.png)
+![Theory of Change](/images/theory-of-change-en.png)
 
 The **Breaking Barriers Network** has crafted an evidence and experience-based research agenda, pinpointing key areas for future research and broader implementation. The main areas of focus and action include:
 
-- Comprehensive Gender-Responsive and Inclusive Institutional Policies: National science institutions and workplaces integrate gender and inclusivity principles into policies to promote marginalized groups in STEM, ensuring advocacy, alignment with science priorities, and creating supportive environments free from gender-based violence, harassment, and discrimination.
-- Data-Driven Approaches to Address Disparities and Marginalization: Improved data collection on gender, racial, and social disparities is critical to understanding factors such as attrition, low participation, and high-risk dropout moments. This evidence base informs policies that address barriers to success in STEM education and careers for marginalized groups.
-- Leadership and Mentorship Opportunities for Underrepresented Groups: Frameworks and initiatives provide leadership opportunities to marginalized groups often excluded from decision-making and research agenda-setting. This includes scaling mentorship practices, postgraduate training, and fostering collaborative networks for women and other underrepresented individuals in STEM.
-- Coordinated Support Across Education and Workforce Transitions: Coordination between institutions and policies across the educational spectrum and workforce is essential to ensure continuity of support. Gender-sensitive training and gender-responsive pedagogies help sustain inclusivity, while addressing the unique challenges faced by marginalized groups as they transition from education to STEM careers.
-
-
+![Activities](/images/activities-en.png)
+![Desired Outcomes](/images/desired-outcomes-en.png)

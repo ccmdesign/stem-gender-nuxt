@@ -13,18 +13,8 @@ Alarmingly, despite increasing representation of women in higher education throu
 
 Recent studies reveal that while female engagement in STEM research averages around 40% in regions like Latin America, the Caribbean, and parts of Europe, it remains lower in North America and Western Europe, hovering around 30% (UIS, 2019). This disparity underscores the need for targeted interventions to support women at critical transition points in their STEM careers. We highlight other major trends and statistics below.
 
-Current statistics and trends.
-- **Global STEM Workforce:** Women make up only 28% of the global STEM workforce (UNESCO, 2021).
-- **Higher Education:** Women account for just 30% of all researchers globally (UNESCO, 2021).
-- **Enrollment in STEM Fields:** In higher education, only 35% of all students enrolled in STEM-related fields are women (UNESCO, 2019).
-- **Leadership Positions:** Women hold less than 15% of senior leadership roles in STEM organizations (Catalyst, 2020).
-- **Patents and Innovation:** Women are listed as inventors on less than 10% of patent applications worldwide (World Intellectual Property Organization, 2019).
-- **Pay Gap**: In Europe, women in STEM earn on average 20% less than their male counterparts (European Commission, 2020).
-- **Publication Rates**: Women publish fewer scientific papers than men, and their papers are cited less frequently (Elsevier, 2020).
-- **Dropout Rates**: Women are more likely to leave STEM careers within the first 10 years compared to men (National Center for Women &amp; Information Technology, 2016).
-- **Field-Specific Disparities**: In physics, women constitute just 21% of the undergraduate degree recipients (American Physical Society, 2021). In engineering and computer science fields, women represent less than 20% of the workforce (OECD, 2019). 
-- **Disparities in the Sustainability Sector**: By 2030, between 15 and 22 million green jobs are projected, yet over 80% are in traditionally male-dominated sectors such as agriculture, energy, manufacturing, transportation, and construction. Women are underrepresented in these areas, with fewer than 20% working in renewable energy. In countries like Uruguay, Bolivia, Costa Rica, El Salvador, and Honduras, women account for 17% to 36% of researchers in engineering and technology.
-- **Disparities in Agricultural Sciences**: Women are notably underrepresented in higher education and research positions in agricultural sciences, with fewer than 25% of staff in relevant academic and training units being women. In public universities in West Africa, the proportion of women in agricultural science courses is as low as 15.36% in Benin, 17.19% in Niger, and 22.22% in Côte d'Ivoire. Women constitute only 16.46% of research team members in these countries.
+## Current statistics and trends.
+![Current statistics and trends](/images/statistics-en.png)
 
 ## Barriers to participation and leadership
 

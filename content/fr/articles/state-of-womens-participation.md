@@ -10,19 +10,9 @@ En étudiant les tendances locales de la participation des femmes aux STIM, la r
 
 Des études récentes révèlent que, bien que la mobilisation des femmes dans la recherche en STIM soit en moyenne d’environ 40 % dans des régions comme l’Amérique latine, les Caraïbes et certaines parties de l’Europe, il reste plus faible en Amérique du Nord et en Europe occidentale, oscillant autour de 30 % (Institut de statistique de l’UNESCO [ISU], 2019). Cette disparité souligne la nécessité d’interventions ciblées afin de soutenir les femmes à des moments critiques de la transition entre les études et le marché du travail en STIM. Nous soulignons d’autres tendances et statistiques majeures ci-dessous.
 
-### Statistiques et tendances actuelles
+## Statistiques et tendances actuelles
 
-- **Main-d’œuvre mondiale en STIM** : Les femmes ne représentent que 28 % de la main-d’œuvre mondiale en STIM (UNESCO, 2021).
-- **Enseignement supérieur** : Les femmes ne représentent que 30 % de l’ensemble des chercheures et chercheurs dans le monde (UNESCO, 2021).
-- **Inscription dans les domaines des STIM** : Dans l’enseignement supérieur, seulement 35 % de l’ensemble des étudiantes et étudiants inscrits dans les domaines liés aux STIM sont des femmes (UNESCO, 2019).
-- **Postes de direction** : Les femmes occupent moins de 15 % des postes de la haute direction dans les organisations de STIM (Catalyst, 2020).
-- **Brevets et innovation** : Les femmes figurent sur la liste des inventrices dans moins de 10 % des demandes de brevet dans le monde (Organisation mondiale de la propriété intellectuelle, 2019).
-- **Écart salarial** : En Europe, les femmes en STIM gagnent en moyenne 20 % de moins que leurs homologues masculins (Commission européenne, 2020).
-- **Taux de publication** : Les femmes publient moins d’articles scientifiques que les hommes, et leurs articles sont aussi cités moins fréquemment (Elsevier, 2020).
-- **Taux d’abandon** : Les femmes sont davantage susceptibles de quitter une carrière en STIM au cours des 10 premières années que les hommes (National Center for Women & Information Technology, 2016).
-- **Disparités propres au domaine** : En physique, les femmes ne constituent que 21 % des titulaires d’un diplôme de premier cycle (American Physical Society, 2021). Dans les domaines de l’ingénierie et de l’informatique, les femmes représentent moins de 20 % de la main-d’œuvre (OCDE, 2019).
-- **Disparités dans le secteur de la durabilité** : D’ici 2030, entre 15 et 22 millions d’emplois verts sont prévus, mais plus de 80 % sont dans des secteurs traditionnellement dominés par les hommes comme l’agriculture, l’énergie, la fabrication, les transports et la construction. Les femmes sont sous-représentées dans ces domaines, avec moins de 20 % travaillant dans les énergies renouvelables. Dans des pays comme l’Uruguay, la Bolivie, le Costa Rica, le Salvador et le Honduras, les femmes représentent de 17 % à 36 % des chercheures et chercheurs en ingénierie et en technologie.
-- **Disparités en sciences agricoles** : Les femmes sont nettement sous-représentées dans les postes d’enseignement supérieur et de recherche en sciences agricoles, avec moins de 25 % du personnel des unités universitaires et de formation pertinentes étant des femmes. Dans les universités publiques d’Afrique de l’Ouest, la proportion de femmes dans les cours de sciences agricoles est faible avec 15,36 % au Bénin, 17,19 % au Niger et 22,22 % en Côte d'Ivoire. Les femmes ne représentent que 16,46 % des membres d’équipes de recherche dans ces pays.
+![Current statistics and trends](/images/statistics-fr.png)
 
 ### Barriers to participation and leadership.
 

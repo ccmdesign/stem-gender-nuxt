@@ -10,19 +10,8 @@ Al investigar las tendencias locales en la participación de las mujeres en las 
 
 Estudios recientes revelan que, si bien la participación femenina en la investigación STEM promedia alrededor del 40% en regiones como América Latina, el Caribe y partes de Europa, sigue siendo menor en América del Norte y Europa Occidental, rondando el 30% (UIS, 2019). Esta disparidad subraya la necesidad de intervenciones específicas para apoyar a las mujeres en puntos críticos de transición en sus carreras en STEM. A continuación, destacamos otras tendencias y estadísticas importantes.
 
-### Estadísticas y tendencias actuales.
-
-- **Fuerza laboral STEM global:** las mujeres representan solo el 28% de la fuerza laboral STEM global (UNESCO, 2021).
-- **Educación superior:** las mujeres representan solo el 30% de todos los investigadores a nivel mundial (UNESCO, 2021).
-- **Matrícula en campos STEM:** en la educación superior, solo el 35% de todos los estudiantes matriculados en campos relacionados con STEM son mujeres (UNESCO, 2019).
-- **Puestos de liderazgo:** las mujeres ocupan menos del 15% de los puestos de liderazgo a nivel superior en las organizaciones STEM (Catalyst, 2020).
-- **Patentes e innovación:** las mujeres figuran como inventoras en menos del 10% de las solicitudes de patentes en todo el mundo (World Intellectual Property Organization, 2019).
-- **Brecha salarial:** en Europa, las mujeres en STEM ganan en promedio un 20% menos que sus homólogos masculinos (Comisión Europea, 2020).
-- **Tasas de publicación:** las mujeres publican menos artículos científicos que los hombres, y sus artículos se citan con menos frecuencia (Elsevier, 2020).
-- **Tasas de abandono:** las mujeres tienen más probabilidades de abandonar las carreras STEM en los primeros 10 años en comparación con los hombres (National Center for Women &amp; Information Technology, 2016).
-- **Disparidades específicas del campo:** en física, las mujeres constituyen solo el 21% de los graduados universitarios (American Physical Society, 2021). En los campos de la ingeniería y la informática, las mujeres representan menos del 20% de la fuerza laboral (OCDE, 2019). 
-- **Disparidades en el sector de la sostenibilidad:** para el 2030, se proyecta que habrá entre 15 y 22 millones de empleos verdes, pero más del 80% se encuentran en sectores tradicionalmente dominados por los hombres, como la agricultura, la energía, la manufactura, el transporte y la construcción. Las mujeres están subrepresentadas en estas áreas, y menos del 20% trabaja en energías renovables. En países como Uruguay, Bolivia, Costa Rica, El Salvador y Honduras, las mujeres representan entre el 17% y el 36% de los investigadores en ingeniería y tecnología.
-- **Disparidades en las ciencias agrícolas:** las mujeres están notablemente subrepresentadas en la educación superior y en los puestos de investigación en ciencias agrícolas, y menos del 25% del personal de las unidades académicas y de formación pertinentes son mujeres. En las universidades públicas de África occidental, la proporción de mujeres en los cursos de ciencias agrícolas llega a ser tan baja como el 15,36% en Benín, el 17,19% en Níger y el 22,22% en Costa de Marfil. Las mujeres constituyen solo el 16,46% de los miembros del equipo de investigación en estos países.
+## Estadísticas y tendencias actuales.
+![Current statistics and trends](/images/statistics-es.png)
 
 ### Barreras a la participación y el liderazgo.
 

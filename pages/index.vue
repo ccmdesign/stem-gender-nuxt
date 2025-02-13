@@ -32,9 +32,10 @@
 
     <div class="chapter-layout__content">
       <div class="map-grid">
-        <img src="/images/idrc-logo-full.png" alt="IDRC" class="map-grid__idrc-logo">
+        <a class="map-grid__idrc-logo" href="https://www.idrc-crdi.ca/en"><img src="/images/idrc-logo-full.png" alt="IDRC" ></a>
         <div class="map-grid__summary | project-summary">
             <h3><span>15</span> {{ $t('globalProjects') }}</h3>
+            <p><a href="https://idrc-crdi.ca/en/initiative/gender-stem" target="_blank">Breaking Barriers Network</a></p>
         </div>
         <div class="map-grid__map">
           <world-map class="map" />
@@ -167,16 +168,22 @@ onUnmounted(() => {
     rgba(0, 0, 0, 0.03) 0px 8px 8px -8px,
     rgba(0, 0, 0, 0.035) 0px 16px 16px -16px;
 
-
   background-color: var(--white-color);
   z-index: 1;
   
 }
 
+.map-grid__summary {
+  a {
+    color: var(--primary-color);
+    font-size: var(--size-1);
+    font-weight: 500;
+  }
+}
 
 .idrc-logo,
 .map-grid__idrc-logo {
-  max-width: 220px;
+  max-width: 180px;
   padding: var(--space-s);
 }
 

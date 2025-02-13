@@ -67,7 +67,7 @@ As part of the **Breaking Barriers Network**, researchers from Latin America and
 
 > The systemic barriers that exist highlight the importance of a coordinated, multi-faceted approach that integrates national and regional educational, science, and technology priorities, with clear commitments to advancing equitable development.
 
-![Theory of Change](/images/introduction-theory-of-change-en.png)
+![Theory of Change](/images/theory-of-change-en.png)
 
 The **Breaking Barriers Network** has crafted an evidence and experience-based research agenda, pinpointing key areas for future research and broader implementation. The main areas of focus and action include:
 

@@ -7,7 +7,7 @@ image: '/images/multi-pronged.jpg'
 
 A través de Breaking Barriers Network, el IDRC está avanzando en sus esfuerzos para abordar las barreras sistémicas y sistemáticas a la participación y el liderazgo de las mujeres en STEM. Con proyectos centrados en modalidades de investigación específicas, contextos, escalas e incluso disciplinas en STEM, los equipos están abordando eficazmente diferentes desafíos y problemas y descubriendo áreas de investigación y colaboración futuras.
 
-![Un enfoque multifacético para abordar las barreras sistémicas y sistemáticas para lograr la equidad de género en STEM](/images/multi-prongued-chart-es.png)
+![A Multi-Pronged Approach to Addressing Systemic and Systematic Barriers to Achieving Gender Equity in STEM](/images/approach-es.png)
 
 ## Creación de instituciones STEM equitativas y con perspectiva de género
 
