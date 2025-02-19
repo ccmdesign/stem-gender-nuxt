@@ -54,7 +54,6 @@
             </div>
           </details>
           
-
           <resource-list :resources="resources" />
           <resource-card v-if="activeCountry && activeProjectIndex !== null"
             :resource="resources[activeCountry].resources[activeProjectIndex]" />
@@ -67,8 +66,7 @@
           <img src="/images/idrc-logo-full.png" alt="IDRC" class="idrc-logo">
         </div>
         
-
-        <resource-card v-for="resource in allResources" :key="resource.name" :resource="resource" />
+        <resource-card v-for="(item, key) in resources" :key="item.name" :resource="item.resources[0]" />
       </div>
 
     </div>
@@ -82,7 +80,7 @@ definePageMeta({
 import { ref, onMounted, onUnmounted } from 'vue'
 import ResourceCard from '@/components/resourceCard.vue'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
-import allResources from '~/public/resources.json'
+import resourcesByCountry from '~/public/resourcesByCountry.json'
 
 const { locale, fallbackLocale } = useI18n()
 const localePath = useLocalePath()
@@ -90,7 +88,8 @@ const query: QueryBuilderParams = {
   path: localePath('/')
 }
 
-const resources = ref([])
+const resources = ref(resourcesByCountry)
+
 const activeCountry = ref<string | null>(null);
 const activeProjectIndex = ref<number | null>(null);
 const data = reactive({
@@ -129,12 +128,6 @@ const activateCountry = (id) => {
 
 onMounted(async () => {
   document.addEventListener('click', handleClickOutside);
-  try {
-    const response = await fetch('/resourcesByCountry.json');
-    resources.value = await response.json();
-  } catch (error) {
-    console.error('Erro ao carregar os recursos:', error);
-  }
 });
 
 onUnmounted(() => {
