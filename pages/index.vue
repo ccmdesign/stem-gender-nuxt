@@ -66,7 +66,7 @@
           <img src="/images/idrc-logo-full.png" alt="IDRC" class="idrc-logo">
         </div>
         
-        <resource-card v-for="(item, key) in resources" :key="item.name" :resource="item.resources[0]" />
+        <resource-card v-for="item in resourceCardContent" :key="item.name" :resource="item" />
       </div>
 
     </div>
@@ -81,14 +81,16 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import ResourceCard from '@/components/resourceCard.vue'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import resourcesByCountry from '~/public/resourcesByCountry.json'
+import { userResourcesFilter } from '~/composables/resourcesFilter'
 
-const { locale, fallbackLocale } = useI18n()
+const { locale } = useI18n()
 const localePath = useLocalePath()
 const query: QueryBuilderParams = {
   path: localePath('/')
 }
 
 const resources = ref(resourcesByCountry)
+const resourceCardContent = userResourcesFilter(resourcesByCountry)
 
 const activeCountry = ref<string | null>(null);
 const activeProjectIndex = ref<number | null>(null);
