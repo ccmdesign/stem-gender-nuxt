@@ -2,9 +2,9 @@
 :root {
   --white-hsl: 255, 100%, 100%;
   --black-hsl: 257, 88%, 10%;
-  --base-hsl: 257, 88%, 10%;
-  --primary-hsl: 184, 58%, 32%;
-  --secondary-hsl: 23, 41%, 91%;
+  --base-hsl: 257, 89%, 10%;
+  --primary-hsl: 201, 100%, 40%;
+  --secondary-hsl: 42, 43%, 91%;
   --tertiary-hsl: 143, 100%, 87%;
 }
 

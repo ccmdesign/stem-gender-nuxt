@@ -84,6 +84,11 @@ It is very unlikely that anyone will need to edits file for customization purpos
   border-color: transparent;
 }
 
+.button[nopadding] {
+  --_button-padding-block: 0;
+  --_button-padding-inline: 0;
+}
+
 .button[fullWidth="true"],
 .button[data-fullWidth="true"] {
   align-self: stretch;

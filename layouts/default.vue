@@ -1,8 +1,8 @@
 <template>
   <NuxtLayout name="default">
     <header>
-      <MainMenu class="mainMenu" />
-      <LangSwitcher />
+      <!--<MainMenu class="mainMenu" />
+      <LangSwitcher />-->
     </header>
     <NuxtChild />
     <footer>

@@ -2,6 +2,7 @@
 title: Resumen Ejecutivo
 permalink: /es/resumen-ejecutivo/
 order: 1
+slug: summary
 image: '/images/summary.jpg'
 description: 'Lograr la equidad de género en STEM requiere un enfoque multifacético que involucre a múltiples partes interesadas, en todos los niveles de impacto y cambio. La Breaking Barriers Network demuestra el potencial para un cambio impactante a través de intervenciones específicas y un esfuerzo colaborativo, pero aún se necesita más para lograr cambios duraderos en las instituciones y el sistema científico en general.'
 ---

@@ -1,13 +1,14 @@
 <template>
     <div class="chapter-hero">
+      <div v-if="image" class="chapter-hero__image" :style="`background-image: url(${image})`"></div>
       <div class="chapter-hero__info | stack">
-        <p class="chapter-hero__brow">{{ brow || 'Breaking Barriers Building Bridges' }}</p>
-        <h1 class="chapter-hero__title">{{ heading }}</h1>
+        <div>
+          <p class="chapter-hero__brow">{{ brow || 'Breaking Barriers Building Bridges' }}</p>
+          <h1 class="chapter-hero__title">{{ heading }}</h1>
+        </div>
         <p v-if="tagline" class="chapter-hero__tagline" data-split>{{ tagline }}</p>
-        <nuxt-link :to="localePath('/')" class="chapter-hero__back">{{ $t('backLink') }}</nuxt-link>
       </div>
       
-      <img v-if="image" class="chapter-hero__image" :src="image" />
     </div>
   </template>
   
@@ -38,83 +39,91 @@
   .chapter-hero {
     --_hero-background-color: var(--primary-color);
     
-    background-color: var(--_hero-background-color);
     display: grid;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-
-    grid-template-areas:
-      "image"
-      "info";
-
     @media screen and (min-width: 1024px) {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto;
-      text-align: right;
-      grid-template-areas:
-        "info image";
     }
+  }
+
+  .chapter-hero__image {
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
   }
 
 // Typography and Visual Styles
 
 .chapter-hero {
-  --_hero-text-color-title: var(--tertiary-color);
-  --_hero-text-color: var(--secondary-color);
+  --_hero-text-color-title: var(--base-color);
+  --_hero-text-color: var(--primary-color);
 }
 
 .chapter-hero__info {
-  padding: var(--space-s-m);
-  grid-area: info;
+  position: relative;
+  padding: var(--space-l);
   display: flex;
   flex-direction: column;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+  transform: translateY(-25%);
+  width: 90vw;
+  gap: var(--space-l);
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: var(--space-l);
+    bottom: var(--space-l);
+    left: 0;
+    transform: translateX(-50%);
+    width: 16px;
+    background-color: var(--primary-color);
+  }
+
+  @media (min-width: 768px) {
+    transform: translateY(-50%);
+    padding: var(--space-2xl);
+    &::before {
+      top: var(--space-2xl);
+      bottom: var(--space-2xl);
+      width: 70vw;
+    }
+  }
 }
 
 .chapter-hero__title {
-  font-family: var(--font-title);
-  text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 500;
   color: var(--_hero-text-color-title);
-  font-size: clamp(3.5rem, 2.1087rem + 6.9565vw, 7.5rem);
-  line-height: 1;
-  margin-block-start: 0;
+  font-size: var(--size-5);
+  letter-spacing: -2%;
+  line-height: 1em;
   flex: 1;
 }
 
 .chapter-hero__tagline {
-  font-family: var(--font-decorative);
-  font-weight: 300;
   color: var(--_hero-text-color);
-  font-size: var(--size-1);
-  
-}
-
-.chapter-hero__back {
-  display: inline-block;
-  text-transform: uppercase;
-  color: var(--_hero-text-color);
-  text-decoration: none;
-  font-size: var(--size-1);
-  font-weight: 500;
-  grid-area: back;
-}
-
-.chapter-hero__image {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  grid-area: image;
+  font-size: var(--size-2);
+  letter-spacing: 2%;
+  line-height: 1.5em;
+  @media (min-width: 768px) {
+    font-size: var(--size-0);
+  }
 }
 
 .chapter-hero__brow {
-  font-family: var(--font-display);
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-weight: 700;
+  letter-spacing: 10%;
+  font-weight: 500;
   color: var(--_hero-text-color);
-  opacity: 0.3;
+  font-size: var(--size-3);
+  @media (min-width: 768px) {
+    font-size: var(--size-1);
+  }
 }
 
   </style>

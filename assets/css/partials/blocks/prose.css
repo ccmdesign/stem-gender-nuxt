@@ -3,7 +3,38 @@
 .prose {
   --stack-space: var(--space-m-l);
   --wrapper-width: 64rem;
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+  & > .dropcap {
+    position: relative;
+    z-index: 1;
+    &::first-letter {
+      position: relative;
+      float: left;
+      font-size: 120px;
+      line-height: 1em;
+      padding-right: var(--space-xs);
+      color: var(--primary-color);
+      z-index: 1;
+    }
+    &::before {
+      content: attr(data-letter);
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 400px;
+      line-height: 1em;
+      line-height: 1;
+      color: var(--secondary-color-50-alpha);
+      z-index: -1;
+      pointer-events: none;
+      transform: translate(-25%, -5%);
+    }
+  }
 }
+
 
 .prose :where(pre, pre + *, figure, figure + *) {
   --stack-space: var(--space-m-l);
@@ -80,7 +111,7 @@
 }
 
 .prose strong {
-  font-weight: 400;
+  font-weight: 700;
   color: var(--primary-color);
 }
 

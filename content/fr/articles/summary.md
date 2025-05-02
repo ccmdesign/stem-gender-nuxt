@@ -2,6 +2,7 @@
 title: Résumé Exécutif
 permalink: /fr/resume-executif/
 order: 1
+slug: summary
 image: '/images/summary.jpg'
 description: 'La réalisation de l’équité entre les genres dans les STIM nécessite une approche à multiples facettes impliquant de multiples parties prenantes, à travers tous les échelons porteurs d’impact et de changement. Le Réseau briser les barrières démontre le potentiel d’un changement percutant grâce à des interventions ciblées et à des efforts de collaboration, mais il en faut encore plus pour apporter des changements durables aux établissements, aux institutions et au système scientifique en général.'
 ---

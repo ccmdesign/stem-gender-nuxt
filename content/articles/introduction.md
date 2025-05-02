@@ -5,6 +5,7 @@ permalink: /en/introduction/
 order: 2
 image: '/images/introduction.jpg'
 description: 'The gender gap in STEM is not a result of individual choices but is shaped by systemic barriers, including gender biases, stereotypes, and structural inequalities within educational institutions and workplaces.'
+slug: introduction
 ---
 
 Achieving gender equality in science is not only a moral imperative but also crucial for advancing scientific innovation. The underrepresentation of women in science deprives the field of diverse perspectives and limits the development of multifaceted solutions. For instance, in many developing countries, women are primarily responsible for water collection. Involving them in water management projects ensures solutions that reflect their needs and lived experiences. Despite this, women's participation in research and leadership within the water sector remains minimal (UNESCO, 2021). 

@@ -8,9 +8,15 @@ export default defineNuxtConfig({
       enabled: true
     }
   },
-  modules: ['@nuxtjs/i18n', '@nuxt/eslint', '@nuxt/content', '@pinia/nuxt'],
+  modules: [
+    '@nuxtjs/i18n',
+    '@nuxt/eslint',
+    '@nuxt/content',
+    '@pinia/nuxt',
+    '@nuxtjs/google-fonts'
+  ],
   
-  css: ['~/assets/css/styles.scss'],
+  css: [ '~/assets/css/styles.scss'],
   vite: {
     css: {
       preprocessorOptions: {
@@ -18,6 +24,11 @@ export default defineNuxtConfig({
           sourceMap: true
         }
       }
+    }
+  },  
+  googleFonts: {
+    families: {
+      Poppins: true,
     }
   },
   

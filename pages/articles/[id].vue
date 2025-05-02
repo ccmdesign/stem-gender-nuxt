@@ -4,10 +4,16 @@ definePageMeta({
 })
 const route = useRoute()
 const localePath = useLocalePath()
+const { locale } = useI18n()
 
 const { data: docs } = await useAsyncData('articles', () =>
   queryContent('articles').sort({ order: 1 }).find()
 )
+
+const chapter = await queryContent(locale.value, 'articles').where({
+    slug: route.params.id
+}).findOne();
+
 
 function getNextDoc(currentOrder: number) {
   if (!docs.value) return null
@@ -26,6 +32,17 @@ function getPrevDoc(currentOrder: number) {
 
 <template>
   <main>
+    <div class="article-links">
+      <div class="wrapper">
+        <div class="article-links__content">
+          <backLink></backLink>
+          <span class="separator not-mobile"></span>
+          <div class="article-links__title">{{ $t('chapter') }} {{ chapter.order }} / <b>{{ chapter.title }}</b></div>
+          <span class="separator not-mobile"></span>
+          <nextLink class="not-mobile" :url="localePath(`/articles/${getNextDoc(chapter.order).id}`)" v-if="getNextDoc(chapter.order)"></nextLink>
+        </div>
+      </div>
+    </div>
     <ContentDoc :path="localePath(route.path)">
       <template v-slot="{ doc }">
         <article class="article-layout">
@@ -72,6 +89,47 @@ function getPrevDoc(currentOrder: number) {
 </template>
 
 <style lang="scss" scoped>
+
+.not-mobile {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+  .article-header {
+    --bd-color: hsla(240, 5%, 90%, 1);
+    border-top: 1px solid var(--bd-color);
+    border-bottom: 1px solid var(--bd-color);
+    backdrop-filter: blur(16px);
+  }
+
+    .article-links__content {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: var(--space-s);
+      padding-block: var(--space-m);
+      .separator {
+        --bd-color: hsla(240, 5%, 90%, 1);
+        width: 1px;
+        height: var(--size-4);
+        background: var(--bd-color);
+      }
+
+      @media (min-width: 768px) {
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: var(--space-s);
+        padding-block: 0;
+        & > * {
+          align-self: center;
+        }
+      }
+    }
+
+    .article-links__title {
+      color: var(--base-color-90-tint);
+      flex-grow: 1;
+    }
+
   .next-article {
     background-color: var(--secondary-color);
     padding: var(--space-l-xl) var(--space-s-m);
