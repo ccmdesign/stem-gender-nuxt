@@ -1,6 +1,7 @@
 ---
 title: What have we learned so far?
 permalink: /en/what-we-learned/
+slug: what-we-learned
 order: 5
 image: '/images/lessons-learned.jpg'
 ---

@@ -1,6 +1,7 @@
 ---
 title: Qu'avons-nous appris jusqu'à présent ?
 permalink: /fr/chapitres/rapport/annexe/
+slug: what-we-learned
 order: 5
 image: '/images/lessons-learned.jpg'
 ---

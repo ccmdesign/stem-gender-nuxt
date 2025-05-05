@@ -1,6 +1,7 @@
 ---
 title: Executive Summary
 permalink: /en/summary/
+slug: summary
 image: '/images/summary.jpg'
 order: 1
 description: 'Achieving gender equity in STEM requires a multifaceted approach involving multiple stakeholders, across levels of impact and change. The Breaking Barriers Network demonstrates the potential for impactful change through targeted interventions and collaborative effort, but more is still needed to achieve lasting changes to institutions and the broader science system.'

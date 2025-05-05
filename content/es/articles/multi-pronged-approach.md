@@ -1,6 +1,7 @@
 ---
 title: Un enfoque multifacético para abordar las barreras sistémicas y sistemáticas para lograr la equidad de género en STEM
 permalink: /es/un-enfoque-multifacetico/
+slug: multi-pronged-approach
 order: 4
 image: '/images/multi-pronged.jpg'
 ---

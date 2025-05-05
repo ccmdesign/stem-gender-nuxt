@@ -1,6 +1,7 @@
 ---
 title: L'état de la participation des femmes dans les STIM dans le Sud global
 permalink: /fr/etat-participation-femmes/
+slug: state-of-womens-participation
 order: 3
 image: '/images/state-of-participation.jpg'
 description: 'La discrimination et le harcèlement fondés sur le genre, comme les commentaires inappropriés et l’exclusion des réunions clés ou des processus de décision, contribuent davantage à un milieu de travail difficile.'

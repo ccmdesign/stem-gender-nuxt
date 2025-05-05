@@ -1,6 +1,7 @@
 ---
 title: A Multi-Pronged Approach to Addressing Systemic and Systematic Barriers to Achieving Gender Equity in STEM
 permalink: /en/multi-pronged-approach/
+slug: multi-pronged-approach
 order: 4
 image: '/images/multi-pronged.jpg'
 ---

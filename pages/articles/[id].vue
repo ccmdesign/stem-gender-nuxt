@@ -39,7 +39,7 @@ function getPrevDoc(currentOrder: number) {
           <span class="separator not-mobile"></span>
           <div class="article-links__title">{{ $t('chapter') }} {{ chapter.order }} / <b>{{ chapter.title }}</b></div>
           <span class="separator not-mobile"></span>
-          <nextLink class="not-mobile" :url="localePath(`/articles/${getNextDoc(chapter.order).id}`)" v-if="getNextDoc(chapter.order)"></nextLink>
+          <nextLink class="not-mobile" :url="localePath(`/articles/${getNextDoc(chapter.order).slug}`)" v-if="getNextDoc(chapter.order)"></nextLink>
         </div>
       </div>
     </div>

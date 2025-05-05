@@ -88,10 +88,10 @@
   @media (min-width: 768px) {
     transform: translateY(-50%);
     padding: var(--space-2xl);
+    width: 70vw;
     &::before {
       top: var(--space-2xl);
       bottom: var(--space-2xl);
-      width: 70vw;
     }
   }
 }

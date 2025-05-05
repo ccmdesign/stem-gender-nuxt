@@ -1,6 +1,7 @@
 ---
 title: Conclusion et Recommandations
 permalink: /fr/conclusion/
+slug: conclusion
 order: 6
 image: '/images/conclusion.jpg'
 ---

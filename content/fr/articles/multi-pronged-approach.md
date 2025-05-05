@@ -1,6 +1,7 @@
 ---
 title: Une approche déclinée en plusieurs volets pour éliminer les obstacles systémiques et systématiques à l’atteinte de l’équité entre les genres dans les STIM
 permalink: /fr/approche-plusieurs-volets/
+slug: multi-pronged-approach
 order: 4
 image: '/images/multi-pronged.jpg'
 ---

@@ -1,6 +1,7 @@
 ---
 title: Qué hemos aprendido hasta ahora?
 permalink: /es/que-hemos-aprendido/
+slug: what-we-learned
 order: 5
 image: '/images/lessons-learned.jpg'
 ---

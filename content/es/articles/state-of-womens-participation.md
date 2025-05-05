@@ -1,6 +1,7 @@
 ---
 title: El estado de la participación de las mujeres en STEM en el sur global
 permalink: /es/estado-participacion-mujeres/
+slug: state-of-womens-participation
 order: 3
 image: '/images/state-of-participation.jpg'
 description: 'La discriminación y el acoso por motivos de género, tales como los comentarios inapropiados y la exclusión de reuniones clave o procesos de toma de decisiones, contribuyen aún más a crear un entorno laboral desafiante.'

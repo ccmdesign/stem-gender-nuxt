@@ -1,6 +1,7 @@
 ---
 title: Referencias
 permalink: /es/referencias/
+slug: references
 order: 8
 ---
 
