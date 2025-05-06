@@ -47,7 +47,7 @@
 
   .chapter-hero__image {
     width: 100%;
-    height: 85vh;
+    aspect-ratio: 16 / 7;
     background-size: cover;
     background-position: center;
   }

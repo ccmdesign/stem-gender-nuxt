@@ -121,10 +121,14 @@
   
   p {
     font-size: var(--size-1);
+    font-weight: 600;
     font-family: var(--font-decorative);
-    color: var(--primary-color-60-tint);
-    border-left: 4px solid var(--secondary-color-60-tint);
+    color: var(--primary-color);
+    border-left: 8px solid var(--primary-color);
     padding-inline-start: var(--space-s);
+    strong {
+      background-color: var(--primary-color-15-alpha);
+    }
   }
 }
 

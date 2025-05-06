@@ -67,6 +67,7 @@
   height: 400px;
   background-size: cover;
   background-position: center;
+  margin-block: var(--space-2xl);
 }
 
 
