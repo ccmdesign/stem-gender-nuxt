@@ -6,6 +6,10 @@ order: 2
 image: '/images/introduction.jpg'
 description: 'L’écart entre les genres dans les STIM n’est pas le résultat de choix individuels, mais est façonné par des obstacles systémiques, notamment des préjugés propres au genre, des stéréotypes et des inégalités structurelles au sein des établissements d’enseignement et des lieux de travail. La découverte et la résolution de ces obstacles représentent une étape nécessaire pour stimuler le développement dans le monde entier.'
 ---
+<audio controls>
+  <source src="/audios/introduction.mp3" type="audio/mpeg">
+    Votre navigateur ne prend pas en charge l’élément audio.
+</audio>
 
 <p class="dropcap" data-letter="A">
 Atteindre l’égalité des genres en science n’est pas seulement un impératif moral, mais aussi crucial pour faire progresser l’innovation scientifique. La sous-représentation des femmes dans les sciences prive ce domaine de perspectives diverses et freine le développement de solutions multiformes. Par exemple, dans de nombreux pays en développement, les femmes sont les principales responsables de la collecte de l’eau. Leur implication dans les projets de gestion de l’eau garantit donc des solutions qui reflètent leurs besoins et leurs expériences vécues. Malgré cela, la participation des femmes à la recherche et au leadership dans le secteur de l’eau reste faible (UNESCO, 2021). Historiquement, le domaine de la recherche médicale dominé par les hommes a négligé les différences cruciales entre les genres en médecine. Cependant, l’inclusion des femmes dans ce domaine a été transformatrice, menant à des découvertes scientifiques révolutionnaires qui améliorent aussi considérablement la santé et le bien-être des femmes (Kozlowski et coll., 2022).

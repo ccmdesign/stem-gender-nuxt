@@ -6,6 +6,11 @@ order: 2
 image: '/images/introduction.jpg'
 description: 'La brecha de género en los ámbitos STEM no es resultado de decisiones individuales, sino que está determinada por barreras sistémicas, tales como prejuicios de género, estereotipos y desigualdades estructurales en las instituciones educativas y los lugares de trabajo. Descubrir y abordar estas barreras es un paso necesario para impulsar el desarrollo en todo el mundo.'
 ---
+<audio controls>
+  <source src="/audios/introduction.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
 <p class="dropcap" data-letter="L">
 Lograr la igualdad de género en la ciencia no es solo un imperativo moral, sino también crucial para promover la innovación científica. La subrepresentación de las mujeres en la ciencia priva al campo de perspectivas diversas y limita el desarrollo de soluciones multifacéticas. Por ejemplo, en muchos países en desarrollo, las mujeres son las principales responsables de la recolección de agua. Involucrarlas en proyectos de gestión del agua garantiza soluciones que reflejen sus necesidades y experiencias vividas. A pesar de ello, la participación de las mujeres en la investigación y el liderazgo dentro del sector del agua sigue siendo mínima (UNESCO, 2021). Históricamente, el campo de la investigación médica, dominado por los hombres, ha pasado por alto las diferencias de género cruciales en la medicina. Sin embargo, la inclusión de las mujeres en este campo ha sido transformadora y ha dado lugar a descubrimientos científicos innovadores que mejoran significativamente la salud y el bienestar de las mujeres (Kozlowski et al., 2022).
 </p>
