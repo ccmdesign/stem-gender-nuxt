@@ -7,8 +7,9 @@ image: '/images/introduction.jpg'
 description: 'The gender gap in STEM is not a result of individual choices but is shaped by systemic barriers, including gender biases, stereotypes, and structural inequalities within educational institutions and workplaces.'
 slug: introduction
 ---
-
+<p class="dropcap" data-letter="A">
 Achieving gender equality in science is not only a moral imperative but also crucial for advancing scientific innovation. The underrepresentation of women in science deprives the field of diverse perspectives and limits the development of multifaceted solutions. For instance, in many developing countries, women are primarily responsible for water collection. Involving them in water management projects ensures solutions that reflect their needs and lived experiences. Despite this, women's participation in research and leadership within the water sector remains minimal (UNESCO, 2021). 
+</p>
 
 Historically, the male-dominated field of medical research has overlooked crucial sex differences in medicine. However, the inclusion of women in this field has been transformative, leading to groundbreaking scientific discoveries that significantly enhance women's health and well-being (Kozlowski et al., 2022).   
 
@@ -58,6 +59,8 @@ To date, the Breaking Barriers Network has collectively advanced work in differe
 
 **Developed Monitoring and Evaluation Frameworks**: Developing robust mechanisms to monitor and evaluate the impact of gender equality initiatives, ensuring continuous improvement and accountability. 
 
+<div class="xl-image" style="background-image:url('/images/introduction-2.JPG')"></div>
+
 ### An Evidence-Informed Research Agenda
 
 The projects have worked to identify context-specific barriers and pilot both known and innovative interventions. These have included pedagogical practices, policies, institutionalized data gathering, and gender-responsive methodologies applied in some higher education institutions and STEM fields. Project leaders have seen success, with initiatives such as co-developing sexual harassment and gender equity policies alongside national ministries and replicating efforts across local institutions. For instance, in Zimbabwe, a project team is assisting the Ministry of Higher Education and Science and Technology in setting an agenda and developing policies on sexual harassment and addressing broader gender equity issues. However, there is a need to explore how these interventions can be scaled up by involving policymakers and other key STI ecosystem stakeholders from the start. 
@@ -67,6 +70,8 @@ Recognizing the critical need for ongoing efforts across the educational spectru
 As part of the **Breaking Barriers Network**, researchers from Latin America and Africa have collaborated to develop a research agenda grounded in existing knowledge, experience, and best practices identified by experts working in diverse contexts. Despite the persistent challenges to women's participation in STEM in both the Global North and South, these researchers have demonstrated that intentional, context-specific, and engaged interventions can help bridge the gender gap in STEM.
 
 > The systemic barriers that exist highlight the importance of a coordinated, multi-faceted approach that integrates national and regional educational, science, and technology priorities, with clear commitments to advancing equitable development.
+
+![Theory of Change](/images/introduction-3.jpg)
 
 ![Theory of Change](/images/theory-of-change-en.png)
 

@@ -7,8 +7,9 @@ image: '/images/introduction.jpg'
 description: 'L’écart entre les genres dans les STIM n’est pas le résultat de choix individuels, mais est façonné par des obstacles systémiques, notamment des préjugés propres au genre, des stéréotypes et des inégalités structurelles au sein des établissements d’enseignement et des lieux de travail. La découverte et la résolution de ces obstacles représentent une étape nécessaire pour stimuler le développement dans le monde entier.'
 ---
 
-### L’importance de la participation et du leadership des femmes dans les STIM.
-Atteindre l’égalité des genres en science n’est pas seulement un impératif moral, mais aussi crucial pour faire progresser l’innovation scientifique. La sous-représentation des femmes dans les sciences prive ce domaine de perspectives diverses et freine le développement de solutions multiformes. Par exemple, dans de nombreux pays en développement, les femmes sont les principales responsables de la collecte de l’eau. Leur implication dans les projets de gestion de l’eau garantit donc des solutions qui reflètent leurs besoins et leurs expériences vécues. Malgré cela, la participation des femmes à la recherche et au leadership dans le secteur de l’eau reste faible (UNESCO, 2021). Historiquement, le domaine de la recherche médicale dominé par les hommes a négligé les différences cruciales entre les genres en médecine. Cependant, l’inclusion des femmes dans ce domaine a été transformatrice, menant à des découvertes scientifiques révolutionnaires qui améliorent aussi considérablement la santé et le bien-être des femmes (Kozlowski et coll., 2022).  
+<p class="dropcap" data-letter="A">
+Atteindre l’égalité des genres en science n’est pas seulement un impératif moral, mais aussi crucial pour faire progresser l’innovation scientifique. La sous-représentation des femmes dans les sciences prive ce domaine de perspectives diverses et freine le développement de solutions multiformes. Par exemple, dans de nombreux pays en développement, les femmes sont les principales responsables de la collecte de l’eau. Leur implication dans les projets de gestion de l’eau garantit donc des solutions qui reflètent leurs besoins et leurs expériences vécues. Malgré cela, la participation des femmes à la recherche et au leadership dans le secteur de l’eau reste faible (UNESCO, 2021). Historiquement, le domaine de la recherche médicale dominé par les hommes a négligé les différences cruciales entre les genres en médecine. Cependant, l’inclusion des femmes dans ce domaine a été transformatrice, menant à des découvertes scientifiques révolutionnaires qui améliorent aussi considérablement la santé et le bien-être des femmes (Kozlowski et coll., 2022).
+</p>
 
 Dans diverses formes de médias, comme ceux qui mettent en évidence les contributions souvent négligées des femmes dans les STIM, nous observons que les disparités entre les genres en matière de reconnaissance et d’occasions sont un enjeu répandu. Par exemple, de nombreuses femmes ont apporté des contributions essentielles à d’importants progrès scientifiques, mais leurs réalisations ont souvent été sous-évaluées, et ce, en raison de préjugés propres au genre. Ce modèle d’effacement systémique des réalisations des femmes en sciences constitue un phénomène mondial. Les femmes scientifiques du monde entier, y compris celles des pays du Sud, continuent d’être confrontées à des défis et à des obstacles importants en raison de leur genre et des environnements sociopolitiques dans lesquels elles travaillent (OCDE, 2020).
 
@@ -43,16 +44,21 @@ Ces études ont généré des données probantes portant sur les obstacles uniqu
 
 Les projets de recherche financés par les deux cohortes, ainsi que les travaux continus du CRDI portant sur l’octroi de bourses d’études aux [femmes scientifiques en début de carrière](https://idrc-crdi.ca/en/project/early-career-fellowships-gender-equality-science-2022-2026) en collaboration avec l’[Organisation pour les femmes et la science dans le monde en développement (OWSD)](https://owsd.net/), montrent des résultats et des conclusions pertinents pour diverses parties prenantes dans les pays du Nord et du Sud. La cohorte de chercheures et chercheurs, qui composent ces diverses initiatives, maintenant appelée le **Réseau briser les barrières**, rassemble et renforce la défense des intérêts et l’élan dans ses zones géographiques pertinentes. Qu’il s’agisse de mener une vérification de l’égalité entre les genres dans une grande université du Zimbabwe ou encore d’un programme de bourses novateur à l’appui des femmes scientifiques autochtones au Mexique, le **Réseau briser les barrières** est en mesure de bâtir des ponts pour faire progresser la participation et le leadership soutenus des femmes dans les domaines des STIM.
 
-À ce jour, le **Réseau briser les barrières** a collectivement fait progresser les travaux dans différents domaines, notamment :
-- Élaboration d’une base de données probantes : produire des données probantes portant sur la façon d’améliorer l’égalité des genres et la diversité dans les STIM, grâce à la portée et à la mise à l’essai d’interventions prometteuses
-- Création de réseaux de collaboration : établir des réseaux de chercheures et de praticiennes pour favoriser la collaboration et le soutien
-- Renforcement des capacités : mise en œuvre de programmes de formation pour renforcer les capacités des femmes scientifiques et chercheures dans les pays du Sud
-- Politique influencée : travailler avec les gouvernements et les institutions pour influencer les changements de politiques qui soutiennent l’égalité des genres dans les domaines des STIM
-- Élaboration de cadres de suivi et d’évaluation : élaborer des mécanismes solides pour surveiller et évaluer les répercussions des initiatives en faveur de l’égalité des genres, assurant ainsi l’amélioration continue et la responsabilisation
+À ce jour, le **Réseau briser les barrières** a collectivement fait progresser les travaux dans différents domaines, notamment:
+
+**Élaboration d’une base de données probantes**: produire des données probantes portant sur la façon d’améliorer l’égalité des genres et la diversité dans les STIM, grâce à la portée et à la mise à l’essai d’interventions prometteuses.
+
+**Création de réseaux de collaboration**: établir des réseaux de chercheures et de praticiennes pour favoriser la collaboration et le soutien.
+
+**Renforcement des capacités**: mise en œuvre de programmes de formation pour renforcer les capacités des femmes scientifiques et chercheures dans les pays du Sud.
+
+**Politique influencée**: travailler avec les gouvernements et les institutions pour influencer les changements de politiques qui soutiennent l’égalité des genres dans les domaines des STIM.
+
+**Élaboration de cadres de suivi et d’évaluation**: élaborer des mécanismes solides pour surveiller et évaluer les répercussions des initiatives en faveur de l’égalité des genres, assurant ainsi l’amélioration continue et la responsabilisation.
+
+<div class="xl-image" style="background-image:url('/images/introduction-2.JPG')"></div>
 
 ### Un programme de recherche fondé sur des données probantes
-
-
 
 Les projets de recherche ont permis de cerner les obstacles propres au contexte et de mettre à l’essai des interventions connues et novatrices. Il s’agit notamment de pratiques pédagogiques, de politiques, de collecte de données institutionnalisées et de méthodologies sensibles au genre appliquées dans certains établissements d’enseignement supérieur et de domaines des STIM. Les responsables des projets ont connu du succès, avec des initiatives comme le codéveloppement de politiques sur le harcèlement sexuel et l’équité entre les genres aux côtés des ministères nationaux et la reproduction des efforts dans les institutions locales. Par exemple, au Zimbabwe, une équipe de projet aide le ministère de l’Enseignement supérieur, des Sciences et de la Technologie à établir un programme et à élaborer des politiques sur le harcèlement sexuel et à résoudre les enjeux plus larges d’équité entre les genres dans les établissements d’enseignement supérieur. Cependant, il est nécessaire d’explorer comment ces interventions peuvent être intensifiées en impliquant les décisionnaires et d’autres parties prenantes clés de l’écosystème des STI dès le début.
 
@@ -61,6 +67,8 @@ Compte tenu de la nécessité cruciale de poursuivre les efforts dans l’ensemb
 Dans le cadre du **Réseau briser les barrières**, des chercheures et chercheurs d’Amérique latine et d’Afrique ont collaboré à l’élaboration d’un programme de recherche fondé sur les connaissances, l’expérience et les pratiques exemplaires existantes déterminées par des personnes expertes travaillant dans divers contextes. Malgré les défis persistants à la participation des femmes aux STIM dans les pays du Nord et du Sud, ces chercheures et chercheurs ont démontré que des interventions intentionnelles, adaptées au contexte et engagées peuvent aider à combler l’écart entre les genres dans les STIM.
 
 > Les obstacles systémiques qui existent soulignent l’importance d’une approche coordonnée et multidimensionnelle qui intègre les priorités nationales et régionales en matière d’éducation, de science et de technologie, avec des engagements clairs afin de faire progresser le développement équitable.
+
+![Théorie du changement](/images/introduction-3.jpg)
 
 ![Théorie du changement](/images/theory-of-change-fr.png)
 
