@@ -4,6 +4,7 @@ permalink: /fr/introduction/
 slug: introduction
 order: 2
 image: '/images/introduction.jpg'
+audio: 'audios/Introduction.mp3'
 description: 'L’écart entre les genres dans les STIM n’est pas le résultat de choix individuels, mais est façonné par des obstacles systémiques, notamment des préjugés propres au genre, des stéréotypes et des inégalités structurelles au sein des établissements d’enseignement et des lieux de travail. La découverte et la résolution de ces obstacles représentent une étape nécessaire pour stimuler le développement dans le monde entier.'
 ---
 <audio controls>

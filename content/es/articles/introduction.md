@@ -4,6 +4,7 @@ permalink: /es/introduccion/
 slug: introduction
 order: 2
 image: '/images/introduction.jpg'
+audio: 'audios/Introduction.mp3'
 description: 'La brecha de género en los ámbitos STEM no es resultado de decisiones individuales, sino que está determinada por barreras sistémicas, tales como prejuicios de género, estereotipos y desigualdades estructurales en las instituciones educativas y los lugares de trabajo. Descubrir y abordar estas barreras es un paso necesario para impulsar el desarrollo en todo el mundo.'
 ---
 <audio controls>

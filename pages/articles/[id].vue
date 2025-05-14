@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ArticleAudio from '~/components/ArticleAudio.vue'
+
 definePageMeta({
   layout: 'default'
 })
@@ -11,7 +13,7 @@ const { data: docs } = await useAsyncData('articles', () =>
 )
 
 const chapter = await queryContent(locale.value, 'articles').where({
-    slug: route.params.id
+  slug: route.params.id
 }).findOne();
 
 
@@ -39,23 +41,24 @@ function getPrevDoc(currentOrder: number) {
           <span class="separator not-mobile"></span>
           <div class="article-links__title">{{ $t('chapter') }} {{ chapter.order }} / <b>{{ chapter.title }}</b></div>
           <span class="separator not-mobile"></span>
-          <nextLink class="not-mobile" :url="localePath(`/articles/${getNextDoc(chapter.order).slug}`)" v-if="getNextDoc(chapter.order)"></nextLink>
+          <nextLink class="not-mobile" :url="localePath(`/articles/${getNextDoc(chapter.order).slug}`)"
+            v-if="getNextDoc(chapter.order)"></nextLink>
         </div>
       </div>
     </div>
     <ContentDoc :path="localePath(route.path)">
       <template v-slot="{ doc }">
         <article class="article-layout">
-          
-          <chapter-hero 
-            class="article-layout__hero"
-            :heading="doc.title"
-            :tagline="doc.description"
-            :brow="doc.brow"
+
+          <chapter-hero class="article-layout__hero" :heading="doc.title" :tagline="doc.description" :brow="doc.brow"
             :image="doc.image">
           </chapter-hero>
 
+          
           <section class="article-layout__content">
+            <div class="audio-center">
+              <ArticleAudio v-if="doc.audio" :src="`/${doc.audio.replace(/^\/+/, '')}`" />
+            </div>
             <ContentRenderer :value="doc" class="post-layout | region prose" />
           </section>
         </article>
@@ -89,81 +92,89 @@ function getPrevDoc(currentOrder: number) {
 </template>
 
 <style lang="scss" scoped>
-
 .not-mobile {
   @media (max-width: 768px) {
     display: none;
   }
 }
-  .article-header {
+
+.article-header {
+  --bd-color: hsla(240, 5%, 90%, 1);
+  border-top: 1px solid var(--bd-color);
+  border-bottom: 1px solid var(--bd-color);
+  backdrop-filter: blur(16px);
+}
+
+.article-links__content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--space-s);
+  padding-block: var(--space-m);
+
+  .separator {
     --bd-color: hsla(240, 5%, 90%, 1);
-    border-top: 1px solid var(--bd-color);
-    border-bottom: 1px solid var(--bd-color);
-    backdrop-filter: blur(16px);
+    width: 1px;
+    height: var(--size-4);
+    background: var(--bd-color);
   }
 
-    .article-links__content {
-      display: flex;
-      flex-flow: column nowrap;
-      gap: var(--space-s);
-      padding-block: var(--space-m);
-      .separator {
-        --bd-color: hsla(240, 5%, 90%, 1);
-        width: 1px;
-        height: var(--size-4);
-        background: var(--bd-color);
-      }
+  @media (min-width: 768px) {
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: var(--space-s);
+    padding-block: 0;
 
-      @media (min-width: 768px) {
-        flex-flow: row nowrap;
-        align-items: center;
-        gap: var(--space-s);
-        padding-block: 0;
-        & > * {
-          align-self: center;
-        }
-      }
+    &>* {
+      align-self: center;
     }
-
-    .article-links__title {
-      color: var(--base-color-90-tint);
-      flex-grow: 1;
-    }
-
-  .next-article {
-    background-color: var(--secondary-color);
-    padding: var(--space-l-xl) var(--space-s-m);
   }
+}
 
-    .next-article__content {
-      display: flex;
-      flex-direction: row;
-      gap: var(--space-xl);
-      justify-content: space-between;
-      color: var(--primary-color);
-      align-items: center;
-    }
+.article-links__title {
+  color: var(--base-color-90-tint);
+  flex-grow: 1;
+}
 
-    .next-article__item {
-      text-wrap: balance; 
-    }
+.next-article {
+  background-color: var(--secondary-color);
+  padding: var(--space-l-xl) var(--space-s-m);
+}
 
-    .next-article__item--right {
-      text-align: right;
-    }
+.next-article__content {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-xl);
+  justify-content: space-between;
+  color: var(--primary-color);
+  align-items: center;
+}
 
-    .next-article__cta {
-      font-size: var(--size-1);
-      text-transform: uppercase;
-      font-weight: 400;
-      font-family: var(--font-title);
-    }
+.next-article__item {
+  text-wrap: balance;
+}
 
-    .next-article__link {
-      font-family: var(--font-display);
-      text-wrap: balance;
-      font-weight: 700;
-      color: var(--primary-color);
-      text-decoration: none;
-    }
+.next-article__item--right {
+  text-align: right;
+}
+
+.next-article__cta {
+  font-size: var(--size-1);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-title);
+}
+
+.next-article__link {
+  font-family: var(--font-display);
+  text-wrap: balance;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.audio-center {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1rem 0;
+}
 </style>
