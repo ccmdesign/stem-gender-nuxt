@@ -56,7 +56,7 @@ function getPrevDoc(currentOrder: number) {
 
           
           <section class="article-layout__content">
-            <div class="audio-center">
+            <div class="post-layout">
               <ArticleAudio v-if="doc.audio" :src="`/${doc.audio.replace(/^\/+/, '')}`" />
             </div>
             <ContentRenderer :value="doc" class="post-layout | region prose" />

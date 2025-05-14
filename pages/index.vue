@@ -1,6 +1,7 @@
 <template>
   <main class="chapter-layout" @click="handleClickOutside">
-    <header class="chapter-layout__header | chapter-header">
+    
+    <!--<header class="chapter-layout__header | chapter-header">
       <div class="repel">
         <LangSwitcher />
         <h3>
@@ -69,7 +70,7 @@
         <resource-card v-for="item in resourceCardContent" :key="item.name" :resource="item" />
       </div>
 
-    </div>
+    </div>-->
   </main>
 </template>
 
