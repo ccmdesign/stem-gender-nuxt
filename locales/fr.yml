@@ -14,3 +14,16 @@ globalProjects: 'Projets Globaux'
 subSaharanAfricaProjects: 'Projets en Afrique Subsaharienne'
 chapter: Chapitre
 nextChapter: Chapitre Suivant
+breakingBarriers: Breaking barriers, Building bridges
+readReport: Lire le Rapport
+initiative:
+  title: L’initiative et notre approche
+  p1: Le CRDI a financé les projets Breaking Barriers en 2020 pour combler cette lacune de connaissances. Le groupe de 10 études a analysé les tendances de la participation genrée dans les systèmes scientifiques du Sud et les inégalités systémiques et systématiques enracinées qui empêchent les femmes de progresser dans divers domaines et secteurs en Amérique latine et en Afrique subsaharienne. Ces études ont généré des données probantes sur les obstacles uniques auxquels sont confrontées les femmes et d'autres groupes marginalisés dans les domaines STEM dans les pays à faible revenu.
+  p2: En s'appuyant sur cette initiative pilote, le financement a été élargi en 2021 pour Gender in science, technology, engineering and mathematics (GIST ou Gender in STEM).
+  p3: En fournissant des preuves de ce qui fonctionne et en nous appuyant sur les réalités des femmes dans les pays à revenu faible et intermédiaire, nous pouvons créer des systèmes scientifiques plus équitables qui améliorent la vie de tous.
+  aim:
+    title: La recherche vise à
+    p1: Accroître la compréhension des obstacles qui empêchent les femmes de progresser dans les domaines STEM
+    p2: Fournir des preuves sur les stratégies les plus efficaces pour surmonter ces obstacles dans les pays à revenu faible et intermédiaire
+    p3: Améliorer le leadership des femmes dans les sciences
+    p4: Intégrer l’analyse de genre comme composante standard de la recherche scientifique

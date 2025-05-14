@@ -14,3 +14,16 @@ globalProjects: 'Proyectos Globales'
 subSaharanAfricaProjects: 'Proyectos en África Subsahariana'
 chapter: Capítulo
 nextChapter: Próximo Capítulo
+breakingBarriers: Breaking barriers, Building bridges
+readReport: Leer el Informe
+initiative:
+  title: La iniciativa y nuestro enfoque
+  p1: IDRC financió los proyectos Breaking Barriers en 2020 para abordar esta brecha de conocimiento. La cohorte de 10 estudios analizó las tendencias de participación con perspectiva de género en los sistemas científicos del Sur y las desigualdades sistémicas y sistemáticas incrustadas que impiden que las mujeres avancen en diversos campos y sectores en América Latina y África subsahariana. Estos estudios generaron evidencia sobre los obstáculos únicos que enfrentan las mujeres y otros grupos marginados en STEM en países de bajos ingresos.
+  p2: Basándose en esta iniciativa piloto, en 2021 se amplió la financiación para Gender in science, technology, engineering and mathematics (GIST o Gender in STEM).
+  p3: Al proporcionar evidencia sobre lo que funciona y basándonos en las realidades de las mujeres en los países de ingresos bajos y medianos, podemos crear sistemas científicos más equitativos que mejoren la vida de todos.
+  aim:
+    title: La investigación tiene como objetivo
+    p1: Aumentar la comprensión de las barreras que impiden que las mujeres progresen en los campos de STEM
+    p2: Proporcionar evidencia sobre qué estrategias son más eficaces para derribar esas barreras en los países de ingresos bajos y medianos
+    p3: Mejorar el liderazgo de las mujeres en la ciencia
+    p4: Integrar el análisis de género como un componente estándar de la investigación científica

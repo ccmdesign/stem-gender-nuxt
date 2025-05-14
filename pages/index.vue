@@ -1,6 +1,31 @@
 <template>
   <main class="chapter-layout" @click="handleClickOutside">
-    
+    <header class="chapter-layout__header | index-header">
+      <div class="stack">
+        <p class="index-header__brow">{{ $t('synthesisReport') }} | Beta</p>
+        <h1 class="index-header__title">{{ $t('breakingBarriers') }}</h1>
+        <p class="index-header__tagline">{{ $t('tagline') }}</p>
+        <nuxt-link class="button index-header__button" icon-after="arrow_downward" color="primary" visual="primary" to="#report">{{ $t('readReport') }}</nuxt-link>
+      </div>
+      <div class="index-header__image" aria-hidden="true"></div>
+    </header>
+    <section class="initiative">
+      <div class="stack">
+        <h2>{{ $t('initiative.title') }}</h2>
+        <p>{{ $t('initiative.p1') }}</p>
+        <p>{{ $t('initiative.p2') }}</p>
+        <p>{{ $t('initiative.p3') }}</p>
+      </div>
+      <div class="stack">
+        <h3>{{ $t('initiative.aim.title') }}:</h3>
+        <div class="research-grid">
+          <p>{{ $t('initiative.aim.p1') }}</p>
+          <p>{{ $t('initiative.aim.p2') }}</p>
+          <p>{{ $t('initiative.aim.p3') }}</p>
+          <p>{{ $t('initiative.aim.p4') }}</p>
+        </div>
+      </div>
+    </section>
     <!--<header class="chapter-layout__header | chapter-header">
       <div class="repel">
         <LangSwitcher />
@@ -139,9 +164,102 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.chapter-header h3 {
-  font-size: var(--size-1);
+h2 {
+  font-size: var(--size-2);
+  font-weight: 600;
 }
+
+.index-header {
+  position: relative;
+  background: linear-gradient(88.42deg, #7F2A28 1.35%, #A63330 98.65%);
+  padding: var(--space-3xl-4xl) var(--size-2) var(--size-2) var(--size-2);
+  & > * {
+    position: relative;
+    z-index: 1;
+    color: var(--white-color);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/images/pattern.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .stack {
+    max-width: 720px;
+    --stack-space: var(--space-m-l)
+  }
+  .index-header__button  {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: var(--size-0);
+  }
+}
+
+  .index-header__brow {
+    text-transform: uppercase;
+    font-size: var(--size--1);
+    font-weight: 500;
+  }
+
+  .index-header__title {
+    font-size: var(--size-6);
+    font-weight: 600;
+  }
+
+  .index-header__tagline {
+    font-size: var(--size-0);
+    font-weight: 400;
+    max-width: 400px;
+  }
+
+  .index-header__image {
+    position: absolute;
+    top: var(--space-l-xl);
+    right: var(--size-2);
+    left: 50%;
+    bottom: 0;
+    z-index: 0;
+    background-image: url(/images/lessons-learned.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: translateY(var(--space-2xl-3xl));
+    box-shadow: 6px 5px 17px 0px hsla(0, 0%, 0%, 0.16);
+  }
+
+.initiative {
+  padding: var(--space-xl-2xl) var(--size-2) var(--size-2) var(--size-2);
+  display: grid;
+  grid-template-columns: auto 50%;
+  gap: var(--space-2xl-3xl);
+  align-items: flex-end;
+  p {
+    font-size: var(--size-0);
+    font-weight: 400;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-size: var(--size-0);
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+}
+
+  .research-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xs);
+    p {
+      padding: var(--space-m);
+      font-size: var(--size-0);
+      font-weight: 400;
+      background-color: var(--black-color-05-alpha);
+    }
+  }
 
 .map-grid {
   @media (max-width: 768px) {
