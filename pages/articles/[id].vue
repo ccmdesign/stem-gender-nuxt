@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import ArticleAudio from '~/components/ArticleAudio.vue'
 
 definePageMeta({
   layout: 'default'
@@ -53,7 +52,7 @@ function getPrevDoc(currentOrder: number) {
           <chapter-hero class="article-layout__hero" :heading="doc.title" :tagline="doc.description" :brow="doc.brow"
             :image="doc.image">
           </chapter-hero>
-
+          
           
           <section class="article-layout__content">
             <div class="post-layout">
