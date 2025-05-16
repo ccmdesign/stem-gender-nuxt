@@ -1,0 +1,17 @@
+:where(.flex) {
+    display: flex;
+}
+
+    :where(.flex--col){
+        flex-direction: column;
+    }
+
+    :where(.flex---1) {
+        gap: var(--size--1)
+    }
+
+    :where(.flex--0) {
+        gap: var(--size-0)
+    }
+
+  

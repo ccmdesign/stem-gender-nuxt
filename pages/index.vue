@@ -26,6 +26,40 @@
         </div>
       </div>
     </section>
+    <section class="report">
+      <div class="repel">
+        <h2>{{ $t('report.title') }}</h2>
+        <div class="flex flex---1">
+          <nuxt-link class="button report__button" icon-after="arrow_downward" color="primary" visual="secondary" to="#report">{{ $t('report.view') }}</nuxt-link>
+          <nuxt-link class="button report__button" icon-after="arrow_downward" color="primary" visual="secondary" to="#report">{{ $t('report.podcast') }}</nuxt-link>
+        </div>
+      </div>
+    </section>
+    <section class="report-list">
+      <div class="report-list__list">
+        <ContentList :query="query" :key="'url' + locale" :path="`/${locale}/`">
+          <template #default="{ list }">
+            <ul class="report-list__toc" role="list">
+              <li v-for="article in list.sort((a, b) => a.order - b.order)" :key="article._path">
+                <NuxtLink v-if="locale !== 'en'" :to="localePath(article._path)">{{ article.title }}
+                </NuxtLink>
+                <NuxtLink v-else :to="`/articles/${article.slug}`">{{ article.title }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </template>
+
+          <template #not-found>
+            <p>{{ $t('noArticlesFound') }}</p>
+          </template>
+
+          <template #pending>
+            <p>...</p>
+          </template>
+        </ContentList>
+      </div>
+      <span class="report-list__spacer"></span>
+    </section>
     <!--<header class="chapter-layout__header | chapter-header">
       <div class="repel">
         <LangSwitcher />
@@ -164,6 +198,11 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss" scoped>
+.button {
+  font-weight: 500;
+  font-size: var(--size-0);
+}
+
 h2 {
   font-size: var(--size-2);
   font-weight: 600;
@@ -195,8 +234,6 @@ h2 {
   }
   .index-header__button  {
     color: var(--white-color);
-    font-weight: 500;
-    font-size: var(--size-0);
   }
 }
 
@@ -260,6 +297,28 @@ h2 {
       background-color: var(--black-color-05-alpha);
     }
   }
+
+
+.report {
+  padding: var(--space-xl) var(--size-2) var(--size-2) var(--size-2);
+}
+
+  .report__button {
+    border-width: 1px;
+    color: var(--base-color);
+  }
+
+  .report-list {
+    display: grid;
+    grid-template-columns: 40% 2px auto;
+  }
+
+    .report-list__list {
+    }
+
+    .report-list__spacer {
+      background-image: linear-gradient(360deg, rgba(228, 228, 231, 0) 0%, rgba(228, 228, 231, 0.5) 15%, #E4E4E7 85%, rgba(228, 228, 231, 0) 100%);
+    }
 
 .map-grid {
   @media (max-width: 768px) {
