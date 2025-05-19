@@ -12,22 +12,32 @@ back: 'Back'
 noArticlesFound: 'No articles found.'
 globalProjects: 'Global Projects'
 subSaharanAfricaProjects: 'Sub-Saharan Africa Projects'
-chapter: Chapter
-nextChapter: Next Chapter
-breakingBarriers: Breaking barriers, Building bridges
-readReport: Read the Report
+chapter: 'Chapter'
+nextChapter: 'Next Chapter'
+breakingBarriers: 'Breaking barriers, Building bridges'
+readReport: 'Read the Report'
+readChapter: 'Read chapter'
+
 initiative:
-  title: The initiative and our approach
-  p1: IDRC funded the Breaking Barriers projects in 2020 to address this knowledge gap. The cohort of 10 studies analyzed trends of gendered participation in Southern science systems and the embedded systemic and systematic inequities that prevent women from advancing in a range of fields and sectors in Latin America and sub-Saharan Africa. These studies generated evidence on the unique obstacles facing women and other marginalized groups in STEM in low-income countries.
-  p2: Building on this pilot initiative, in 2021 funding was expanded for Gender in science, technology, engineering and mathematics (GIST or Gender in STEM).
-  p3: By providing evidence on what works and grounded in the realities of women in low- and middle-income countries, we can create more equitable science systems that improve the lives of all.
+  title: 'The initiative and our approach'
+  p1: 'IDRC funded the Breaking Barriers projects in 2020 to address this knowledge gap. The cohort of 10 studies analyzed trends of gendered participation in Southern science systems and the embedded systemic and systematic inequities that prevent women from advancing in a range of fields and sectors in Latin America and sub-Saharan Africa. These studies generated evidence on the unique obstacles facing women and other marginalized groups in STEM in low-income countries.'
+  p2: 'Building on this pilot initiative, in 2021 funding was expanded for Gender in science, technology, engineering and mathematics (GIST or Gender in STEM).'
+  p3: 'By providing evidence on what works and grounded in the realities of women in low- and middle-income countries, we can create more equitable science systems that improve the lives of all.'
   aim:
-    title: The research aims to
-    p1: Increase understanding of the barriers that prevent women from progressing in STEM fields 
-    p2: Provide evidence on which strategies are most effective to break down those barriers in low- and middle-income countries 
-    p3: Improve women’s leadership in science 
-    p4: Integrate gender analysis as a standard component of scientific research
+    title: 'The research aims to'
+    p1: 'Increase understanding of the barriers that prevent women from progressing in STEM fields'
+    p2: 'Provide evidence on which strategies are most effective to break down those barriers in low- and middle-income countries'
+    p3: 'Improve women’s leadership in science'
+    p4: 'Integrate gender analysis as a standard component of scientific research'
+
 report:
-  title: Report
-  view: View Report (PDF)
-  podcast: Podcast (AI)
+  title: 'Report'
+  view: 'View Report (PDF)'
+  podcast: 'Podcast (AI)'
+
+challenge:
+  title: 'The Challenge'
+  p1: 'At IDRC, we believe that inclusivity contributes to innovation. We support a more inclusive approach to science, technology and innovation — one that not only integrates women as scientists and users of science, but that recognizes gender analysis as integral to high-quality research and innovation.'
+  link: Women represent only 30% of the world’s researchers
+  p2: ", with even less representation in science leadership positions. In 2015, the Interacademy Partnership published the first comprehensive survey of science academies in its global network. Across the 69 national science academies for which data was available, women made up 10% or less of members in almost half of the countries."
+  p3: 'Although the systemic barriers to the participation of women scientists is increasingly being studied, such data and case studies have historically been based on countries in the Global North.'
