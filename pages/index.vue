@@ -56,7 +56,7 @@
         </ContentList>
       </div>
       <span class="report-list__spacer"></span>
-      <div class="report-list__content" v-if="data.selectedChapter">
+      <div class="report-list__content" v-if="data.selectedChapter && data.selectedChapter.title">
           <h3 class="report-list__title">{{ data.selectedChapter.title }}</h3>
           <p class="report-list__subtitle">{{ data.selectedChapter.description }}</p>
           <NuxtLink class="button index-header__button" color="primary" visual="primary" v-if="locale !== 'en'" :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }}</NuxtLink>
@@ -64,28 +64,16 @@
       </div>
     </section>
     <section class="map-grid">
-        <a class="map-grid__idrc-logo" href="https://www.idrc-crdi.ca/en"><img src="/images/idrc-logo-full.png" alt="IDRC" ></a>
-        <div class="map-grid__summary | project-summary">
+         <!--<div class="map-grid__summary | project-summary">
             <h3><span>15</span> {{ $t('globalProjects') }}</h3>
             <p><a href="https://idrc-crdi.ca/en/initiative/gender-stem" target="_blank">Breaking Barriers Network</a></p>
-        </div>
+        </div>-->
         <div class="map-grid__map">
           <world-map class="map" />
           <map-data class="data" :resources="resources" :activeCountry="data.selectedCountry" @project-selected="handleProjectSelected" />
         </div>
-        <div class="map-grid__content">          
-          <details class="country-list">
-            <summary>
-              <h4>{{ $t('countries') }}</h4>
-            </summary>
-            <div class="cluster">
-              <button v-for="(i, key) in resources" class="country-button" :class="{'country-button--active': data.selectedCountry == key}" @click="activateCountry(key)">{{ i.name }}</button>
-            </div>
-          </details>
-          
-          <resource-list :resources="resources" />
-          <resource-card v-if="activeCountry && activeProjectIndex !== null"
-            :resource="resources[activeCountry].resources[activeProjectIndex]" />
+        <div class="map-grid__content">  
+          <resource-list :resources="data.resourceList" />
         </div>
       </section>
       <section class="challenge">
@@ -97,76 +85,6 @@
           <p>{{ $t('challenge.p3') }}</p>
         </div>
       </section>
-    <!--<header class="chapter-layout__header | chapter-header">
-      <div class="repel">
-        <LangSwitcher />
-        <h3>
-          {{ $t('synthesisReport') }} | Beta
-        </h3>
-        
-      </div>
-
-      <chapter-titles />
-
-      <ContentList :query="query" :key="'url' + locale" :path="`/${locale}/`">
-        <template #default="{ list }">
-          <ul class="chapter-header__toc" role="list">
-            <li v-for="article in list.sort((a, b) => a.order - b.order)" :key="article._path">
-              <NuxtLink v-if="locale !== 'en'" :to="localePath(article._path)">{{ article.title }}
-              </NuxtLink>
-              <NuxtLink v-else :to="`/articles/${article.slug}`">{{ article.title }}
-              </NuxtLink>
-            </li>
-          </ul>
-        </template>
-
-        <template #not-found>
-          <p>{{ $t('noArticlesFound') }}</p>
-        </template>
-
-        <template #pending>
-          <p>...</p>
-        </template>
-      </ContentList>
-    </header>
-
-    <div class="chapter-layout__content">
-      <div class="map-grid">
-        <a class="map-grid__idrc-logo" href="https://www.idrc-crdi.ca/en"><img src="/images/idrc-logo-full.png" alt="IDRC" ></a>
-        <div class="map-grid__summary | project-summary">
-            <h3><span>15</span> {{ $t('globalProjects') }}</h3>
-            <p><a href="https://idrc-crdi.ca/en/initiative/gender-stem" target="_blank">Breaking Barriers Network</a></p>
-        </div>
-        <div class="map-grid__map">
-          <world-map class="map" />
-          <map-data class="data" :resources="resources" :activeCountry="data.selectedCountry" @project-selected="handleProjectSelected" />
-        </div>
-        <div class="map-grid__content">          
-          <details class="country-list">
-            <summary>
-              <h4>{{ $t('countries') }}</h4>
-            </summary>
-            <div class="cluster">
-              <button v-for="(i, key) in resources" class="country-button" :class="{'country-button--active': data.selectedCountry == key}" @click="activateCountry(key)">{{ i.name }}</button>
-            </div>
-          </details>
-          
-          <resource-list :resources="resources" />
-          <resource-card v-if="activeCountry && activeProjectIndex !== null"
-            :resource="resources[activeCountry].resources[activeProjectIndex]" />
-        </div>
-      </div>
-
-      <div class="mobile-resource-cards | stack">
-        <div class="repel">
-          <h3>{{ $t('resources') }}</h3>
-          <img src="/images/idrc-logo-full.png" alt="IDRC" class="idrc-logo">
-        </div>
-        
-        <resource-card v-for="item in resourceCardContent" :key="item.name" :resource="item" />
-      </div>
-
-    </div>-->
   </main>
 </template>
 
@@ -174,8 +92,7 @@
 definePageMeta({
   layout: 'default'
 })
-import { ref, onMounted, onUnmounted } from 'vue'
-import ResourceCard from '@/components/resourceCard.vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import resourcesByCountry from '~/public/resourcesByCountry.json'
 import { userResourcesFilter } from '~/composables/resourcesFilter'
@@ -187,13 +104,46 @@ const query: QueryBuilderParams = {
 }
 
 const resources = ref(resourcesByCountry)
-const resourceCardContent = userResourcesFilter(resourcesByCountry)
+
+// Primeiro, vamos definir as interfaces necessárias
+interface Resource {
+  name: string;
+  select: string;
+  project_type: string;
+  region: string;
+  region_codes: string[];
+  funding: number;
+  status: string;
+  programs: string;
+  url: string;
+}
+
+interface Country {
+  name: string;
+  resources: Resource[];
+  position: {
+    x: string;
+    y: string;
+  };
+}
+
+// Agora vamos corrigir a definição do resourceFullList
+const resourceFullList = Object.values(resources.value).reduce<Resource[]>((acc, country: Country) => {
+  country.resources.forEach((resource: Resource) => {
+    const exists = acc.some((r: Resource) => r.name === resource.name);
+    if (!exists) {
+      acc.push(resource);
+    }
+  });
+  return acc;
+}, []).sort((a: Resource, b: Resource) => a.name.localeCompare(b.name));
 
 const activeCountry = ref<string | null>(null);
 const activeProjectIndex = ref<number | null>(null);
 const data = reactive({
   selectedCountry: '',
-  selectedChapter: {}
+  selectedChapter: {},
+  resourceList: resourceFullList
 })
 
 const handleProjectSelected = ({ countryCode, projectIndex }) => {
@@ -225,6 +175,27 @@ const activateCountry = (id) => {
     data.selectedCountry = ''
   }
 }
+
+// Primeiro, vamos criar uma ref para a lista filtrada
+const filteredResourceList = ref<Resource[]>(resourceFullList);
+
+// Agora vamos adicionar o watcher
+watch(() => data.selectedCountry, (newCountry) => {
+  if (!newCountry) {
+    // Se não houver país selecionado, mostra a lista completa
+    filteredResourceList.value = resourceFullList;
+  } else {
+    // Filtra os recursos pelo país selecionado
+    filteredResourceList.value = resourceFullList.filter(resource => 
+      resource.region_codes.includes(newCountry)
+    );
+  }
+}, { immediate: true });
+
+// Atualiza o data.resourceList para usar a lista filtrada
+watch(filteredResourceList, (newList) => {
+  data.resourceList = newList;
+}, { immediate: true });
 
 onMounted(async () => {
   document.addEventListener('click', handleClickOutside);
@@ -350,6 +321,8 @@ h2 {
   .report-list {
     display: grid;
     grid-template-columns: 40% 2px auto;
+    position: relative;
+    z-index: 1;
   }
 
     .report-list__toc {
@@ -387,10 +360,12 @@ h2 {
       }
 
 .challenge {
-  padding: var(--space-xl) var(--space-m);
+  padding: var(--space-3xl) var(--space-m) var(--space-xl) ;
   display: flex;
   gap: var(--space-2xl-3xl);
   align-items: center;
+  background-color: var(--base-color-02-tint);
+  border-top: 1px solid var(--base-color-10-tint);
 }
 
   .challenge__image {
