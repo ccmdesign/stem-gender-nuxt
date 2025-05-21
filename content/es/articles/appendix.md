@@ -5,11 +5,16 @@ slug: appendix
 description: 'La brecha de género en STEM no es resultado de elecciones individuales, sino que está determinada por barreras sistémicas, incluyendo sesgos de género, estereotipos y desigualdades estructurales dentro de las instituciones educativas y lugares de trabajo. Descubrir y abordar estas barreras es un paso necesario para impulsar el desarrollo en todo el mundo.'
 order: 7
 image: '/images/appendix.jpg'
+audio: '/audios/Appendix.mp3'
 ---
 
-## Una instantánea de nuestros proyectos
+<div class="header-start">
+<h2>Una instantánea de nuestros proyectos</h2>
+</div>
 
-### Apoyando al liderazgo de las mujeres en ciencia, tecnología e innovación a través de becas para jóvenes al comienzo de su carrera (2017–2021)
+<div class="header-start">
+<h3>Apoyando al liderazgo de las mujeres en ciencia, tecnología e innovación a través de becas para jóvenes al comienzo de su carrera (2017–2021)</h3>
+</div>
 
 #### Antecedentes
 La beca de inicio de carrera de la OWSD es una beca de hasta USD 50.000 destinada a apoyar a las mujeres que han completado sus doctorados en los campos de STEM. La beca está diseñada para aquellas mujeres empleadas en institutos académicos o de investigación en varios países del mundo en desarrollo.
@@ -29,7 +34,9 @@ La beca proporciona financiación para los costos relacionados con la investigac
 - Beneficios institucionales: las becas también han fortalecido las instituciones donde trabajan los becarios al proporcionar nuevos equipos y mejorar la visibilidad de la investigación, lo que abre las puertas a futuras colaboraciones.
 - Influencia en las políticas: un porcentaje notable de becarios de EC han sido invitados a participar en comités, han sido consultados sobre políticas de CTI y han brindado asesoramiento sobre sus campos de especialización para la formulación de políticas.
 
-### Eliminando barreras para el reclutamiento, la retención y el avance de las mujeres en los campos de ciencia y tecnología para promover industrias verdes en Colombia
+<div class="header-start">
+<h3>Eliminando barreras para el reclutamiento, la retención y el avance de las mujeres en los campos de ciencia y tecnología para promover industrias verdes en Colombia</h3>
+</div>
 
 #### Antecedentes
 Este proyecto en Colombia tuvo como objetivo promover el papel de las mujeres en los campos STEM relacionados con el crecimiento verde a través de procesos de Educación y Formación Técnica y Profesional (EFTP). 
@@ -48,7 +55,9 @@ El proyecto implementó una combinación de estrategias blandas (por ejemplo, re
 - Cambio organizacional: un centro de EFTP en Colombia facilitó el aprendizaje organizacional y los procesos de aprendizaje transformador, lo que resultó en un cambio sistémico dentro de los programas de EFTP. Cuatro centros regionales de EFTP comenzaron a liderar el camino en la educación STEM con equidad de género.
 - Empoderamiento: La combinación de aprendizaje experiencial y modelos a seguir visibles inspiró a las aprendices e instructoras a seguir y sobresalir en carreras en STEM. Su éxito en estos campos desafió estereotipos profundamente arraigados y creó nuevos caminos para futuras generaciones de mujeres en ciencia y tecnología.
 
-### Mujeres en la educación y las carreras de ingeniería en Benín y Ghana
+<div class="header-start">
+<h3>Mujeres en la educación y las carreras de ingeniería en Benín y Ghana</h3>
+</div>
 
 #### Antecedentes
 El proyecto Mujeres en la educación y las carreras de ingeniería tuvo como objetivo investigar las tendencias de la participación de las mujeres en la educación y las carreras de ingeniería en Ghana y Benín. El proyecto buscó identificar barreras sistémicas y proponer recomendaciones para eliminar estas barreras.
@@ -67,7 +76,9 @@ El proyecto incluyó debates en grupos focales, encuestas y análisis de políti
 - Concientización y defensa: el proyecto generó conciencia sobre los desafíos que enfrentan las mujeres en la educación y las carreras de ingeniería y abogó por políticas y prácticas más inclusivas y de apoyo.
 - Empoderamiento: el proyecto empoderó a las mujeres al brindarles el conocimiento y los recursos necesarios para navegar sus carreras y alcanzar posiciones de liderazgo en los campos de ingeniería.
 
-### TranSformando InSTituciones para el Avance de Mujeres LídeReS en Ciencias, Tecnología, Ingeniería y Matemáticas (SISTARS): Lecciones de Ghana y Kenia
+<div class="header-start">
+<h3>TranSformando InSTituciones para el Avance de Mujeres LídeReS en Ciencias, Tecnología, Ingeniería y Matemáticas (SISTARS): Lecciones de Ghana y Kenia</h3>
+</div>
 
 #### Antecedentes
 El proyecto SISTARS se centra en abordar la subrepresentación de las mujeres en roles de liderazgo dentro de los campos STEM, particularmente en los sectores relacionados con el agua en Ghana y Kenia. A pesar de varias políticas nacionales e institucionales destinadas a promover la igualdad de género, las mujeres continúan enfrentando barreras significativas para avanzar a posiciones de liderazgo. Estas barreras incluyen expectativas sociales, estereotipos y sesgos sistémicos que obstaculizan el avance profesional de las mujeres. El proyecto tiene como objetivo evaluar y fortalecer las políticas que apoyan la inclusión de las mujeres en roles de liderazgo, reconociendo que los equipos de liderazgo diversos mejoran el desempeño, la innovación y la toma de decisiones.
@@ -85,7 +96,9 @@ El proyecto se llevó a cabo en dos fases en instituciones seleccionadas en Ghan
 - Desarrollo profesional mejorado: el proyecto brindó oportunidades valiosas para que las mujeres avanzaran en sus carreras científicas. A través de programas de capacitación específicos, tutoría y oportunidades de establecer contactos, las mujeres pudieron fortalecer sus conocimientos y habilidades, obtener reconocimiento y progresar hacia roles de liderazgo en los campos de STEM.
 - Influencia y recomendaciones de políticas: el proyecto ha desarrollado recomendaciones de políticas basadas en evidencia destinadas a reducir la brecha de género en STEM. Estas incluyen brindar incentivos y becas para niñas en STEM, implementar políticas sensibles al género y promover la representación igualitaria de mujeres en roles de liderazgo y toma de decisiones dentro de las comunidades científicas y académicas.
 
-### Apoyando a las mujeres indígenas en carreras de ciencia, tecnología, ingeniería y matemáticas en México y América Central
+<div class="header-start">
+<h3>Apoyando a las mujeres indígenas en carreras de ciencia, tecnología, ingeniería y matemáticas en México y América Central</h3>
+</div>
 
 #### Antecedentes
 El Programa de Apoyo a Mujeres Indígenas en Ciencia, Tecnología, Ingeniería y Matemáticas (PEPMI) fue lanzado en el 2018 por el Centro de Investigaciones y Estudios Superiores en Antropología Social (CIESAS) con financiamiento del Centro Internacional de Investigaciones para el Desarrollo (IDRC) y el Consejo Nacional de Ciencia y Tecnología de México (CONACYT). El programa tuvo como objetivo apoyar a las mujeres indígenas en las primeras etapas de sus carreras científicas mediante becas postdoctorales de tres años. Esta iniciativa fue la primera de su tipo en México y América Latina, dirigida a mujeres indígenas con doctorados en áreas de STEM. El programa buscó fortalecer sus conocimientos y habilidades, vinculándolas al sector de investigación del país y combatiendo los estereotipos negativos sobre las mujeres indígenas.
@@ -104,7 +117,9 @@ El programa otorgó becas a doce jóvenes científicas indígenas de varios esta
 - Combatir estereotipos negativos: al mostrar los logros de las científicas indígenas, el programa desafió y combatió eficazmente los estereotipos negativos sobre las mujeres indígenas. Esto ayudó a cambiar las percepciones sociales y a promover un entorno más inclusivo y equitativo en los campos de STEM.
 - Influencia de políticas y recomendaciones: los hallazgos del programa sirvieron de base para las políticas nacionales e institucionales destinadas a promover la equidad de género y social en los campos de STEM. El éxito del programa demostró la importancia del apoyo específico para los grupos subrepresentados y proporcionó un modelo para iniciativas similares en otros contextos. 
 
-### Construyendo políticas públicas para la participación efectiva de las mujeres en ciencia, tecnología, ingeniería y matemáticas en Bolivia
+<div class="header-start">
+<h3>Construyendo políticas públicas para la participación efectiva de las mujeres en ciencia, tecnología, ingeniería y matemáticas en Bolivia</h3>
+</div>
 
 #### Antecedentes
 El proyecto aborda la importante subrepresentación de las mujeres en los campos de STEM en Bolivia. El proyecto tiene como objetivo mejorar la participación de las mujeres en STEM para alcanzar los objetivos de desarrollo sostenible y fomentar el avance socioeconómico y tecnológico. La iniciativa se centra en comprender y abordar los desafíos multifacéticos que limitan la participación de las mujeres en STEM desde la educación temprana hasta las carreras profesionales.
@@ -129,7 +144,9 @@ La segunda fase implicó facilitar espacios de diálogo constructivo con las com
 - Entornos educativos y profesionales mejorados: el proyecto ha puesto de relieve la necesidad de entornos de aprendizaje interactivos y equitativos que desarrollen competencias independientemente del género. También ha hecho hincapié en la importancia de la orientación y la tutoría vocacional para apoyar a las niñas en sus decisiones académicas y profesionales en STEM.
 - Información estadística e intervenciones basadas en datos: el análisis estadístico proporcionado por el proyecto ha ofrecido información valiosa sobre las tasas de participación y las barreras que enfrentan las mujeres en STEM. Estos datos han sido cruciales para informar las intervenciones de políticas y garantizar que sean específicas y efectivas.
 
-### Reduciendo la brecha de igualdad de género en la ciencia en la Women's University en África
+<div class="header-start">
+<h3>Reduciendo la brecha de igualdad de género en la ciencia en la Women's University en África</h3>
+</div>
 
 #### Antecedentes
 El proyecto “Reduciendo la brecha de igualdad de género en la ciencia en la Women's University en África” se inició para abordar la importante subrepresentación de las mujeres en los campos de STEM. A pesar de que la Visión 2030 del país y la Estrategia Nacional de Desarrollo (NDS1) enfatizan la importancia de la ciencia y la tecnología para la industrialización y la igualdad de género, las mujeres siguen estando subrepresentadas en estas disciplinas. El proyecto tuvo como objetivo identificar y mitigar las barreras sistémicas a la participación de las mujeres en las áreas de STEM en la WUA, que se creó con el mandato de abordar las disparidades de género en la educación.

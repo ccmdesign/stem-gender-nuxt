@@ -4,8 +4,10 @@ permalink: /fr/conclusion/
 slug: conclusion
 order: 6
 image: '/images/conclusion.jpg'
+audio: '/audios/Chapter-5.mp3'
 ---
 
+<p class="dropcap" data-letter="L">
 Le parcours vers l’égalité des genres dans les STIM est multiforme et nécessite un effort concerté de la part de toutes les parties prenantes. Les programmes, les initiatives et les résultats de recherche décrits soulignent l’importance des programmes complets, de la recherche participative, du mentorat, de l’intégration des politiques, de la mobilisation communautaire et de l’apprentissage transformateur. Ces éléments sont essentiels afin d’éliminer les obstacles systémiques et favoriser un environnement inclusif pour les femmes dans les STIM.
 
 Le travail du CRDI et de ses partenaires illustre le potentiel de changements percutants pour éliminer les défis cernés grâce à des interventions ciblées et à des efforts de collaboration. En déterminant les obstacles particuliers au contexte et en mettant à l’essai des solutions innovantes, des progrès importants ont été réalisés dans la promotion de l’équité entre les genres. Les réussites de diverses régions, comme l’élaboration de politiques collaboratives au Zimbabwe et les engagements à intégrer des programmes de mentorat dans les universités d’Afrique de l’Est, démontrent l’efficacité de ces approches.
@@ -13,10 +15,13 @@ Le travail du CRDI et de ses partenaires illustre le potentiel de changements pe
 Toutefois, afin de soutenir et mettre à l’échelle ces efforts, il est impératif d’impliquer les décisionnaires et les principales parties prenantes dès le départ. Cela garantit que les interventions ne sont pas seulement mises en œuvre, mais également institutionnalisées, créant un impact durable. En continuant de miser sur ces fondements et en élargissant la portée des programmes couronnés de succès, nous pouvons nous rapprocher de la réalisation d’une véritable transformation de nos systèmes scientifiques, en les rendant plus équitables et inclusifs, et en reflétant les populations que leurs innovations peuvent servir. 
 
 La voie à suivre exige un engagement à l’égard de la recherche continue, de la défense des politiques et de la mobilisation communautaire. En tirant parti de l’expertise et des expériences collectives de diverses parties prenantes, nous pouvons créer un paysage des STIM plus équitable et inclusif qui profite à tout le monde.
+</p>
 
-## Recommandations à l’intention des principales parties prenantes
+<div class="header-start">
+<h4>Recommandations à l’intention des principales parties prenantes</h4>
+</div>
 
-### Responsables politiques
+#### Responsables politiques
 
 1. Accroître la visibilité des femmes scientifiques : Lancer des campagnes médiatiques nationales et des conférences publiques pour mettre en avant les femmes scientifiques, en favorisant une association positive entre les femmes et la science.
 
@@ -28,7 +33,7 @@ La voie à suivre exige un engagement à l’égard de la recherche continue, de
 
 5. Élaborer des stratégies d'intégration : Élaborer des stratégies assorties d'objectifs clairs et de structures de responsabilité, y compris des politiques de prévention et de réponse à la violence fondée sur le genre.
 
-### Universités et établissements d'enseignement
+#### Universités et établissements d'enseignement
 
 1. Développer les activités de sensibilisation et de mentorat : Renforcer les systèmes de soutien dans les écoles et les universités et mettre en œuvre des programmes de mentorat formels pour soutenir les femmes dans divers secteurs des STIM.
 
@@ -40,7 +45,7 @@ La voie à suivre exige un engagement à l’égard de la recherche continue, de
 
 5. Réaliser des audits sur l'égalité des sexes : Réaliser des audits sur l'égalité entre les hommes et les femmes dans les établissements d'enseignement concernés.
 
-### Institutions scientifiques et de recherche
+#### Institutions scientifiques et de recherche
 
 1. Accroître la visibilité des femmes scientifiques : Présenter les femmes scientifiques dans les publications de recherche et les conférences afin d'améliorer leur visibilité et d'inspirer les générations futures.
 
@@ -52,7 +57,7 @@ La voie à suivre exige un engagement à l’égard de la recherche continue, de
 
 5. Adopter une approche coordonnée et multipartite : Collaborer avec les agences gouvernementales, les établissements d'enseignement et les groupes de pression pour améliorer la participation des femmes dans les disciplines STIM.
 
-### Les femmes dans les STIM
+#### Les femmes dans les STIM
 
 1. Accroître la visibilité des femmes scientifiques : Participer à des campagnes médiatiques, des conférences publiques et du matériel éducatif pour inspirer les jeunes filles et établir une association positive avec la science.
 

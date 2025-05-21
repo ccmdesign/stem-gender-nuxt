@@ -4,6 +4,7 @@ permalink: /fr/etat-participation-femmes/
 slug: state-of-womens-participation
 order: 3
 image: '/images/state-of-participation.jpg'
+audio: 'audios/Chapter-2.mp3'
 description: 'La discrimination et le harcèlement fondés sur le genre, comme les commentaires inappropriés et l’exclusion des réunions clés ou des processus de décision, contribuent davantage à un milieu de travail difficile.'
 ---
 
@@ -36,6 +37,8 @@ Cultural norms and practices can severely restrict women's participation in STEM
 
 ### Policy and Institutional Barriers
 National and institutional policies frequently lack integration of gender considerations, resulting in insufficient support for women in STEM. Many existing policies do not adequately address the specific needs and challenges faced by women, leading to ineffective implementation and limited impact. For example, policies may fail to promote gender diversity in recruitment, advancement, and leadership roles within STEM organizations. The lack of enforcement of gender equity guidelines and the absence of dedicated resources to implement supportive measures further exacerbate these barriers. Effective policy integration is essential for creating environments that support and sustain women's participation and leadership in STEM.
+
+<div class="xl-image" style="background-image:url('/images/state-of-participation-2.jpg')"></div>
 
 ### Responding to UNESCO's Call to Action to Close the Gender Gap in Science
 

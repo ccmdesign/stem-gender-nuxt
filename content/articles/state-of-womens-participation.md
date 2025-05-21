@@ -3,20 +3,23 @@ title: The State of Women's Participation in STEM in the Global South
 permalink: /en/state-of-womens-participation/
 slug: state-of-womens-participation
 image: '/images/state-of-participation.jpg'
+audio: '/audios/Chapter-2.mp3'
 order: 3
 description: 'Gender-based discrimination and harassment, such as inappropriate comments and exclusion from key meetings or decision-making processes, further contribute to a challenging work environment.'
 ---
-
+### The importance of women's participation and leadership in STEM.
+<p class="dropcap" data-letter="I">
 In investigating local trends in women's participation in STEM, IDRC-funded research has highlighted challenges similar to those reported in the Global North. Across various regions, women's participation and leadership in STEM fields have not kept pace with the rapid growth of STEM industries and broader advancements toward gender equality (UNESCO, 2017).
+</p>
 
 Alarmingly, despite increasing representation of women in higher education throughout the Americas and Europe, significant attrition occurs as women transition from STEM education to the workforce and even into advanced levels of education (European Commission, 2021; National Science Foundation, 2021).
 
 Recent studies reveal that while female engagement in STEM research averages around 40% in regions like Latin America, the Caribbean, and parts of Europe, it remains lower in North America and Western Europe, hovering around 30% (UIS, 2019). This disparity underscores the need for targeted interventions to support women at critical transition points in their STEM careers. We highlight other major trends and statistics below.
 
-## Current statistics and trends
+### Current statistics and trends
 ![Current statistics and trends](/images/statistics-en.png)
 
-## Barriers to participation and leadership
+### Barriers to participation and leadership
 
 These challenges are not isolated incidents but are part of a broader pattern that has been extensively documented. Research from the Breaking Barriers Network, a collaborative effort at understanding and addressing these obstacles, has uncovered several key issues:
 
@@ -37,6 +40,8 @@ Cultural norms and practices can severely restrict women's participation in STEM
 
 #### Policy and Institutional Barriers
 National and institutional policies frequently lack integration of gender considerations, resulting in insufficient support for women in STEM. Many existing policies do not adequately address the specific needs and challenges faced by women, leading to ineffective implementation and limited impact. For example, policies may fail to promote gender diversity in recruitment, advancement, and leadership roles within STEM organizations. The lack of enforcement of gender equity guidelines and the absence of dedicated resources to implement supportive measures further exacerbate these barriers. Effective policy integration is essential for creating environments that support and sustain women's participation and leadership in STEM.
+
+<div class="xl-image" style="background-image:url('/images/state-of-participation-2.jpg')"></div>
 
 ## Responding to UNESCO's Call to Action to Close the Gender Gap in Science
 

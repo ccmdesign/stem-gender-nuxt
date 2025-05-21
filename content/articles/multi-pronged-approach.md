@@ -4,14 +4,18 @@ permalink: /en/multi-pronged-approach/
 slug: multi-pronged-approach
 order: 4
 image: '/images/multi-pronged.jpg'
+audio: '/audios/Chapter-3.mp3'
 ---
 
+<p class="dropcap" data-letter="T">
 Through the Breaking Barriers network, IDRC is advancing its efforts to address systemic and systematic barriers to women's participation and leadership in STEM. With projects focused on specific research modalities, contexts, scales, and even STEM disciplines, teams are effectively addressing different challenges and issues and uncovering areas of future research and collaboration. 
+</p>
 
 ![A Multi-Pronged Approach to Addressing Systemic and Systematic Barriers to Achieving Gender Equity in STEM](/images/approach-en.png)
 
-
-##	Building Gender-Responsive and Equitable STEM Institutions
+<div class="header-start">
+<h3>Building Gender-Responsive and Equitable STEM Institutions</h3>
+</div>
 
 Projects from across the Breaking Barriers Network have worked diligently to begin to institutionalize gender-responsive policies that promote equity and inclusivity within STEM institutions. Formal mentorship programs have been developed to support women in fields such as engineering, agronomic sciences, green industries, and water management. These programs connect emerging female scientists with experienced mentors, offering them critical resources, guidance, and encouragement to navigate their STEM careers. Additionally, the projects have established and supported scholarship and incentive programs to motivate women to pursue STEM studies and recognize their academic achievements, ensuring ongoing participation in research and innovation. 
 
@@ -20,7 +24,11 @@ To foster greater gender equity in university settings, one of our projects in Z
 #### What's needed?
 A focus on evaluating existing gender-responsive policies at national and institutional levels, identifying gaps and areas for improvement to ensure alignment with national science priorities. There is a need to explore the impact of advocacy efforts on women's representation in leadership and decision-making roles within STEM, generating evidence to support policy refinement.
 
-## Leveraging Data to Address Gender Disparities
+<div class="xl-image" style="background-image:url('/images/state-of-participation.jpg')"></div>
+
+<div class="header-start">
+<h3>Leveraging Data to Address Gender Disparities</h3>
+</div>
 
 Given an increasing acknowledgement of the lack of gender-based data to support interventions in this space, some projects have prioritized data-driven approaches to understanding and addressing gender disparities in STEM. Projects have established comprehensive data collection and digitalization efforts in countries such as South Africa, Uganda, Kenya, Zambia, Bolivia, Brazil and Peru. Some projects, such as our project in South Africa, is using gender-responsive methodologies to gather gender-disaggregated data on women's participation in STEM fields, identifying barriers and critical points of attrition, such as during transitions from education into the workforce.
 
@@ -31,7 +39,9 @@ Some projects are beginning to develop digital platforms, as these also play a k
 #### What's needed?
 We must prioritize the collection and analysis of comprehensive data on the factors contributing to attrition and low participation rates among marginalized groups in STEM, focusing on existing mechanisms and platforms for institutional and national-level data collection. Future efforts should examine high-risk moments for dropout across the educational spectrum and during transitions into the workforce, aiming to develop targeted interventions based on empirical findings to address these critical gaps.
 
-## Fostering Leadership and Mentorship for Women in STEM
+<div class="header-start">
+<h3>Fostering Leadership and Mentorship for Women in STEM</h3>
+</div>
 
 The Network has made significant progress in creating leadership and mentorship pathways for marginalized women, who are often excluded from decision-making and research leadership roles. In Kenya, Uganda, Tanzania, Rwanda, Burundi and South Sudan, the East African Supervision and Mentorship Framework was co-designed by key stakeholders with the aim of strengthening the connection between the women researchers and mentors. These programs not only provide women with the technical skills they need to succeed, but also build their confidence and leadership capacities, enabling them to participate in research agenda-setting and policy development.
 
@@ -42,7 +52,9 @@ In addition, leadership programs have emphasized the need for intersectionality,
 #### What's needed?
 Explore the effectiveness of mentorship frameworks in supporting women, particularly those from underrepresented groups, in STEM fields. Future efforts should assess the impact of partnerships with advocacy organizations and digital platforms in enhancing mentorship connections, as well as investigate leadership training programs that equip women with the necessary skills and confidence to assume decision-making roles.
 
-## Ensuring Support Across Education and Career Pathways
+<div class="header-start">
+<h3>Ensuring Support Across Education and Career Pathways</h3>
+</div>
 
 Projects have begun to develop coordinated, multi-level support system to help women transition successfully from STEM education into the workforce. At the educational level, one project has developed curriculum revisions to ensure gender equity is embedded in learning materials and teaching practices. Other projects are promoting capacity-building initiatives for lecturers and university staff emphasize gender-sensitivity training and the adoption of gender-responsive pedagogies. These efforts create inclusive learning environments where women are not only encouraged to participate, but also given tailored support that addresses their unique challenges.
 

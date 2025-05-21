@@ -4,6 +4,7 @@ permalink: /en/what-we-learned/
 slug: what-we-learned
 order: 5
 image: '/images/lessons-learned.jpg'
+audio: '/audios/Chapter-4.mp3'
 ---
 
 #### Importance of Comprehensive Programs

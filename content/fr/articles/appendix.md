@@ -5,11 +5,16 @@ slug: appendix
 order: 7
 description: "L'écart entre les genres dans les STIM n'est pas le résultat de choix individuels, mais est façonné par des barrières systémiques, notamment les préjugés de genre, les stéréotypes et les inégalités structurelles au sein des établissements d'enseignement et des lieux de travail. Découvrir et éliminer ces barrières est une étape nécessaire pour stimuler le développement dans le monde entier."
 image: '/images/appendix.jpg'
+audio: '/audios/Appendix.mp3'
 ---
 
-## Aperçu de nos projets
+<div class="header-start">
+<h2>Aperçu de nos projets</h2>
+</div>
 
-### Appuyer le leadership des femmes dans les sciences, la technologie et l’innovation grâce à des bourses de début de carrière (2017-2021)
+<div class="header-start">
+<h3>Appuyer le leadership des femmes dans les sciences, la technologie et l’innovation grâce à des bourses de début de carrière (2017-2021)</h3>
+</div>
 
 #### Contexte
 La bourse de recherche en début de carrière de l’OWSD est un prix allant jusqu’à 50 000 USD, destiné à soutenir les femmes qui ont terminé leur Ph. D. dans les domaines des STIM. La bourse est conçue pour les personnes qui travaillent dans des instituts universitaires ou de recherche dans divers pays du monde en développement.
@@ -29,7 +34,9 @@ La bourse fournit du financement pour les coûts associés à la recherche, des 
 - **Avantages institutionnels** : Les bourses ont également renforcé les institutions où les bénéficiaires de subvention travaillent en fournissant de nouveaux équipements et en améliorant la visibilité de la recherche, ce qui ouvre la porte à d’autres collaborations.
 - **Influence des politiques** : Un pourcentage notable de bénéficiaires de subvention en début de carrière ont été invitées à participer à des comités, consultées à l’égard de politiques en matière de STI et ont fourni des conseils sur leurs domaines d’expertise en matière d’élaboration de politiques.
 
-### Éliminer les obstacles au recrutement, au maintien et à la promotion des femmes dans les domaines scientifiques et technologiques pour promouvoir les industries vertes en Colombie
+<div class="header-start">
+<h3>Éliminer les obstacles au recrutement, au maintien et à la promotion des femmes dans les domaines scientifiques et technologiques pour promouvoir les industries vertes en Colombie</h3>
+</div>
 
 #### Contexte
 Ce projet en Colombie visait à promouvoir le rôle des femmes dans les domaines des STIM liés à la croissance verte au moyen de processus d’enseignement et de formation techniques et professionnels (EFTP).
@@ -48,7 +55,9 @@ L’équipe de projet a mis en œuvre une combinaison de stratégies souples (p.
 - **Changement organisationnel** : Un centre d’EFTP en Colombie a facilité l’apprentissage organisationnel et les processus d’apprentissage transformateurs, ce qui a ainsi entraîné un changement systémique au sein des programmes d’EFTP. Quatre centres régionaux d’EFTP ont commencé à montrer la voie en matière d’études en STIM équitable entre les genres.
 - **Autonomisation** : La combinaison de l’apprentissage par l’expérience et de figures exemplaires visibles a inspiré les apprenties et les formatrices à poursuivre dans les carrières en STIM et à y exceller. Leur succès dans ces domaines a remis en question les stéréotypes profondément ancrés et a créé de nouvelles voies pour les générations futures de femmes dans le secteur des sciences et de la technologie.
 
-### Les femmes dans les formations en ingénierie et les carrières d’ingénieur au Bénin et au Ghana
+<div class="header-start">
+<h3>Les femmes dans les formations en ingénierie et les carrières d’ingénieur au Bénin et au Ghana</h3>
+</div>
 
 #### Contexte
 Le projet Les femmes dans les formations en ingénierie et les carrières d’ingénieur visait à étudier les tendances de la participation des femmes aux études et aux carrières d’ingénieur au Ghana et au Bénin. Le projet visait à cerner les obstacles systémiques ainsi qu’à proposer des recommandations pour les éliminer.
@@ -67,7 +76,9 @@ Le projet comprenait des discussions de groupe, des sondages et une analyse des 
 - **Sensibilisation et défense des intérêts** : Le projet a permis de sensibiliser la population aux défis auxquels les femmes sont confrontées dans les études et les carrières en génie et a plaidé en faveur de politiques et de pratiques plus inclusives et de mesures de soutien.
 - **Autonomisation** : Le projet a permis d’autonomiser les femmes en leur fournissant les connaissances et les ressources nécessaires pour s’orienter dans leur carrière et obtenir des postes de direction dans les domaines de l’ingénierie.
 
-### Transformer les institutions que les femmes jouent un rôle de leader dans les STIM : les leçons du Ghana et du Kenya
+<div class="header-start">
+<h3>Transformer les institutions que les femmes jouent un rôle de leader dans les STIM : les leçons du Ghana et du Kenya</h3>
+</div>
 
 #### Contexte
 Le projet SISTARS (Transformer les institutions que les femmes jouent un rôle de leader dans les STIM) se concentre sur la lutte contre la sous-représentation des femmes dans des rôles de leadership dans les domaines des STIM, en particulier dans les secteurs liés à l’eau du Ghana et du Kenya. Malgré diverses politiques nationales et institutionnelles visant à promouvoir l’égalité des genres, les femmes continuent de se heurter à d’importants obstacles pour accéder à des postes de direction. Ces obstacles comprennent les attentes de la société, les stéréotypes et les préjugés systémiques qui nuisent à l’avancement professionnel des femmes. Le projet vise à évaluer et à renforcer les politiques qui soutiennent l’inclusion des femmes dans des rôles de leadership, en reconnaissant que les diverses équipes de direction améliorent le rendement, l’innovation, ainsi que la prise de décision.
@@ -85,7 +96,9 @@ Le projet a été mené en deux phases dans des institutions et des établisseme
 - **Amélioration du perfectionnement professionnel** : Le projet a offert aux femmes de précieuses occasions en vue de faire progresser leur carrière scientifique. Grâce à des programmes de formation ciblés, à du mentorat et à des occasions de réseautage, les femmes ont été en mesure de renforcer leurs connaissances et leurs compétences, d’obtenir une reconnaissance, ainsi que de progresser vers des rôles de leadership dans les domaines des STIM.
 - **Influence et recommandations sur les politiques** : L’équipe de projet a élaboré des recommandations stratégiques fondées sur des données probantes visant à réduire l’écart entre les genres dans les STIM. Il s’agit entre autres d’offrir des incitations et des bourses d’études aux filles dans les STIM, de mettre en œuvre des politiques sensibles au genre et de promouvoir une représentation égale des femmes dans les rôles de leadership et de prise de décisions au sein des communautés scientifiques et universitaires.
 
-### Soutien aux femmes autochtones voulant faire carrière dans les domaines des sciences, de la technologie, de l’ingénierie et des mathématiques, au Mexique et en Amérique centrale
+<div class="header-start">
+<h3>Soutien aux femmes autochtones voulant faire carrière dans les domaines des sciences, de la technologie, de l’ingénierie et des mathématiques, au Mexique et en Amérique centrale</h3>
+</div>
 
 #### Contexte
 Le PEPMI (Programa de Estancias Posdoctorales para Mujeres Indígenas - Programme de postdoctorat pour femmes autochtones dans les domaines des sciences) a été lancé en 2018 par le Centro de Investigaciones y Estudios Superiores en Antropología Social (CIESAS) grâce au financement du Centre de recherches pour le développement international (CRDI) et du CONACYT (de l’espagnol Consejo Nacional de Ciencia y Tecnología de México – Conseil national mexicain pour la science et la technologie). Le programme visait à soutenir les femmes autochtones en début de carrière scientifique en offrant des bourses postdoctorales d’une durée de trois ans. Cette initiative était la première du genre au Mexique et en Amérique latine, ciblant ainsi les femmes autochtones titulaires d’un doctorat dans les domaines des STIM. Le programme visait à renforcer leurs connaissances et leurs compétences, en les arrimant au secteur de la recherche du pays et en luttant contre les stéréotypes négatifs sur les femmes autochtones.
@@ -104,7 +117,9 @@ Le programme a décerné des bourses à douze jeunes femmes scientifiques autoch
 - **Combattre les stéréotypes négatifs** : En mettant en valeur les réalisations des femmes scientifiques autochtones, le programme a efficacement remis en question et combattu les stéréotypes négatifs portant sur les femmes autochtones. Cela a contribué à changer les perceptions sociétales ainsi qu’à promouvoir un environnement plus inclusif et équitable dans les domaines des STIM.
 - **Influence et recommandations politiques** : Les conclusions du programme ont éclairé les politiques nationales et institutionnelles visant à promouvoir l’égalité entre les genres et l’équité sociale dans les STIM. Le succès du programme a démontré l’importance d’un soutien ciblé pour les groupes sous-représentés et a également fourni un modèle pour des initiatives similaires dans d’autres contextes.
 
-### Élaborer une politique publique pour une participation efficace des femmes aux sciences, à la technologie, à l’ingénierie et aux mathématiques en Bolivie
+<div class="header-start">
+<h3>Élaborer une politique publique pour une participation efficace des femmes aux sciences, à la technologie, à l’ingénierie et aux mathématiques en Bolivie</h3>
+</div>
 
 #### Contexte
 Le projet s’attaque à l’importante sous-représentation des femmes dans les domaines des STIM en Bolivie. Le projet vise à améliorer la participation des femmes aux STIM en vue d’atteindre les Objectifs de développement durable des Nations Unies (ODD) et de favoriser le progrès socioéconomique et technologique. L’initiative met l’accent sur la compréhension et la résolution des défis multiformes qui freinent la participation des femmes aux STIM, de la petite enfance à la carrière professionnelle.
@@ -129,7 +144,9 @@ La deuxième phase consistait à faciliter des espaces de dialogue constructifs 
 - **Amélioration des environnements éducatifs et professionnels** : Le projet a mis en évidence la nécessité d’environnements d’apprentissage interactifs et équitables qui développent des compétences sans distinction de genre. L’équipe du projet a également souligné l’importance de l’orientation professionnelle et du mentorat afin de soutenir les filles dans leurs décisions académiques et professionnelles en STIM.
 - **Aperçus statistiques et interventions axées sur les données** : L’analyse statistique présentée par l’équipe du projet a fourni des renseignements précieux sur les taux de participation et les obstacles auxquels se heurtent les femmes dans les STIM. Ces données ont été cruciales pour éclairer les interventions politiques et ainsi s’assurer qu’elles sont ciblées et efficaces.
 
-### Combler l’écart entre les genres dans les sciences à la Women’s University in Africa (WUA)
+<div class="header-start">
+<h3>Combler l’écart entre les genres dans les sciences à la Women’s University in Africa (WUA)</h3>
+</div>
 
 #### Contexte
 Le projet « Combler l’écart entre les genres dans les sciences à la Women’s University in Africa (WUA) » a été lancé pour remédier à la sous-représentation importante des femmes dans les domaines des STIM. Bien que la Vision 2030 du pays et la Stratégie nationale de développement (NDS1) mettent l’accent sur l’importance de la science et de la technologie pour l’industrialisation et l’égalité des genres, les femmes restent sous-représentées dans ces disciplines. Le projet visait à déterminer et à atténuer les obstacles systémiques à la participation des femmes aux STIM à la WUA, qui a été créée avec le mandat de s’attaquer aux disparités entre les genres dans l’éducation.
@@ -152,7 +169,9 @@ Le projet a été mis en œuvre en deux phases sur une durée de 36 mois. La pre
 - **Influence et recommandations des politiques** : Le projet a éclairé les politiques nationales et institutionnelles visant à promouvoir l’équité entre les genres dans les STIM. Les recommandations comprenaient la nécessité d’une pédagogie sensible au genre, d’audits propres au genre et de stratégies d’intégration dans les universités.
 - **Infrastructure de soutien** : La construction d’un salon des mères allaitantes et la création d’un Centre de STIM ont fourni un soutien essentiel aux étudiantes et au personnel féminins, leur permettant de trouver un juste équilibre entre leurs responsabilités universitaires et personnelles.
 
-### Renforcement de l’inclusion du genre dans la recherche agronomique pour des résultats plus probants en Afrique de l’Ouest
+<div class="header-start">
+<h3>Renforcement de l’inclusion du genre dans la recherche agronomique pour des résultats plus probants en Afrique de l’Ouest</h3>
+</div>
 
 #### Contexte
 Les disparités entre les genres dans les domaines des STIM, en particulier dans les sciences agricoles, constituent un défi important en Afrique de l’Ouest. Cette étude se concentre sur les universités publiques et les unités de recherche au Bénin, en Côte d’Ivoire et au Niger, en examinant l’étendue des inégalités entre les genres et en proposant des stratégies pour améliorer la participation des femmes aux sciences agricoles.
@@ -171,7 +190,9 @@ L’étude a révélé d’importantes disparités entre les genres dans les sci
 - **Interventions politiques** : Des réformes juridiques ainsi que des campagnes de sensibilisation sont nécessaires pour assurer l’égalité d’accès aux ressources agricoles et aux possibilités pour les femmes.
 - **Programmes éducatifs** : Des initiatives de formation et de renforcement des capacités devraient être mises en place afin de doter les femmes des compétences et des connaissances nécessaires à une participation plus large aux activités agricoles.
 
-### Données ouvertes d’Amérique latine pour les politiques d’égalité des genres axées sur le leadership dans les STIM
+<div class="header-start">
+<h3>Données ouvertes d’Amérique latine pour les politiques d’égalité des genres axées sur le leadership dans les STIM</h3>
+</div>
 
 #### Contexte
 Le réseau ELLAS (Equality in Leadership for Latin American STEM) a été créé en 2022 par une équipe multidisciplinaire de chercheurs de Bolivie, du Brésil et du Pérou. Cette collaboration rassemble l'expertise de divers domaines afin de combler l'écart important entre les données sur les femmes et les hommes dans les STIM en Amérique latine. Malgré les avancées mondiales en matière d'égalité des sexes, les femmes dans les STIM continuent d'être sous-représentées et de se heurter à des obstacles sur le lieu de travail. En Amérique latine, le manque de données ouvertes et fiables sur les femmes dans les STIM exacerbe ces défis, ce qui rend difficile la conception et la mise en œuvre de politiques et d'initiatives efficaces pour promouvoir l'égalité entre les hommes et les femmes.

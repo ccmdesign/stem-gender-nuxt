@@ -4,13 +4,18 @@ permalink: /fr/approche-plusieurs-volets/
 slug: multi-pronged-approach
 order: 4
 image: '/images/multi-pronged.jpg'
+audio: '/audios/Chapter-3.mp3'
 ---
 
+<p class="dropcap" data-letter="P">
 Par l’entremise du Réseau briser les obstacles, le CRDI fait progresser ses efforts pour éliminer les obstacles systémiques et systématiques à la participation et au leadership des femmes dans les STIM. Avec des projets axés sur des modalités de recherche, des contextes, des échelles et même des disciplines particulières des STIM, les équipes des projets abordent efficacement différents défis et enjeux et découvrent des domaines de recherche et de collaboration futures.
+</p>
 
 ![Une approche déclinée en plusieurs volets pour éliminer les obstacles systémiques et systématiques à l’atteinte de l’équité entre les genres dans les STIM](/images/approach-fr.png)
 
-## Bâtir des institutions et des établissements en STIM équitables et adaptés au genre
+<div class="header-start">
+<h3>Bâtir des institutions et des établissements en STIM équitables et adaptés au genre</h3>
+</div>
 
 Les équipes des projets de l’ensemble du Réseau briser les barrières ont travaillé avec diligence pour commencer à institutionnaliser des politiques adaptées au genre qui favorisent l’équité et l’inclusion au sein des institutions et établissements de STIM. Des programmes de mentorat officiels ont été élaborés afin de soutenir les femmes dans des domaines comme le génie, les sciences agronomiques, les industries vertes et la gestion de l’eau. Ces programmes arriment les femmes scientifiques émergentes à des mentores et des mentors expérimentés, en leur offrant des ressources essentielles, des conseils et des encouragements pour s’orienter dans leur carrière en STIM. De plus, les équipes des projets ont établi et soutenu des programmes de bourses d’études et d’incitatifs pour motiver les femmes à poursuivre des études en STIM et à reconnaître leurs réalisations universitaires, assurant ainsi une participation continue à la recherche et à l’innovation. 
 
@@ -19,7 +24,11 @@ Pour favoriser une plus grande équité entre les genres dans les milieux univer
 ### Ce qui est nécessaire?
 Mettre l’accent sur l’évaluation des politiques existantes adaptées au genre à l’échelle nationale et institutionnelle, en déterminant les lacunes et les domaines à améliorer pour assurer l’harmonisation avec les priorités scientifiques nationales. Il est nécessaire d’explorer les répercussions des efforts de plaidoyer sur la représentation des femmes dans les rôles de leadership et de prise de décision au sein des STIM, en générant des données probantes afin de soutenir l’amélioration des politiques.
 
-## Tirer parti des données pour s’attaquer aux disparités entre les genres
+<div class="xl-image" style="background-image:url('/images/state-of-participation.jpg')"></div>
+
+<div class="header-start">
+<h3>Tirer parti des données pour s’attaquer aux disparités entre les genres</h3>
+</div>
 
 Étant donné que l’on reconnaît de plus en plus le manque de données comparatives entre les genres pour appuyer les interventions dans cet espace, certaines équipes des projets ont accordé la priorité aux approches axées sur les données pour comprendre et aborder les disparités entre les genres dans les STIM. Les équipes des projets ont mis en place des efforts complets de collecte de données et de numérisation dans des pays comme l’Afrique du Sud, l’Ouganda, le Kenya, la Zambie, la Bolivie, le Brésil et le Pérou. Certaines équipes de projets, comme celle en Afrique du Sud, utilisent des méthodologies adaptées au genre pour recueillir des données désagrégées par genre portant sur la participation des femmes dans les domaines des STIM, en déterminant les obstacles et les points critiques d’attrition, comme lors des transitions des études vers le marché du travail en STIM.
 
@@ -30,7 +39,9 @@ Certaines équipes de projets commencent à élaborer des plateformes numérique
 ### Ce qui est nécessaire?
 Nous devons donner la priorité à la collecte et à l’analyse de données complètes portant sur les facteurs contribuant à l’attrition et aux faibles taux de participation parmi les groupes marginalisés dans les STIM, en nous concentrant sur les mécanismes et les plateformes existants pour la collecte de données à l’échelle institutionnelle et nationale. Les efforts futurs devraient examiner les moments à haut risque d’abandon des études dans l’ensemble du spectre éducatif et pendant la transition entre les études et le marché du travail en STIM, dans le but d’élaborer des interventions ciblées basées sur des résultats empiriques pour combler ces lacunes critiques.
 
-## Favoriser le leadership et le mentorat pour les femmes dans les STIM
+<div class="header-start">
+<h3>Favoriser le leadership et le mentorat pour les femmes dans les STIM</h3>
+</div>
 
 Le réseau a réalisé des progrès significatifs dans la création de parcours de leadership et de mentorat pour les femmes marginalisées, qui sont souvent exclues de la prise de décision et des rôles de leadership en matière de recherche. Au Kenya, en Ouganda, en Tanzanie, au Rwanda, au Burundi et au Sud-Soudan, le cadre de supervision et de mentorat pour l'Afrique de l'Est a été conçu conjointement par les principales parties prenantes dans le but de renforcer le lien entre les chercheuses et les mentors. Ces programmes ne se contentent pas de fournir aux femmes les compétences techniques dont elles ont besoin pour réussir, ils renforcent également leur confiance et leurs capacités de leadership, ce qui leur permet de participer à la définition des programmes de recherche et à l'élaboration des politiques. 
 
@@ -41,7 +52,9 @@ De plus, les programmes de leadership ont mis l’accent sur la nécessité de l
 ### Ce qui est nécessaire?
 Explorer l’efficacité des cadres de mentorat afin de soutenir les femmes, en particulier celles des groupes sous-représentés, dans les domaines des STIM. Les efforts futurs devraient évaluer les répercussions des partenariats avec des organisations de défense des droits et des plateformes numériques sur l’amélioration des liens de mentorat, ainsi que des programmes de formation en leadership qui dotent les femmes des compétences et de la confiance nécessaires pour assumer des rôles décisionnels.
 
-## Assurer un soutien dans l’ensemble des études et des cheminements de carrière
+<div class="header-start">
+<h3>Assurer un soutien dans l’ensemble des études et des cheminements de carrière</h3>
+</div>
 
 Des équipes de projets ont commencé à élaborer un système de soutien coordonné à plusieurs niveaux pour aider les femmes à réussir la transition des études en STIM vers le marché du travail dans ce secteur. À l’échelle des études, une équipe de projet a élaboré des révisions des programmes d’études pour veiller à ce que l’équité entre les genres soit intégrée dans le matériel d’apprentissage et les pratiques d’enseignement. D’autres équipes de projets encouragent des initiatives de renforcement des capacités à l’intention des personnes chargées d’enseignement et du personnel universitaire mettent l’accent sur la formation sensible au genre et l’adoption de pédagogies adaptées au genre. Ces efforts créent des environnements d’apprentissage inclusifs où les femmes sont non seulement encouragées à participer, mais reçoivent aussi un soutien personnalisé qui répond à leurs défis uniques.
 

@@ -4,6 +4,7 @@ permalink: /es/que-hemos-aprendido/
 slug: what-we-learned
 order: 5
 image: '/images/lessons-learned.jpg'
+audio: '/audios/Chapter-4.mp3'
 ---
 
 ### Importancia de los programas integrales

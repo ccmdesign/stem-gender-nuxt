@@ -4,6 +4,7 @@ permalink: /es/estado-participacion-mujeres/
 slug: state-of-womens-participation
 order: 3
 image: '/images/state-of-participation.jpg'
+audio: 'audios/Chapter-2.mp3'
 description: 'La discriminación y el acoso por motivos de género, tales como los comentarios inapropiados y la exclusión de reuniones clave o procesos de toma de decisiones, contribuyen aún más a crear un entorno laboral desafiante.'
 ---
 
@@ -35,6 +36,8 @@ Las normas y prácticas culturales pueden restringir gravemente la participació
 
 #### Barreras políticas e institucionales
 Las políticas nacionales e institucionales con frecuencia carecen de la integración de consideraciones de género, lo que resulta en un apoyo insuficiente para las mujeres en STEM. Muchas políticas existentes no abordan adecuadamente las necesidades y los desafíos específicos que enfrentan las mujeres, lo que conduce a una implementación ineficaz y un impacto limitado. Por ejemplo, las políticas pueden no promover la diversidad de género en la contratación, el ascenso y los roles de liderazgo dentro de las organizaciones de STEM. La falta de aplicación de las directrices de equidad de género y la ausencia de recursos dedicados a implementar medidas de apoyo exacerban aún más estas barreras. La integración eficaz de las políticas es esencial para crear entornos que respalden y sostengan la participación y el liderazgo de las mujeres en STEM.
+
+<div class="xl-image" style="background-image:url('/images/state-of-participation-2.jpg')"></div>
 
 ### Respondiendo al llamado a la acción de la UNESCO para cerrar la brecha de género en la ciencia
 

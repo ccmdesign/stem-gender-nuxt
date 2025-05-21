@@ -4,13 +4,18 @@ permalink: /es/un-enfoque-multifacetico/
 slug: multi-pronged-approach
 order: 4
 image: '/images/multi-pronged.jpg'
+audio: '/audios/Chapter-3.mp3'
 ---
 
+<p class="dropcap" data-letter="A">
 A través de Breaking Barriers Network, el IDRC está avanzando en sus esfuerzos para abordar las barreras sistémicas y sistemáticas a la participación y el liderazgo de las mujeres en STEM. Con proyectos centrados en modalidades de investigación específicas, contextos, escalas e incluso disciplinas en STEM, los equipos están abordando eficazmente diferentes desafíos y problemas y descubriendo áreas de investigación y colaboración futuras.
+</p>
 
 ![A Multi-Pronged Approach to Addressing Systemic and Systematic Barriers to Achieving Gender Equity in STEM](/images/approach-es.png)
 
-## Creación de instituciones STEM equitativas y con perspectiva de género
+<div class="header-start">
+<h3>Creación de instituciones STEM equitativas y con perspectiva de género</h3>
+</div>
 
 Los proyectos de toda la Breaking Barriers Network han trabajado diligentemente para comenzar a institucionalizar políticas con perspectiva de género que promuevan la equidad y la inclusión dentro de las instituciones STEM. Se han desarrollado programas formales de tutoría para apoyar a las mujeres en campos como la ingeniería, las ciencias agronómicas, las industrias verdes y la gestión del agua. Estos programas conectan a científicas emergentes con mentoras experimentadas, ofreciéndoles recursos esenciales, orientación y estímulo para que puedan seguir sus carreras en STEM. Adicionalmente, los proyectos han establecido y apoyado programas de becas e incentivos para motivar a las mujeres a cursar estudios en STEM y reconocer sus logros académicos, garantizando así una participación continua en la investigación y la innovación. 
 
@@ -19,7 +24,11 @@ Para fomentar una mayor equidad de género en los entornos universitarios, uno d
 ### ¿Qué se necesita?
 Un enfoque en la evaluación de las políticas con perspectiva de género existentes a nivel nacional e institucional, identificando brechas y áreas de mejora para asegurar la alineación con las prioridades científicas nacionales. Es necesario explorar el impacto de los esfuerzos de promoción en la representación de las mujeres en roles de liderazgo y toma de decisiones dentro de STEM, generando evidencia para respaldar el refinamiento de las políticas.
 
-## Aprovechamiento de los datos para abordar las disparidades de género
+<div class="xl-image" style="background-image:url('/images/state-of-participation.jpg')"></div>
+
+<div class="header-start">
+<h3>Aprovechamiento de los datos para abordar las disparidades de género</h3>
+</div>
 
 Dado el creciente reconocimiento de la falta de datos basados en el género para respaldar las intervenciones en este espacio, algunos proyectos han priorizado los enfoques basados en datos para comprender y abordar las disparidades de género en STEM. Los proyectos han puesto en marcha iniciativas integrales de recopilación y digitalización de datos en países como Sudáfrica, Uganda, Kenia, Zambia, Bolivia, Brasil y Perú. Algunos proyectos, como nuestro proyecto en Sudáfrica, están utilizando metodologías sensibles al género para recopilar datos desglosados por género sobre la participación de las mujeres en los campos de STEM, identificando barreras y puntos críticos de desgaste, tales como durante las transiciones de la educación a la fuerza laboral.
 
@@ -30,7 +39,9 @@ Algunos proyectos están empezando a desarrollar plataformas digitales, ya que e
 ### ¿Qué se necesita?
 Debemos priorizar la recopilación y el análisis de datos integrales sobre los factores que contribuyen a la deserción y las bajas tasas de participación entre los grupos marginados en STEM, centrándonos en los mecanismos y plataformas existentes para la recopilación de datos a nivel institucional y nacional. Los esfuerzos futuros deben examinar los momentos de alto riesgo de abandono escolar en todo el espectro educativo y durante las transiciones a la fuerza laboral, con el objetivo de desarrollar intervenciones específicas basadas en hallazgos empíricos para abordar estas brechas críticas.
 
-## Fomentando el liderazgo y la tutoría para las mujeres en STEM
+<div class="header-start">
+<h3>Fomentando el liderazgo y la tutoría para las mujeres en STEM</h3>
+</div>
 
 La Red ha logrado avances significativos en la creación de vías de liderazgo y tutoría para mujeres marginadas, a menudo excluidas de la toma de decisiones y de las funciones de liderazgo en la investigación. En Kenia, Uganda, Tanzania, Ruanda, Burundi y Sudán del Sur, el Marco de Supervisión y Tutoría de África Oriental fue diseñado conjuntamente por las principales partes interesadas con el objetivo de reforzar la conexión entre las investigadoras y los mentores. Estos programas no sólo proporcionan a las mujeres las habilidades técnicas que necesitan para tener éxito, sino que también fomentan su confianza y su capacidad de liderazgo, permitiéndoles participar en la elaboración de programas de investigación y en el desarrollo de políticas.
 
@@ -41,7 +52,9 @@ Además, los programas de liderazgo han enfatizado la necesidad de intersecciona
 ### ¿Qué se necesita?
 Explorar la eficacia de los marcos de mentoría para apoyar a las mujeres, en particular a las de grupos subrepresentados, en los campos de STEM. Los esfuerzos futuros deberían evaluar el impacto de las asociaciones con organizaciones de defensa y plataformas digitales para mejorar las conexiones de mentoría, así como investigar programas de capacitación en liderazgo que doten a las mujeres de las habilidades y la confianza necesarias para asumir roles de toma de decisiones.
 
-## Garantizando el apoyo en todas las trayectorias educativas y profesionales
+<div class="header-start">
+<h3>Garantizando el apoyo en todas las trayectorias educativas y profesionales</h3>
+</div>
 
 Los proyectos han comenzado a desarrollar sistemas de apoyo coordinado de múltiples niveles para ayudar a las mujeres a realizar una transición exitosa de la educación en STEM al mercado laboral. En el nivel educativo, un proyecto ha desarrollado revisiones del plan de estudios para garantizar que la equidad de género esté incorporada en los materiales de aprendizaje y las prácticas de enseñanza. Otros proyectos están promoviendo iniciativas de desarrollo de capacidades para profesores y personal universitario que enfatizan la capacitación en sensibilidad de género y la adopción de pedagogías sensibles al género. Estos esfuerzos crean entornos de aprendizaje inclusivos donde no solo se alienta a las mujeres a participar, sino que también se les brinda apoyo personalizado que aborda sus desafíos únicos.
 

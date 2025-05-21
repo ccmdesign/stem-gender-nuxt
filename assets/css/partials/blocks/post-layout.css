@@ -75,7 +75,10 @@
 }
 
 
-
+.post-layout .header-start {
+  text-align: start;
+  width: 100%;
+}
 
 .post-layout h2 {
   padding-block-start: var(--space-xl-2xl);

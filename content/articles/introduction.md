@@ -75,12 +75,29 @@ As part of the **Breaking Barriers Network**, researchers from Latin America and
 
 ![Theory of Change](/images/introduction-3.jpg)
 
-![Theory of Change](/images/theory-of-change-en.png)
+<!-- ## A Theory of Change -->
 
-The **Breaking Barriers Network** has crafted an evidence and experience-based research agenda, pinpointing key areas for future research and broader implementation. The main areas of focus and action include:
+<!-- <BorderedGrid type="scenario1">
 
-![Activities](/images/activities-en.png)
-![Desired Outcomes](/images/desired-outcomes-en.png)
+</BorderedGrid>
+<div class="header-start">
+<h3>A Theory of Change</h3>
+</div> -->
+
+<!-- ![Theory of Change](/images/theory-of-change-en.png) -->
+<!-- <div class="header-start">
+<h3> Activities </h3>
+</div>
+
+To date, the **Breaking Barriers Network** has collectively advanced work in different areas:
+
+<InfoCard>
+  <template #title>Card Title</template>
+  Your card content goes here. This will be rendered inside a paragraph tag.
+  You can add multiple lines of text.
+</InfoCard> -->
+<!-- ![Activities](/images/activities-en.png) -->
+<!-- ![Desired Outcomes](/images/desired-outcomes-en.png) -->
 
 
 
