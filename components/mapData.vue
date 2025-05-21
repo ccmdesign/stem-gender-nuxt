@@ -17,18 +17,6 @@
         <span class="circle"></span>
         <span class="name" :style="{'position-anchor': `--resource-list-${key}`}">{{ resource.name }}</span>
       </button>
-      
-      <ul 
-        role="list" 
-        class="resource__list" 
-        popover 
-        :id="`resource-list-${key}`" 
-        :style="{'position-anchor': `--resource-list-${key}`}">
-        <li v-for="(i, index) in resource.resources" :key="index">
-          <span class="circle"></span>
-          <button @click="toggleCard(key, index)">{{ i.name }}</button>
-        </li>
-      </ul>
     </li>
   </ul>
 </template>
@@ -59,18 +47,6 @@ const toggleCard = (countryCode, projectIndex) => {
 
 const findPopover = (id) => {
   data.selectedCountry = data.selectedCountry == id ? '' : id
-  const trigger = document.querySelector(`#trigger-${id}`);
-  const popover = document.querySelector(`#resource-list-${id}`);
-  
-  window.setTimeout(function() {
-    const triggerPos = trigger.getBoundingClientRect().x;
-    const popoverPos = popover.getBoundingClientRect().x;
-    if(popoverPos == 0) {
-      popover.classList.remove('resource-list--fallback');
-    } else if(triggerPos != popoverPos) {
-      popover.classList.add('resource-list--fallback');
-    }
-  },1)
 }
 </script>
 

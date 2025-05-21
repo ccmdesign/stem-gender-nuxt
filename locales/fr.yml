@@ -16,6 +16,7 @@ chapter: Chapitre
 nextChapter: Chapitre Suivant
 breakingBarriers: Breaking barriers, Building bridges
 readReport: Lire le Rapport
+readChapter: Lire le chapitre
 initiative:
   title: L’initiative et notre approche
   p1: Le CRDI a financé les projets Breaking Barriers en 2020 pour combler cette lacune de connaissances. Le groupe de 10 études a analysé les tendances de la participation genrée dans les systèmes scientifiques du Sud et les inégalités systémiques et systématiques enracinées qui empêchent les femmes de progresser dans divers domaines et secteurs en Amérique latine et en Afrique subsaharienne. Ces études ont généré des données probantes sur les obstacles uniques auxquels sont confrontées les femmes et d'autres groupes marginalisés dans les domaines STEM dans les pays à faible revenu.
@@ -31,3 +32,9 @@ report:
   title: Rapport
   view: Voir le Rapport (PDF)
   podcast: Podcast (IA)
+challenge:
+  title: Le Défi
+  p1: Au CRDI, nous croyons que l’inclusivité contribue à l’innovation. Nous soutenons une approche plus inclusive de la science, de la technologie et de l’innovation — une approche qui intègre non seulement les femmes en tant que scientifiques et utilisatrices de la science, mais qui reconnaît également l’analyse de genre comme un élément essentiel d’une recherche et d’une innovation de qualité.
+  link: Les femmes ne représentent que 30 % des chercheurs dans le monde
+  p2: ", avec encore moins de représentation dans les postes de direction scientifique. En 2015, le Partenariat Interacadémique a publié la première enquête complète sur les académies scientifiques de son réseau mondial. Parmi les 69 académies scientifiques nationales disposant de données, les femmes représentaient 10 % ou moins des membres dans près de la moitié des pays."
+  p3: Bien que les obstacles systémiques à la participation des femmes scientifiques fassent de plus en plus l’objet d’études, ces données et études de cas ont historiquement été basées sur des pays du Nord global.

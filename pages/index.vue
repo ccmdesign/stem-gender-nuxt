@@ -30,21 +30,18 @@
       <div class="repel">
         <h2>{{ $t('report.title') }}</h2>
         <div class="flex flex---1">
-          <nuxt-link class="button report__button" icon-after="arrow_downward" color="primary" visual="secondary" to="#report">{{ $t('report.view') }}</nuxt-link>
-          <nuxt-link class="button report__button" icon-after="arrow_downward" color="primary" visual="secondary" to="#report">{{ $t('report.podcast') }}</nuxt-link>
+          <nuxt-link class="button report__button" color="primary" visual="secondary" to="#report">{{ $t('report.view') }}</nuxt-link>
+          <nuxt-link class="button report__button" color="primary" visual="secondary" to="#report">{{ $t('report.podcast') }}</nuxt-link>
         </div>
       </div>
     </section>
-    <section class="report-list">
+    <section class="report-list" id="report">
       <div class="report-list__list">
         <ContentList :query="query" :key="'url' + locale" :path="`/${locale}/`">
           <template #default="{ list }">
             <ul class="report-list__toc" role="list">
-              <li v-for="article in list.sort((a, b) => a.order - b.order)" :key="article._path">
-                <NuxtLink v-if="locale !== 'en'" :to="localePath(article._path)">{{ article.title }}
-                </NuxtLink>
-                <NuxtLink v-else :to="`/articles/${article.slug}`">{{ article.title }}
-                </NuxtLink>
+              <li class="report-list__item" :class="{'report-list__item--active': data.selectedChapter.slug == article.slug}" v-for="article in list.sort((a, b) => a.order - b.order)" @click="data.selectedChapter = article" :key="article._path">
+                {{ article.title }}
               </li>
             </ul>
           </template>
@@ -59,77 +56,35 @@
         </ContentList>
       </div>
       <span class="report-list__spacer"></span>
-    </section>
-    <!--<header class="chapter-layout__header | chapter-header">
-      <div class="repel">
-        <LangSwitcher />
-        <h3>
-          {{ $t('synthesisReport') }} | Beta
-        </h3>
-        
+      <div class="report-list__content" v-if="data.selectedChapter && data.selectedChapter.title">
+          <h3 class="report-list__title">{{ data.selectedChapter.title }}</h3>
+          <p class="report-list__subtitle">{{ data.selectedChapter.description }}</p>
+          <NuxtLink class="button index-header__button" color="primary" visual="primary" v-if="locale !== 'en'" :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }}</NuxtLink>
+          <NuxtLink class="button index-header__button" color="primary" visual="primary" v-else :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter')  }}</NuxtLink>
       </div>
-
-      <chapter-titles />
-
-      <ContentList :query="query" :key="'url' + locale" :path="`/${locale}/`">
-        <template #default="{ list }">
-          <ul class="chapter-header__toc" role="list">
-            <li v-for="article in list.sort((a, b) => a.order - b.order)" :key="article._path">
-              <NuxtLink v-if="locale !== 'en'" :to="localePath(article._path)">{{ article.title }}
-              </NuxtLink>
-              <NuxtLink v-else :to="`/articles/${article.slug}`">{{ article.title }}
-              </NuxtLink>
-            </li>
-          </ul>
-        </template>
-
-        <template #not-found>
-          <p>{{ $t('noArticlesFound') }}</p>
-        </template>
-
-        <template #pending>
-          <p>...</p>
-        </template>
-      </ContentList>
-    </header>
-
-    <div class="chapter-layout__content">
-      <div class="map-grid">
-        <a class="map-grid__idrc-logo" href="https://www.idrc-crdi.ca/en"><img src="/images/idrc-logo-full.png" alt="IDRC" ></a>
-        <div class="map-grid__summary | project-summary">
+    </section>
+    <section class="map-grid">
+         <!--<div class="map-grid__summary | project-summary">
             <h3><span>15</span> {{ $t('globalProjects') }}</h3>
             <p><a href="https://idrc-crdi.ca/en/initiative/gender-stem" target="_blank">Breaking Barriers Network</a></p>
-        </div>
+        </div>-->
         <div class="map-grid__map">
           <world-map class="map" />
           <map-data class="data" :resources="resources" :activeCountry="data.selectedCountry" @project-selected="handleProjectSelected" />
         </div>
-        <div class="map-grid__content">          
-          <details class="country-list">
-            <summary>
-              <h4>{{ $t('countries') }}</h4>
-            </summary>
-            <div class="cluster">
-              <button v-for="(i, key) in resources" class="country-button" :class="{'country-button--active': data.selectedCountry == key}" @click="activateCountry(key)">{{ i.name }}</button>
-            </div>
-          </details>
-          
-          <resource-list :resources="resources" />
-          <resource-card v-if="activeCountry && activeProjectIndex !== null"
-            :resource="resources[activeCountry].resources[activeProjectIndex]" />
+        <div class="map-grid__content">  
+          <resource-list :resources="data.resourceList" />
         </div>
-      </div>
-
-      <div class="mobile-resource-cards | stack">
-        <div class="repel">
-          <h3>{{ $t('resources') }}</h3>
-          <img src="/images/idrc-logo-full.png" alt="IDRC" class="idrc-logo">
+      </section>
+      <section class="challenge">
+        <div class="challenge__image"></div>
+        <div class="stack">
+          <h2>{{ $t('challenge.title') }}</h2>
+          <p>{{ $t('challenge.p1') }}</p>
+          <p><a href="https://unesdoc.unesco.org/ark:/48223/pf0000375429" target="_blank">{{ $t('challenge.link') }}</a>{{ $t('challenge.p2') }}</p>
+          <p>{{ $t('challenge.p3') }}</p>
         </div>
-        
-        <resource-card v-for="item in resourceCardContent" :key="item.name" :resource="item" />
-      </div>
-
-    </div>-->
+      </section>
   </main>
 </template>
 
@@ -137,8 +92,7 @@
 definePageMeta({
   layout: 'default'
 })
-import { ref, onMounted, onUnmounted } from 'vue'
-import ResourceCard from '@/components/resourceCard.vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import resourcesByCountry from '~/public/resourcesByCountry.json'
 import { userResourcesFilter } from '~/composables/resourcesFilter'
@@ -150,12 +104,46 @@ const query: QueryBuilderParams = {
 }
 
 const resources = ref(resourcesByCountry)
-const resourceCardContent = userResourcesFilter(resourcesByCountry)
+
+// Primeiro, vamos definir as interfaces necessárias
+interface Resource {
+  name: string;
+  select: string;
+  project_type: string;
+  region: string;
+  region_codes: string[];
+  funding: number;
+  status: string;
+  programs: string;
+  url: string;
+}
+
+interface Country {
+  name: string;
+  resources: Resource[];
+  position: {
+    x: string;
+    y: string;
+  };
+}
+
+// Agora vamos corrigir a definição do resourceFullList
+const resourceFullList = Object.values(resources.value).reduce<Resource[]>((acc, country: Country) => {
+  country.resources.forEach((resource: Resource) => {
+    const exists = acc.some((r: Resource) => r.name === resource.name);
+    if (!exists) {
+      acc.push(resource);
+    }
+  });
+  return acc;
+}, []).sort((a: Resource, b: Resource) => a.name.localeCompare(b.name));
 
 const activeCountry = ref<string | null>(null);
 const activeProjectIndex = ref<number | null>(null);
 const data = reactive({
-  selectedCountry: ''
+  selectedCountry: '',
+  selectedChapter: {},
+  resourceList: resourceFullList
 })
 
 const handleProjectSelected = ({ countryCode, projectIndex }) => {
@@ -188,8 +176,30 @@ const activateCountry = (id) => {
   }
 }
 
+// Primeiro, vamos criar uma ref para a lista filtrada
+const filteredResourceList = ref<Resource[]>(resourceFullList);
+
+// Agora vamos adicionar o watcher
+watch(() => data.selectedCountry, (newCountry) => {
+  if (!newCountry) {
+    // Se não houver país selecionado, mostra a lista completa
+    filteredResourceList.value = resourceFullList;
+  } else {
+    // Filtra os recursos pelo país selecionado
+    filteredResourceList.value = resourceFullList.filter(resource => 
+      resource.region_codes.includes(newCountry)
+    );
+  }
+}, { immediate: true });
+
+// Atualiza o data.resourceList para usar a lista filtrada
+watch(filteredResourceList, (newList) => {
+  data.resourceList = newList;
+}, { immediate: true });
+
 onMounted(async () => {
   document.addEventListener('click', handleClickOutside);
+  document.querySelectorAll('.report-list__item')[0].click();
 });
 
 onUnmounted(() => {
@@ -232,10 +242,10 @@ h2 {
     max-width: 720px;
     --stack-space: var(--space-m-l)
   }
+}
   .index-header__button  {
     color: var(--white-color);
   }
-}
 
   .index-header__brow {
     text-transform: uppercase;
@@ -311,14 +321,62 @@ h2 {
   .report-list {
     display: grid;
     grid-template-columns: 40% 2px auto;
+    position: relative;
+    z-index: 1;
   }
 
-    .report-list__list {
+    .report-list__toc {
+      .report-list__item {
+        padding-inline: var(--space-m) var(--space-l);
+        padding-block: var(--space-s);
+        cursor: pointer;
+        font-size: var(--size-0);
+      }
+      .report-list__item--active {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+      }
     }
 
     .report-list__spacer {
       background-image: linear-gradient(360deg, rgba(228, 228, 231, 0) 0%, rgba(228, 228, 231, 0.5) 15%, #E4E4E7 85%, rgba(228, 228, 231, 0) 100%);
     }
+
+    .report-list__content {
+      padding-inline: var(--space-2xl) var(--space-m);
+      display: flex;
+      gap: var(--space-xl);
+      flex-direction: column;
+      justify-content: center;
+    }
+
+      .report-list__title {
+        font-size: var(--size-4);
+        color: var(--primary-color);
+      }
+
+      .report-list__subtitle {
+        font-size: var(--space-0);
+      }
+
+.challenge {
+  padding: var(--space-3xl) var(--space-m) var(--space-xl) ;
+  display: flex;
+  gap: var(--space-2xl-3xl);
+  align-items: center;
+  background-color: var(--base-color-02-tint);
+  border-top: 1px solid var(--base-color-10-tint);
+}
+
+  .challenge__image {
+    width: 100%;
+    max-width: 500px;
+    height: 544px;
+    flex-shrink: 0;
+    background-image: url(/images/conclusion.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 
 .map-grid {
   @media (max-width: 768px) {
