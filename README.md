@@ -58,3 +58,11 @@ RewriteRule ^ /index.html [L]
 User-agent: *
 Disallow:
 ```
+
+### Map component architecture
+
+The homepage map is now grouped in a dedicated `HomeMap` component that brings
+`worldMap.vue` and `mapData.vue` together. The container exposes a single
+`project-selected` event and receives the resources collection along with an
+optional `activeCountry` prop. This encapsulation keeps the page markup simpler
+and lets the map cluster evolve independently.
