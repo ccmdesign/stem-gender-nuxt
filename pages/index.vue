@@ -69,8 +69,11 @@
             <p><a href="https://idrc-crdi.ca/en/initiative/gender-stem" target="_blank">Breaking Barriers Network</a></p>
         </div>-->
         <div class="map-grid__map">
-          <world-map class="map" />
-          <map-data class="data" :resources="resources" :activeCountry="data.selectedCountry" @project-selected="handleProjectSelected" />
+          <HomeMap
+            :resources="resources"
+            :activeCountry="data.selectedCountry"
+            @project-selected="handleProjectSelected"
+          />
         </div>
         <div class="map-grid__content">  
           <resource-list :resources="data.resourceList" />
