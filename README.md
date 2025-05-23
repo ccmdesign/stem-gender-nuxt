@@ -1,60 +1,59 @@
-# Multilingual static site based on Nuxt Content, Nuxt 3, nuxtjs/i18n
+# Breaking Barriers Nuxt Site
 
-Boilerplate to start localized static site. Includes two static routs and dynamic routes and metadata for each page.
+This repository contains the source for a multilingual static site built with **Nuxt 3** and **Nuxt Content**. The site hosts articles and resources related to advancing gender equality in STEM across English, Spanish and French.
 
-### Gallery index page:
+## Features
 
-![gallery](https://github.com/RollingTL/Image-gallery-nuxt3-i18n/blob/main/images/gallery.png?raw=trues)
+- **Nuxt 3** with server-side rendering and static generation
+- **Internationalization** provided by `nuxtjs/i18n`
+- Content written in Markdown and managed through **Nuxt Content**
+- Simple Pinia store and custom composables
 
-### Gallery item page:
+## Requirements
 
-![gallery item](https://github.com/RollingTL/Image-gallery-nuxt3-i18n/blob/main/images/item.png?raw=trues)
+- Node.js 18 or newer
+- npm
 
-## Setup
+## Getting started
 
-Make sure to install the dependencies:
+Install the dependencies:
 
 ```bash
-# npm
 npm install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Launch a development server at `http://localhost:3000`:
 
 ```bash
-# npm
 npm run dev
 ```
 
-## Deployment to static server
-
-Build the application for production:
+Run the linter to check code style:
 
 ```bash
-# npm
-npx nuxi generate
+npm run lint
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Building for production
 
-Then copy content of `dist` folder to `public` folder of your web site.
+Generate a fully static version of the site:
 
-If necessary create .htaccess and robots.txt files.
-
-### Sample .htaccess
-
-```
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ /index.html [L]
+```bash
+npm run generate
 ```
 
-### Sample robots.txt
+The generated files will be available in the `dist` directory. Upload its contents to your static hosting provider (e.g. Netlify, GitHub Pages) to deploy.
 
-```
-User-agent: *
-Disallow:
-```
+See the [Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more details.
+
+## Project structure
+
+- `pages/` – Vue pages rendered by Nuxt
+- `content/` – Markdown articles in multiple languages
+- `locales/` – Translation files for UI strings
+- `components/` – Reusable Vue components
+
+Additional notes for contributors can be found in [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md).
+
+This project is released under the [Unlicense](LICENSE).
+
