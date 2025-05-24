@@ -72,8 +72,8 @@
           <world-map class="map" />
           <map-data class="data" :resources="resources" :activeCountry="data.selectedCountry" @project-selected="handleProjectSelected" />
         </div>
-        <div class="map-grid__content">  
-          <resource-list :resources="data.resourceList" />
+        <div class="map-grid__content">
+          <resource-list :resources="resourceList" />
         </div>
       </section>
       <section class="challenge">
@@ -92,10 +92,9 @@
 definePageMeta({
   layout: 'default'
 })
-import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import resourcesByCountry from '~/public/resourcesByCountry.json'
-import { userResourcesFilter } from '~/composables/resourcesFilter'
 
 const { locale } = useI18n()
 const localePath = useLocalePath()
@@ -142,8 +141,16 @@ const activeCountry = ref<string | null>(null);
 const activeProjectIndex = ref<number | null>(null);
 const data = reactive({
   selectedCountry: '',
-  selectedChapter: {},
-  resourceList: resourceFullList
+  selectedChapter: {}
+})
+
+const resourceList = computed<Resource[]>(() => {
+  if (!data.selectedCountry) {
+    return resourceFullList
+  }
+  return resourceFullList.filter(resource =>
+    resource.region_codes.includes(data.selectedCountry)
+  )
 })
 
 const handleProjectSelected = ({ countryCode, projectIndex }) => {
@@ -160,42 +167,7 @@ const handleClickOutside = (event: MouseEvent) => {
   }
 };
 
-const activateCountry = (id) => {
-  if(data.selectedCountry != id) {
-    const trigger = document.querySelector(`#trigger-${id}`);
-    if(trigger) {
-      trigger.click();
-    }
-    data.selectedCountry = id
-  } else {
-    const trigger = document.querySelector(`.map-grid__map`);
-    if(trigger) {
-      trigger.click();
-    }
-    data.selectedCountry = ''
-  }
-}
 
-// Primeiro, vamos criar uma ref para a lista filtrada
-const filteredResourceList = ref<Resource[]>(resourceFullList);
-
-// Agora vamos adicionar o watcher
-watch(() => data.selectedCountry, (newCountry) => {
-  if (!newCountry) {
-    // Se não houver país selecionado, mostra a lista completa
-    filteredResourceList.value = resourceFullList;
-  } else {
-    // Filtra os recursos pelo país selecionado
-    filteredResourceList.value = resourceFullList.filter(resource => 
-      resource.region_codes.includes(newCountry)
-    );
-  }
-}, { immediate: true });
-
-// Atualiza o data.resourceList para usar a lista filtrada
-watch(filteredResourceList, (newList) => {
-  data.resourceList = newList;
-}, { immediate: true });
 
 onMounted(async () => {
   document.addEventListener('click', handleClickOutside);

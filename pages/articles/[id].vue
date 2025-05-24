@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+import { computed } from 'vue'
+
 definePageMeta({
   layout: 'default'
 })
@@ -16,19 +18,19 @@ const chapter = await queryContent(locale.value, 'articles').where({
 }).findOne();
 
 
-function getNextDoc(currentOrder: number) {
-  if (!docs.value) return null
-  const sortedDocs = docs.value
-  const currentIndex = sortedDocs.findIndex(d => d.order === currentOrder)
-  return currentIndex !== -1 ? sortedDocs[currentIndex + 1] || null : null
-}
+const docIndex = computed(() => {
+  return docs.value ? docs.value.findIndex(d => d.order === chapter.order) : -1
+})
 
-function getPrevDoc(currentOrder: number) {
+const nextDoc = computed(() => {
   if (!docs.value) return null
-  const sortedDocs = docs.value
-  const currentIndex = sortedDocs.findIndex(d => d.order === currentOrder)
-  return currentIndex !== 0 ? sortedDocs[currentIndex - 1] || null : null
-}
+  return docs.value[docIndex.value + 1] || null
+})
+
+const prevDoc = computed(() => {
+  if (!docs.value) return null
+  return docIndex.value > 0 ? docs.value[docIndex.value - 1] : null
+})
 </script>
 
 <template>
@@ -40,8 +42,8 @@ function getPrevDoc(currentOrder: number) {
           <span class="separator not-mobile"></span>
           <div class="article-links__title">{{ $t('chapter') }} {{ chapter.order }} / <b>{{ chapter.title }}</b></div>
           <span class="separator not-mobile"></span>
-          <nextLink class="not-mobile" :url="localePath(`/articles/${getNextDoc(chapter.order).slug}`)"
-            v-if="getNextDoc(chapter.order)"></nextLink>
+          <nextLink class="not-mobile" :url="nextDoc ? localePath(`/articles/${nextDoc.slug}`) : ''"
+            v-if="nextDoc"></nextLink>
         </div>
       </div>
     </div>
@@ -63,18 +65,18 @@ function getPrevDoc(currentOrder: number) {
         </article>
         <article class="next-article">
           <div class="next-article__content">
-            <div class="next-article__item" v-if="getPrevDoc(doc.order)">
+            <div class="next-article__item" v-if="prevDoc">
               <p class="next-article__cta">{{ $t('previousArticle') }}</p>
-              <NuxtLink class="next-article__link" :to="localePath(getPrevDoc(doc.order)._path)">
-                {{ getPrevDoc(doc.order).title }}
+              <NuxtLink class="next-article__link" :to="localePath(prevDoc._path)">
+                {{ prevDoc.title }}
               </NuxtLink>
             </div>
             <div class="next-article__item" v-else></div>
 
-            <div class="next-article__item next-article__item--right" v-if="getNextDoc(doc.order)">
+            <div class="next-article__item next-article__item--right" v-if="nextDoc">
               <p class="next-article__cta">{{ $t('readNext') }}</p>
-              <NuxtLink class="next-article__link" :to="localePath(getNextDoc(doc.order)._path)">
-                {{ getNextDoc(doc.order).title }}
+              <NuxtLink class="next-article__link" :to="localePath(nextDoc._path)">
+                {{ nextDoc.title }}
               </NuxtLink>
             </div>
             <div class="next-article__item next-article__item--right" v-else></div>
