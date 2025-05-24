@@ -9,25 +9,18 @@ export function userResourcesFilter(resourcesByCountry) {
   }
 
   const filteredResources = ref([]);
-  let resourcesKeys = new Set();
-  for (let key in resourcesByCountry) {
-    const value = resourcesByCountry[key];
-    
-    value.resources.forEach((resource: any) => {
+  const resourcesKeys = new Set();
+
+  for (const countryKey in resourcesByCountry) {
+    const { resources } = resourcesByCountry[countryKey];
+
+    resources.forEach((resource: any) => {
       const key = buildKey(resource);
-      
-      if(!resourcesKeys.has(key)) {
+      if (!resourcesKeys.has(key)) {
         filteredResources.value.push(resource);
+        resourcesKeys.add(key);
       }
     });
-
-    value.resources.forEach(element => {
-      resourcesKeys = new Set([
-        ...resourcesKeys, 
-        buildKey(element),
-      ]);  
-    });
-
   }
 
   return filteredResources;
