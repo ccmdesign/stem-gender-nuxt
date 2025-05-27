@@ -76,35 +76,84 @@ As part of the **Breaking Barriers Network**, researchers from Latin America and
 
 ![Theory of Change](/images/introduction-3.jpg)
 
-<!-- ## A Theory of Change -->
+::borderedGrid{type="scenario1"}
+::
+### A Theory of Change
 
-<!-- <BorderedGrid type="scenario1">
+::borderedGrid{type="scenario2"}
+#### Barriers
+::
 
-</BorderedGrid>
-<div class="header-start">
-<h3>A Theory of Change</h3>
-</div> -->
+- Gender stereotypes, cultural and societal norms shapewomen’s aspirations and experiences in STEM.
+- There is a lack of female role models and mentors in STEM fields.
+- Gender biases in education undermine women’s confidence in STEM.
+- Women face undervaluation and discrimination in STEM workplaces.
+- There are insufficient policies that support and protect women in STEM.
 
-<!-- ![Theory of Change](/images/theory-of-change-en.png) -->
-<!-- <div class="header-start">
-<h3> Activities </h3>
-</div>
+::borderedGrid{type="scenario2"}
+#### Key Assumptions
+::
 
-To date, the **Breaking Barriers Network** has collectively advanced work in different areas:
+- Importance of Comprehensive Programs
+- Role of Participatory Research
+- Value of Role Models
+- Need for Policy Integration and Implementation
+- Community Engagement and Education
+- Transformative Learning
 
-<InfoCard>
-  <template #title>Card Title</template>
-  Your card content goes here. This will be rendered inside a paragraph tag.
-  You can add multiple lines of text.
-</InfoCard> -->
-<!-- ![Activities](/images/activities-en.png) -->
-<!-- ![Desired Outcomes](/images/desired-outcomes-en.png) -->
+::borderedGrid{type="scenario2"}
+#### Activities
+::
 
+- Establishing initiatives to promote gender equity, including genderresponsive policies, mentorship programs, and scholarship programmes. Additionally, conducting gender audits to ensure safe and supportive environments for women.
+- Establishing initiatives to promote gender equity, including genderresponsive policies, mentorship programs, and scholarship programmes. Additionally, conducting gender audits to ensure safe and supportive environments for women. Comprehensive data collection efforts that utilize genderresponsive methodologies to identify barriers to women’s participation in STEM, inform evidence-based policies that address gender inequalities.
+- Designing and implementing mentorship frameworks and collaborative networks that empower marginalized women in STEM, providing them with leadership opportunities and resources to enhance their participation in decision-making and research initiatives.
+- Building support systems to facilitate women’s transitions from STEM education to the workforce. These systems include curriculum revisions, capacity-building initiatives, and policy frameworks, ensuring women receive ongoing support throughout their careers.
 
+::borderedGrid{type="scenario2"}
+#### Desired Outcomes
+::
 
-<!-- - Comprehensive Gender-Responsive and Inclusive Institutional Policies: National science institutions and workplaces integrate gender and inclusivity principles into policies to promote marginalized groups in STEM, ensuring advocacy, alignment with science priorities, and creating supportive environments free from gender-based violence, harassment, and discrimination.
-- Data-Driven Approaches to Address Disparities and Marginalization: Improved data collection on gender, racial, and social disparities is critical to understanding factors such as attrition, low participation, and high-risk dropout moments. This evidence base informs policies that address barriers to success in STEM education and careers for marginalized groups.
-- Leadership and Mentorship Opportunities for Underrepresented Groups: Frameworks and initiatives provide leadership opportunities to marginalized groups often excluded from decision-making and research agenda-setting. This includes scaling mentorship practices, postgraduate training, and fostering collaborative networks for women and other underrepresented individuals in STEM.
-- Coordinated Support Across Education and Workforce Transitions: Coordination between institutions and policies across the educational spectrum and workforce is essential to ensure continuity of support. Gender-sensitive training and gender-responsive pedagogies help sustain inclusivity, while addressing the unique challenges faced by marginalized groups as they transition from education to STEM careers. -->
+- **Expanding Leadership and Mentorship Opportunities:** Frameworks and initiatives provide leadership opportunities to marginalized groups often excluded from decision-making and research agendasetting. This includes scaling mentorship practices, postgraduate training, and fostering collaborative networks for women and other underrepresented individuals in STEM.
+- **Strengthening Data Collection and Analysis:** Improved data collection on gender, racial, and social disparities is critical to understanding factors such as attrition, low participation, and high-risk dropout moments. This evidence base informs policies that address barriers to success in STEM education and careers for marginalized groups.
+- **Facilitating Coordinated Support Across Education and Career Pathways:** Coordination between institutions and policies across the educational spectrum and workforce is essential to ensure continuity of support. Gendersensitive training and gender-responsive pedagogies help sustain inclusivity, while addressing the unique challenges faced by marginalized groups as they transition from education to STEM careers.
+- **Enhancing Gender-Responsive Institutional Policies:** National science institutions and workplaces integrate gender and inclusivity principles into policies to promote marginalized groups in STEM, ensuring advocacy, alignment with science priorities, and creating supportive environments free from gender-based violence, harassment, and discrimination.
 
+::borderedGrid{type="scenario3"}
+::
+> ##### Ultimate Goal
+> **Science systems are made more inclusive, enabling women to emerge as leaders  and contribute to knowledge and innovation that improves people’s lives.**
+
+::card-list
+#header
+  ### What have our initiatives revealed so far?
+  To date, the **Breaking Barriers Network** has collectively advanced work in different areas:
+
+#cards
+  - #### Developed an Evidence-base
+    Generating evidence on how to improve gender equality and diversity in STEM,through scoping and the testing of promising interventions.
+  - #### Established Collaborative Networks
+    Establishing networks of female researchers and practitioners to foster collaboration and support.
+  - #### Built and Strengthened Capacities
+    Implementing training programs to build the capacity of female scientists and researchers in the Global South.
+  - #### Influenced Policy Capacities
+    Working with governments and institutions to influence policy changes that support gender equality in STEM fields.
+  - #### Developed Monitoring and Evaluation Frameworks
+    Developing robust mechanisms to monitor and evaluate the impact of gender equality initiatives, ensuring continuous improvement and accountability.
+::
+::card-list
+#header
+  ### What is needed?
+  The **Breaking Barriers Network** has crafted an evidence and experience-based research agenda, pinpointing key areas for future research and broader implementation. The main areas of focus and action include:
+
+#cards
+  - #### Comprehensive Gender-Responsive and Inclusive Institutional Policies
+    National science institutions and workplaces integrate gender and inclusivity principles into policies to promote marginalized groups in STEM, ensuring advocacy, alignment with science priorities, and creating supportive environments free from gender-based violence, harassment, and discrimination.
+  - #### Data-Driven Approaches to Address Disparities and Marginalization
+    Improved data collection on gender, racial, and social disparities is critical to understanding factors such as attrition, low participation, and high-risk dropout moments. This evidence base informs policies that address barriers to success in STEM education and careers for marginalized groups.
+  - #### Leadership and Mentorship Opportunities for Underrepresented Groups
+    Frameworks and initiatives provide leadership opportunities to marginalized groups often excluded from decision-making and research agendasetting. This includes scaling mentorship practices, postgraduate training, and fostering collaborative networks for women and other underrepresented individuals in STEM.
+  - #### Coordinated Support Across Education and Workforce Transitions
+    Coordination between institutions and policies across the educational spectrum and workforce is essential to ensure continuity of support. Gendersensitive training and gender-responsive pedagogies help sustain inclusivity, while addressing the unique challenges faced by marginalized groups as they transition from education to STEM careers.
+::
 

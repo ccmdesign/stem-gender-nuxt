@@ -12,6 +12,12 @@ export default defineNuxtConfig({
       enabled: true
     }
   },
+  components: {
+    dirs: [
+      '~/components',
+      '~/components/content'
+    ]
+  },
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/eslint',

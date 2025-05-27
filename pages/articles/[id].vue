@@ -1,10 +1,13 @@
 <script setup lang="ts">
+<<<<<<< HEAD
 import BgImage from '~/components/bgImage.vue'
 import DropcapComponent from '~/components/dropcapComponent.vue'
 import HeaderGroup from '~/components/headerGroup.vue'
 import HeaderStart from '~/components/HeaderStart.vue'
 
 
+=======
+>>>>>>> 3cb254b1375e4495ae80e978ceb4a64c11b5ea95
 definePageMeta({
   layout: 'default'
 })

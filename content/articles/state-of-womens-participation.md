@@ -16,12 +16,87 @@ Alarmingly, despite increasing representation of women in higher education throu
 
 Recent studies reveal that while female engagement in STEM research averages around 40% in regions like Latin America, the Caribbean, and parts of Europe, it remains lower in North America and Western Europe, hovering around 30% (UIS, 2019). This disparity underscores the need for targeted interventions to support women at critical transition points in their STEM careers. We highlight other major trends and statistics below.
 
-### Current statistics and trends
-![Current statistics and trends](/images/statistics-en.png)
+::graphText
+### Workforce
+::
 
-### Barriers to participation and leadership
+::graphText
+#### Dropout rates
+Women are more likely to leave STEM careers within the first 10 years compared to me (National Center for Women & Information Technology, 2016).
+::
 
+::graphText{graph=true percentage=28}
+#### Global STEM workforce
+Women make up only **28%** of the global STEM workforce (UNESCO, 2021).
+::
+
+::graphText{graph=true percentage=15}
+#### Leadership positions
+Women Women hold less than **15%** of senior leadership roles in STEM organizations (Catalyst, 2020).
+::
+
+::graphText{graph=true percentage=20 gap=50}
+#### Pay gap
+In Europe, women in STEM earn on average **20%** less than their male counterparts (European Commission, 2020).
+::
+
+::graphText
+### Field-Specific Disparities
+::
+
+::graphText{graph=true percentage=21}
+#### Physics
+In physics, women constitute just **21%** of the undergraduate degree recipients (American Physical Society, 2021).
+::
+
+::graphText{graph=true percentage=20}
+#### Engineering and Computer Science
+In engineering and computer science fields, women represent less than **20%** of the workforce (OECD, 2019).
+::
+
+::graphText{graph=true percentage=20}
+#### Sustainability
+By 2030, between 15 and 22 million green jobs are projected, yet over 80% are in traditionally male-dominated sectors such as agriculture, energy, manufacturing, transportation, and construction. Women are underrepresented in these areas, with fewer than **20%** working in renewable energy. In countries like Uruguay, Bolivia, Costa Rica, El Salvador, and Honduras, women account for **17%** to **36%** of researchers in engineering and technology.
+::
+
+::graphText{graph=true percentage=25}
+#### Agricultural Sciences
+Women are notably underrepresented in higher education and research positions in agricultural sciences, with fewer than **25%** of staff in relevant academic and training units being women. In public universities in West Africa, the proportion of women in agricultural science courses is as low as **15.36% in Benin, 17.19% in Niger, and 22.22% in Côte d'Ivoire.** Women constitute only **16.46%** of research team members in these countries.
+::
+
+::graphText
+### Education
+::
+
+::graphText{graph=true percentage=30}
+#### Higher education
+Women account for just **30%** of all researchers globally (UNESCO, 2021).
+::
+
+::graphText{graph=true percentage=35}
+#### Enrollment in STEM fields
+In higher education, only **35%** of all students enrolled in STEM-related fields are women (UNESCO, 2019).
+::
+
+::graphText
+### Patents and Publications
+::
+
+::graphText
+#### Publication rates
+Women publish fewer scientific papers than men, and their papers are cited less frequently (Elsevier, 2020).
+::
+
+::graphText{graph=true percentage=10}
+#### Patents and innovation
+Women are listed as inventors on **less than 10%** of patent applications worldwide (World Intellectual Property Organization, 2019).
+::
+
+::graphText
+## Barriers to participation and leadership
 These challenges are not isolated incidents but are part of a broader pattern that has been extensively documented. Research from the Breaking Barriers Network, a collaborative effort at understanding and addressing these obstacles, has uncovered several key issues:
+::
+
 
 #### Gender Stereotypes and Societal Norms
 Gender stereotypes significantly influence the perception of which STEM-related jobs are deemed appropriate for women and men. These stereotypes often limit women's career aspirations and discourage them from pursuing or advancing in STEM fields. Societal expectations and traditional roles, particularly in patriarchal communities, create additional barriers by reinforcing beliefs that women are less suited for technical and scientific professions. For instance, the notion that STEM fields are inherently masculine can deter women from entering or persisting in these careers, as they may internalize these beliefs or face external discouragement.
@@ -44,7 +119,9 @@ National and institutional policies frequently lack integration of gender consid
 ::bg-image{imageClass="xl-image" url="/images/state-of-participation-2.jpg"}
 ::
 
+::graphText
 ## Responding to UNESCO's Call to Action to Close the Gender Gap in Science
+::
 
 IDRC's **Breaking Barriers Network** reflects only a snapshot of the global movement to bridge the gender gap on women's participation and success in STEM. There has been a growing awareness among the international community of the importance of gender equality in STEM. Various organizations, governments, and advocacy groups have been actively working to promote gender diversity and inclusion in these fields. 
 A key moment for this community has been the launch of UNESCO's 2024 call to action entitled ["Closing the Gender Gap in Science."](https://dataviz.unesco.org/en/science-technology-and-innovation/cta) While this call emphasizes the importance of gender equality in addressing complex global challenges, it also highlighted the significant gaps that exist, which map directly onto many of the systemic and systematic barriers that IDRC's research collaborators have confronted and identified to date.
