@@ -125,7 +125,7 @@ As part of the **Breaking Barriers Network**, researchers from Latin America and
 
 ::card-list
 #header
-  ### Activities
+  ### What have our initiatives revealed so far?
   To date, the **Breaking Barriers Network** has collectively advanced work in different areas:
 
 #cards
@@ -142,7 +142,7 @@ As part of the **Breaking Barriers Network**, researchers from Latin America and
 ::
 ::card-list
 #header
-  ### Desired Outcomes
+  ### What is needed?
   The **Breaking Barriers Network** has crafted an evidence and experience-based research agenda, pinpointing key areas for future research and broader implementation. The main areas of focus and action include:
 
 #cards
