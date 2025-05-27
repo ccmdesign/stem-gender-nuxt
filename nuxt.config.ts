@@ -19,8 +19,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/google-fonts'
   ],
-  
-  css: [ '~/assets/css/styles.scss'],
+
+  css: ['~/assets/css/styles.scss'],
   vite: {
     css: {
       preprocessorOptions: {
@@ -29,13 +29,13 @@ export default defineNuxtConfig({
         }
       }
     }
-  },  
+  },
   googleFonts: {
     families: {
       Poppins: true,
     }
   },
-  
+
   i18n: {
     // Module Options
     lazy: true,

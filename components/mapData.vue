@@ -1,24 +1,23 @@
 <template>
-  <ul class="map-data" role="list">
-    <li 
-      :id="`resource-${key}`"
-      name="resource-list" 
-      class="resource"
-      :class="{'resource--active': data.selectedCountry == key}"
-      v-for="(resource, key) in resources" 
-      :key="key"
-      :style="{
-        left: resource.position.x,
-        top: resource.position.y,
-        'anchor-name': `--resource-list-${key}`
-      }"
-    >
-      <button :popovertarget="`resource-list-${key}`" :id="`trigger-${key}`" @click="findPopover(key)">
-        <span class="circle"></span>
-        <span class="name" :style="{'position-anchor': `--resource-list-${key}`}">{{ resource.name }}</span>
-      </button>
-    </li>
-  </ul>
+  <div v-for="(resource, key) in resources"
+    :id="`resource-${key}`"
+    :key="key"
+    name="resource-list"
+    class="resource"
+    :class="{ 'resource--active': data.selectedCountry == key }"
+    :style="{
+      ...mapPostions[resource.name],
+      'anchor-name': `--resource-list-${key}`, 'z-index': 10
+    }">
+    <button :id="`trigger-${key}`"
+      :popovertarget="`resource-list-${key}`"
+      @click="findPopover(key)">
+      <span class="circle" />
+      <span class="name"
+        :style="{ 'position-anchor': `--resource-list-${key}` }">{{ resource.name }}</span>
+    </button>
+  </div>
+
 </template>
 
 <script setup>
@@ -35,9 +34,11 @@ const props = defineProps({
   }
 })
 
-const data= reactive({
+const data = reactive({
   selectedCountry: props.activeCountry
 })
+
+const mapPostions = ref([])
 
 const emit = defineEmits(['project-selected']);
 
@@ -48,10 +49,45 @@ const toggleCard = (countryCode, projectIndex) => {
 const findPopover = (id) => {
   data.selectedCountry = data.selectedCountry == id ? '' : id
 }
+
+const getPosition = (resource, key) => {
+  const mapContainer = document.querySelector('.world-map svg')
+  const mapLocation = mapContainer.querySelector(`[title="${resource.name}"]`)
+  const points = mapLocation.getBoundingClientRect()
+
+  const mapLocationCenter = {
+    x: points.x + (points.width / 2),
+    y: points.y + (points.height / 2)
+  }
+
+  const calcOfPostionY = (mapLocationCenter.y / mapContainer.clientHeight).toFixed(2)
+  const calcOfPostionX = (mapLocationCenter.x / mapContainer.clientWidth).toFixed(2)
+
+  console.log(key, parseFloat(calcOfPostionX), parseFloat(calcOfPostionY))
+
+  return {
+    top: `${parseFloat(calcOfPostionY) * 100}%`,
+    left: `${parseFloat(calcOfPostionX) * 100}%`
+  }
+}
+
+onMounted(() => {
+  const keysOfResources = Object.keys(props.resources)
+
+  const objectOfLocations = keysOfResources.reduce((accumulator, key) => {
+    const positions = getPosition(props.resources[key], key)
+
+    return {
+      ...accumulator,
+      [props.resources[key].name]: positions
+    }
+  }, {})
+
+  mapPostions.value = objectOfLocations
+})
 </script>
 
 <style lang="scss" scoped>
-
 .map-data {
   position: absolute;
 }
@@ -120,51 +156,61 @@ const findPopover = (id) => {
     align-items: flex-start;
     gap: calc(var(--_gap) * .75); // por algum motivo isso estva ficando diferente. 
 
-    & + li { margin-top: var(--space-3xs); }
-    
-    .circle { 
-      transform: translateY(.25rem); 
+    &+li {
+      margin-top: var(--space-3xs);
+    }
+
+    .circle {
+      transform: translateY(.25rem);
       --_circle-hsl: var(--base-hsl);
       --_circle-border-hsl: var(--primary-hsl);
     }
   }
 }
 
-  .resource-list--fallback {
-    li {
-      grid-template-columns: 1fr var(--size--1);
-      transform: translateX(.25rem);
-      &:not(:last-child):before {
-        right: calc(var(--size--2) / 2 + 2px);
-        left: auto;
-      }
-      .circle { 
-        order: 1;
-      }
-      button {
-        text-align: right;
-      }
+.resource-list--fallback {
+  li {
+    grid-template-columns: 1fr var(--size--1);
+    transform: translateX(.25rem);
+
+    &:not(:last-child):before {
+      right: calc(var(--size--2) / 2 + 2px);
+      left: auto;
+    }
+
+    .circle {
+      order: 1;
+    }
+
+    button {
+      text-align: right;
     }
   }
+}
 
-.resource .name { 
-  opacity: 0; 
+.resource .name {
+  opacity: 0;
   transition: opacity 0.2s ease-in-out;
   font-weight: 700;
 }
 
 .resource:has(:popover-open) .name,
-.resource:hover .name { 
+.resource:hover .name {
   z-index: 10;
-  opacity: 1 !important; 
+  opacity: 1 !important;
 }
 
 
 
 // isso aqui é para o efeito de fade-in/out dos recursos
 .map-data:has(:popover-open) {
-  .resource { opacity: .25;}
-  .resource:has(:popover-open) { opacity: 1;}
+  .resource {
+    opacity: .25;
+  }
+
+  .resource:has(:popover-open) {
+    opacity: 1;
+  }
 }
 
 
@@ -172,7 +218,7 @@ const findPopover = (id) => {
 #resource-bd,
 #resource-nt {
   // isso aqui é para customizar os textos do SriLanka, Bangladesh e Nepal
-  
+
   .name {
     left: unset;
     right: calc(var(--space-3xs) + var(--size-0));
@@ -182,6 +228,6 @@ const findPopover = (id) => {
   //   grid-template-columns: 1fr var(--size--1);
   //   grid-template-areas: name circle;
   // }
-  
+
 }
 </style>

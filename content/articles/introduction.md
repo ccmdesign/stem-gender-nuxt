@@ -9,9 +9,9 @@ description: 'The gender gap in STEM is not a result of individual choices but i
 slug: introduction
 ---
 
-<p class="dropcap" data-letter="A">
+::dropcap{letter="A"}
 Achieving gender equality in science is not only a moral imperative but also crucial for advancing scientific innovation. The underrepresentation of women in science deprives the field of diverse perspectives and limits the development of multifaceted solutions. For instance, in many developing countries, women are primarily responsible for water collection. Involving them in water management projects ensures solutions that reflect their needs and lived experiences. Despite this, women's participation in research and leadership within the water sector remains minimal (UNESCO, 2021). 
-</p>
+::
 
 Historically, the male-dominated field of medical research has overlooked crucial sex differences in medicine. However, the inclusion of women in this field has been transformative, leading to groundbreaking scientific discoveries that significantly enhance women's health and well-being (Kozlowski et al., 2022).   
 
@@ -61,7 +61,8 @@ To date, the Breaking Barriers Network has collectively advanced work in differe
 
 **Developed Monitoring and Evaluation Frameworks**: Developing robust mechanisms to monitor and evaluate the impact of gender equality initiatives, ensuring continuous improvement and accountability. 
 
-<div class="xl-image" style="background-image:url('/images/introduction-2.JPG')"></div>
+::bg-image{imageClass="xl-image" url="/images/introduction-2.JPG"}
+::
 
 ### An Evidence-Informed Research Agenda
 

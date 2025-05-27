@@ -1,17 +1,20 @@
 <template>
-  <NuxtLayout name="default">
+  <!-- <NuxtLayout name="default">
     <header>
-      <!--<MainMenu class="mainMenu" />
-      <LangSwitcher />-->
+      <MainMenu class="mainMenu" />
+      <LangSwitcher />
     </header>
     <NuxtChild />
     <footer>
       
     </footer>
-  </NuxtLayout>
+  </NuxtLayout> -->
+  <div>
+    <slot />
+  </div>
 </template>
 
 <script setup lang="ts">
 
 
-</script> 
+</script>
