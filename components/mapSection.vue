@@ -14,8 +14,11 @@
 </script>
 
 <style lang="scss" scoped>
+
 .map-section {
-  padding: var(--space-m-l);
+  z-index: -1;
+
+  // padding: var(--space-m-l);
   @media (max-width: 768px) {
     display: none;
   }
