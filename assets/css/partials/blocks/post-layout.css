@@ -152,22 +152,22 @@ ol {
     padding: 0;
   }
 
-  .post-layout ul li {
+  .post-layout .bordered-grid + ul li {
     list-style: none;
     padding-block: var(--space-2xs);
     font-size: var(--size-0);
     border-top: 1px solid var(--secondary-color);
   }
 
-  .post-layout ul li:last-child {
+  .post-layout .bordered-grid + ul li:last-child {
     border-bottom: 1px solid var(--secondary-color);
   }
 
-  .post-layout ul li::marker {
+  .post-layout .bordered-grid + ul li::marker {
     content: '';
   }
 
-  .post-layout ul li strong {
+  .post-layout .bordered-grid + ul li strong {
     color: var(--base-color);
   }
 

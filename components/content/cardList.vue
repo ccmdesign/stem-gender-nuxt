@@ -40,6 +40,9 @@
                 background-color: var(--primary-color);
                 transform: translateX(-50%);
             }
+            &::marker {
+                content: '';
+            }
         }
     }
 }

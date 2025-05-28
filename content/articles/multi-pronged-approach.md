@@ -8,10 +8,10 @@ audio: '/audios/Chapter-3.mp3'
 ---
 
 <p class="dropcap" data-letter="T">
-Through the Breaking Barriers network, IDRC is advancing its efforts to address systemic and systematic barriers to women's participation and leadership in STEM. With projects focused on specific research modalities, contexts, scales, and even STEM disciplines, teams are effectively addressing different challenges and issues and uncovering areas of future research and collaboration. 
+Through the <strong>Breaking Barriers network</strong>, IDRC is advancing its efforts to address systemic and systematic barriers to women's participation and leadership in STEM. With projects focused on specific research modalities, contexts, scales, and even STEM disciplines, teams are effectively addressing different challenges and issues and uncovering areas of future research and collaboration. 
 </p>
 
-![A Multi-Pronged Approach to Addressing Systemic and Systematic Barriers to Achieving Gender Equity in STEM](/images/approach-en.png)
+![A Multi-Pronged Approach to Addressing Systemic and Systematic Barriers to Achieving Gender Equity in STEM](/images/approach-en.webp)
 
 <div class="header-start">
 <h3>Building Gender-Responsive and Equitable STEM Institutions</h3>
@@ -39,6 +39,7 @@ Some projects are beginning to develop digital platforms, as these also play a k
 #### What's needed?
 We must prioritize the collection and analysis of comprehensive data on the factors contributing to attrition and low participation rates among marginalized groups in STEM, focusing on existing mechanisms and platforms for institutional and national-level data collection. Future efforts should examine high-risk moments for dropout across the educational spectrum and during transitions into the workforce, aiming to develop targeted interventions based on empirical findings to address these critical gaps.
 
+::coloredDiv
 <div class="header-start">
 <h3>Fostering Leadership and Mentorship for Women in STEM</h3>
 </div>
@@ -51,6 +52,7 @@ In addition, leadership programs have emphasized the need for intersectionality,
 
 #### What's needed?
 Explore the effectiveness of mentorship frameworks in supporting women, particularly those from underrepresented groups, in STEM fields. Future efforts should assess the impact of partnerships with advocacy organizations and digital platforms in enhancing mentorship connections, as well as investigate leadership training programs that equip women with the necessary skills and confidence to assume decision-making roles.
+::
 
 <div class="header-start">
 <h3>Ensuring Support Across Education and Career Pathways</h3>
