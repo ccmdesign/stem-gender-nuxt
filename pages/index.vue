@@ -3,22 +3,26 @@
 
     <!-- Hero -->
     <template #hero>
-      <homepage-header>
+      <homepage-hero>
         <template #topbar>
           <top-bar />
         </template>
         <template #headings>
-          <p class="homepage-header__brow">{{ $t('synthesisReport') }} | Beta</p>
-          <h1 class="homepage-header__title">{{ $t('breakingBarriers') }}</h1>
-          <p class="homepage-header__tagline">{{ $t('tagline') }}</p>
-          <nuxt-link class="button homepage-header__button" icon-after="arrow_downward" color="primary" visual="primary" to="#report">{{ $t('readReport') }}</nuxt-link>
+          <p class="homepage-hero__brow">{{ $t('synthesisReport') }} | Beta</p>
+          <h1 class="homepage-hero__title">{{ $t('breakingBarriers') }}</h1>
+          <p class="homepage-hero__tagline">{{ $t('tagline') }}</p>
+          <nuxt-link class="button homepage-hero__button" icon-after="arrow_downward" color="primary" visual="primary" to="#report">{{ $t('readReport') }}</nuxt-link>
         </template>
-      </homepage-header>
+
+        <template #image>
+          <img class="homepage-hero__image" src="/images/lessons-learned.jpg" alt="Lessons Learned" />
+        </template>
+      </homepage-hero>
     </template>
     
     <!-- Intro -->
     <template #intro>
-      <twin-section class="intro">
+      <intro-section class="intro">
         <template #left>
           <div class="stack">
             <h2>{{ $t('initiative.title') }}</h2>
@@ -38,7 +42,7 @@
           </div>
         </div>
         </template>
-      </twin-section>
+      </intro-section>
     </template>
     
     <!-- Report -->
