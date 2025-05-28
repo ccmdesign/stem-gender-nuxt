@@ -22,3 +22,7 @@ Can be any acceptable flexbox alignment value.
   justify-content: var(--_cluster-horizontal-alignment, flex-start);
   align-items: var(--_cluster-vertical-alignment, center);
 }
+
+.cluster [split] {
+  margin-left: auto;
+}

@@ -3,7 +3,7 @@
 
     <!-- Hero -->
     <template #hero>
-      <homepage-hero>
+      <homepage-hero class="hero">
         <template #topbar>
           <top-bar />
         </template>
@@ -290,7 +290,8 @@ h2 {
   font-weight: 600;
 }
 
-.button {
+
+.hero .button {
   font-weight: 500;
   font-size: var(--size-0);
 }
