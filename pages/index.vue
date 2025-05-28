@@ -66,13 +66,63 @@
             </ul>
           </template>
 
-          <template #not-found>
-            <p>{{ $t('noArticlesFound') }}</p>
+          <!-- Hero -->
+          <template #hero>
+            <homepage-hero>
+              <template #topbar>
+                <top-bar />
+              </template>
+              <template #headings>
+                <p class="homepage-hero__brow">{{ $t('synthesisReport') }} | Beta</p>
+                <h1 class="homepage-hero__title">{{ $t('breakingBarriers') }}</h1>
+                <p class="homepage-hero__tagline">{{ $t('tagline') }}</p>
+                <nuxt-link class="button homepage-hero__button"
+                  icon-after="arrow_downward"
+                  color="primary"
+                  visual="primary"
+                  to="#report">{{ $t('readReport') }}</nuxt-link>
+              </template>
+
+              <template #image>
+                <img class="homepage-hero__image"
+                  src="/images/lessons-learned.jpg"
+                  alt="Lessons Learned">
+              </template>
+            </homepage-hero>
           </template>
 
-          <template #pending>
-            <p>...</p>
+          <!-- Intro -->
+          <template #intro>
+            <intro-section class="intro">
+              <template #left>
+                <div class="stack">
+                  <h2>{{ $t('initiative.title') }}</h2>
+                  <p>{{ $t('initiative.p1') }}</p>
+                  <p>{{ $t('initiative.p2') }}</p>
+                  <p>{{ $t('initiative.p3') }}</p>
+                </div>
+              </template>
+              <template #right>
+                <div class="stack">
+                  <h3>{{ $t('initiative.aim.title') }}:</h3>
+                  <div class="research-grid">
+                    <p>{{ $t('initiative.aim.p1') }}</p>
+                    <p>{{ $t('initiative.aim.p2') }}</p>
+                    <p>{{ $t('initiative.aim.p3') }}</p>
+                    <p>{{ $t('initiative.aim.p4') }}</p>
+                  </div>
+                </div>
+              </template>
+            </intro-section>
           </template>
+
+          <!-- Report -->
+          <template #report>
+            <report-section class="report">
+              <template #top-left>
+                <h2>{{ $t('report.title') }}</h2>
+              </template>
+            </report-section></template>
         </ContentList>
       </div>
       <span class="report-list__spacer" />
@@ -245,11 +295,6 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.button {
-  font-weight: 500;
-  font-size: var(--size-0);
-}
-
 h2 {
   font-size: var(--size-2);
   font-weight: 600;
@@ -353,9 +398,6 @@ h2 {
 }
 
 
-.report {
-  padding: var(--space-xl) var(--size-2) var(--size-2) var(--size-2);
-}
 
 .report__button {
   border-width: 1px;
@@ -423,11 +465,6 @@ h2 {
   background-position: center;
 }
 
-.map-grid {
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
 
 .map-grid__map {
   position: relative;
