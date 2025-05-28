@@ -39,5 +39,8 @@
 </script>
 
 <style lang="scss" scoped>
-
+.report {
+  z-index: 2;
+  position: relative;
+}
 </style>

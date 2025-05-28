@@ -47,7 +47,7 @@
     
     <!-- Report -->
     <template #report>
-      <report-section>
+      <report-section class="report">
         <template #top-left>
             <h2>{{ $t('report.title') }}</h2>
           </template>
@@ -261,26 +261,7 @@ h2 {
   font-weight: 600;
 }
 
-.intro {
-  h3 {
-    text-transform: uppercase;
-    font-size: var(--size-0);
-    font-weight: 600;
-    color: var(--primary-color);
-  }  
-}
 
-.research-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-2xs);
-  p {
-    padding: var(--space-m);
-    font-size: var(--size-0);
-    font-weight: 400;
-    background-color: var(--black-color-05-alpha);
-  }
-}
 
 
 
