@@ -48,19 +48,48 @@
     <!-- Report -->
     <template #report>
       <report-section class="report">
+        
         <template #top-left>
-            <h2>{{ $t('report.title') }}</h2>
-          </template>
+          <h2>{{ $t('report.title') }}</h2>
+        </template>
+          
           <template #top-right>
-              <nuxt-link class="button report__button" color="primary" visual="secondary" to="#report">{{ $t('report.view') }}</nuxt-link>
-              <nuxt-link class="button report__button" color="primary" visual="secondary" to="#report">{{ $t('report.podcast') }}</nuxt-link>
+            <nuxt-link class="button" color="primary" visual="secondary" to="#report">{{ $t('report.view') }}</nuxt-link>
+            <nuxt-link class="button" color="primary" visual="secondary" to="#report">{{ $t('report.podcast') }}</nuxt-link>
           </template>
+
+          <template #mobile>
+            <ContentList :query="query" :key="'url' + locale" :path="`/${locale}/`">
+              <template #default="{ list }">
+                <ul class="report-list__mobile" role="list">
+                  <li v-for="article in list.sort((a, b) => a.order - b.order)" :key="article._path">
+                    <NuxtLink :to="locale !== 'en' ? localePath(article._path) : `/articles/${article.slug}`">
+                      {{ article.title }}
+                    </NuxtLink>
+                  </li>
+                </ul>
+              </template>
+
+              <template #not-found>
+                <p>{{ $t('noArticlesFound') }}</p>
+              </template>
+
+              <template #pending>
+                <p>...</p>
+              </template>
+            </ContentList>
+        </template>
         <template #left>
           <div class="report-list__list">
             <ContentList :query="query" :key="'url' + locale" :path="`/${locale}/`">
               <template #default="{ list }">
                 <ul class="report-list__toc" role="list">
-                  <li class="report-list__item" :class="{'report-list__item--active': data.selectedChapter.slug == article.slug}" v-for="article in list.sort((a, b) => a.order - b.order)" @click="data.selectedChapter = article" :key="article._path">
+                  <li class="report-list__item" 
+                      :class="{'report-list__item--active': data.selectedChapter?.slug === article.slug}" 
+                      v-for="article in list.sort((a, b) => a.order - b.order)" 
+                      @click="data.selectedChapter = article" 
+                      :key="article._path"
+                      ref="listItems">
                     {{ article.title }}
                   </li>
                 </ul>
@@ -80,8 +109,8 @@
           <div class="report-list__content" v-if="data.selectedChapter && data.selectedChapter.title">
           <h3 class="report-list__title">{{ data.selectedChapter.title }}</h3>
           <p class="report-list__subtitle">{{ data.selectedChapter.description }}</p>
-          <NuxtLink class="button index-header__button" color="primary" visual="primary" v-if="locale !== 'en'" :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }}</NuxtLink>
-          <NuxtLink class="button index-header__button" color="primary" visual="primary" v-else :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter')  }}</NuxtLink>
+          <NuxtLink class="report__button | button" color="primary" visual="primary" v-if="locale !== 'en'" :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }}</NuxtLink>
+          <NuxtLink class="report__button | button" color="primary" visual="primary" v-else :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter')  }}</NuxtLink>
       </div>
         </template>
       </report-section>
@@ -259,6 +288,11 @@ onUnmounted(() => {
 h2 {
   font-size: var(--size-2);
   font-weight: 600;
+}
+
+.button {
+  font-weight: 500;
+  font-size: var(--size-0);
 }
 
 

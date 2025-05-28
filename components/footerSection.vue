@@ -11,7 +11,7 @@
 <style lang="scss" scoped>
 .footer-section {
   padding: var(--space-m-l);
-  background-color: var(--primary-color);
+  background-color: var(--black-color);
   color: var(--white-color);
 }
 </style>
