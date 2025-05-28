@@ -28,13 +28,30 @@ initiative:
     p2: Fournir des preuves sur les stratégies les plus efficaces pour surmonter ces obstacles dans les pays à revenu faible et intermédiaire
     p3: Améliorer le leadership des femmes dans les sciences
     p4: Intégrer l’analyse de genre comme composante standard de la recherche scientifique
+
 report:
   title: Rapport
   view: Voir le Rapport (PDF)
   podcast: Podcast (IA)
+
 challenge:
   title: Le Défi
   p1: Au CRDI, nous croyons que l’inclusivité contribue à l’innovation. Nous soutenons une approche plus inclusive de la science, de la technologie et de l’innovation — une approche qui intègre non seulement les femmes en tant que scientifiques et utilisatrices de la science, mais qui reconnaît également l’analyse de genre comme un élément essentiel d’une recherche et d’une innovation de qualité.
   link: Les femmes ne représentent que 30 % des chercheurs dans le monde
   p2: ", avec encore moins de représentation dans les postes de direction scientifique. En 2015, le Partenariat Interacadémique a publié la première enquête complète sur les académies scientifiques de son réseau mondial. Parmi les 69 académies scientifiques nationales disposant de données, les femmes représentaient 10 % ou moins des membres dans près de la moitié des pays."
   p3: Bien que les obstacles systémiques à la participation des femmes scientifiques fassent de plus en plus l’objet d’études, ces données et études de cas ont historiquement été basées sur des pays du Nord global.
+
+footer:
+  careers: 'Carrières'
+  contact: 'Nous contacter'
+  digitalLibrary: 'Bibliothèque numérique'
+  media: 'Médias'
+  accessibility: 'Accessibilité'
+  equityStandard: 'Norme d’équité'
+  openAccessPolicy: 'Politique d’accès libre'
+  privacyNotice: 'Avis de confidentialité'
+  researchEthics: 'Éthique de la recherche'
+  termsOfUse: 'Conditions d’utilisation'
+  transparency: 'Transparence'
+  copyright: 'Copyright © currentYear CRDI. Tous droits réservés.'
+

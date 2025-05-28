@@ -4,9 +4,7 @@
     <img class="idrc-logo" src="assets/idrc-logo.png" alt="IDRC Logo" />
 
     <div class="top-bar__languages">
-      <nuxtLink class="button" size="s" color="primary" visual="ghost" :to="localePath('/')" @click="setLocale('en')">EN</nuxtLink>
-      <nuxtLink class="button" size="s" color="primary" visual="ghost" :to="localePath('/fr')" @click="setLocale('fr')">FR</nuxtLink>
-      <nuxtLink class="button" size="s" color="primary" visual="ghost" :to="localePath('/es')" @click="setLocale('es')">ES</nuxtLink>
+      <nuxtLink v-for="lang in locales" :key="lang.code" class="button" size="s" color="primary" visual="ghost" @click="setLocale(lang.code)">{{ lang.code.toUpperCase() }}</nuxtLink>
     </div>
 
     <div class="top-bar__chapters" split>
@@ -20,11 +18,8 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const { locales, setLocale } = useI18n()
 
-const setLocale = (locale) => {
-  locale.value = locale
-}
 </script>
 
 <style lang="scss" scoped>
