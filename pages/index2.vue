@@ -1,37 +1,91 @@
 <template>
-  <homepageLayout>
-    <template #hero>
-      <homepage-header>
-        <template #topbar>
-          <top-bar />
-        </template>
-        <template #headings>
-          <p class="homepage-header__brow">{{ $t('synthesisReport') }} | Beta</p>
-          <h1 class="homepage-header__title">{{ $t('breakingBarriers') }}</h1>
-          <p class="homepage-header__tagline">{{ $t('tagline') }}</p>
-          <nuxt-link class="button homepage-header__button" icon-after="arrow_downward" color="primary" visual="primary" to="#report">{{ $t('readReport') }}</nuxt-link>
-        </template>
-      </homepage-header>
-    </template>
-    <template #intro>
-      <h2>Intro</h2>
-    </template>
-    <template #report>
-      <h2>Report</h2>
-    </template>
-    <template #map-grid>
-      <h2>Map Grid</h2>
-    </template>
-    <template #challenge>
-      <h2>Challenge</h2>
-    </template>
-    <template #sign-up>
-      <h2>Sign Up</h2>
-    </template>
-    <template #footer>
-      <h2>Footer</h2>
-    </template>
-  </homepageLayout>
+  <main class="chapter-layout" @click="handleClickOutside">
+    <header class="chapter-layout__header | index-header">
+      <div class="stack">
+        <p class="index-header__brow">{{ $t('synthesisReport') }} | Beta</p>
+        <h1 class="index-header__title">{{ $t('breakingBarriers') }}</h1>
+        <p class="index-header__tagline">{{ $t('tagline') }}</p>
+        <nuxt-link class="button index-header__button" icon-after="arrow_downward" color="primary" visual="primary" to="#report">{{ $t('readReport') }}</nuxt-link>
+      </div>
+      <div class="index-header__image" aria-hidden="true"></div>
+    </header>
+    <section class="initiative">
+      <div class="stack">
+        <h2>{{ $t('initiative.title') }}</h2>
+        <p>{{ $t('initiative.p1') }}</p>
+        <p>{{ $t('initiative.p2') }}</p>
+        <p>{{ $t('initiative.p3') }}</p>
+      </div>
+      <div class="stack">
+        <h3>{{ $t('initiative.aim.title') }}:</h3>
+        <div class="research-grid">
+          <p>{{ $t('initiative.aim.p1') }}</p>
+          <p>{{ $t('initiative.aim.p2') }}</p>
+          <p>{{ $t('initiative.aim.p3') }}</p>
+          <p>{{ $t('initiative.aim.p4') }}</p>
+        </div>
+      </div>
+    </section>
+    <section class="report">
+      <div class="repel">
+        <h2>{{ $t('report.title') }}</h2>
+        <div class="flex flex---1">
+          <nuxt-link class="button report__button" color="primary" visual="secondary" to="#report">{{ $t('report.view') }}</nuxt-link>
+          <nuxt-link class="button report__button" color="primary" visual="secondary" to="#report">{{ $t('report.podcast') }}</nuxt-link>
+        </div>
+      </div>
+    </section>
+    <section class="report-list" id="report">
+      <div class="report-list__list">
+        <ContentList :query="query" :key="'url' + locale" :path="`/${locale}/`">
+          <template #default="{ list }">
+            <ul class="report-list__toc" role="list">
+              <li class="report-list__item" :class="{'report-list__item--active': data.selectedChapter.slug == article.slug}" v-for="article in list.sort((a, b) => a.order - b.order)" @click="data.selectedChapter = article" :key="article._path">
+                {{ article.title }}
+              </li>
+            </ul>
+          </template>
+
+          <template #not-found>
+            <p>{{ $t('noArticlesFound') }}</p>
+          </template>
+
+          <template #pending>
+            <p>...</p>
+          </template>
+        </ContentList>
+      </div>
+      <span class="report-list__spacer"></span>
+      <div class="report-list__content" v-if="data.selectedChapter && data.selectedChapter.title">
+          <h3 class="report-list__title">{{ data.selectedChapter.title }}</h3>
+          <p class="report-list__subtitle">{{ data.selectedChapter.description }}</p>
+          <NuxtLink class="button index-header__button" color="primary" visual="primary" v-if="locale !== 'en'" :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }}</NuxtLink>
+          <NuxtLink class="button index-header__button" color="primary" visual="primary" v-else :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter')  }}</NuxtLink>
+      </div>
+    </section>
+    <section class="map-grid">
+         <!--<div class="map-grid__summary | project-summary">
+            <h3><span>15</span> {{ $t('globalProjects') }}</h3>
+            <p><a href="https://idrc-crdi.ca/en/initiative/gender-stem" target="_blank">Breaking Barriers Network</a></p>
+        </div>-->
+        <div class="map-grid__map">
+          <world-map class="map" />
+          <map-data class="data" :resources="resources" :activeCountry="data.selectedCountry" @project-selected="handleProjectSelected" />
+        </div>
+        <div class="map-grid__content">  
+          <resource-list :resources="data.resourceList" />
+        </div>
+      </section>
+      <section class="challenge">
+        <div class="challenge__image"></div>
+        <div class="stack">
+          <h2>{{ $t('challenge.title') }}</h2>
+          <p>{{ $t('challenge.p1') }}</p>
+          <p><a href="https://unesdoc.unesco.org/ark:/48223/pf0000375429" target="_blank">{{ $t('challenge.link') }}</a>{{ $t('challenge.p2') }}</p>
+          <p>{{ $t('challenge.p3') }}</p>
+        </div>
+      </section>
+  </main>
 </template>
 
 <script setup lang="ts">
@@ -164,7 +218,65 @@ h2 {
   font-weight: 600;
 }
 
+.index-header {
+  position: relative;
+  background: linear-gradient(88.42deg, #7F2A28 1.35%, #A63330 98.65%);
+  padding: var(--space-3xl-4xl) var(--size-2) var(--size-2) var(--size-2);
+  & > * {
+    position: relative;
+    z-index: 1;
+    color: var(--white-color);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/images/pattern.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .stack {
+    max-width: 720px;
+    --stack-space: var(--space-m-l)
+  }
+}
+  .index-header__button  {
+    color: var(--white-color);
+  }
 
+  .index-header__brow {
+    text-transform: uppercase;
+    font-size: var(--size--1);
+    font-weight: 500;
+  }
+
+  .index-header__title {
+    font-size: var(--size-6);
+    font-weight: 600;
+  }
+
+  .index-header__tagline {
+    font-size: var(--size-0);
+    font-weight: 400;
+    max-width: 400px;
+  }
+
+  .index-header__image {
+    position: absolute;
+    top: var(--space-l-xl);
+    right: var(--size-2);
+    left: 50%;
+    bottom: 0;
+    z-index: 0;
+    background-image: url(/images/lessons-learned.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: translateY(var(--space-2xl-3xl));
+    box-shadow: 6px 5px 17px 0px hsla(0, 0%, 0%, 0.16);
+  }
 
 .initiative {
   padding: var(--space-xl-2xl) var(--size-2) var(--size-2) var(--size-2);
