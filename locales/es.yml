@@ -38,3 +38,17 @@ challenge:
   link: Las mujeres representan solo el 30% de los investigadores del mundo
   p2: ", con aún menos representación en posiciones de liderazgo científico. En 2015, la Interacademy Partnership publicó la primera encuesta integral de academias científicas en su red global. En las 69 academias científicas nacionales para las que había datos disponibles, las mujeres constituían el 10% o menos de los miembros en casi la mitad de los países."
   p3: 'Aunque las barreras sistémicas a la participación de mujeres científicas se estudian cada vez más, estos datos y estudios de caso se han basado históricamente en países del Norte Global.'
+
+footer:
+  careers: 'Carreras'
+  contact: 'Contáctanos'
+  digitalLibrary: 'Biblioteca Digital'
+  media: 'Medios'
+  accessibility: 'Accesibilidad'
+  equityStandard: 'Estándar de Equidad'
+  openAccessPolicy: 'Política de Acceso Abierto'
+  privacyNotice: 'Aviso de Privacidad'
+  researchEthics: 'Ética la Investigación'
+  termsOfUse: 'Términos de Uso'
+  transparency: 'Transparencia'
+  copyright: 'Copyright © currentYear IDRC. Todos los derechos reservados.'
