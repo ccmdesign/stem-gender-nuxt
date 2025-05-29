@@ -1,6 +1,6 @@
 <template>
   <div class="top-bar | cluster">
-    <h1>Breaking barriers, Building bridges</h1>
+    <h1>{{ $t('breakingBarriers') }}</h1>
     <img class="idrc-logo" src="assets/idrc-logo.png" alt="IDRC Logo" />
 
     <div class="top-bar__languages">

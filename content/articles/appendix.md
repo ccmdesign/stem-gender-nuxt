@@ -10,7 +10,7 @@ audio: '/audios/Appendix.mp3'
 ---
 
 <div class="header-start">
-<h2>A Snapshot of our Projects</h2>
+<h2>A Recommendations for Key Stakeholders</h2>
 </div>
 
 *Supporting women's leadership in science, technology, and innovation through early-career fellowships (2017–2021)*
@@ -53,6 +53,7 @@ The project implemented a combination of soft strategies (e.g., recognizing fema
 - Skill Development: The project empowered both female apprentices and instructors by providing experiential learning opportunities that built capacities in green technologies and environmental stewardship. One TVET Centre's hands-on training programs ensured the transfer of STEM-environmental knowledge, positioning 15 rural women and 7 women experts as key STEM referents. These role models helped overturn unfounded beliefs about women's capacities in science and technology.
 - Organizational Change: One TVET Centre in Colombia facilitated organizational learning and transformative learning processes, resulting in systemic change within TVET programs. Four regional TVET centers began leading the way in gender-equitable STEM education.
 - Empowerment: The combination of experiential learning and visible role models inspired female apprentices and instructors to pursue and excel in STEM careers. Their success in these fields challenged deep-seated stereotypes and created new pathways for future generations of women in science and technology.
+::
 
 ::header-start{title="Women in engineering education and careers in Benin and Ghana"}
 ::
@@ -74,8 +75,15 @@ The project included focus group discussions, surveys, and policy analysis to un
 - Awareness and Advocacy: The project raised awareness about the challenges women face in engineering education and careers and advocated for more inclusive and supportive policies and practices.
 - Empowerment: The project empowered women by providing them with the knowledge and resources needed to navigate their careers and achieve leadership positions in engineering fields.
 
+<<<<<<< HEAD
 ::header-start{title="Transforming Institutions to Advance women leaders in Science Technology Engineering and Mathematics (SISTARS): lessons from Ghana and Kenya*"}
 ::
+=======
+::coloredDiv
+<div class="header-start">
+<h3>Transforming Institutions to Advance women leaders in Science Technology Engineering and Mathematics (SISTARS): lessons from Ghana and Kenya*</h3>
+</div>
+>>>>>>> 69101651970c2eabc6f4a6939718b44103ef0609
 
 #### Background
 The SISTARS project focuses on addressing the underrepresentation of women in leadership roles within STEM fields, particularly in the water-related sectors of Ghana and Kenya. Despite various national and institutional policies aimed at promoting gender equality, women continue to face significant barriers in advancing to leadership positions. These barriers include societal expectations, stereotypes, and systemic biases that hinder women's career progression. The project aims to assess and strengthen policies that support women's inclusion in leadership roles, recognizing that diverse leadership teams enhance performance, innovation, and decision-making.
@@ -92,6 +100,7 @@ The project was conducted in two phases across selected institutions in Ghana an
 - Increased Visibility of Women in STEM: The project has significantly increased the visibility of women scientists in Ghana and Kenya, highlighting their contributions and establishing a positive association between women and science from an early age. This has been achieved through the dissemination of success stories and role models.
 - Enhanced Professional Development: The project provided valuable opportunities for women to advance their scientific careers. Through targeted training programs, mentorship, and networking opportunities, women were able to strengthen their knowledge and skills, gain recognition, and progress into leadership roles in STEM fields.
 - Policy Influence and Recommendations: The project has developed evidence-based policy recommendations aimed at reducing the gender gap in STEM. These include providing incentives and scholarships for girls in STEM, implementing gender-sensitive policies, and promoting equal representation of women in leadership and decision-making roles within the scientific and academic communities.
+::
 
 ::header-start{title="Supporting indigenous women in science, technology, engineering and mathematics careers in Mexico and Central America"}
 ::
@@ -113,8 +122,15 @@ The project was conducted in two phases across selected institutions in Ghana an
 - Combating Negative Stereotypes: By showcasing the achievements of indigenous women scientists, the program effectively challenged and combated negative stereotypes about indigenous women. This helped to change societal perceptions and promote a more inclusive and equitable environment in STEM fields.
 - Policy Influence and Recommendations: The findings from the program informed national and institutional policies aimed at promoting gender and social equity in STEM. The program's success demonstrated the importance of targeted support for underrepresented groups and provided a model for similar initiatives in other contexts. 
 
+<<<<<<< HEAD
 ::header-start{title="Constructing public policy for effective participation of women in science, technology, engineering and mathematics in Bolivia"}
 ::
+=======
+::coloredDiv
+<div class="header-start">
+<h3>Constructing public policy for effective participation of women in science, technology, engineering and mathematics in Bolivia</h3>
+</div>
+>>>>>>> 69101651970c2eabc6f4a6939718b44103ef0609
 
 #### Background
 The project addresses the significant underrepresentation of women in STEM fields in Bolivia. The project aims to enhance women's participation in STEM to achieve sustainable development goals and foster socioeconomic and technological advancement. The initiative focuses on understanding and addressing the multifaceted challenges that limit women's involvement in STEM from early education through to professional careers.
@@ -137,6 +153,7 @@ o	Statistical Analysis of Women's Participation in STEM: Quantitative data to co
 - Policy Recommendations and *Implementation*: The project has developed evidence-based policy recommendations aimed at reducing the gender gap in STEM. These include providing incentives and scholarships for girls in STEM, implementing gender-sensitive policies, and promoting equal representation of women in leadership and decision-making roles within the scientific and academic communities.
 - Improved Educational and Professional Environments: The project has highlighted the need for interactive and equitable learning environments that develop competencies regardless of gender. It has also emphasized the importance of vocational guidance and mentorship to support girls in their academic and professional decisions in STEM.
 - Statistical Insights and Data-Driven Interventions: The statistical analysis provided by the project has offered valuable insights into the participation rates and barriers faced by women in STEM. This data has been crucial for informing policy interventions and ensuring that they are targeted and effective.
+::
 
 ::header-start{title="Bridging the gender equality gap in science at the Women's University in Africa"}
 ::
@@ -162,8 +179,15 @@ o	Interventions: Based on the findings, WUA implemented several initiatives, inc
 - Policy Influence and Recommendations: The project informed national and institutional policies aimed at promoting gender equity in STEM. Recommendations included the need for gender-sensitive pedagogy, gender audits, and mainstreaming strategies in universities.
 - Supportive Infrastructure: The construction of a nursing mothers' lounge and the establishment of a STEM Center provided essential support for female students and staff, enabling them to balance their academic and personal responsibilities.
 
+<<<<<<< HEAD
 ::header-start{title="Strengthening gender inclusion in agricultural research for more conclusive results in West Africa"}
 ::
+=======
+::coloredDiv
+<div class="header-start">
+<h3>Strengthening gender inclusion in agricultural research for more conclusive results in West Africa</h3>
+</div>
+>>>>>>> 69101651970c2eabc6f4a6939718b44103ef0609
 
 #### Background
 Gender disparities in STEM fields, particularly in agricultural sciences, remain a significant challenge in West Africa. This study focuses on public universities and research units in Benin, Côte d'Ivoire, and Niger, examining the extent of gender inequalities and proposing strategies to improve women's participation in agricultural sciences.
@@ -181,6 +205,7 @@ The study revealed significant gender disparities in agricultural sciences in We
 - Inclusive Research Methodologies: Surveys and data collection methods should include women's input and be sensitive to gender issues to avoid biases.
 - Policy Interventions: Legal reforms and awareness campaigns are needed to ensure equal access to agricultural resources and opportunities for women.
 - Educational Programs: Training and capacity-building initiatives should be established to equip women with the necessary skills and knowledge for broader participation in agricultural activities.
+::
 
 ::header-start{title="Latin American open data for gender-equality policies focusing on leadership in STEM"}
 ::

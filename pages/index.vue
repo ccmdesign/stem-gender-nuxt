@@ -198,6 +198,17 @@
                     </li>
                   </ul>
                 </template>
+                <!-- Sign Up -->
+                <!--<template #sign-up>
+      <twin-section class="sign-up">
+        <template #left>
+          <h2>Sign Up</h2>
+        </template>
+        <template #right>
+          <h2>Sign Up</h2>
+        </template> 
+      </twin-section>
+    </template>-->
 
                 <!-- Hero -->
                 <template #hero>
