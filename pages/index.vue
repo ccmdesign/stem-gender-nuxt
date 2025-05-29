@@ -1,177 +1,313 @@
 <template>
+
   <main class="chapter-layout"
     @click="handleClickOutside">
-    <header class="chapter-layout__header | index-header">
-      <div class="stack">
-        <p class="index-header__brow">{{ $t('synthesisReport') }} | Beta</p>
-        <h1 class="index-header__title">{{ $t('breakingBarriers') }}</h1>
-        <p class="index-header__tagline">{{ $t('tagline') }}</p>
-        <nuxt-link class="button index-header__button"
-          icon-after="arrow_downward"
-          color="primary"
-          visual="primary"
-          to="#report">{{ $t('readReport') }}</nuxt-link>
-      </div>
-      <div class="index-header__image"
-        aria-hidden="true" />
-    </header>
-    <section class="initiative">
-      <div class="stack">
-        <h2>{{ $t('initiative.title') }}</h2>
-        <p>{{ $t('initiative.p1') }}</p>
-        <p>{{ $t('initiative.p2') }}</p>
-        <p>{{ $t('initiative.p3') }}</p>
-      </div>
-      <div class="stack">
-        <h3>{{ $t('initiative.aim.title') }}:</h3>
-        <div class="research-grid">
-          <p>{{ $t('initiative.aim.p1') }}</p>
-          <p>{{ $t('initiative.aim.p2') }}</p>
-          <p>{{ $t('initiative.aim.p3') }}</p>
-          <p>{{ $t('initiative.aim.p4') }}</p>
-        </div>
-      </div>
-    </section>
-    <section class="report">
-      <div class="repel">
-        <h2>{{ $t('report.title') }}</h2>
-        <div class="flex flex---1">
-          <nuxt-link class="button report__button"
-            color="primary"
-            visual="secondary"
-            to="#report">{{ $t('report.view') }}</nuxt-link>
-          <nuxt-link class="button report__button"
-            color="primary"
-            visual="secondary"
-            to="#report">{{ $t('report.podcast') }}</nuxt-link>
-        </div>
-      </div>
-    </section>
-    <section id="report"
-      class="report-list">
-      <div class="report-list__list">
-        <ContentList :key="'url' + locale"
-          :query="query"
-          :path="`/${locale}/`">
-          <template #default="{ list }">
-            <ul class="report-list__toc"
-              role="list">
-              <li v-for="article in list.sort((a, b) => a.order - b.order)"
-                :key="article._path"
-                class="report-list__item"
-                :class="{ 'report-list__item--active': data.selectedChapter.slug == article.slug }"
-                @click="data.selectedChapter = article">
-                {{ article.title }}
-              </li>
-            </ul>
+    <homepageLayout>
+
+      <!-- Hero -->
+      <template #hero>
+        <homepage-hero class="hero">
+          <template #topbar>
+            <top-bar />
+          </template>
+          <template #headings>
+            <p class="homepage-hero__brow">{{ $t('synthesisReport') }} | Beta</p>
+            <h1 class="homepage-hero__title">{{ $t('breakingBarriers') }}</h1>
+            <p class="homepage-hero__tagline">{{ $t('tagline') }}</p>
+            <nuxt-link class="button homepage-hero__button"
+              icon-after="arrow_downward"
+              color="primary"
+              visual="primary"
+              to="#report">{{ $t('readReport') }}</nuxt-link>
           </template>
 
-          <!-- Hero -->
-          <template #hero>
-            <homepage-hero>
-              <template #topbar>
-                <top-bar />
+          <template #image>
+            <img class="homepage-hero__image"
+              src="/images/lessons-learned.jpg"
+              alt="Lessons Learned">
+          </template>
+        </homepage-hero>
+      </template>
+
+      <!-- Intro -->
+      <template #intro>
+        <intro-section class="intro">
+          <template #left>
+            <div class="stack">
+              <h2>{{ $t('initiative.title') }}</h2>
+              <p>{{ $t('initiative.p1') }}</p>
+              <p>{{ $t('initiative.p2') }}</p>
+              <p>{{ $t('initiative.p3') }}</p>
+            </div>
+          </template>
+          <template #right>
+            <div class="stack">
+              <h3>{{ $t('initiative.aim.title') }}:</h3>
+              <div class="research-grid">
+                <p>{{ $t('initiative.aim.p1') }}</p>
+                <p>{{ $t('initiative.aim.p2') }}</p>
+                <p>{{ $t('initiative.aim.p3') }}</p>
+                <p>{{ $t('initiative.aim.p4') }}</p>
+              </div>
+            </div>
+          </template>
+        </intro-section>
+      </template>
+
+      <!-- Report -->
+      <template #report>
+        <report-section class="report">
+
+          <template #top-left>
+            <h2>{{ $t('report.title') }}</h2>
+          </template>
+
+          <template #top-right>
+            <nuxt-link class="button"
+              color="primary"
+              visual="secondary"
+              to="#report">{{ $t('report.view') }}</nuxt-link>
+            <nuxt-link class="button"
+              color="primary"
+              visual="secondary"
+              to="#report">{{ $t('report.podcast') }}</nuxt-link>
+          </template>
+
+          <template #mobile>
+            <ContentList :key="'url' + locale"
+              :query="query"
+              :path="`/${locale}/`">
+              <template #default="{ list }">
+                <ul class="report-list__mobile"
+                  role="list">
+                  <li v-for="article in list.sort((a, b) => a.order - b.order)"
+                    :key="article._path">
+                    <NuxtLink :to="locale !== 'en' ? localePath(article._path) : `/articles/${article.slug}`">
+                      {{ article.title }}
+                    </NuxtLink>
+                  </li>
+                </ul>
               </template>
-              <template #headings>
-                <p class="homepage-hero__brow">{{ $t('synthesisReport') }} | Beta</p>
-                <h1 class="homepage-hero__title">{{ $t('breakingBarriers') }}</h1>
-                <p class="homepage-hero__tagline">{{ $t('tagline') }}</p>
-                <nuxt-link class="button homepage-hero__button"
-                  icon-after="arrow_downward"
+
+              <template #not-found>
+                <p>{{ $t('noArticlesFound') }}</p>
+              </template>
+
+              <template #pending>
+                <p>...</p>
+              </template>
+            </ContentList>
+          </template>
+          <template #left>
+            <div class="report-list__list">
+              <ContentList :key="'url' + locale"
+                :query="query"
+                :path="`/${locale}/`">
+                <template #default="{ list }">
+                  <ul class="report-list__toc"
+                    role="list">
+                    <li v-for="article in list.sort((a, b) => a.order - b.order)"
+                      :key="article._path"
+                      ref="listItems"
+                      class="report-list__item"
+                      :class="{ 'report-list__item--active': data.selectedChapter?.slug === article.slug }"
+                      @click="data.selectedChapter = article">
+                      {{ article.title }}
+                    </li>
+                  </ul>
+                </template>
+
+                <template #not-found>
+                  <p>{{ $t('noArticlesFound') }}</p>
+                </template>
+
+                <template #pending>
+                  <p>...</p>
+                </template>
+              </ContentList>
+            </div>
+          </template>
+          <template #right>
+            <div v-if="data.selectedChapter && data.selectedChapter.title"
+              class="report-list__content">
+              <h3 class="report-list__title">{{ data.selectedChapter.title }}</h3>
+              <p class="report-list__subtitle">{{ data.selectedChapter.description }}</p>
+              <NuxtLink v-if="locale !== 'en'"
+                class="report__button | button"
+                color="primary"
+                visual="primary"
+                :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }}</NuxtLink>
+              <NuxtLink v-else
+                class="report__button | button"
+                color="primary"
+                visual="primary"
+                :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter') }}</NuxtLink>
+
+            </div>
+          </template>
+
+          <section class="initiative">
+            <div class="stack">
+              <h2>{{ $t('initiative.title') }}</h2>
+              <p>{{ $t('initiative.p1') }}</p>
+              <p>{{ $t('initiative.p2') }}</p>
+              <p>{{ $t('initiative.p3') }}</p>
+            </div>
+            <div class="stack">
+              <h3>{{ $t('initiative.aim.title') }}:</h3>
+              <div class="research-grid">
+                <p>{{ $t('initiative.aim.p1') }}</p>
+                <p>{{ $t('initiative.aim.p2') }}</p>
+                <p>{{ $t('initiative.aim.p3') }}</p>
+                <p>{{ $t('initiative.aim.p4') }}</p>
+              </div>
+            </div>
+          </section>
+          <section class="report">
+            <div class="repel">
+              <h2>{{ $t('report.title') }}</h2>
+              <div class="flex flex---1">
+                <nuxt-link class="button report__button"
                   color="primary"
-                  visual="primary"
-                  to="#report">{{ $t('readReport') }}</nuxt-link>
-              </template>
+                  visual="secondary"
+                  to="#report">{{ $t('report.view')
+                  }}</nuxt-link>
+                <nuxt-link class="button report__button"
+                  color="primary"
+                  visual="secondary"
+                  to="#report">{{ $t('report.podcast')
+                  }}</nuxt-link>
+              </div>
+            </div>
+          </section>
+          <section id="report"
+            class="report-list">
+            <div class="report-list__list">
+              <ContentList :key="'url' + locale"
+                :query="query"
+                :path="`/${locale}/`">
+                <template #default="{ list }">
+                  <ul class="report-list__toc"
+                    role="list">
+                    <li v-for="article in list.sort((a, b) => a.order - b.order)"
+                      :key="article._path"
+                      class="report-list__item"
+                      :class="{ 'report-list__item--active': data.selectedChapter.slug == article.slug }"
+                      @click="data.selectedChapter = article">
+                      {{ article.title }}
+                    </li>
+                  </ul>
+                </template>
 
-              <template #image>
-                <img class="homepage-hero__image"
-                  src="/images/lessons-learned.jpg"
-                  alt="Lessons Learned">
-              </template>
-            </homepage-hero>
-          </template>
+                <!-- Hero -->
+                <template #hero>
+                  <homepage-hero>
+                    <template #topbar>
+                      <top-bar />
+                    </template>
+                    <template #headings>
+                      <p class="homepage-hero__brow">{{ $t('synthesisReport') }} | Beta</p>
+                      <h1 class="homepage-hero__title">{{ $t('breakingBarriers') }}</h1>
+                      <p class="homepage-hero__tagline">{{ $t('tagline') }}</p>
+                      <nuxt-link class="button homepage-hero__button"
+                        icon-after="arrow_downward"
+                        color="primary"
+                        visual="primary"
+                        to="#report">{{ $t('readReport') }}</nuxt-link>
+                    </template>
 
-          <!-- Intro -->
-          <template #intro>
-            <intro-section class="intro">
-              <template #left>
-                <div class="stack">
-                  <h2>{{ $t('initiative.title') }}</h2>
-                  <p>{{ $t('initiative.p1') }}</p>
-                  <p>{{ $t('initiative.p2') }}</p>
-                  <p>{{ $t('initiative.p3') }}</p>
-                </div>
-              </template>
-              <template #right>
-                <div class="stack">
-                  <h3>{{ $t('initiative.aim.title') }}:</h3>
-                  <div class="research-grid">
-                    <p>{{ $t('initiative.aim.p1') }}</p>
-                    <p>{{ $t('initiative.aim.p2') }}</p>
-                    <p>{{ $t('initiative.aim.p3') }}</p>
-                    <p>{{ $t('initiative.aim.p4') }}</p>
-                  </div>
-                </div>
-              </template>
-            </intro-section>
-          </template>
+                    <template #image>
+                      <img class="homepage-hero__image"
+                        src="/images/lessons-learned.jpg"
+                        alt="Lessons Learned">
+                    </template>
+                  </homepage-hero>
+                </template>
 
-          <!-- Report -->
-          <template #report>
-            <report-section class="report">
-              <template #top-left>
-                <h2>{{ $t('report.title') }}</h2>
-              </template>
-            </report-section></template>
-        </ContentList>
-      </div>
-      <span class="report-list__spacer" />
-      <div v-if="data.selectedChapter && data.selectedChapter.title"
-        class="report-list__content">
-        <h3 class="report-list__title">{{ data.selectedChapter.title }}</h3>
-        <p class="report-list__subtitle">{{ data.selectedChapter.description }}</p>
-        <NuxtLink v-if="locale !== 'en'"
-          class="button index-header__button"
-          color="primary"
-          visual="primary"
-          :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }}</NuxtLink>
-        <NuxtLink v-else
-          class="button index-header__button"
-          color="primary"
-          visual="primary"
-          :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter') }}</NuxtLink>
-      </div>
-    </section>
-    <section class="map-grid">
-      <!--<div class="map-grid__summary | project-summary">
+                <!-- Intro -->
+                <template #intro>
+                  <intro-section class="intro">
+                    <template #left>
+                      <div class="stack">
+                        <h2>{{ $t('initiative.title') }}</h2>
+                        <p>{{ $t('initiative.p1') }}</p>
+                        <p>{{ $t('initiative.p2') }}</p>
+                        <p>{{ $t('initiative.p3') }}</p>
+                      </div>
+                    </template>
+                    <template #right>
+                      <div class="stack">
+                        <h3>{{ $t('initiative.aim.title') }}:</h3>
+                        <div class="research-grid">
+                          <p>{{ $t('initiative.aim.p1') }}</p>
+                          <p>{{ $t('initiative.aim.p2') }}</p>
+                          <p>{{ $t('initiative.aim.p3') }}</p>
+                          <p>{{ $t('initiative.aim.p4') }}</p>
+                        </div>
+                      </div>
+                    </template>
+                  </intro-section>
+                </template>
+
+                <!-- Report -->
+                <template #report>
+                  <report-section class="report">
+                    <template #top-left>
+                      <h2>{{ $t('report.title') }}</h2>
+                    </template>
+                  </report-section></template>
+              </ContentList>
+            </div>
+            <span class="report-list__spacer" />
+            <div v-if="data.selectedChapter && data.selectedChapter.title"
+              class="report-list__content">
+              <h3 class="report-list__title">{{ data.selectedChapter.title }}</h3>
+              <p class="report-list__subtitle">{{ data.selectedChapter.description }}</p>
+              <NuxtLink v-if="locale !== 'en'"
+                class="button index-header__button"
+                color="primary"
+                visual="primary"
+                :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }}</NuxtLink>
+              <NuxtLink v-else
+                class="button index-header__button"
+                color="primary"
+                visual="primary"
+                :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter') }}</NuxtLink>
+            </div>
+          </section>
+          <section class="map-grid">
+            <!--<div class="map-grid__summary | project-summary">
             <h3><span>15</span> {{ $t('globalProjects') }}</h3>
             <p><a href="https://idrc-crdi.ca/en/initiative/gender-stem" target="_blank">Breaking Barriers Network</a></p>
         </div>-->
-      <div class="map-grid__map">
-        <ClientOnly fallback-tag="span"
-          fallback="Loading...">
-          <map-data class="data"
-            :resources="resources"
-            :active-country="data.selectedCountry"
-            @project-selected="handleProjectSelected" />
-        </ClientOnly>
-        <world-map class="map" />
-      </div>
-      <div class="map-grid__content">
-        <resource-list :resources="data.resourceList" />
-      </div>
-    </section>
-    <section class="challenge">
-      <div class="challenge__image" />
-      <div class="stack">
-        <h2>{{ $t('challenge.title') }}</h2>
-        <p>{{ $t('challenge.p1') }}</p>
-        <p><a href="https://unesdoc.unesco.org/ark:/48223/pf0000375429"
-            target="_blank">{{ $t('challenge.link') }}</a>{{
-              $t('challenge.p2') }}</p>
-        <p>{{ $t('challenge.p3') }}</p>
-      </div>
-    </section>
+            <div class="map-grid__map">
+              <ClientOnly fallback-tag="span"
+                fallback="Loading...">
+                <map-data class="data"
+                  :resources="resources"
+                  :active-country="data.selectedCountry"
+                  @project-selected="handleProjectSelected" />
+              </ClientOnly>
+              <world-map class="map" />
+            </div>
+            <div class="map-grid__content">
+              <resource-list :resources="data.resourceList" />
+            </div>
+          </section>
+          <section class="challenge">
+            <div class="challenge__image" />
+            <div class="stack">
+              <h2>{{ $t('challenge.title') }}</h2>
+              <p>{{ $t('challenge.p1') }}</p>
+              <p><a href="https://unesdoc.unesco.org/ark:/48223/pf0000375429"
+                  target="_blank">{{ $t('challenge.link') }}</a>{{
+                    $t('challenge.p2') }}</p>
+              <p>{{ $t('challenge.p3') }}</p>
+            </div>
+          </section>
+        </report-section>
+      </template>
+    </homepagelayout>
   </main>
 </template>
 
@@ -396,6 +532,12 @@ h2 {
     background-color: var(--black-color-05-alpha);
   }
 }
+
+.hero .button {
+  font-weight: 500;
+  font-size: var(--size-0);
+}
+
 
 
 

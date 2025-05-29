@@ -13,6 +13,9 @@
     <div class="report-section__right">
       <slot name="right" />
     </div>
+    <div class="report-section__mobile">
+      <slot name="mobile" />
+    </div>
   </section>
 </template>
 
@@ -47,52 +50,80 @@
   .report-section__top-right { grid-area: top_right; }
   .report-section__left { grid-area: left; }
   .report-section__right { grid-area: right; }
+  .report-section__mobile { grid-column: 1 / -1; }
 }
 
+.report-section__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .report__button {
+.report-section__mobile {
+  padding-inline: 0;
+}
+ 
+@media (max-width: 768px) {
+  .report-section__left,
+  .report-section__right { display: none; }
+}
+
+@media (min-width: 768px) {
+  .report-section__mobile { display: none; }
+}
+
+  :deep(.report__button) {
     border-width: 1px;
     color: var(--base-color);
   }
 
-  .report-list {
-    display: grid;
-    grid-template-columns: 40% 2px auto;
-    position: relative;
-    z-index: 1;
+  :deep(.report-list__mobile a) {
+    display: block;
+    padding-inline: 0;
+    padding-block: var(--space-xs);
+    color: var(--base-color-70-tint);
+    border-bottom: 1px solid var(--base-color-05-tint);
+    text-decoration: none;
   }
 
-    .report-list__toc {
-      .report-list__item {
-        padding-inline: var(--space-m) var(--space-l);
-        padding-block: var(--space-s);
-        cursor: pointer;
-        font-size: var(--size-0);
-      }
-      .report-list__item--active {
-        background-color: var(--primary-color);
-        color: var(--white-color);
-      }
-    }
+  :deep(.report-list__item) {
+    padding-inline: var(--space-m) var(--space-l);
+    padding-block: var(--space-s);
+    cursor: pointer;
+    font-size: var(--size-0);
+  }
+  :deep(.report-list__item--active) {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+  }
 
-    .report-list__spacer {
-      background-image: linear-gradient(360deg, rgba(228, 228, 231, 0) 0%, rgba(228, 228, 231, 0.5) 15%, #E4E4E7 85%, rgba(228, 228, 231, 0) 100%);
-    }
+  :deep(.report-list__content) {
+    display: flex;
+    gap: var(--space-xl);
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .report-list__content {
-      padding-inline: var(--space-2xl) var(--space-m);
-      display: flex;
-      gap: var(--space-xl);
-      flex-direction: column;
-      justify-content: center;
-    }
+  :deep(.report-list__title) {
+    font-size: var(--size-3);
+    color: var(--primary-color);
+  }
 
-      .report-list__title {
-        font-size: var(--size-4);
-        color: var(--primary-color);
-      }
+  :deep(.report-list__subtitle) {
+    font-size: var(--space-0);
+  }
 
-      .report-list__subtitle {
-        font-size: var(--space-0);
-      }
+  :deep(.report__button) {
+    color: var(--white-color);
+  }
+
+  :deep(.report-list__toc) {
+    display: flex;
+    flex-direction: column;
+    padding-block: var(--space-s);
+    cursor: pointer;
+    border-right: 1px solid;
+    border-image: linear-gradient(to bottom, transparent 0%, #ccc 50%, transparent 100%) 1;
+  }
+  
 </style>

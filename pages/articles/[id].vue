@@ -120,7 +120,7 @@ v-else
         <button @click="$router.push(localePath('/'))">{{ $t('back') }}</button>
       </template>
     </ContentDoc>
-    <chapterFooter />
+    <footer-section />
   </main>
 </template>
 

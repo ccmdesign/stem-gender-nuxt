@@ -85,11 +85,17 @@
   background-position: center, center;
   background-blend-mode: overlay;
   position: relative;
-
-  & * { color: var(--white-color); }
 }
 
 // Typography
+:deep(.homepage-hero__headings) {
+  color: var(--white-color);
+
+  .button[visual="primary"] {
+    color: var(--white-color) !important;
+  }
+}
+
 :deep(.homepage-hero__brow) {
   text-transform: uppercase;
   font-size: var(--size-1);

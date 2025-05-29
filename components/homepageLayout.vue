@@ -12,7 +12,7 @@
       <slot name="intro" />
     </section>
 
-    <section class="report">
+    <section class="report" id="report">
       <slot name="report" />
     </section>
 
@@ -39,6 +39,16 @@
 </script>
 
 <style lang="scss" scoped>
+
+.homepage-layout {
+  
+
+  > * { 
+    scroll-margin-top: 40px; 
+    scroll-behavior: smooth;
+  }
+}
+
 .report {
   z-index: 2;
   position: relative;
