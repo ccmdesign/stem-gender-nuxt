@@ -212,6 +212,9 @@ ol {
 
     .post-layout .percentage-graph {
       grid-column: 2/3;
+      @media (max-width: 768px) {
+        grid-column: 1;
+      }
     }
 
     .post-layout .graph-text h4, 

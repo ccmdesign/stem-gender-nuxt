@@ -10,5 +10,8 @@
         background-color: var(--secondary-color);
         grid-column: 1/5;
         padding-bottom: var(--space-xl);
+        @media (max-width: 768px) {
+            grid-column: 1;
+        }
     }
 </style>

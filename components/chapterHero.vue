@@ -1,5 +1,5 @@
 <template>
-    <div class="chapter-hero">
+    <div class="chapter-hero" :class="{'chapter-hero--small': !tagline}">
       <div v-if="image" class="chapter-hero__image" :style="`background-image: url(${image})`"></div>
       <div class="chapter-hero__info | stack">
         <div>
@@ -44,6 +44,12 @@
     @media screen and (min-width: 1024px) {
     }
   }
+
+    .chapter-hero--small {
+        @media (max-width: 768px) {
+            margin-bottom: var(--space-3xl);
+        }
+    }
 
   .chapter-hero__image {
     width: 100%;
