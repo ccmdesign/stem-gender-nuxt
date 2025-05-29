@@ -32,10 +32,10 @@ Women make up only **28%** of the global STEM workforce (UNESCO, 2021).
 
 ::graphText{graph=true percentage=15}
 #### Leadership positions
-Women Women hold less than **15%** of senior leadership roles in STEM organizations (Catalyst, 2020).
+Women hold less than **15%** of senior leadership roles in STEM organizations (Catalyst, 2020).
 ::
 
-::graphText{graph=true percentage=20 gap=50}
+::graphText{graph=true percentage=30 gap=50}
 #### Pay gap
 In Europe, women in STEM earn on average **20%** less than their male counterparts (European Commission, 2020).
 ::
