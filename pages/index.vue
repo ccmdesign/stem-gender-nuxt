@@ -266,7 +266,8 @@
                     <template #top-left>
                       <h2>{{ $t('report.title') }}</h2>
                     </template>
-                  </report-section></template>
+                  </report-section>
+                </template>
               </ContentList>
             </div>
             <span class="report-list__spacer" />
@@ -286,25 +287,6 @@
                 :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter') }}</NuxtLink>
             </div>
           </section>
-          <section class="map-grid">
-            <!--<div class="map-grid__summary | project-summary">
-            <h3><span>15</span> {{ $t('globalProjects') }}</h3>
-            <p><a href="https://idrc-crdi.ca/en/initiative/gender-stem" target="_blank">Breaking Barriers Network</a></p>
-        </div>-->
-            <div class="map-grid__map">
-              <ClientOnly fallback-tag="span"
-                fallback="Loading...">
-                <map-data class="data"
-                  :resources="resources"
-                  :active-country="data.selectedCountry"
-                  @project-selected="handleProjectSelected" />
-              </ClientOnly>
-              <world-map class="map" />
-            </div>
-            <div class="map-grid__content">
-              <resource-list :resources="data.resourceList" />
-            </div>
-          </section>
           <section class="challenge">
             <div class="challenge__image" />
             <div class="stack">
@@ -317,6 +299,26 @@
             </div>
           </section>
         </report-section>
+      </template>
+
+      <template #map-grid>
+        <!--<div class="map-grid__summary | project-summary">
+            <h3><span>15</span> {{ $t('globalProjects') }}</h3>
+            <p><a href="https://idrc-crdi.ca/en/initiative/gender-stem" target="_blank">Breaking Barriers Network</a></p>
+        </div>-->
+        <div class="map-grid__map">
+          <ClientOnly fallback-tag="span"
+            fallback="Loading...">
+            <map-data class="data"
+              :resources="resources"
+              :active-country="data.selectedCountry"
+              @project-selected="handleProjectSelected" />
+          </ClientOnly>
+          <world-map class="map" />
+        </div>
+        <div class="map-grid__content">
+          <resource-list :resources="data.resourceList" />
+        </div>
       </template>
     </homepagelayout>
   </main>
