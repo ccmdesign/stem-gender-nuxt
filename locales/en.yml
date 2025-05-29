@@ -41,3 +41,18 @@ challenge:
   link: Women represent only 30% of the world’s researchers
   p2: ", with even less representation in science leadership positions. In 2015, the Interacademy Partnership published the first comprehensive survey of science academies in its global network. Across the 69 national science academies for which data was available, women made up 10% or less of members in almost half of the countries."
   p3: 'Although the systemic barriers to the participation of women scientists is increasingly being studied, such data and case studies have historically been based on countries in the Global North.'
+
+footer:
+  careers: 'Careers'
+  contact: 'Contact Us'
+  digitalLibrary: 'Digital Library'
+  media: 'Media'
+  accessibility: 'Accessibility'
+  equityStandard: 'Equity Standard'
+  openAccessPolicy: 'Open Access Policy'
+  privacyNotice: 'Privacy Notice'
+  researchEthics: 'Research Ethics'
+  termsOfUse: 'Terms of Use'
+  transparency: 'Transparency'
+  copyright: 'Copyright © currentYear IDRC. All Rights Reserved.'
+  
