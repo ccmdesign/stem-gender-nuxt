@@ -51,18 +51,19 @@ const findPopover = (id) => {
 }
 
 const getPosition = (resource, key) => {
-  const mapContainer = document.querySelector('.world-map svg')
+  const mapContainer = document.querySelector('#map-container svg')
   const mapLocation = mapContainer.querySelector(`[title="${resource.name}"]`)
-  mapLocation.style.fill = 'var(--primary-color)'
+
   const points = mapLocation.getBoundingClientRect()
+  const mapContaierPoints = mapContainer.getBoundingClientRect()
 
   const mapLocationCenter = {
     x: points.x + (points.width / 2),
     y: points.y + (points.height / 2)
   }
 
-  const calcOfPostionY = (mapLocationCenter.y / mapContainer.clientHeight).toFixed(2)
-  const calcOfPostionX = (mapLocationCenter.x / mapContainer.clientWidth).toFixed(2)
+  const calcOfPostionY = (mapLocationCenter.y / mapContaierPoints.height).toFixed(2)
+  const calcOfPostionX = (mapLocationCenter.x / mapContaierPoints.width).toFixed(2)
 
   console.log(key, parseFloat(calcOfPostionX), parseFloat(calcOfPostionY))
 
