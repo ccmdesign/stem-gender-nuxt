@@ -147,7 +147,7 @@
     </template>
 
     <!-- Sign Up -->
-    <template #sign-up>
+    <!--<template #sign-up>
       <twin-section class="sign-up">
         <template #left>
           <h2>Sign Up</h2>
@@ -156,7 +156,7 @@
           <h2>Sign Up</h2>
         </template> 
       </twin-section>
-    </template>
+    </template>-->
 
     <!-- Footer -->
     <template #footer>
