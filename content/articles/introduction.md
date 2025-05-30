@@ -5,7 +5,7 @@ permalink: /en/introduction/
 order: 2
 image: '/images/introduction.jpg'
 audio: 'audios/Introduction.mp3'
-description: 'The gender gap in STEM is not a result of individual choices but is shaped by systemic barriers, including gender biases, stereotypes, and structural inequalities within educational institutions and workplaces.'
+description: 'The gender gap in STEM is not a result of individual choices but is shaped by systemic barriers, including gender biases, stereotypes, and structural inequalities within educational institutions and workplaces. Uncovering and addressing these barriers is a necessary step in driving development around the world.'
 slug: introduction
 ---
 
@@ -25,13 +25,13 @@ The gender gap in STEM is not a result of individual choices but is shaped by sy
 </hgroup>
 
 
-Significant progress has been made in highlighting the lack of gender equality in STEM fields, yet non-diverse science and technology sectors remain the norm. According to UNESCO's 2024 report on the gender gap in science, women represent only a third of researchers globally, with even lower representation in leadership roles and senior positions—a statistic that has remained almost unchanged in the past decade.  Data on other marginalized groups is often unavailable or unrecognized.
+Significant progress has been made in highlighting the lack of gender equality in STEM fields, yet non-diverse science and technology sectors remain the norm. According to UNESCO's [2024 report on the gender gap in science](https://unesdoc.unesco.org/ark:/48223/pf0000388805), women represent only a third of researchers globally, with even lower representation in leadership roles and senior positions—a statistic that has remained almost unchanged in the past decade.  Data on other marginalized groups is often unavailable or unrecognized.
 
 The lack of diversity in science, technology, and innovation sectors has significant economic consequences. Studies show that diverse teams are more innovative and produce more impactful research. Excluding women and other marginalized groups leads to missed opportunities for innovation and solutions to global challenges like climate change and health crises. This exclusion risks further entrenching biases and neglecting key research priorities. It is crucial that voices from all regions, especially marginalized communities, shape research agendas and drive innovation.
 
 ### IDRC's commitment to gender equality in STEM
 
-Building evidence on gender equality has been a priority for IDRC throughout its history, from ensuring that women participate in research projects as researchers and beneficiaries to identifying how to scale much needed services, like childcare or sexual and reproductive health rights.   All IDRC-supported research considers gender in its rationale and most of it addresses gender equality through the meaningful participation of women in marginalized communities, for example, or by generating new data on gender inequality. 
+Building evidence on gender equality has been a priority for IDRC [throughout its history](https://idrc-crdi.ca/en/research-in-action/gender-equality-making-transformative-impact#:~:text=Building%20evidence%20on%20gender%20equality%20has%20been%20a,child%20care%20or%20sexual%20and%20reproductive%20health%20rights), from ensuring that women participate in research projects as researchers and beneficiaries to identifying how to scale much needed services, like childcare or sexual and reproductive health rights.   All IDRC-supported research considers gender in its rationale and most of it addresses gender equality through the meaningful participation of women in marginalized communities, for example, or by generating new data on gender inequality. 
 
 Inequalities exist across multiple and intersecting categories of identity, including, but not limited to gender, sexuality, age, class, race, caste, ethnicity, citizenship status, religion, and ability; taking an intersectional approach to equality recognizes these differences and understands diversity as central to advancing equality. Given that gender inequality is a significant barrier across all dimensions of diversity, IDRC invests specific efforts in ensuring its work promotes gender equality.
 
@@ -105,7 +105,7 @@ As part of the **Breaking Barriers Network**, researchers from Latin America and
 ::
 
 - Establishing initiatives to promote gender equity, including genderresponsive policies, mentorship programs, and scholarship programmes. Additionally, conducting gender audits to ensure safe and supportive environments for women.
-- Establishing initiatives to promote gender equity, including genderresponsive policies, mentorship programs, and scholarship programmes. Additionally, conducting gender audits to ensure safe and supportive environments for women. Comprehensive data collection efforts that utilize genderresponsive methodologies to identify barriers to women’s participation in STEM, inform evidence-based policies that address gender inequalities.
+- Comprehensive data collection efforts that utilize genderresponsive methodologies to identify barriers to women’s participation in STEM, inform evidence-based policies that address gender inequalities.
 - Designing and implementing mentorship frameworks and collaborative networks that empower marginalized women in STEM, providing them with leadership opportunities and resources to enhance their participation in decision-making and research initiatives.
 - Building support systems to facilitate women’s transitions from STEM education to the workforce. These systems include curriculum revisions, capacity-building initiatives, and policy frameworks, ensuring women receive ongoing support throughout their careers.
 

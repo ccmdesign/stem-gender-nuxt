@@ -32,8 +32,8 @@ The path forward requires a commitment to ongoing research, policy advocacy, and
 1. Expand Outreach and Mentorship Activities: Strengthen support systems in schools and universities, and implement formal mentorship programs to support women in various STEM sectors.
 2. Develop Interactive and Equitable Learning Environments: Create inclusive learning environments and provide vocational guidance and mentorship to support career development in STEM fields.
 3. Staff Development in Gender-Sensitive Pedagogy: Train university lecturers on gender-sensitive teaching methods and review curricula to make them more inclusive.
-5. Improve Data Collection and Analysis: Implement systems for collecting gender-disaggregated data in all training and research structures, ensuring methodologies mitigate gender biases.
-6. Conduct Gender Audits: Perform gender audits across relevant education institutions.
+4. Improve Data Collection and Analysis: Implement systems for collecting gender-disaggregated data in all training and research structures, ensuring methodologies mitigate gender biases.
+5. Conduct Gender Audits: Perform gender audits across relevant education institutions.
  
 #### Science and Research Institutions
 1. Increase Visibility of Women Scientists: Feature women scientists in research publications and conferences to enhance their visibility and inspire future generations.
