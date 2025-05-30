@@ -3,7 +3,7 @@
       <div class="report-list__list">
           <ul class="report-list__toc" role="list">
             <li class="report-list__item" @click="toArticle(article)"  
-                v-for="(article, index) in articles.sort((a, b) => a.order - b.order)" 
+                v-for="(article, index) in chapters.sort((a, b) => a.order - b.order)" 
                 :key="article._path"
                 ref="listItems">
                 <span>0{{ index+1 }}</span>
@@ -19,9 +19,13 @@
 </template>
 
 <script setup>
+import { useChapterMenu } from '~/store/chapterMenuStore'
+import { storeToRefs } from 'pinia';
+
 const { locale } = useI18n()
 const localePath = useLocalePath()
-const articles = await queryContent(locale.value, 'articles').find()
+const store = useChapterMenu()
+const { chapters } = storeToRefs(store)
 
 const toArticle = (article) => {
   if(locale.value !== 'en') {

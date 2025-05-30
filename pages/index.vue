@@ -167,6 +167,11 @@ import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import resourcesByCountry from '~/public/resourcesByCountry.json'
 import { userResourcesFilter } from '~/composables/resourcesFilter'
 
+import { useChapterMenu } from '~/store/chapterMenuStore'
+import { storeToRefs } from 'pinia';
+const store = useChapterMenu()
+const { chapters } = storeToRefs(store)
+
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const query: QueryBuilderParams = {
@@ -208,12 +213,12 @@ const resourceFullList = Object.values(resources.value).reduce<Resource[]>((acc,
   return acc;
 }, []).sort((a: Resource, b: Resource) => a.name.localeCompare(b.name));
 
-const selectedChapter = (await queryContent(locale.value, 'articles').sort({ order: 1 }).find())[0]
+chapters.value = await queryContent(locale.value, 'articles').sort({ order: 1 }).find()
 const activeCountry = ref<string | null>(null);
 const activeProjectIndex = ref<number | null>(null);
 const data = reactive({
   selectedCountry: '',
-  selectedChapter: selectedChapter,
+  selectedChapter: chapters.value[0],
   resourceList: resourceFullList
 })
 

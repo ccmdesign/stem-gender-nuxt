@@ -3,13 +3,14 @@ import { defineStore } from 'pinia'
 export const useChapterMenu = defineStore('chapterMenu', {
   state: () => ({
     isChapterMenuOpen: false,
+    chapters: [] as any[]
   }),
   actions: {
     toggleChapterMenu() {
       this.isChapterMenuOpen = !this.isChapterMenuOpen
     },
-    setChapterMenu(open) {
-      this.isChapterMenuOpen = open
+    setChapters(list: any[]) {
+      this.chapters = list
     }
   }
 })
