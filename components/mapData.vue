@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div v-for="(resource, key) in resources"
     :id="`resource-${key}`"
     :key="key"
@@ -6,8 +6,9 @@
     class="resource"
     :class="{ 'resource--active': data.selectedCountry == key }"
     :style="{
-      ...mapPostions[resource.name],
-      'anchor-name': `--resource-list-${key}`, 'z-index': 10
+      ...mapPositions[resource.name],
+      'anchor-name': `--resource-list-${key}`,
+      'z-index': 10,
     }">
     <button :id="`trigger-${key}`"
       :popovertarget="`resource-list-${key}`"
@@ -17,11 +18,9 @@
         :style="{ 'position-anchor': `--resource-list-${key}` }">{{ resource.name }}</span>
     </button>
   </div>
-
-</template>
+</template> -->
 
 <script setup>
-import { defineEmits } from 'vue';
 const props = defineProps({
   resources: {
     type: Object,
@@ -38,7 +37,6 @@ const data = reactive({
   selectedCountry: props.activeCountry
 })
 
-const mapPostions = ref([])
 
 const emit = defineEmits(['project-selected']);
 
@@ -51,49 +49,59 @@ const findPopover = (id) => {
 }
 
 const getPosition = (resource, key) => {
-  const mapContainer = document.querySelector('#map-container svg')
-  const mapLocation = mapContainer.querySelector(`[title="${resource.name}"]`)
+  const container = document.querySelector('#map-container svg g')
+  const marker = document.querySelector(`#${key}-marker`);
+  marker.classList.add('marker')
 
-  const points = mapLocation.getBoundingClientRect()
-  const mapContaierPoints = mapContainer.getBoundingClientRect()
-
-  const mapLocationCenter = {
-    x: points.x + (points.width / 2),
-    y: points.y + (points.height / 2)
+  const markerXY = {
+    x: parseFloat(marker.querySelector('circle:last-of-type').getAttribute('cx')) + 8,
+    y: parseFloat(marker.querySelector('circle:last-of-type').getAttribute('cy')) + 4
   }
 
-  const calcOfPostionY = (mapLocationCenter.y / mapContaierPoints.height).toFixed(2)
-  const calcOfPostionX = (mapLocationCenter.x / mapContaierPoints.width).toFixed(2)
+  const newText = document.createElementNS("http://www.w3.org/2000/svg", "text");
+  newText.setAttributeNS(null, "x", markerXY.x);
+  newText.setAttributeNS(null, "y", markerXY.y);
+  newText.setAttributeNS(null, "width", "100%");
+  newText.setAttributeNS(null, "height", "auto");
+  newText.setAttributeNS(null, "font-size", "12");
+  newText.setAttributeNS(null, "font-style", "normal");
+  newText.setAttributeNS(null, "fill", "currentColor");
+  newText.setAttributeNS(null, "style", `
+    z-index: 1000;
+    fill: var(--base-color);
+    font-weight: 800;
+    transition: opacity 0.2s ease-in-out;
+    font-family: var(--font-body);
+  `)
 
-  console.log(key, parseFloat(calcOfPostionX), parseFloat(calcOfPostionY))
+  newText.setAttributeNS(null, "display", "none")
+  newText.appendChild(document.createTextNode(resource.name))
 
-  return {
-    top: `${parseFloat(calcOfPostionY) * 100}%`,
-    left: `${parseFloat(calcOfPostionX) * 100}%`
-  }
+  container.append(newText)
+
+  marker.addEventListener('mouseover', () => {
+    newText.setAttributeNS(null, 'display', 'block')
+  })
+
+  marker.addEventListener('mouseleave', () => {
+    newText.setAttributeNS(null, 'display', 'none')
+  })
+
+  marker.addEventListener('click', () => {
+    findPopover(key)
+  })
 }
 
 onMounted(() => {
   const keysOfResources = Object.keys(props.resources)
 
-  const objectOfLocations = keysOfResources.reduce((accumulator, key) => {
-    const positions = getPosition(props.resources[key], key)
-
-    return {
-      ...accumulator,
-      [props.resources[key].name]: positions
-    }
-  }, {})
-
-  mapPostions.value = objectOfLocations
+  keysOfResources.forEach((key) => {
+    getPosition(props.resources[key], key)
+  })
 })
 </script>
 
 <style lang="scss" scoped>
-.map-data {
-  position: absolute;
-}
-
 .resource {
   position: absolute;
   width: fit-content;
@@ -133,13 +141,12 @@ onMounted(() => {
   --_circle-hsl: var(--primary-hsl);
   --_circle-border-hsl: var(--base-hsl);
 
-  border-radius: 50%;
-  width: var(--size--2);
-  height: var(--size--2);
+  border: 1px solid red;
+  position-area: right;
   display: inline-block;
-  background-color: hsla(var(--_circle-hsl), 1);
+  width: var(--circle-width);
+  height: var(--circle-height);
   transition: opacity 0.2s ease-in-out;
-  outline: 8px solid hsla(var(--_circle-border-hsl), .15);
 }
 
 .resource__list {
