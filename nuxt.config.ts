@@ -23,7 +23,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/content',
     '@pinia/nuxt',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@pinia/nuxt',
   ],
   
   css: [ '~/assets/css/styles.scss'],

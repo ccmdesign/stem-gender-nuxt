@@ -1,5 +1,5 @@
 <template>
-  <div class="top-bar | cluster">
+  <div v-if="!isChapterMenuOpen" class="top-bar | cluster">
     <h1>{{ $t('breakingBarriers') }}</h1>
     <img class="idrc-logo" src="assets/idrc-logo.png" alt="IDRC Logo" />
 
@@ -8,17 +8,36 @@
     </div>
 
     <div class="top-bar__chapters" split>
-      <a href="#report" class="chapter-button | button" size="s" color="primary" visual="ghost"  @click="setLocale('en')">
+      <a class="chapter-button | button" size="s" color="primary" visual="ghost"  @click="store.toggleChapterMenu()">
         <span>Chapters</span>
         <span class="icon">menu</span>
       </a>
       
     </div>
   </div>
+  <div v-else class="top-bar | cluster">
+    <div class="chapter-header__languages">
+      <nuxtLink v-for="lang in locales" :key="lang.code" class="button" size="s" color="primary" visual="ghost" @click="setLocale(lang.code)">{{ lang.code.toUpperCase() }}</nuxtLink>
+    </div>
+
+    <div class="top-bar__chapters" split>
+      <a class="chapter-button | button" size="s" visual="ghost"  @click="store.toggleChapterMenu()">
+        <span class="icon">close</span>
+      </a>
+      
+    </div>
+  </div>
+  <Transition name="slide-fade" mode="out-in">
+    <chapter-menu v-if="isChapterMenuOpen" />
+  </Transition>
 </template>
 
 <script setup>
+import { useChapterMenu } from '~/store/chapterMenuStore'
+import { storeToRefs } from 'pinia';
 const { locales, setLocale } = useI18n()
+const store = useChapterMenu()
+const { isChapterMenuOpen } = storeToRefs(store)
 
 </script>
 
@@ -65,6 +84,13 @@ h1 {
   }
 }
 
+.chapter-header__languages {
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
 .icon {
   font-size: var(--size-0);
   margin-left: var(--space-xs);
@@ -78,6 +104,17 @@ h1 {
   justify-content: center;
   background-color: var(--primary-color);
   color: var(--white-color);
+}
+
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
 }
 
 

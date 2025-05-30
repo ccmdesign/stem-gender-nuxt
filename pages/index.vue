@@ -208,11 +208,12 @@ const resourceFullList = Object.values(resources.value).reduce<Resource[]>((acc,
   return acc;
 }, []).sort((a: Resource, b: Resource) => a.name.localeCompare(b.name));
 
+const selectedChapter = (await queryContent(locale.value, 'articles').sort({ order: 1 }).find())[0]
 const activeCountry = ref<string | null>(null);
 const activeProjectIndex = ref<number | null>(null);
 const data = reactive({
   selectedCountry: '',
-  selectedChapter: {},
+  selectedChapter: selectedChapter,
   resourceList: resourceFullList
 })
 
@@ -267,9 +268,9 @@ watch(filteredResourceList, (newList) => {
   data.resourceList = newList;
 }, { immediate: true });
 
+
 onMounted(async () => {
   document.addEventListener('click', handleClickOutside);
-  document.querySelectorAll('.report-list__item')[0].click();
 });
 
 onUnmounted(() => {
