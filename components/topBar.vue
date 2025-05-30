@@ -84,13 +84,6 @@ h1 {
   }
 }
 
-.chapter-header__languages {
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
-
 .icon {
   font-size: var(--size-0);
   margin-left: var(--space-xs);
