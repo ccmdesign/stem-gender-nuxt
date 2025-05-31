@@ -7,7 +7,7 @@ image: '/images/conclusion.jpg'
 audio: '/audios/Chapter-5.mp3'
 ---
 
-<p class="dropcap" data-letter="T">
+::dropcap{letter="T"}
 The journey towards gender equity in STEM is multifaceted and requires a concerted effort from all stakeholders. The programs, initiatives and research findings outlined highlight the importance of comprehensive programs, participatory research, mentorship, policy integration, community engagement, and transformative learning. These elements are crucial in addressing systemic barriers and fostering an inclusive environment for women in STEM.
 
 The work of the IDRC and its partners exemplifies the potential for impactful change to dismantle identified challenges through targeted interventions and collaborative efforts. By identifying context-specific barriers and piloting innovative solutions, significant strides have been made in promoting gender equity. The success stories from various regions, such as the collaborative policy development in Zimbabwe and commitments to incorporate mentorship programs across universities in East Africa, demonstrate the effectiveness of these approaches.
@@ -15,11 +15,10 @@ The work of the IDRC and its partners exemplifies the potential for impactful ch
 However, to sustain and scale these efforts, it is imperative to involve policymakers and key stakeholders from the outset. This ensures that interventions are not only implemented but also institutionalized, creating a lasting impact. By continuing to build on these foundations and expanding the reach of successful programs, we can move closer to achieving true transformation of our science systems, making them more equitable and inclusive, and reflective of the populations their innovations can service. 
 
 The path forward requires a commitment to ongoing research, policy advocacy, and community engagement. By leveraging the collective expertise and experiences of diverse stakeholders, we can create a more equitable and inclusive STEM landscape that benefits everyone.
-</p>
+::
 
-<div class="header-start">
-<h4>Recommendations for Key Stakeholders</h4>
-</div>
+::header-start{title="Recommendations for Key Stakeholders" hTag="h4"}
+::
 
 #### Policymakers
 1. Increase Visibility of Women Scientists: Launch national media campaigns and public lectures to highlight women scientists, fostering a positive association between women and science.

@@ -1,10 +1,23 @@
 <script setup lang="ts">
+import BgImage from '~/components/bgImage.vue'
+import DropcapComponent from '~/components/dropcapComponent.vue'
+import HeaderGroup from '~/components/headerGroup.vue'
+import HeaderStart from '~/components/HeaderStart.vue'
+
+
 definePageMeta({
   layout: 'default'
 })
 const route = useRoute()
 const localePath = useLocalePath()
 const { locale } = useI18n()
+
+const components = {
+  'header-start': HeaderStart,
+  'bg-image': BgImage,
+  'dropcap': DropcapComponent,
+  'hgroup': HeaderGroup
+}
 
 const { data: docs } = await useAsyncData('articles', () =>
   queryContent('articles').sort({ order: 1 }).find()
@@ -35,48 +48,70 @@ function getPrevDoc(currentOrder: number) {
     <div class="article-links">
       <div class="wrapper">
         <div class="article-links__content">
-          <backLink></backLink>
-          <span class="separator not-mobile"></span>
+          <backLink />
+          <span class="separator not-mobile" />
           <div class="article-links__title">{{ $t('chapter') }} {{ chapter.order }} / <b>{{ chapter.title }}</b></div>
-          <span class="separator not-mobile"></span>
-          <nextLink class="not-mobile" :url="localePath(`/articles/${getNextDoc(chapter.order).slug}`)"
-            v-if="getNextDoc(chapter.order)"></nextLink>
+          <span class="separator not-mobile" />
+          <nextLink
+v-if="getNextDoc(chapter.order)"
+            class="not-mobile"
+            :url="localePath(`/articles/${getNextDoc(chapter.order).slug}`)" />
         </div>
       </div>
     </div>
     <ContentDoc :path="localePath(route.path)">
-      <template v-slot="{ doc }">
+      <template #default="{ doc }">
         <article class="article-layout">
 
-          <chapter-hero class="article-layout__hero" :heading="doc.title" :tagline="doc.description" :brow="doc.brow"
-            :image="doc.image">
-          </chapter-hero>
-          
-          
+          <chapter-hero
+class="article-layout__hero"
+            :heading="doc.title"
+            :tagline="doc.description"
+            :brow="doc.brow"
+            :image="doc.image" />
+
+
           <section class="article-layout__content">
             <div class="post-layout">
-              <ArticleAudio v-if="doc.audio" :src="`/${doc.audio.replace(/^\/+/, '')}`" />
+              <ArticleAudio
+v-if="doc.audio"
+                :src="`/${doc.audio.replace(/^\/+/, '')}`" />
             </div>
-            <ContentRenderer :value="doc" class="post-layout | region prose" />
+            <ContentRenderer
+:value="doc"
+              :components
+              class="post-layout | region prose" />
           </section>
         </article>
         <article class="next-article">
           <div class="next-article__content">
-            <div class="next-article__item" v-if="getPrevDoc(doc.order)">
+            <div
+v-if="getPrevDoc(doc.order)"
+              class="next-article__item">
               <p class="next-article__cta">{{ $t('previousArticle') }}</p>
-              <NuxtLink class="next-article__link" :to="localePath(getPrevDoc(doc.order)._path)">
+              <NuxtLink
+class="next-article__link"
+                :to="localePath(getPrevDoc(doc.order)._path)">
                 {{ getPrevDoc(doc.order).title }}
               </NuxtLink>
             </div>
-            <div class="next-article__item" v-else></div>
+            <div
+v-else
+              class="next-article__item" />
 
-            <div class="next-article__item next-article__item--right" v-if="getNextDoc(doc.order)">
+            <div
+v-if="getNextDoc(doc.order)"
+              class="next-article__item next-article__item--right">
               <p class="next-article__cta">{{ $t('readNext') }}</p>
-              <NuxtLink class="next-article__link" :to="localePath(getNextDoc(doc.order)._path)">
+              <NuxtLink
+class="next-article__link"
+                :to="localePath(getNextDoc(doc.order)._path)">
                 {{ getNextDoc(doc.order).title }}
               </NuxtLink>
             </div>
-            <div class="next-article__item next-article__item--right" v-else></div>
+            <div
+v-else
+              class="next-article__item next-article__item--right" />
           </div>
         </article>
       </template>

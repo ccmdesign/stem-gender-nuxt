@@ -1,6 +1,9 @@
 <template>
   <div class="resource-list">
-    <resource-card v-for="resource in resources" :resource="resource" />
+    <resource-card 
+      v-for="resource in resources"
+      :key="resource.name"
+      :resource="resource" />
   </div>
 </template>
 

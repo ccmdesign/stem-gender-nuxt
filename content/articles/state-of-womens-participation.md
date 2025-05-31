@@ -8,9 +8,9 @@ order: 3
 description: 'Gender-based discrimination and harassment, such as inappropriate comments and exclusion from key meetings or decision-making processes, further contribute to a challenging work environment.'
 ---
 ### The importance of women's participation and leadership in STEM.
-<p class="dropcap" data-letter="I">
+::dropcap{letter="I"}
 In investigating local trends in women's participation in STEM, IDRC-funded research has highlighted challenges similar to those reported in the Global North. Across various regions, women's participation and leadership in STEM fields have not kept pace with the rapid growth of STEM industries and broader advancements toward gender equality (UNESCO, 2017).
-</p>
+::
 
 Alarmingly, despite increasing representation of women in higher education throughout the Americas and Europe, significant attrition occurs as women transition from STEM education to the workforce and even into advanced levels of education (European Commission, 2021; National Science Foundation, 2021).
 
@@ -116,7 +116,8 @@ Cultural norms and practices can severely restrict women's participation in STEM
 #### Policy and Institutional Barriers
 National and institutional policies frequently lack integration of gender considerations, resulting in insufficient support for women in STEM. Many existing policies do not adequately address the specific needs and challenges faced by women, leading to ineffective implementation and limited impact. For example, policies may fail to promote gender diversity in recruitment, advancement, and leadership roles within STEM organizations. The lack of enforcement of gender equity guidelines and the absence of dedicated resources to implement supportive measures further exacerbate these barriers. Effective policy integration is essential for creating environments that support and sustain women's participation and leadership in STEM.
 
-<div class="xl-image" style="background-image:url('/images/state-of-participation-2.jpg')"></div>
+::bg-image{imageClass="xl-image" url="/images/state-of-participation-2.jpg"}
+::
 
 ::graphText
 ## Responding to UNESCO's Call to Action to Close the Gender Gap in Science
