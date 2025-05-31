@@ -3,14 +3,13 @@ title: Appendix
 permalink: /en/appendix/
 slug: appendix
 order: 7
-description: 'The gender gap in STEM is not a result of individual choices but is shaped by systemic barriers, including gender biases, stereotypes, and structural inequalities within educational institutions and workplaces. Uncovering and addressing these barriers is a necessary step in driving development around the world.'
 brow: 'Breaking barriers building bridges'
 image: '/images/appendix.jpg'
 audio: '/audios/Appendix.mp3'
 ---
 
 <div class="header-start">
-<h2>A Recommendations for Key Stakeholders</h2>
+<h2>A Snapshot of our Projects</h2>
 </div>
 
 *Supporting women's leadership in science, technology, and innovation through early-career fellowships (2017–2021)*
@@ -88,7 +87,7 @@ The project included focus group discussions, surveys, and policy analysis to un
 #### Background
 The SISTARS project focuses on addressing the underrepresentation of women in leadership roles within STEM fields, particularly in the water-related sectors of Ghana and Kenya. Despite various national and institutional policies aimed at promoting gender equality, women continue to face significant barriers in advancing to leadership positions. These barriers include societal expectations, stereotypes, and systemic biases that hinder women's career progression. The project aims to assess and strengthen policies that support women's inclusion in leadership roles, recognizing that diverse leadership teams enhance performance, innovation, and decision-making.
 
-### Objectives
+#### Objectives
 - Assess Policy and Systemic Institutional Factors: Evaluate the existing policies and systemic institutional factors that provide opportunities for women to attain leadership roles in water-related sectors.
 - Identify Barriers and Opportunities: Understand the specific limitations of current policies and identify opportunities to support diversity and equity in STEM fields.
 - Promote Policy Improvements: Develop recommendations for policy improvements to create a more inclusive and supportive environment for women in STEM.
@@ -113,7 +112,7 @@ The project was conducted in two phases across selected institutions in Ghana an
 - Promote Inclusion and Diversity: Increase the visibility and representation of indigenous women in STEM fields, challenging negative stereotypes and promoting broader social and gender equity goals.
 - Document Educational Trajectories: Study and document the personal profiles, educational trajectories, and academic experiences of the grantees to understand the factors that facilitate or obstruct their progression in STEM careers.
 
-*Implementation*
+#### Implementation
 - The program awarded scholarships to twelve young indigenous women scientists from various states and ethnic groups in Mexico. The selection process involved leveraging CIESAS's extensive network of contacts and CONACYT's database of scholarship recipients. The program faced initial challenges due to the lack of background, norms, and practices for including indigenous women in research centers. Despite these challenges, the program garnered strong support from certain sectors of the research institutes. The grantees conducted their postdoctoral research at public research centers, where they received mentorship and support from academic staff.
 
 #### Impact
@@ -141,10 +140,10 @@ The project addresses the significant underrepresentation of women in STEM field
 - Enhance Visibility and Participation: Increase the visibility and participation of women in STEM through innovative programs and project proposals.
 
 #### Implementation
-- The project employed a participatory action research methodology, involving collaborative and inclusive approaches between researchers and the community. The initial phase included three investigations across five cities in Bolivia:
-o	Life Histories of Successful Bolivian Women in STEM: Qualitative analyses highlighting women's trajectories, challenges, and achievements.
-o	Perceptions and Social Representations: Research aimed at identifying stereotypes and social barriers affecting women's participation in STEM.
-o	Statistical Analysis of Women's Participation in STEM: Quantitative data to complement qualitative findings, providing a comprehensive understanding of the current situation and potential intervention areas.
+The project employed a participatory action research methodology, involving collaborative and inclusive approaches between researchers and the community. The initial phase included three investigations across five cities in Bolivia:
+- Life Histories of Successful Bolivian Women in STEM: Qualitative analyses highlighting women's trajectories, challenges, and achievements.
+- Perceptions and Social Representations: Research aimed at identifying stereotypes and social barriers affecting women's participation in STEM.
+- Statistical Analysis of Women's Participation in STEM: Quantitative data to complement qualitative findings, providing a comprehensive understanding of the current situation and potential intervention areas.
 - The second phase involved facilitating constructive dialogue spaces with school, university, and labor market communities to generate innovative program and project proposals that significantly enhance the visibility and participation of women in STEM fields.
 
 #### Impact
@@ -159,7 +158,7 @@ o	Statistical Analysis of Women's Participation in STEM: Quantitative data to co
 ::
 
 #### Background
-- The project "Bridging the Gender Gap in Science at Women University in Africa (WUA), Zimbabwe" was initiated to address the significant underrepresentation of women in STEM fields. Despite the country's Vision 2030 and the National Development Strategy (NDS1) emphasizing the importance of science and technology for industrialization and gender equality, women remain underrepresented in these disciplines. The project aimed to identify and mitigate systemic barriers to women's participation in STEM at WUA, which was established with a mandate to address gender disparities in education.
+The project "Bridging the Gender Gap in Science at Women University in Africa (WUA), Zimbabwe" was initiated to address the significant underrepresentation of women in STEM fields. Despite the country's Vision 2030 and the National Development Strategy (NDS1) emphasizing the importance of science and technology for industrialization and gender equality, women remain underrepresented in these disciplines. The project aimed to identify and mitigate systemic barriers to women's participation in STEM at WUA, which was established with a mandate to address gender disparities in education.
 
 #### Objectives
 - Identify Systemic Barriers: Understand the systemic barriers and gendered enrollment trends in STEM fields at WUA and other higher education institutions in Zimbabwe.
@@ -168,10 +167,10 @@ o	Statistical Analysis of Women's Participation in STEM: Quantitative data to co
 - Share Best Practices: Provide recommendations, lessons, and best practices to key stakeholders in Zimbabwe to promote gender equity in STEM education.
 
 #### Implementation
-- The project was implemented in two phases over 36 months. The first phase focused on data collection, including a gender audit, questionnaires, focus group discussions, and key informant interviews with students, alumni, staff, and stakeholders. The second phase involved designing, implementing, monitoring, and evaluating new interventions based on the findings from the first phase.
-o	Gender Audit: Conducted to assess the extent of gender mainstreaming at WUA, focusing on enrollment statistics, staff composition, and institutional policies.
-o	Data Collection: Included questionnaires, focus group discussions, and key informant interviews to gather perceptions and experiences related to gender equality and STEM participation.
-o	Interventions: Based on the findings, WUA implemented several initiatives, including the establishment of a Gender and Diversity Center, a STEM Center, and a nursing mothers' lounge. The university also included gender promotion in its strategic plan and formed partnerships with gender-based organizations.
+The project was implemented in two phases over 36 months. The first phase focused on data collection, including a gender audit, questionnaires, focus group discussions, and key informant interviews with students, alumni, staff, and stakeholders. The second phase involved designing, implementing, monitoring, and evaluating new interventions based on the findings from the first phase.
+- Gender Audit: Conducted to assess the extent of gender mainstreaming at WUA, focusing on enrollment statistics, staff composition, and institutional policies.
+- Data Collection: Included questionnaires, focus group discussions, and key informant interviews to gather perceptions and experiences related to gender equality and STEM participation.
+- Interventions: Based on the findings, WUA implemented several initiatives, including the establishment of a Gender and Diversity Center, a STEM Center, and a nursing mothers' lounge. The university also included gender promotion in its strategic plan and formed partnerships with gender-based organizations.
 
 #### Impact
 - Increased Enrollment and Participation: The project led to increased enrollment and participation of women in STEM programs at WUA. The establishment of the STEM Center provided a supportive environment for female students to engage in hands-on practice and innovation.

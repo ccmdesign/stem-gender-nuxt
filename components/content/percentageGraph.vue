@@ -42,6 +42,9 @@ const getGap = (i) => {
         gap: var(--space-3xs);
         justify-content: flex-end;
         padding-top: var(--space-3xs);
+        @media (max-width: 768px) {
+            justify-content: flex-start;
+        }
     }
 
     .percentage-graph__bar {

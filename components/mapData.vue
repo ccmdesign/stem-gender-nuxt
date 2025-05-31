@@ -45,7 +45,7 @@ const toggleCard = (countryCode, projectIndex) => {
 };
 
 const findPopover = (id) => {
-  data.selectedCountry = data.selectedCountry == id ? '' : id
+  data.selectedCountry = data.selectedCountry === id ? '' : id
 }
 
 const getPosition = (resource, key) => {

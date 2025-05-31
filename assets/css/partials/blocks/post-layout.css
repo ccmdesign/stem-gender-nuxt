@@ -144,6 +144,10 @@
   padding-block-start: var(--space-xs-s) !important;
 }
 
+.post-layout h4 + ul {
+  padding-block-start: var(--space-m-l);
+}
+
 ol {
   margin-top: 0;
 }
@@ -212,6 +216,9 @@ ol {
 
     .post-layout .percentage-graph {
       grid-column: 2/3;
+      @media (max-width: 768px) {
+        grid-column: 1;
+      }
     }
 
     .post-layout .graph-text h4, 
