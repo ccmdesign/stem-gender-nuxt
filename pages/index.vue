@@ -336,7 +336,7 @@
 import { ref, onMounted, onUnmounted, watch } from 'vue'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import resourcesByCountry from '~/public/resourcesByCountry.json'
-import { userResourcesFilter } from '~/composables/resourcesFilter'
+import { useChapterMenu } from '~/store/chapterMenuStore'
 definePageMeta({
   layout: 'default'
 })
@@ -384,11 +384,16 @@ const resourceFullList = Object.values(resources.value).reduce<Resource[]>((acc,
 
 const filteredResourceList = ref<Resource[]>(resourceFullList);
 
+
+const store = useChapterMenu()
+const { chapters } = storeToRefs(store)
+chapters.value = await queryContent(locale.value, 'articles').sort({ order: 1 }).find()
+
 const activeCountry = ref<string | null>(null);
 const activeProjectIndex = ref<number | null>(null);
 const data = reactive({
   selectedCountry: '',
-  selectedChapter: {},
+  selectedChapter: chapters.value[0],
   resourceList: resourceFullList
 })
 
@@ -472,7 +477,6 @@ const activateCountry = (id) => {
 
 onMounted(async () => {
   document.addEventListener('click', handleClickOutside);
-  document.querySelectorAll('.report-list__item')[0].click();
 });
 
 onUnmounted(() => {
