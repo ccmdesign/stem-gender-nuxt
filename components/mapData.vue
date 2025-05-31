@@ -1,25 +1,3 @@
-<!-- <template>
-  <div v-for="(resource, key) in resources"
-    :id="`resource-${key}`"
-    :key="key"
-    name="resource-list"
-    class="resource"
-    :class="{ 'resource--active': data.selectedCountry == key }"
-    :style="{
-      ...mapPositions[resource.name],
-      'anchor-name': `--resource-list-${key}`,
-      'z-index': 10,
-    }">
-    <button :id="`trigger-${key}`"
-      :popovertarget="`resource-list-${key}`"
-      @click="findPopover(key)">
-      <span class="circle" />
-      <span class="name"
-        :style="{ 'position-anchor': `--resource-list-${key}` }">{{ resource.name }}</span>
-    </button>
-  </div>
-</template> -->
-
 <script setup>
 const props = defineProps({
   resources: {
@@ -40,12 +18,9 @@ const data = reactive({
 
 const emit = defineEmits(['project-selected']);
 
-const toggleCard = (countryCode, projectIndex) => {
-  emit('project-selected', { countryCode, projectIndex });
-};
-
 const findPopover = (id) => {
   data.selectedCountry = data.selectedCountry === id ? '' : id
+  emit('project-selected', data.selectedCountry)
 }
 
 const getPosition = (resource, key) => {
@@ -98,6 +73,24 @@ onMounted(() => {
   keysOfResources.forEach((key) => {
     getPosition(props.resources[key], key)
   })
+})
+
+watch(() => props.activeCountry, (newValue) => {
+  if (newValue) {
+    const markers = document.querySelectorAll(`.marker`);
+
+    markers.forEach(marker => {
+      if (marker.getAttribute('id').includes(`${newValue}-marker`)) {
+        marker.classList.add('active-marker')
+      } else {
+        marker.classList.remove('active-marker')
+      }
+    })
+  } else {
+    const markers = document.querySelectorAll(`.marker`);
+
+    markers.forEach(marker => marker.classList.remove('active-marker'))
+  }
 })
 </script>
 

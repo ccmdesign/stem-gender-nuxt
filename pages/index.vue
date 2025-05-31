@@ -308,18 +308,25 @@
         </div>-->
         <div class="map-grid__map">
           <world-map class="map" />
+          <button v-if="data.selectedCountry"
+            class="clear-filter"
+            @click="clearFilter">Clear Filter</button>
           <ClientOnly fallback-tag="span"
             fallback="Loading...">
-
             <map-data :resources="resources"
               :active-country="data.selectedCountry"
               @project-selected="handleProjectSelected" />
-
           </ClientOnly>
         </div>
         <div class="map-grid__content">
-          <resource-list :resources="data.resourceList" />
+          <resource-list :resources="filteredResourceList" />
         </div>
+      </template>
+      <template #challenge>
+        <challenge-section />
+      </template>
+      <template #footer>
+        <footer-section />
       </template>
     </homepagelayout>
   </main>
@@ -375,6 +382,8 @@ const resourceFullList = Object.values(resources.value).reduce<Resource[]>((acc,
   return acc;
 }, []).sort((a: Resource, b: Resource) => a.name.localeCompare(b.name));
 
+const filteredResourceList = ref<Resource[]>(resourceFullList);
+
 const activeCountry = ref<string | null>(null);
 const activeProjectIndex = ref<number | null>(null);
 const data = reactive({
@@ -383,9 +392,26 @@ const data = reactive({
   resourceList: resourceFullList
 })
 
-const handleProjectSelected = ({ countryCode, projectIndex }) => {
+const handleProjectSelected = (countryCode: string) => {
+  data.selectedCountry = ''
+
   activeCountry.value = countryCode;
-  activeProjectIndex.value = projectIndex;
+  data.selectedCountry = countryCode;
+
+  if (!countryCode) {
+    // Se não houver país selecionado, mostra a lista completa
+    filteredResourceList.value = resourceFullList;
+
+    data.resourceList = filteredResourceList.value
+    data.selectedCountry = ''
+  } else {
+    // Filtra os recursos pelo país selecionado
+    filteredResourceList.value = resourceFullList.filter(resource =>
+      resource.region_codes.includes(countryCode)
+    );
+
+    data.resourceList = filteredResourceList.value
+  }
 };
 
 const handleClickOutside = (event: MouseEvent) => {
@@ -396,6 +422,10 @@ const handleClickOutside = (event: MouseEvent) => {
     activeProjectIndex.value = null;
   }
 };
+
+function clearFilter() {
+  data.selectedCountry = ''
+}
 
 const activateCountry = (id) => {
   if (data.selectedCountry != id) {
@@ -414,25 +444,31 @@ const activateCountry = (id) => {
 }
 
 // Primeiro, vamos criar uma ref para a lista filtrada
-const filteredResourceList = ref<Resource[]>(resourceFullList);
+
 
 // Agora vamos adicionar o watcher
-watch(() => data.selectedCountry, (newCountry) => {
-  if (!newCountry) {
-    // Se não houver país selecionado, mostra a lista completa
-    filteredResourceList.value = resourceFullList;
-  } else {
-    // Filtra os recursos pelo país selecionado
-    filteredResourceList.value = resourceFullList.filter(resource =>
-      resource.region_codes.includes(newCountry)
-    );
-  }
-}, { immediate: true });
+// watch(() => activeCountry.value, (newCountry) => {
+//   if (!newCountry) {
+//     // Se não houver país selecionado, mostra a lista completa
+//     filteredResourceList.value = resourceFullList;
+
+//     data.resourceList = filteredResourceList.value
+//   } else {
+//     // Filtra os recursos pelo país selecionado
+//     filteredResourceList.value = resourceFullList.filter(resource =>
+//       resource.region_codes.includes(newCountry)
+//     );
+
+//     data.resourceList = filteredResourceList.value
+//     console.log(filteredResourceList.value)
+//   }
+// }, { immediate: true });
 
 // Atualiza o data.resourceList para usar a lista filtrada
-watch(filteredResourceList, (newList) => {
-  data.resourceList = newList;
-}, { immediate: true });
+// watch(filteredResourceList, (newList) => {
+//   console.log(newList)
+//   data.resourceList = newList;
+// }, { immediate: true });
 
 onMounted(async () => {
   document.addEventListener('click', handleClickOutside);
@@ -477,6 +513,13 @@ h2 {
     max-width: 720px;
     --stack-space: var(--space-m-l)
   }
+}
+
+.clear-filter {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .index-header__button {
