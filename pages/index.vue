@@ -337,6 +337,8 @@ import { ref, onMounted, onUnmounted, watch } from 'vue'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import resourcesByCountry from '~/public/resourcesByCountry.json'
 import { userResourcesFilter } from '~/composables/resourcesFilter'
+import { useChapterMenu } from '~/store/chapterMenuStore'
+import { storeToRefs } from 'pinia'
 definePageMeta({
   layout: 'default'
 })
@@ -348,6 +350,9 @@ const query: QueryBuilderParams = {
 }
 
 const resources = ref(resourcesByCountry)
+
+const store = useChapterMenu()
+const { chapters } = storeToRefs(store)
 
 // Primeiro, vamos definir as interfaces necessárias
 interface Resource {
@@ -382,13 +387,15 @@ const resourceFullList = Object.values(resources.value).reduce<Resource[]>((acc,
   return acc;
 }, []).sort((a: Resource, b: Resource) => a.name.localeCompare(b.name));
 
+chapters.value = await queryContent(locale.value, 'articles').sort({ order: 1 }).find()
+
 const filteredResourceList = ref<Resource[]>(resourceFullList);
 
 const activeCountry = ref<string | null>(null);
 const activeProjectIndex = ref<number | null>(null);
 const data = reactive({
   selectedCountry: '',
-  selectedChapter: {},
+  selectedChapter: chapters.value ? chapters.value[0] : {},
   resourceList: resourceFullList
 })
 
