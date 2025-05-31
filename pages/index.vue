@@ -429,6 +429,9 @@ const handleClickOutside = (event: MouseEvent) => {
 };
 
 function clearFilter() {
+  activeCountry.value = null
+  filteredResourceList.value = resourceFullList
+  data.resourceList = filteredResourceList.value
   data.selectedCountry = ''
 }
 
