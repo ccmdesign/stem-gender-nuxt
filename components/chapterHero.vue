@@ -1,5 +1,5 @@
 <template>
-    <div class="chapter-hero" :class="{'chapter-hero--small': !tagline}">
+    <div class="chapter-hero" :class="{'chapter-hero--small': !tagline, 'chapter-hero--no-image': !image}">
       <div v-if="image" class="chapter-hero__image" :style="`background-image: url(${image})`"></div>
       <div class="chapter-hero__info | stack">
         <div>
@@ -13,9 +13,9 @@
   </template>
   
   <script setup>
-    const { locale } = useI18n()
-    const localePath = useLocalePath()
-    const props = defineProps({
+    const { locale: _locale } = useI18n()
+    const _localePath = useLocalePath()
+    const _props = defineProps({
         heading: {
             type: String,
             default: ''
@@ -73,6 +73,10 @@
   background-color: var(--secondary-color);
   margin: 0 auto;
   transform: translateY(-25%);
+
+  .chapter-hero--no-image & {
+    transform: none;
+  }
   width: 90vw;
   gap: var(--space-l);
   & > div {
@@ -93,6 +97,10 @@
 
   @media (min-width: 768px) {
     transform: translateY(-50%);
+
+    .chapter-hero--no-image & {
+      transform: none;
+    }
     padding: var(--space-2xl);
     width: 70vw;
     &::before {
