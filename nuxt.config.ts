@@ -12,6 +12,17 @@ export default defineNuxtConfig({
       enabled: true
     }
   },
+    app: {
+    head: {
+      title: 'Breaking barriers, Building bridges',
+      meta: [
+      ],
+      link: [
+        // { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
+      ],
+      script: [],
+    }
+  },
   components: {
     dirs: [
       '~/components',
