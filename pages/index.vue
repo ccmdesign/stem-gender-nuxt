@@ -528,8 +528,8 @@ h2 {
 
 .clear-filter {
   position: absolute;
-  left: 10%;
-  top: 50%;
+  left: var(--space-l);
+  top: var(--space-l);
   transform: translateY(-50%);
 }
 
