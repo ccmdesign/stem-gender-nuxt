@@ -40,7 +40,7 @@
   @media (min-width: 480px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
-    gap: var(--space-2xl-3xl);
+    gap: var(--space-m);
     grid-template-areas:
       "top_left top_right"
       "left right";
@@ -121,7 +121,7 @@
 
 :deep(.report-list__content) {
   display: flex;
-  gap: var(--space-xl);
+  gap: var(--space-m);
   flex-direction: column;
   justify-content: center;
 }
