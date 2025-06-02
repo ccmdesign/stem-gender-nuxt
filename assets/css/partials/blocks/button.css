@@ -18,12 +18,18 @@
   --_button-border-radius: var(--border-radius, 0); /* Fallback to 0 */
   --_button-border-color: var(--_button-color); /* Fallback to 1px */
   --_button-border-width: var(--base-border-width, 2px); /* Fallback to 1px */
-  --_button-border-style: var( --base-border-style, solid); /* Fallback to solid */
+  --_button-border-style: var(
+    --base-border-style,
+    solid
+  ); /* Fallback to solid */
   --_button-font-weight: 600; /* Fallback to 400 */
   --_button-font-size: 100%;
   --_button-icon-color: var(--_button-text-color);
-  --_button-font-family: var(--font-display, sans-serif); /* Fallback to sans-serif */
-  --_button-letter-spacing: .5px;
+  --_button-font-family: var(
+    --font-display,
+    sans-serif
+  ); /* Fallback to sans-serif */
+  --_button-letter-spacing: 0.5px;
 }
 
 /* 
@@ -49,7 +55,10 @@ It is very unlikely that anyone will need to edits file for customization purpos
   align-self: self-start;
   justify-self: flex-start;
 
-  font-family: var(--_button-font-family, sans-serif); /* Fallback to sans-serif */
+  font-family: var(
+    --_button-font-family,
+    sans-serif
+  ); /* Fallback to sans-serif */
   font-weight: var(--_button-font-weight);
   letter-spacing: var(--_button-letter-spacing);
 }
@@ -89,91 +98,91 @@ It is very unlikely that anyone will need to edits file for customization purpos
   --_button-padding-inline: 0;
 }
 
-.button[fullWidth="true"],
-.button[data-fullWidth="true"] {
+.button[fullWidth='true'],
+.button[data-fullWidth='true'] {
   align-self: stretch;
   justify-self: stretch;
 }
 
-.button[data-color="base"],
-.button[color="base"] {
+.button[data-color='base'],
+.button[color='base'] {
   --_button-hsl: var(--base-hsl);
   --_button-text-color: var(--base-color);
 }
 
-.button[data-color="primary"],
-.button[color="primary"] {
+.button[data-color='primary'],
+.button[color='primary'] {
   --_button-hsl: var(--primary-hsl);
   --_button-text-color: var(--primary-color);
 }
 
-.button[data-color="secondary"],
-.button[color="secondary"] {
+.button[data-color='secondary'],
+.button[color='secondary'] {
   --_button-hsl: var(--secondary-hsl);
   --_button-text-color: var(--secondary-color);
 }
 
-.button[data-color="tertiary"],
-.button[color="tertiary"] {
+.button[data-color='tertiary'],
+.button[color='tertiary'] {
   --_button-hsl: var(--tertiary-hsl);
   --_button-text-color: var(--tertiary-color);
 }
 
-.button[data-color="accent"],
-.button[color="accent"] {
+.button[data-color='accent'],
+.button[color='accent'] {
   --_button-hsl: var(--accent-hsl);
   --_button-text-color: var(--accent-color);
 }
 
-.button[data-color="white"],
-.button[color="white"] {
+.button[data-color='white'],
+.button[color='white'] {
   --_button-hsl: var(--white-hsl);
   --_button-text-color: var(--white-color);
 }
 
-.button[data-color="success"],
-.button[color="success"] {
+.button[data-color='success'],
+.button[color='success'] {
   --_button-hsl: var(--green-hsl);
   --_button-text-color: var(--green-color);
 }
 
-.button[data-color="cancel"],
-.button[data-color="fail"],
-.button[color="cancel"],
-.button[color="fail"] {
+.button[data-color='cancel'],
+.button[data-color='fail'],
+.button[color='cancel'],
+.button[color='fail'] {
   --_button-hsl: var(--red-hsl);
   --_button-text-color: var(--red-color);
 }
 
-.button[data-color="warning"],
-.button[color="warning"] {
+.button[data-color='warning'],
+.button[color='warning'] {
   --_button-hsl: var(--yellow-hsl);
   --_button-text-color: var(--yellow-color);
 }
 
-.button[data-size="s"],
-.button[size="s"] {
+.button[data-size='s'],
+.button[size='s'] {
   --_button-padding-block: var(--space-xs);
   --_button-padding-inline: var(--space-s);
   --_button-font-size: 85%;
 }
 
-.button[data-size="l"],
-.button[size="l"] {
+.button[data-size='l'],
+.button[size='l'] {
   --_button-padding-block: var(--space-s);
   --_button-padding-inline: var(--space-m);
   --_button-font-size: 120%;
 }
 
-.button[data-size="xl"],
-.button[size="xl"] {
+.button[data-size='xl'],
+.button[size='xl'] {
   --_button-padding-block: var(--size-0);
   --_button-padding-inline: var(--size-2);
   --_button-font-size: 150%;
 }
 
-.button[data-size="full-width"],
-.button[size="full-width"] {
+.button[data-size='full-width'],
+.button[size='full-width'] {
   width: 100%;
 }
 
@@ -213,8 +222,8 @@ It is very unlikely that anyone will need to edits file for customization purpos
   box-shadow: var(--focus-effect);
 }
 
-.button[data-visual="primary"],
-.button[visual="primary"] {
+.button[data-visual='primary'],
+.button[visual='primary'] {
   color: var(--base-color);
   border-width: var(--_button-border-width, 0);
   border-style: var(--_button-border-style, solid);
@@ -222,18 +231,18 @@ It is very unlikely that anyone will need to edits file for customization purpos
   background-color: hsla(var(--_button-hsl), 1);
 }
 
-.button[data-visual="primary"]:hover,
-.button[data-visual="primary"]:focus,
-.button[visual="primary"]:hover,
-.button[visual="primary"]:focus {
+.button[data-visual='primary']:hover,
+.button[data-visual='primary']:focus,
+.button[visual='primary']:hover,
+.button[visual='primary']:focus {
   background-image: linear-gradient(
     hsla(0, 0%, 0%, 0.15),
     hsla(0, 0%, 0%, 0.25)
   );
 }
 
-.button[data-visual="secondary"],
-.button[visual="secondary"] {
+.button[data-visual='secondary'],
+.button[visual='secondary'] {
   background-color: transparent;
   color: var(--_button-text-color);
   border-width: var(--_button-border-width, 1px);
@@ -241,18 +250,18 @@ It is very unlikely that anyone will need to edits file for customization purpos
   border-color: hsla(var(--_button-hsl), 1);
 }
 
-.button[data-visual="secondary"]:hover,
-.button[data-visual="secondary"]:focus,
-.button[visual="secondary"]:hover,
-.button[visual="secondary"]:focus {
+.button[data-visual='secondary']:hover,
+.button[data-visual='secondary']:focus,
+.button[visual='secondary']:hover,
+.button[visual='secondary']:focus {
   background-image: linear-gradient(
     hsla(var(--_button-hsl), 0.1),
     hsla(var(--_button-hsl), 0.1)
   );
 }
 
-.button[data-visual="unstyled"],
-.button[visual="unstyled"] {
+.button[data-visual='unstyled'],
+.button[visual='unstyled'] {
   color: hsla(var(--_button-hsl), 1);
   border-width: var(--_button-border-width, 0);
   border-style: var(--_button-border-style, solid);
@@ -260,8 +269,8 @@ It is very unlikely that anyone will need to edits file for customization purpos
 }
 
 @media (max-width: 36em) {
-  .button[data-mobile="wide"],
-  .button[mobile="wide"] {
+  .button[data-mobile='wide'],
+  .button[mobile='wide'] {
     width: 100%;
   }
 }
@@ -288,7 +297,7 @@ It is very unlikely that anyone will need to edits file for customization purpos
 .button[data-icon-after]:after,
 .button[icon]:before,
 .button[icon-after]:after {
-  font-family: "Material Symbols Outlined";
+  font-family: 'Material Symbols Outlined';
   font-weight: normal;
   font-style: normal;
   font-size: 24px; /* Preferred icon size */
@@ -311,7 +320,7 @@ It is very unlikely that anyone will need to edits file for customization purpos
   -moz-osx-font-smoothing: grayscale;
 
   /* Support for IE. */
-  font-feature-settings: "liga";
+  font-feature-settings: 'liga';
 }
 
 .button[data-icon]:before,
@@ -341,9 +350,9 @@ It is very unlikely that anyone will need to edits file for customization purpos
   padding: var(--_button-padding-v) var(--_button-padding-v);
 }
 
-.button[data-visual="primary"][data-icon]:before,
-.button[visual="primary"][icon]:before,
-.button[data-visual="primary"][data-icon-after]:after,
-.button[visual="primary"][icon-after]:after {
+.button[data-visual='primary'][data-icon]:before,
+.button[visual='primary'][icon]:before,
+.button[data-visual='primary'][data-icon-after]:after,
+.button[visual='primary'][icon-after]:after {
   --_button-icon-color: var(--white-color);
 }

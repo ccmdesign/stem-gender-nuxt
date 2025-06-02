@@ -52,8 +52,7 @@ function getPrevDoc(currentOrder: number) {
           <span class="separator not-mobile" />
           <div class="article-links__title">{{ $t('chapter') }} {{ chapter.order }} / <b>{{ chapter.title }}</b></div>
           <span class="separator not-mobile" />
-          <nextLink
-v-if="getNextDoc(chapter.order)"
+          <nextLink v-if="getNextDoc(chapter.order)"
             class="not-mobile"
             :url="localePath(`/articles/${getNextDoc(chapter.order).slug}`)" />
         </div>
@@ -63,8 +62,7 @@ v-if="getNextDoc(chapter.order)"
       <template #default="{ doc }">
         <article class="article-layout">
 
-          <chapter-hero
-class="article-layout__hero"
+          <chapter-hero class="article-layout__hero"
             :heading="doc.title"
             :tagline="doc.description"
             :brow="doc.brow"
@@ -72,45 +70,37 @@ class="article-layout__hero"
 
 
           <section class="article-layout__content">
-            <div class="post-layout">
-              <ArticleAudio
-v-if="doc.audio"
+            <div class="post-layout audio">
+              <ArticleAudio v-if="doc.audio"
                 :src="`/${doc.audio.replace(/^\/+/, '')}`" />
             </div>
-            <ContentRenderer
-:value="doc"
+            <ContentRenderer :value="doc"
               :components
               class="post-layout | region prose" />
           </section>
         </article>
         <article class="next-article">
           <div class="next-article__content">
-            <div
-v-if="getPrevDoc(doc.order)"
+            <div v-if="getPrevDoc(doc.order)"
               class="next-article__item">
               <p class="next-article__cta">{{ $t('previousArticle') }}</p>
-              <NuxtLink
-class="next-article__link"
+              <NuxtLink class="next-article__link"
                 :to="localePath(getPrevDoc(doc.order)._path)">
                 {{ getPrevDoc(doc.order).title }}
               </NuxtLink>
             </div>
-            <div
-v-else
+            <div v-else
               class="next-article__item" />
 
-            <div
-v-if="getNextDoc(doc.order)"
+            <div v-if="getNextDoc(doc.order)"
               class="next-article__item next-article__item--right">
               <p class="next-article__cta">{{ $t('readNext') }}</p>
-              <NuxtLink
-class="next-article__link"
+              <NuxtLink class="next-article__link"
                 :to="localePath(getNextDoc(doc.order)._path)">
                 {{ getNextDoc(doc.order).title }}
               </NuxtLink>
             </div>
-            <div
-v-else
+            <div v-else
               class="next-article__item next-article__item--right" />
           </div>
         </article>
@@ -209,5 +199,9 @@ v-else
   display: flex;
   justify-content: center;
   margin: 2rem 0 1rem 0;
+}
+
+.audio {
+  margin-top: 1.5rem;
 }
 </style>
