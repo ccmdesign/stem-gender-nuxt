@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /server/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /node_modules/
+Disallow: /nuxt/
+Disallow: /_nuxt/
+Allow: /
+
+Sitemap: https://breakingbarriersnetwork.com/sitemap.xml
