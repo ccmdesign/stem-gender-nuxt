@@ -41,6 +41,15 @@ function getPrevDoc(currentOrder: number) {
   const currentIndex = sortedDocs.findIndex(d => d.order === currentOrder)
   return currentIndex !== 0 ? sortedDocs[currentIndex - 1] || null : null
 }
+useHead({
+    title: `Breaking barriers, Building bridges | ${chapter.title}`,
+    meta: [
+      { property: 'og:title',  content: `Breaking barriers, Building bridges | ${chapter.title}`},
+      { name: "description", content: chapter.description?chapter.description:'A Southern-led research network to advance gender equality in STEM.' },
+      { property: 'og:description',  content: chapter.description?chapter.description:'A Southern-led research network to advance gender equality in STEM.'},
+      { name: 'twitter:description', content: chapter.description?chapter.description:'A Southern-led research network to advance gender equality in STEM.' }
+    ]
+})
 </script>
 
 <template>

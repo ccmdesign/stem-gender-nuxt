@@ -348,6 +348,7 @@ definePageMeta({
   layout: 'default'
 })
 
+
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const query: QueryBuilderParams = {
