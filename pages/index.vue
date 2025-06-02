@@ -66,11 +66,14 @@
             <nuxt-link class="button report-button__link"
               color="primary"
               visual="secondary"
-              to="#report">{{ $t('report.view') }}</nuxt-link>
+              :to="`/breaking-barriers-${locale}-mar-2025.pdf`" 
+              external
+              target="_blank">{{ $t('report.view') }}</nuxt-link>
             <nuxt-link class="button report-button__link"
               color="primary"
               visual="secondary"
-              to="#report">{{ $t('report.podcast') }}</nuxt-link>
+              target="_blank"
+              to="/podcast">{{ $t('report.podcast') }}</nuxt-link>
           </template>
 
           <template #mobile>
