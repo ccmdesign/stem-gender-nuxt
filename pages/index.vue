@@ -458,33 +458,6 @@ const activateCountry = (id) => {
   }
 }
 
-// Primeiro, vamos criar uma ref para a lista filtrada
-
-
-// Agora vamos adicionar o watcher
-// watch(() => activeCountry.value, (newCountry) => {
-//   if (!newCountry) {
-//     // Se não houver país selecionado, mostra a lista completa
-//     filteredResourceList.value = resourceFullList;
-
-//     data.resourceList = filteredResourceList.value
-//   } else {
-//     // Filtra os recursos pelo país selecionado
-//     filteredResourceList.value = resourceFullList.filter(resource =>
-//       resource.region_codes.includes(newCountry)
-//     );
-
-//     data.resourceList = filteredResourceList.value
-//     console.log(filteredResourceList.value)
-//   }
-// }, { immediate: true });
-
-// Atualiza o data.resourceList para usar a lista filtrada
-// watch(filteredResourceList, (newList) => {
-//   console.log(newList)
-//   data.resourceList = newList;
-// }, { immediate: true });
-
 onMounted(async () => {
   document.addEventListener('click', handleClickOutside);
 });
@@ -608,9 +581,6 @@ h2 {
   font-weight: 500;
   font-size: var(--size-0);
 }
-
-
-
 
 .report__button {
   border-width: 1px;
