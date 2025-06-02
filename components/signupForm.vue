@@ -34,6 +34,7 @@ label {
 }
 
 input {
+  width: 100%;
   padding: calc(var(--space-s) - 2px);
   background-color: var(--base-color-05-tint);
   border: 0;

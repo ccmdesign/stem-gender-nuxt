@@ -94,6 +94,8 @@ watch(() => props.activeCountry, (newValue) => {
 })
 </script>
 
+<template></template>
+
 <style lang="scss" scoped>
 .resource {
   position: absolute;
