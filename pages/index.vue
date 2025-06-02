@@ -166,7 +166,7 @@
           <section class="report">
             <div class="repel">
               <h2>{{ $t('report.title') }}</h2>
-              <div class="flex flex---1">
+              <div class="">
                 <nuxt-link class="button report__button"
                   color="primary"
                   visual="secondary"
@@ -312,7 +312,19 @@
         </div>
       </template>
       <template #challenge>
-        <challenge-section />
+        <challenge-section>
+          <template #left>
+            <img class="challenge__image" src="/images/summary-1.webp" alt="Challenge">
+          </template>
+          <template #right>
+            <div class="stack">
+              <h2>{{ $t('challenge.title') }}</h2>
+              <p>{{ $t('challenge.p1') }}</p>
+              <p><a href="https://unesdoc.unesco.org/ark:/48223/pf0000375429" target="_blank">{{ $t('challenge.link') }}</a>{{ $t('challenge.p2') }}</p>
+              <p>{{ $t('challenge.p3') }}</p>
+            </div>
+          </template>
+        </challenge-section>
       </template>
       <template #sign-up>
         <signup-section />

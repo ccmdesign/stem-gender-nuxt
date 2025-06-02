@@ -14,5 +14,15 @@
 </script>
 
 <style lang="scss" scoped>
+.challenge-section {
+  margin-top: var(--space-xl);
+}
 
+
+:deep(.challenge__image) {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
 </style>

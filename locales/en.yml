@@ -27,7 +27,7 @@ initiative:
     title: 'The research aims to'
     p1: 'Increase understanding of the barriers that prevent women from progressing in STEM fields'
     p2: 'Provide evidence on which strategies are most effective to break down those barriers in low- and middle-income countries'
-    p3: 'Improve women’s leadership in science'
+    p3: "Improve women's leadership in science"
     p4: 'Integrate gender analysis as a standard component of scientific research'
 
 report:
@@ -38,7 +38,7 @@ report:
 challenge:
   title: 'The Challenge'
   p1: 'At IDRC, we believe that inclusivity contributes to innovation. We support a more inclusive approach to science, technology and innovation — one that not only integrates women as scientists and users of science, but that recognizes gender analysis as integral to high-quality research and innovation.'
-  link: Women represent only 30% of the world’s researchers
+  link: "Women represent only 30% of the world's researchers"
   p2: ", with even less representation in science leadership positions. In 2015, the Interacademy Partnership published the first comprehensive survey of science academies in its global network. Across the 69 national science academies for which data was available, women made up 10% or less of members in almost half of the countries."
   p3: 'Although the systemic barriers to the participation of women scientists is increasingly being studied, such data and case studies have historically been based on countries in the Global North.'
 
@@ -55,4 +55,9 @@ footer:
   termsOfUse: 'Terms of Use'
   transparency: 'Transparency'
   copyright: 'Copyright © currentYear IDRC. All Rights Reserved.'
+
+signupForm:
+  label: 'Sign up for IDRC news'
+  placeholder: 'Email address'
+  button: 'Subscribe'
   
