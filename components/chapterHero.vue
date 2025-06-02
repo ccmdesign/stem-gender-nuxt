@@ -1,62 +1,68 @@
 <template>
-    <div class="chapter-hero" :class="{'chapter-hero--small': !tagline}">
-      <div v-if="image" class="chapter-hero__image" :style="`background-image: url(${image})`"></div>
-      <div class="chapter-hero__info | stack">
-        <div>
-          <p class="chapter-hero__brow">{{ brow || 'Breaking Barriers Building Bridges' }}</p>
-          <h1 class="chapter-hero__title">{{ heading }}</h1>
-        </div>
-        <p v-if="tagline" class="chapter-hero__tagline" data-split>{{ tagline }}</p>
+  <div class="chapter-hero"
+    :class="{ 'chapter-hero--small': !tagline }">
+    <div v-if="image"
+      class="chapter-hero__image"
+      :style="`background-image: url(${image})`" />
+    <div v-else
+      class="empty-image" />
+    <div class="chapter-hero__info | stack">
+      <div>
+        <p class="chapter-hero__brow">{{ brow || 'Breaking Barriers Building Bridges' }}</p>
+        <h1 class="chapter-hero__title">{{ heading }}</h1>
       </div>
-      
+      <p v-if="tagline"
+        class="chapter-hero__tagline"
+        data-split>{{ tagline }}</p>
     </div>
-  </template>
-  
-  <script setup>
-    const { locale } = useI18n()
-    const localePath = useLocalePath()
-    const props = defineProps({
-        heading: {
-            type: String,
-            default: ''
-        },
-        tagline: {
-            type: String,
-            default: ''
-        },
-        brow: {
-            type: String,
-            default: ''
-        },
-        image: {
-            type: String,
-            default: ''
-        },
-    });
-  </script>
-  
+
+  </div>
+</template>
+
+<script setup>
+const { locale } = useI18n()
+const localePath = useLocalePath()
+const props = defineProps({
+  heading: {
+    type: String,
+    default: ''
+  },
+  tagline: {
+    type: String,
+    default: ''
+  },
+  brow: {
+    type: String,
+    default: ''
+  },
+  image: {
+    type: String,
+    default: ''
+  },
+});
+</script>
+
 <style lang="scss" scoped>
-  .chapter-hero {
-    --_hero-background-color: var(--primary-color);
-    
-    display: grid;
+.chapter-hero {
+  --_hero-background-color: var(--primary-color);
 
-    @media screen and (min-width: 1024px) {
-    }
+  display: grid;
+
+  @media screen and (min-width: 1024px) {}
+}
+
+.chapter-hero--small {
+  @media (max-width: 768px) {
+    margin-bottom: var(--space-3xl);
   }
+}
 
-    .chapter-hero--small {
-        @media (max-width: 768px) {
-            margin-bottom: var(--space-3xl);
-        }
-    }
-
-  .chapter-hero__image {
-    width: 100%;
-    aspect-ratio: 16 / 7;
-    background-size: cover;
-    background-position: center;
-  }
+.chapter-hero__image {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  background-size: cover;
+  background-position: center;
+}
 
 // Typography and Visual Styles
 
@@ -75,11 +81,13 @@
   transform: translateY(-25%);
   width: 90vw;
   gap: var(--space-l);
-  & > div {
+
+  &>div {
     display: flex;
     flex-direction: column;
     gap: var(--space-m);
   }
+
   &::before {
     content: '';
     position: absolute;
@@ -95,6 +103,7 @@
     transform: translateY(-50%);
     padding: var(--space-2xl);
     width: 70vw;
+
     &::before {
       top: var(--space-2xl);
       bottom: var(--space-2xl);
@@ -116,6 +125,7 @@
   font-size: var(--size-2);
   letter-spacing: 2%;
   line-height: 1.5em;
+
   @media (min-width: 768px) {
     font-size: var(--size-0);
   }
@@ -127,9 +137,19 @@
   font-weight: 500;
   color: var(--_hero-text-color);
   font-size: var(--size-3);
+
   @media (min-width: 768px) {
     font-size: var(--size-1);
   }
 }
 
-  </style>
+.empty-image {
+  width: 100%;
+  background-color: var(--base-color);
+  height: 16.125rem;
+
+  @media (max-width: 768px) {
+    height: 8.1875rem;
+  }
+}
+</style>

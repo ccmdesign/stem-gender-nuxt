@@ -63,11 +63,11 @@
           </template>
 
           <template #top-right>
-            <nuxt-link class="button"
+            <nuxt-link class="button report-button__link"
               color="primary"
               visual="secondary"
               to="#report">{{ $t('report.view') }}</nuxt-link>
-            <nuxt-link class="button"
+            <nuxt-link class="button report-button__link"
               color="primary"
               visual="secondary"
               to="#report">{{ $t('report.podcast') }}</nuxt-link>
@@ -599,7 +599,9 @@ h2 {
 
 .report__button {
   border-width: 1px;
-  color: var(--base-color);
+  color: var(--white-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .report-list {
@@ -778,5 +780,12 @@ h2 {
     font-family: var(--font-display);
     color: var(--primary-color);
   }
+}
+
+.button.report-button__link {
+  color: var(--base-color);
+  border: 1px solid var(--primary-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 </style>
