@@ -74,15 +74,10 @@ The project included focus group discussions, surveys, and policy analysis to un
 - Awareness and Advocacy: The project raised awareness about the challenges women face in engineering education and careers and advocated for more inclusive and supportive policies and practices.
 - Empowerment: The project empowered women by providing them with the knowledge and resources needed to navigate their careers and achieve leadership positions in engineering fields.
 
-<<<<<<< HEAD
-::header-start{title="Transforming Institutions to Advance women leaders in Science Technology Engineering and Mathematics (SISTARS): lessons from Ghana and Kenya*"}
-::
-=======
 ::coloredDiv
 <div class="header-start">
 <h3>Transforming Institutions to Advance women leaders in Science Technology Engineering and Mathematics (SISTARS): lessons from Ghana and Kenya*</h3>
 </div>
->>>>>>> 69101651970c2eabc6f4a6939718b44103ef0609
 
 #### Background
 The SISTARS project focuses on addressing the underrepresentation of women in leadership roles within STEM fields, particularly in the water-related sectors of Ghana and Kenya. Despite various national and institutional policies aimed at promoting gender equality, women continue to face significant barriers in advancing to leadership positions. These barriers include societal expectations, stereotypes, and systemic biases that hinder women's career progression. The project aims to assess and strengthen policies that support women's inclusion in leadership roles, recognizing that diverse leadership teams enhance performance, innovation, and decision-making.
@@ -105,7 +100,7 @@ The project was conducted in two phases across selected institutions in Ghana an
 ::
 
 #### Background
-- The Programa de Apoyo a Mujeres Indígenas en Ciencia, Tecnología, Ingeniería y Matemáticas (PEPMI) was launched in 2018 by the Centro de Investigaciones y Estudios Superiores en Antropología Social (CIESAS) with funding from the International Development Research Center (IDRC) and the Mexican National Council for Science and Technology (CONACYT). The program aimed to support indigenous women in the early stages of their scientific careers by providing three-year postdoctoral fellowships. This initiative was the first of its kind in Mexico and Latin America, targeting indigenous women with PhDs in STEM fields. The program sought to strengthen their knowledge and skills, linking them to the country's research sector and combating negative stereotypes about indigenous women.
+The Programa de Apoyo a Mujeres Indígenas en Ciencia, Tecnología, Ingeniería y Matemáticas (PEPMI) was launched in 2018 by the Centro de Investigaciones y Estudios Superiores en Antropología Social (CIESAS) with funding from the International Development Research Center (IDRC) and the Mexican National Council for Science and Technology (CONACYT). The program aimed to support indigenous women in the early stages of their scientific careers by providing three-year postdoctoral fellowships. This initiative was the first of its kind in Mexico and Latin America, targeting indigenous women with PhDs in STEM fields. The program sought to strengthen their knowledge and skills, linking them to the country's research sector and combating negative stereotypes about indigenous women.
 
 #### Objectives
 - Support Indigenous Women in STEM: Provide postdoctoral fellowships to indigenous women scientists to enhance their knowledge and skills in their areas of specialization.
@@ -121,15 +116,10 @@ The project was conducted in two phases across selected institutions in Ghana an
 - Combating Negative Stereotypes: By showcasing the achievements of indigenous women scientists, the program effectively challenged and combated negative stereotypes about indigenous women. This helped to change societal perceptions and promote a more inclusive and equitable environment in STEM fields.
 - Policy Influence and Recommendations: The findings from the program informed national and institutional policies aimed at promoting gender and social equity in STEM. The program's success demonstrated the importance of targeted support for underrepresented groups and provided a model for similar initiatives in other contexts. 
 
-<<<<<<< HEAD
-::header-start{title="Constructing public policy for effective participation of women in science, technology, engineering and mathematics in Bolivia"}
-::
-=======
 ::coloredDiv
 <div class="header-start">
 <h3>Constructing public policy for effective participation of women in science, technology, engineering and mathematics in Bolivia</h3>
 </div>
->>>>>>> 69101651970c2eabc6f4a6939718b44103ef0609
 
 #### Background
 The project addresses the significant underrepresentation of women in STEM fields in Bolivia. The project aims to enhance women's participation in STEM to achieve sustainable development goals and foster socioeconomic and technological advancement. The initiative focuses on understanding and addressing the multifaceted challenges that limit women's involvement in STEM from early education through to professional careers.
@@ -144,7 +134,6 @@ The project employed a participatory action research methodology, involving coll
 - Life Histories of Successful Bolivian Women in STEM: Qualitative analyses highlighting women's trajectories, challenges, and achievements.
 - Perceptions and Social Representations: Research aimed at identifying stereotypes and social barriers affecting women's participation in STEM.
 - Statistical Analysis of Women's Participation in STEM: Quantitative data to complement qualitative findings, providing a comprehensive understanding of the current situation and potential intervention areas.
-- The second phase involved facilitating constructive dialogue spaces with school, university, and labor market communities to generate innovative program and project proposals that significantly enhance the visibility and participation of women in STEM fields.
 
 #### Impact
 - Increased Visibility of Women in STEM: The project has significantly increased the visibility of women scientists in Bolivia, highlighting their contributions and establishing a positive association between women and science from an early age. This has been achieved through the dissemination of life stories of successful women in STEM, which serve as role models for younger generations.
@@ -178,15 +167,10 @@ The project was implemented in two phases over 36 months. The first phase focuse
 - Policy Influence and Recommendations: The project informed national and institutional policies aimed at promoting gender equity in STEM. Recommendations included the need for gender-sensitive pedagogy, gender audits, and mainstreaming strategies in universities.
 - Supportive Infrastructure: The construction of a nursing mothers' lounge and the establishment of a STEM Center provided essential support for female students and staff, enabling them to balance their academic and personal responsibilities.
 
-<<<<<<< HEAD
-::header-start{title="Strengthening gender inclusion in agricultural research for more conclusive results in West Africa"}
-::
-=======
 ::coloredDiv
 <div class="header-start">
 <h3>Strengthening gender inclusion in agricultural research for more conclusive results in West Africa</h3>
 </div>
->>>>>>> 69101651970c2eabc6f4a6939718b44103ef0609
 
 #### Background
 Gender disparities in STEM fields, particularly in agricultural sciences, remain a significant challenge in West Africa. This study focuses on public universities and research units in Benin, Côte d'Ivoire, and Niger, examining the extent of gender inequalities and proposing strategies to improve women's participation in agricultural sciences.
