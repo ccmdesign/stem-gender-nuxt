@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/google-fonts',
     '@pinia/nuxt',
+    'nuxt-gtag'
   ],
 
   css: ['~/assets/css/styles.scss'],
@@ -41,6 +42,9 @@ export default defineNuxtConfig({
     families: {
       Poppins: true,
     }
+  },
+  gtag: {
+    id: 'G-1PTFML4ED1'
   },
 
   i18n: {
@@ -70,7 +74,10 @@ export default defineNuxtConfig({
       }
     ],
     defaultLocale: 'en'
-  }
+  },
+  plugins: [
+    { src: '~/plugins/clarity.client.js', mode: 'client' }
+  ],
   // content: {
   //   locales: ['en', 'de', 'ru'],
   //   defaultLocale: 'en',
