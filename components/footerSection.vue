@@ -55,7 +55,10 @@
             href="https://idrc-crdi.ca/en/about-idrc/transparency"
             aria-label="Transparency">{{ $t('footer.transparency') }}</a>
         </div>
-        <p class="copyright">{{ copyrightText }}</p>
+        <p class="copyright">{{ copyrightText }}
+        <br>
+        <a target="_blank" href="https://www.ccmdesign.ca/" aria-label="Research Ethics">by ccm.design</a>
+        </p>
       </div>
     </footer>
   </client-only>
