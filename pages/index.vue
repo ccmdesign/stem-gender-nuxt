@@ -139,12 +139,12 @@
                 class="report__button | button"
                 color="primary"
                 visual="primary"
-                :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }}</NuxtLink>
+                :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }} {{ data.selectedChapter.order }}</NuxtLink>
               <NuxtLink v-else
                 class="report__button | button"
                 color="primary"
                 visual="primary"
-                :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter') }}</NuxtLink>
+                :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter') }} {{ data.selectedChapter.order }}</NuxtLink>
 
             </div>
           </template>
@@ -271,12 +271,12 @@
                 class="button index-header__button"
                 color="primary"
                 visual="primary"
-                :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }}</NuxtLink>
+                :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }} {{ data.selectedChapter }}</NuxtLink>
               <NuxtLink v-else
                 class="button index-header__button"
                 color="primary"
                 visual="primary"
-                :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter') }}</NuxtLink>
+                :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter') }} {{ data.selectedChapter }}</NuxtLink>
             </div>
           </section>
           <section class="challenge">
