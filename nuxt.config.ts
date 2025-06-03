@@ -1,6 +1,6 @@
 const description = 'A Southern-led research network to advance gender equality in STEM.'
 const title = 'Breaking barriers, Building bridges'
-const OG = '/OG.jpg'
+const OG = '/OG.png'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
