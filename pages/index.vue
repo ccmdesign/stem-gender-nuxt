@@ -139,12 +139,12 @@
                 class="report__button | button"
                 color="primary"
                 visual="primary"
-                :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }} {{ data.selectedChapter.order }}</NuxtLink>
+                :to="localePath(data.selectedChapter._path)">{{ $t('readChapter') }}<span class="sr-only">:{{ data.selectedChapter.title }}</span></NuxtLink>
               <NuxtLink v-else
                 class="report__button | button"
                 color="primary"
                 visual="primary"
-                :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter') }} {{ data.selectedChapter.order }}</NuxtLink>
+                :to="`/articles/${data.selectedChapter.slug}`">{{ $t('readChapter') }}<span class="sr-only">:{{ data.selectedChapter.title }}</span></NuxtLink>
 
             </div>
           </template>

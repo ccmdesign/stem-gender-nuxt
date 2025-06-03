@@ -1,12 +1,12 @@
 <template>
   <div class="resource-card | stack" :class="{ 'hidden': !isVisible }">
     <div class="repel">
-      <h5 class="resource-card__country">{{ resource.region }}</h5>
-      <h5 class="resource-card__status">{{ resource.status }}</h5>
+      <p class="resource-card__country">{{ resource.region }}</p>
+      <p class="resource-card__status">{{ resource.status }}</p>
     </div>
-    <h2 class="resource-card__title">{{ resource.name }}</h2>
+    <h3 class="resource-card__title">{{ resource.name }}</h3>
     <p class="resource-card__description">{{ resource.project_type }}</p>
-    <a class="button" data-color="primary" data-visual="secondary" :href="resource.url" target="_blank">Read More</a>
+    <a class="button" data-color="primary" data-visual="secondary" :href="resource.url" target="_blank">{{ $t('readMore') }}<span class="sr-only">:{{ resource.name }}</span></a>
   </div>
 </template>
 
