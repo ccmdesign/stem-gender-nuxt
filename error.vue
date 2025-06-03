@@ -10,11 +10,10 @@ defineProps({
 <template>
   <div>
     <h2>
-      {{ error ? error.statusCode : 'Error' }}
+      {{ $t('error.title') }}
     </h2>
-    <p>{{ $t('errorPageMessage') }}</p>
     <button @click="$router.push(localePath('/'))">
-      {{ $t('backToHomePage') }}
+      {{ $t('error.backToHome') }}
     </button>
   </div>
 </template>

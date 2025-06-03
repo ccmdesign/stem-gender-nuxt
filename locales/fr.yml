@@ -7,7 +7,6 @@ countries: 'Pays'
 resources: 'Ressources'
 previousArticle: 'Article précédent'
 readNext: 'Lire suivant'
-error: 'Erreur'
 back: 'Retour'
 noArticlesFound: 'Aucun article trouvé.'
 globalProjects: 'Projets Globaux'
@@ -59,4 +58,9 @@ signupForm:
   label: "S'inscrire aux nouvelles du CRDI"
   placeholder: 'Adresse e-mail'
   button: "S'abonner"
+
+error:
+  title: 'Désolé, cette page nexiste pas.'
+  message: 'Page non trouvée.'
+  backToHome: 'Retour à laccueil'
 

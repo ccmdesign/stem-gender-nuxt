@@ -115,7 +115,7 @@ useHead({
         </article>
       </template>
       <template #not-found>
-        <h1>{{ $t('error') }}</h1>
+        <h1>{{ $t('error.title') }}</h1>
         <button @click="$router.push(localePath('/'))">{{ $t('back') }}</button>
       </template>
     </ContentDoc>

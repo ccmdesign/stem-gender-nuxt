@@ -7,7 +7,6 @@ countries: 'Countries'
 resources: 'Resources'
 previousArticle: 'Previous article'
 readNext: 'Read next'
-error: 'Error'
 back: 'Back'
 noArticlesFound: 'No articles found.'
 globalProjects: 'Global Projects'
@@ -60,4 +59,8 @@ signupForm:
   label: 'Sign up for IDRC news'
   placeholder: 'Email address'
   button: 'Subscribe'
-  
+
+error:
+  title: 'Sorry, this page does not exist.'
+  message: 'Page not found.'
+  backToHome: 'Back to Home'

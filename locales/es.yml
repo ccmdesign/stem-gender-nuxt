@@ -7,7 +7,6 @@ countries: 'Países'
 resources: 'Recursos'
 previousArticle: 'Artículo anterior'
 readNext: 'Leer siguiente'
-error: 'Error'
 back: 'Volver'
 noArticlesFound: 'No se encontraron artículos.'
 globalProjects: 'Proyectos Globales'
@@ -57,3 +56,8 @@ signupForm:
   label: 'Suscríbete a las noticias de IDRC'
   placeholder: 'Correo electrónico'
   button: 'Suscribirse'
+
+error:
+  title: 'Lo sentimos, esta página no existe.'
+  message: 'Página no encontrada.'
+  backToHome: 'Volver al inicio'
