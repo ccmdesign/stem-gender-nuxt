@@ -14,11 +14,18 @@
             <p class="homepage-hero__brow">{{ $t('synthesisReport') }} | Beta</p>
             <h1 class="homepage-hero__title">{{ $t('breakingBarriers') }}</h1>
             <p class="homepage-hero__tagline">{{ $t('tagline') }}</p>
-            <nuxt-link class="button homepage-hero__button"
-              icon-after="arrow_downward"
-              color="primary"
-              visual="primary"
-              to="#report">{{ $t('readReport') }}</nuxt-link>
+            <div class="homepage-hero__buttons">
+              <nuxt-link class="button homepage-hero__button"
+                color="secondary"
+                visual="secondary"
+                target="_blank"
+                to="https://idrc-crdi.ca/en/initiative/gender-stem">{{ $t('fullReport') }}</nuxt-link>
+              <nuxt-link class="button homepage-hero__button"
+                icon-after="arrow_downward"
+                color="primary"
+                visual="primary"
+                to="#report">{{ $t('readReport') }}</nuxt-link>
+            </div>
           </template>
 
           <template #image>
@@ -328,9 +335,6 @@
             </div>
           </template>
         </challenge-section>
-      </template>
-      <template #sign-up>
-        <signup-section />
       </template>
       <template #footer>
         <footer-section />
@@ -773,5 +777,11 @@ h2 {
   border: 1px solid var(--primary-color);
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.homepage-hero__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
 }
 </style>
