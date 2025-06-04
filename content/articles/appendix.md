@@ -108,7 +108,7 @@ The Programa de Apoyo a Mujeres Indígenas en Ciencia, Tecnología, Ingeniería 
 - Document Educational Trajectories: Study and document the personal profiles, educational trajectories, and academic experiences of the grantees to understand the factors that facilitate or obstruct their progression in STEM careers.
 
 #### Implementation
-- The program awarded scholarships to twelve young indigenous women scientists from various states and ethnic groups in Mexico. The selection process involved leveraging CIESAS's extensive network of contacts and CONACYT's database of scholarship recipients. The program faced initial challenges due to the lack of background, norms, and practices for including indigenous women in research centers. Despite these challenges, the program garnered strong support from certain sectors of the research institutes. The grantees conducted their postdoctoral research at public research centers, where they received mentorship and support from academic staff.
+The program awarded scholarships to twelve young indigenous women scientists from various states and ethnic groups in Mexico. The selection process involved leveraging CIESAS's extensive network of contacts and CONACYT's database of scholarship recipients. The program faced initial challenges due to the lack of background, norms, and practices for including indigenous women in research centers. Despite these challenges, the program garnered strong support from certain sectors of the research institutes. The grantees conducted their postdoctoral research at public research centers, where they received mentorship and support from academic staff.
 
 #### Impact
 - Increased Visibility of Indigenous Women in STEM: The program significantly increased the visibility of indigenous women scientists in Mexico, highlighting their contributions and establishing a positive association between indigenous women and science. This was achieved through the dissemination of their research and success stories, which served as role models for younger generations.
@@ -134,6 +134,8 @@ The project employed a participatory action research methodology, involving coll
 - Life Histories of Successful Bolivian Women in STEM: Qualitative analyses highlighting women's trajectories, challenges, and achievements.
 - Perceptions and Social Representations: Research aimed at identifying stereotypes and social barriers affecting women's participation in STEM.
 - Statistical Analysis of Women's Participation in STEM: Quantitative data to complement qualitative findings, providing a comprehensive understanding of the current situation and potential intervention areas.
+
+The second phase involved facilitating constructive dialogue spaces with school, university, and labor market communities to generate innovative program and project proposals that significantly enhance the visibility and participation of women in STEM fields.
 
 #### Impact
 - Increased Visibility of Women in STEM: The project has significantly increased the visibility of women scientists in Bolivia, highlighting their contributions and establishing a positive association between women and science from an early age. This has been achieved through the dissemination of life stories of successful women in STEM, which serve as role models for younger generations.
