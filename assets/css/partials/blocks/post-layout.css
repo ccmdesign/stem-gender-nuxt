@@ -21,7 +21,7 @@
   }
 
   .post-layout > * { grid-column:3/4; }
-  .post-layout > :where(h3, h4, .left-column, hgroup) { grid-column:2/3; }
+  .post-layout > :where(h3, h4, .left-column, .hgroup) { grid-column:2/3; }
   .post-layout > h2,
   .post-layout >.bordered-grid { 
     grid-column:2/3; 
@@ -63,7 +63,7 @@
     padding-block: var(--space-s-m);
   }
 
-  .post-layout > :where(h3, h4, .left-column, hgroup) {
+  .post-layout > :where(h3, h4, .left-column, .hgroup) {
     text-align: right;
     padding-inline-end: var(--space-s-m);
     padding-block-end: var(--space-s-m);
@@ -74,7 +74,7 @@
   }
   
   .post-layout h3 + *,
-  .post-layout hgroup + * {
+  .post-layout .hgroup + * {
     padding-block-start: var(--space-l-xl);
   }
 
@@ -115,7 +115,7 @@
   
 }
 
-.post-layout hgroup {
+.post-layout .hgroup {
   padding-block-start: var(--space-l-xl);
 
   * { padding-block: 0; }

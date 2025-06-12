@@ -19,10 +19,10 @@ In various forms of media, such as those that highlight the often-overlooked con
 
 The gender gap in STEM is not a result of individual choices but is shaped by systemic barriers, including gender biases, stereotypes, and structural inequalities within educational institutions and workplaces (UNESCO, 2021). Uncovering and addressing these barriers is a necessary step in driving development around the world.
 
-<hgroup>
+<div class="hgroup">
   <h4>The global context</h4>
   <h3>Challenges and opportunities identified through past work and investments</h3>
-</hgroup>
+</div>
 
 
 Significant progress has been made in highlighting the lack of gender equality in STEM fields, yet non-diverse science and technology sectors remain the norm. According to UNESCO's [2024 report on the gender gap in science](https://unesdoc.unesco.org/ark:/48223/pf0000388805), women represent only a third of researchers globally, with even lower representation in leadership roles and senior positions—a statistic that has remained almost unchanged in the past decade.  Data on other marginalized groups is often unavailable or unrecognized.
@@ -48,18 +48,6 @@ These studies generated evidence on the unique obstacles facing women and other 
 - Integrating gender analysis as a standard component of scientific research
 
 Research projects funded through both cohorts, as well as IDRC's ongoing work on providing scholarships for [early career women scientists](https://idrc-crdi.ca/en/project/early-career-fellowships-gender-equality-science-2022-2026) through collaboration with the [Organization for Women in Science for the Developing World (OWSD)](https://owsd.net/), are showing results and findings relevant to various stakeholders across the Global North and South. The cohort of researchers, that make up these various initiatives, now referred to as the **Breaking Barriers Network**, is gathering and building advocacy and momentum across its relevant geographies. From conducting a gender audit at a major university in Zimbabwe to an innovative fellowship program supporting Indigenous women scientists in Mexico, the **Breaking Barriers Network** is building bridges to advance women's sustained participation and leadership across STEM fields. 
-
-To date, the Breaking Barriers Network has collectively advanced work in different areas:
-
-**Developed an Evidence-base**: Generating evidence on how to improve gender equality and diversity in STEM, through scoping and the testing of promising interventions. 
-
-**Established Collaborative Networks**: Establishing networks of female researchers and practitioners to foster collaboration and support. 
-
-**Built and Strengthened Capacities**: Implementing training programs to build the capacity of female scientists and researchers in the Global South. 
-
-**Influenced Policy**: Working with governments and institutions to influence policy changes that support gender equality in STEM fields. 
-
-**Developed Monitoring and Evaluation Frameworks**: Developing robust mechanisms to monitor and evaluate the impact of gender equality initiatives, ensuring continuous improvement and accountability. 
 
 ::bg-image{imageClass="xl-image" url="/images/introduction-2.JPG"}
 ::
@@ -141,6 +129,7 @@ As part of the **Breaking Barriers Network**, researchers from Latin America and
   - #### Developed Monitoring and Evaluation Frameworks
     Developing robust mechanisms to monitor and evaluate the impact of gender equality initiatives, ensuring continuous improvement and accountability.
 ::
+
 ::card-list
 #header
   ### What is needed?
