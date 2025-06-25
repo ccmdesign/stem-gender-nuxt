@@ -66,3 +66,8 @@ error:
   message: 'Page non trouvée.'
   backToHome: 'Retour à laccueil'
 
+book:
+  title: Procurez-vous l’édition imprimée de Breaking Barriers
+  paragraph: Vous préférez une version magnifiquement conçue et tangible de notre rapport phare? Le rapport Breaking Barriers est désormais disponible en version imprimée. Parfait pour les bibliothèques, les institutions ou votre collection personnelle. Plongez dans des analyses approfondies sur l’équité des genres dans les STIM, dans un format conçu pour durer.
+  button: Commandez maintenant
+
