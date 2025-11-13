@@ -7,11 +7,13 @@
         <div class="twin-section__right book__info stack">
             <h2>{{ $t('book.title') }}</h2>
             <p>{{ $t('book.paragraph') }}</p>
-            <nuxt-link class="button"
+            <a href="https://www.africanminds.co.za/gender-stem/"
+                target="_blank"
+                class="button"
                 color="white"
                 visual="primary"
                 size="l"
-                to="">{{ $t('book.button') }}</nuxt-link>
+                to="">{{ $t('book.button') }}</a>
         </div>
       </template>
     </twin-section>
