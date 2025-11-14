@@ -47,6 +47,12 @@
             height: 13%;
             background-color: var(--white-color);
         }
+        img {
+            transform: translate(20%, -10%) scale(0.85);
+            @media (max-width: 768px) {
+                transform: translateY(5%);
+            }
+        }
 
         @media (max-width: 768px) {
             margin-bottom: 0;
