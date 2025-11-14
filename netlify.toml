@@ -1,0 +1,8 @@
+[[plugins]]
+package = "netlify-plugin-checklinks"
+
+  [plugins.inputs]
+  # Option 1: skip Google Fonts from checks
+  skipPatterns = [
+    "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+  ]

@@ -66,3 +66,8 @@ error:
   message: 'Page non trouvée.'
   backToHome: 'Retour à laccueil'
 
+book:
+  title: Démanteler les barrières de genre dans les STEM
+  paragraph: Vous souhaitez aller au-delà des points clés du rapport Breaking Barriers ? Ce livre explore plus en profondeur les données, les témoignages et les stratégies pour faire progresser l’équité entre les genres dans les STEM. Découvrez des analyses complètes provenant du Sud Global, disponibles en téléchargement gratuit.
+  button: Accès
+

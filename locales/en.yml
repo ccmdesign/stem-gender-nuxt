@@ -65,3 +65,8 @@ error:
   title: 'Sorry, this page does not exist.'
   message: 'Page not found.'
   backToHome: 'Back to Home'
+
+book:
+  title: Access Dismantling Gender Barriers in STEM
+  paragraph: Want to go beyond the highlights of the Breaking Barriers report? This book dives deeper into the evidence, stories, and strategies for advancing gender equity in STEM. Explore comprehensive insights from the Global South, free to download.
+  button: Access

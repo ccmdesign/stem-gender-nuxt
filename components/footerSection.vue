@@ -74,6 +74,7 @@ const copyrightText = computed(() => {
 
 <style lang="scss" scoped>
 .footer-section {
+  position: relative;
   padding: var(--space-m-l);
   background-color: var(--black-color);
   display: flex;
