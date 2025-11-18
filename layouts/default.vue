@@ -12,6 +12,7 @@
   <div>
     <slot />
   </div>
+  <nc-cookie-consent />
 </template>
 
 <script setup lang="ts">
