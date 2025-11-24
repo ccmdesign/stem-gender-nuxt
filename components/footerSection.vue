@@ -54,6 +54,7 @@
           <a target="_blank"
             href="https://idrc-crdi.ca/en/about-idrc/transparency"
             aria-label="Transparency">{{ $t('footer.transparency') }}</a>
+          <a href="#" @click.prevent="openCookieModal">Cookies</a>
         </div>
         <p class="copyright">{{ copyrightText }}
         <br>
@@ -70,6 +71,7 @@ const currentYear = computed(() => new Date().getFullYear())
 const copyrightText = computed(() => {
   return t('footer.copyright').replace('currentYear', currentYear.value)
 })
+const { openCookieModal } = useCookieControl();
 </script>
 
 <style lang="scss" scoped>
